@@ -1,0 +1,7 @@
+2013-04-30  Max Polk  <maxpolk@gmail.com>
+
+	* CHANGELOG: began change log
+
+	* complete-convert: created driver bash script
+
+	* phase-01-parse-test: created test Python parsing of HTML as XML

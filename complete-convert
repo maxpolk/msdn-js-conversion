@@ -1,0 +1,77 @@
+#! /bin/sh
+
+#
+# Code from:
+# http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
+#
+# To capture return string:   DIR=$(ScriptDirectory)
+# To echo to stdout:          ScriptDirectory
+#
+function ScriptDirectory
+{
+    local SOURCE="${BASH_SOURCE[0]}"
+    local DIR="$( dirname "$SOURCE" )"
+    while [ -h "$SOURCE" ]; do 
+      SOURCE="$(readlink "$SOURCE")"
+      [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
+      DIR="$( cd -P "$( dirname "$SOURCE"  )" && pwd )"
+    done
+    DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+    echo $DIR
+}
+
+# Directory of github clone
+M="msdn-js"
+
+# Directory of this script (so it can find python scripts next to it)
+SCRIPTDIR=$(ScriptDirectory)
+
+# Clone from github if not already present
+if [ ! -d "${M}" ]; then
+    echo "Cloning from github..."
+    git clone https://github.com/webplatform/msdn-js.git
+    if [ ! -d "${M}" ]; then
+        echo "ERROR: Unable to clone source files from github"
+        exit 1
+    fi
+fi
+
+# Change to cloned repository directory
+cd "${M}"
+
+# # Run xmllint on each to ensure each file is well-formed XML
+# echo "Verify files are well-formed..."
+# for file in *.html; do
+#     echo "==== $file"
+#     if [ "$file" = "js_toc.html" ]; then
+#         echo "Ignoring non-content file"
+#         continue
+#     fi
+# 
+#     # See if xmllint reports non-well-formed XML
+#     if [ ! "$(xmllint --nonet --noout $file 2>&1 | wc -c)" = "0" ]; then
+#         echo "ERROR: xmllint reported a problem"
+#         exit 1
+#     fi
+# done
+
+# Extract title of each file to demo reading XML in Python
+echo "Beginning processing pipeline"
+echo "Phase 1"
+for file in *.html; do
+    echo "==== $file"
+    if [ "$file" = "js_toc.html" ]; then
+        echo "Ignoring non-content file"
+        continue
+    fi
+
+    "${SCRIPTDIR}/phase-01" "$file"
+    if [ ! $? = 0 ]; then
+        echo "ERROR: problem discovered"
+        exit 1
+    fi
+done
+
+# Success if we got here without exiting early
+echo "SUCCESS"
