@@ -4,4 +4,4 @@
 
 	* complete-convert: created driver bash script
 
-	* phase-01-parse-test: created test Python parsing of HTML as XML
+	* phase-01: created test Python parsing of HTML as XML
