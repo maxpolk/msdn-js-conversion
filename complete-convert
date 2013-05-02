@@ -1,6 +1,9 @@
 #! /bin/sh
 
 #
+# Detect what directory this script is running in, useful to run sibling
+# scripts in the same directory.
+#
 # Code from:
 # http://stackoverflow.com/questions/59895/can-a-bash-script-tell-what-directory-its-stored-in
 #
@@ -40,38 +43,105 @@ fi
 # Change to cloned repository directory
 cd "${M}"
 
-# Run xmllint on each to ensure each file is well-formed XML
-echo "Verify files are well-formed..."
-for file in *.html; do
-    echo "==== $file"
-    if [ "$file" = "js_toc.html" ]; then
-        echo "Ignoring non-content file"
-        continue
-    fi
+echo "Verify files are well-formed"
+if [ ! -f "ZZZ-xmllint" ]; then
+    # Don't repeat this step
+    touch "ZZZ-xmllint"
 
-    # See if xmllint reports non-well-formed XML
-    if [ ! "$(xmllint --nonet --noout $file 2>&1 | wc -c)" = "0" ]; then
-        echo "ERROR: xmllint reported a problem"
-        exit 1
-    fi
-done
+    # Run xmllint on each to ensure each file is well-formed XML
+    for file in *.html; do
+        echo "==== $file"
+        if [ "$file" = "js_toc.html" ]; then
+            echo "Ignoring non-content file"
+            continue
+        fi
 
-# Extract title of each file to demo reading XML in Python
-echo "Beginning processing pipeline"
-echo "Phase 1"
-for file in *.html; do
-    echo "==== $file"
-    if [ "$file" = "js_toc.html" ]; then
-        echo "Ignoring non-content file"
-        continue
-    fi
+        # See if xmllint reports non-well-formed XML
+        if [ ! "$(xmllint --nonet --noout $file 2>&1 | wc -c)" = "0" ]; then
+            echo "ERROR: xmllint reported a problem"
+            exit 1
+        fi
+    done
+fi
 
-    "${SCRIPTDIR}/phase-01" "$file"
-    if [ ! $? = 0 ]; then
-        echo "ERROR: problem discovered"
-        exit 1
-    fi
-done
+# Fix file name anomaly
+echo "Fixing file name anomaly"
+if [ ! -f "Conditional__Ternary-Operator.html" ]; then
+    echo "Renaming file"
+    mv 'Conditional__Ternary)-Operator.html' 'Conditional__Ternary-Operator.html'
+    echo "Editing js_toc.html"
+    TMPFILE=$(mktemp)
+    sed 's/a href="Conditional__Ternary.html"/a href="Conditional__Ternary-Operator.html"/' js_toc.html > "$TMPFILE"
+    mv "$TMPFILE" js_toc.html
+fi
+
+# For better readability, reformat the XML
+echo "Formatting files in place for readability"
+if [ ! -f "ZZZ-reformat" ]; then
+    # Don't repeat this step
+    touch "ZZZ-reformat"
+
+    for file in *.html; do
+        echo "==== $file"
+        if [ "$file" = "js_toc.html" ]; then
+            echo "Ignoring non-content file"
+            continue
+        fi
+        TMPFILE=$(mktemp)
+        xmllint --nonet --format "$file" > "$TMPFILE"
+        mv "$TMPFILE" "$file"
+    done
+fi
+
+#
+# Fix internal links within files by grabbing from each file "FILENAME":
+#   <meta name="Microsoft.Help.Id" content="ac6ad343-7663-406a-a2b7-4cc5025ca3d6"/>
+# and every anchor linking to that in all files, replace:
+#   <a href="1c46a560-ec8d-41c5-a806-30c4843789c4.htm">
+# with:
+#   <a href="FILENAME">
+#
+echo "Fix internal links within files"
+if [ ! -f "ZZZ-internallinks" ]; then
+    # Don't repeat this step
+    touch "ZZZ-internallinks"
+
+    for file in *.html; do
+        echo "==== $file"
+        if [ "$file" = "js_toc.html" ]; then
+            echo "Ignoring non-content file"
+            continue
+        fi
+
+        # Grab the content attribute value from meta element with name="Microsoft.Help.Id"
+        HELP_ID=$(grep 'meta name="Microsoft.Help.Id"' $file | sed 's/^.*content="\([^"]*\)".*$/\1/')
+        echo "Fixing links to ${HELP_ID}.htm"
+        for fix in $(grep -l "${HELP_ID}.htm" *.html); do
+            echo "    $fix"
+            TMPFILE=$(mktemp)
+            sed "s/${HELP_ID}.htm/${file}/" "$fix" > "$TMPFILE"
+            mv "$TMPFILE" "$fix"
+        done
+    done
+fi
+
+
+# # Extract title of each file to demo reading XML in Python
+# echo "Beginning processing pipeline"
+# echo "Phase 1"
+# for file in *.html; do
+#     echo "==== $file"
+#     if [ "$file" = "js_toc.html" ]; then
+#         echo "Ignoring non-content file"
+#         continue
+#     fi
+# 
+#     "${SCRIPTDIR}/phase-01" "$file"
+#     if [ ! $? = 0 ]; then
+#         echo "ERROR: problem discovered"
+#         exit 1
+#     fi
+# done
 
 # Success if we got here without exiting early
 echo "SUCCESS"

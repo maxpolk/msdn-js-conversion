@@ -1,3 +1,9 @@
+2013-05-02  Max Polk  <maxpolk@gmail.com>
+
+	* complete-convert: Fixes filename anomaly.
+	Fixes internal links that reference the old filename to use the
+	new filename.
+
 2013-04-30  Max Polk  <maxpolk@gmail.com>
 
 	* CHANGELOG: began change log
