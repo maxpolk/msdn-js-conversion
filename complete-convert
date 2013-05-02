@@ -125,6 +125,27 @@ if [ ! -f "ZZZ-internallinks" ]; then
     done
 fi
 
+#
+# Convert JavaScript-Reference.html, only <div id="mainBody">, into new section
+# of page http://docs.webplatform.org/wiki/javascript
+#
+# Rule: div id becomes new section but only if it has non-whitespace text node children,
+#       use the div id as the section name.
+# Rule: p becomes double-newline separated paragraphs, using only text node children.
+# Rule: h1 text children nodes (might be h1/span) becomes "==text=="
+# Rule: ul/li become "* text"
+# Rule: dl/dt becomes "; text"
+#       dl/dd becomes ": text" (same line as above)
+#
+echo "Converting JavaScript-Reference.html"
+TMPFILE=$(mktemp)
+"${SCRIPTDIR}/simple-convert" "JavaScript-Reference.html" "mainBody" > "$TMPFILE"
+if [ ! $? = 0 ]; then
+    echo "ERROR: problem discovered"
+    rm "$TMPFILE"
+    exit 1
+fi
+mv "$TMPFILE" "JavaScript-Reference.html"
 
 # # Extract title of each file to demo reading XML in Python
 # echo "Beginning processing pipeline"

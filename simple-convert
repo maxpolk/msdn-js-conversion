@@ -1,0 +1,81 @@
+#! /usr/bin/env python
+
+import sys
+from xml.etree import ElementTree
+
+usage = "Usage: " + sys.argv[0] + " INPUTFILE ELEMENTID"
+
+# Parse args
+if len (sys.argv) != 3:
+    raise Exception ("ERROR: Invalid number of arguments\n" + usage)
+inputfile = sys.argv[1]
+elementid = sys.argv[2]
+print ("Reading {:} looking for element id {:}".format (inputfile, elementid))
+
+# Parse XML file and find element having given id
+tree = ElementTree.parse (inputfile)
+root = tree.getroot ()
+element = root.find (".//*[@id='{:}']".format (elementid))
+if (element is None):
+    raise Exception ("ERROR: Unable to find element having id {:}".format (elementid))
+
+def allText (element):
+    '''
+    Returns whitespace-stripped concatenated child text node values, or None if empty.
+    '''
+    all = []
+    for part in element.itertext ():
+        less = part.strip ()
+        if (less != ""):
+            all.append (less)
+    if (len (all) == 0):
+        return None
+    else:
+        return ''.join (all)
+
+def convertChildren (element, sectionDepth, listDepth):
+    for child in element:
+        convert (child, sectionDepth, listDepth)
+
+def convert (element, sectionDepth, listDepth):
+    '''
+    Convert html element into MediaWiki syntax.
+
+    Rule: div id becomes new section but only if it has non-whitespace text node children,
+          use the div id as the section name.
+
+    Rule: p becomes double-newline separated paragraphs, using only text node children.
+
+    Rule: h1 text children nodes (might be h1/span) becomes "==text=="
+
+    Rule: ul/li become "* text"
+
+    Rule: dl/dt becomes "; text"
+          dl/dd becomes ": text" (same line as above)
+    '''
+    all = allText (element)
+    if (all is not None):
+        # Element has non-whitespace text inside, recurse
+        if (element.tag == "div"):
+            # sectionName = element.get ('id')
+            # if (sectionName is None):
+            #     sectionName = "unknown"
+            # print "=" * sectionDepth + sectionName + "=" * sectionDepth
+            convertChildren (element, sectionDepth + 1, listDepth)
+        elif (element.tag == "p"):
+            print "\n" + all + "\n"
+        elif (element.tag == "h1"):
+            print "\n" + "=" * sectionDepth + all + "=" * sectionDepth + "\n"
+        elif (element.tag == "ul"):
+            convertChildren (element, sectionDepth, listDepth + 1)
+        elif (element.tag == "li"):
+            print "\n" + "*" * listDepth + " " + all
+        elif (element.tag == "dl"):
+            convertChildren (element, sectionDepth, listDepth)
+        elif (element.tag == "dt"):
+            sys.stdout.write ("; " + all)
+        elif (element.tag == "dd"):
+            print ": " + all + "\n"
+
+# Start walking element recursively applying various rules
+convertChildren (element, sectionDepth=2, listDepth=0)
