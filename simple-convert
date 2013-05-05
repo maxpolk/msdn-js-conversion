@@ -34,6 +34,9 @@ def allText (element):
         return ''.join (all)
 
 def convertChildren (element, sectionDepth, listDepth):
+    '''
+    Call convert on each child of element.
+    '''
     for child in element:
         convert (child, sectionDepth, listDepth)
 
@@ -53,9 +56,10 @@ def convert (element, sectionDepth, listDepth):
     Rule: dl/dt becomes "; text"
           dl/dd becomes ": text" (same line as above)
     '''
+    # Grab all the combined text nodes underneath element
     all = allText (element)
+    # Skip the element completely if there is no text inside of it anywhere.
     if (all is not None):
-        # Element has non-whitespace text inside, recurse
         if (element.tag == "div"):
             # sectionName = element.get ('id')
             # if (sectionName is None):
@@ -63,19 +67,26 @@ def convert (element, sectionDepth, listDepth):
             # print "=" * sectionDepth + sectionName + "=" * sectionDepth
             convertChildren (element, sectionDepth + 1, listDepth)
         elif (element.tag == "p"):
-            print "\n" + all + "\n"
+            # Paragraphs need a normal line ending plus one more blank line
+            print all + "\n"
         elif (element.tag == "h1"):
-            print "\n" + "=" * sectionDepth + all + "=" * sectionDepth + "\n"
+            # Headers turn into sections with the right number of equals signs
+            print "\n" + "=" * sectionDepth + all + "=" * sectionDepth
         elif (element.tag == "ul"):
+            # Unordered lists we simply recurse and then 'li' gets converted
             convertChildren (element, sectionDepth, listDepth + 1)
         elif (element.tag == "li"):
-            print "\n" + "*" * listDepth + " " + all
+            # List elements turn into the right number of asterisks
+            print "*" * listDepth + " " + all
         elif (element.tag == "dl"):
+            # Definition list we simply recurse and the 'dt' gets converted
             convertChildren (element, sectionDepth, listDepth)
         elif (element.tag == "dt"):
+            # A semicolon and the definition term, expect a 'dd' afterward
             sys.stdout.write ("; " + all)
         elif (element.tag == "dd"):
-            print ": " + all + "\n"
+            # A definition follows a 'dt' and has a colon and content
+            print ": " + all
 
 # Start walking element recursively applying various rules
 convertChildren (element, sectionDepth=2, listDepth=0)

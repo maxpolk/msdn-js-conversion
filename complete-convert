@@ -31,13 +31,22 @@ M="msdn-js"
 SCRIPTDIR=$(ScriptDirectory)
 
 # Clone from github if not already present
-if [ ! -d "${M}" ]; then
+if [ -d "${M}" ]; then
+    # Ensure we created this directory, so that we don't destroy someone's
+    # work in progress
+    if [ ! -f "${M}/ZZZ-owned-by-complete-convert" ]; then
+        echo "It doesn't appear this script created the "${M}" directory."
+        echo "To avoid destroying existing files, this script will not continue."
+        exit 1
+    fi
+else
     echo "Cloning from github..."
     git clone https://github.com/webplatform/msdn-js.git
     if [ ! -d "${M}" ]; then
         echo "ERROR: Unable to clone source files from github"
         exit 1
     fi
+    touch "${M}/ZZZ-owned-by-complete-convert"
 fi
 
 # Change to cloned repository directory
@@ -138,14 +147,19 @@ fi
 #       dl/dd becomes ": text" (same line as above)
 #
 echo "Converting JavaScript-Reference.html"
-TMPFILE=$(mktemp)
-"${SCRIPTDIR}/simple-convert" "JavaScript-Reference.html" "mainBody" > "$TMPFILE"
-if [ ! $? = 0 ]; then
-    echo "ERROR: problem discovered"
-    rm "$TMPFILE"
-    exit 1
+if [ ! -f "ZZZ-simple-convert-test" ]; then
+    # Don't repeat this step
+    touch "ZZZ-simple-convert-test"
+
+    TMPFILE=$(mktemp)
+    "${SCRIPTDIR}/simple-convert" "JavaScript-Reference.html" "mainBody" > "$TMPFILE"
+    if [ ! $? = 0 ]; then
+        echo "ERROR: problem discovered"
+        rm "$TMPFILE"
+        exit 1
+    fi
+    mv "$TMPFILE" "JavaScript-Reference.wiki"
 fi
-mv "$TMPFILE" "JavaScript-Reference.html"
 
 # # Extract title of each file to demo reading XML in Python
 # echo "Beginning processing pipeline"
