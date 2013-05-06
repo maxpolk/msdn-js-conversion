@@ -1,9 +1,12 @@
 #! /usr/bin/env python
+'''
+Convert an html file into MediaWiki syntax.
+'''
 
 import sys
 from xml.etree import ElementTree
 
-usage = "Usage: " + sys.argv[0] + " INPUTFILE ELEMENTID"
+usage = "Usage: simple-convert INPUTFILE ELEMENTID"
 
 # Parse args
 if len (sys.argv) != 3:
@@ -23,70 +26,137 @@ def allText (element):
     '''
     Returns whitespace-stripped concatenated child text node values, or None if empty.
     '''
-    all = []
+    textFragments = []
     for part in element.itertext ():
         less = part.strip ()
         if (less != ""):
-            all.append (less)
-    if (len (all) == 0):
+            textFragments.append (less)
+    if (len (textFragments) == 0):
         return None
     else:
-        return ''.join (all)
+        return ''.join (textFragments)
 
-def convertChildren (element, sectionDepth, listDepth):
+def convertChildren (element, sectionDepth, listDepth, parents):
     '''
-    Call convert on each child of element.
+    Call convert on each child of element, the driver for recursion.
     '''
+    parents.append (element.tag)
     for child in element:
-        convert (child, sectionDepth, listDepth)
+        convert (child, sectionDepth, listDepth, parents)
+    parents.pop ()
 
-def convert (element, sectionDepth, listDepth):
+def convert_p (element, sectionDepth, listDepth, parents):
     '''
-    Convert html element into MediaWiki syntax.
+    Convert a paragraph into MediaWiki syntax.
+
+    Rule: p becomes double-newline separated paragraphs, using only text node children.
+    '''
+    all = allText (element)
+    # Paragraphs need a normal line ending plus one more blank line
+    print all + "\n"
+
+def convert_div (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a paragraph into MediaWiki syntax.
 
     Rule: div id becomes new section but only if it has non-whitespace text node children,
           use the div id as the section name.
+    '''
+    # sectionName = element.get ('id')
+    # if (sectionName is None):
+    #     sectionName = "unknown"
+    # print "=" * sectionDepth + sectionName + "=" * sectionDepth
+    convertChildren (element, sectionDepth + 1, listDepth, parents)
 
-    Rule: p becomes double-newline separated paragraphs, using only text node children.
+def convert_h1 (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a heading into MediaWiki syntax.
 
-    Rule: h1 text children nodes (might be h1/span) becomes "==text=="
+    Rule: h1 text children nodes becomes "==text==", ignoring intermediate elements
+          like span in the case of h1/span.
+    '''
+    all = allText (element)
+    # Headers turn into sections with the right number of equals signs
+    print "\n" + "=" * sectionDepth + all + "=" * sectionDepth
+
+def convert_ul (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a paragraph into MediaWiki syntax.
 
     Rule: ul/li become "* text"
+    '''
+    # Unordered lists we simply recurse and then 'li' gets converted
+    convertChildren (element, sectionDepth, listDepth + 1, parents)
+
+def convert_li (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a paragraph into MediaWiki syntax.
+
+    Rule: ul/li become "* text"
+    '''
+    #@@@TODO -- ensure parent is "ul"
+    all = allText (element)
+    # List elements turn into the right number of asterisks
+    print "*" * listDepth + " " + all
+
+def convert_dl (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a paragraph into MediaWiki syntax.
 
     Rule: dl/dt becomes "; text"
           dl/dd becomes ": text" (same line as above)
     '''
+    # Definition list we simply recurse and the 'dt' gets converted
+    convertChildren (element, sectionDepth, listDepth, parents)
+
+def convert_dt (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a paragraph into MediaWiki syntax.
+
+    Rule: dl/dt becomes "; text"
+          dl/dd becomes ": text" (same line as above)
+    '''
+    #@@@TODO -- ensure parent is "dl"
+    all = allText (element)
+    # A semicolon and the definition term, expect a 'dd' afterward
+    sys.stdout.write ("; " + all)
+
+def convert_dd (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a paragraph into MediaWiki syntax.
+
+    Rule: dl/dt becomes "; text"
+          dl/dd becomes ": text" (same line as above)
+    '''
+    #@@@TODO -- ensure parent is "dl" (and maybe previous sibling is "dt"?)
+    all = allText (element)
+    # A definition follows a 'dt' and has a colon and content
+    print ": " + all
+
+def convert (element, sectionDepth, listDepth, parents):
+    '''
+    Convert html element into MediaWiki syntax according to a set of rules.
+    '''
     # Grab all the combined text nodes underneath element
     all = allText (element)
-    # Skip the element completely if there is no text inside of it anywhere.
+    # Skip the element completely if there is no text inside of it anywhere
     if (all is not None):
         if (element.tag == "div"):
-            # sectionName = element.get ('id')
-            # if (sectionName is None):
-            #     sectionName = "unknown"
-            # print "=" * sectionDepth + sectionName + "=" * sectionDepth
-            convertChildren (element, sectionDepth + 1, listDepth)
+            convert_div (element, sectionDepth, listDepth, parents)
         elif (element.tag == "p"):
-            # Paragraphs need a normal line ending plus one more blank line
-            print all + "\n"
+            convert_p (element, sectionDepth, listDepth, parents)
         elif (element.tag == "h1"):
-            # Headers turn into sections with the right number of equals signs
-            print "\n" + "=" * sectionDepth + all + "=" * sectionDepth
+            convert_h1 (element, sectionDepth, listDepth, parents)
         elif (element.tag == "ul"):
-            # Unordered lists we simply recurse and then 'li' gets converted
-            convertChildren (element, sectionDepth, listDepth + 1)
+            convert_ul (element, sectionDepth, listDepth, parents)
         elif (element.tag == "li"):
-            # List elements turn into the right number of asterisks
-            print "*" * listDepth + " " + all
+            convert_li (element, sectionDepth, listDepth, parents)
         elif (element.tag == "dl"):
-            # Definition list we simply recurse and the 'dt' gets converted
-            convertChildren (element, sectionDepth, listDepth)
+            convert_dl (element, sectionDepth, listDepth, parents)
         elif (element.tag == "dt"):
-            # A semicolon and the definition term, expect a 'dd' afterward
-            sys.stdout.write ("; " + all)
+            convert_dt (element, sectionDepth, listDepth, parents)
         elif (element.tag == "dd"):
-            # A definition follows a 'dt' and has a colon and content
-            print ": " + all
+            convert_dd (element, sectionDepth, listDepth, parents)
 
 # Start walking element recursively applying various rules
-convertChildren (element, sectionDepth=2, listDepth=0)
+convertChildren (element, sectionDepth=2, listDepth=0, parents=[])

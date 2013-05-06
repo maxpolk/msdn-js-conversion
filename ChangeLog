@@ -1,3 +1,9 @@
+2013-05-06  Max Polk  <maxpolk@gmail.com>
+
+	* simple-convert: Split element processing into their own
+	functions.  Now includes a list of parents so you can ensure that
+	child processing isn't blind.
+
 2013-05-02  Max Polk  <maxpolk@gmail.com>
 
 	* complete-convert: Fixes filename anomaly.
