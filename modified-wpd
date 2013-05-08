@@ -1,0 +1,152 @@
+#!/usr/bin/env python
+'''
+This file is a copy of "wpd" from https://github.com/borismus/webplatform-tools.
+
+Small modifications were made so that this can be run in batch, namely:
+* Read wiki username/password from environment variables
+* Read wiki root url from environment variable
+* Read page contents from a file
+'''
+
+import os
+from optparse import OptionParser
+from httplib import HTTPConnection
+import urllib, urllib2
+import json
+import sys
+import getpass
+
+#
+# Read from env vars wiki username/password and root URL where the api.php lives.
+#
+DEFAULT_USERNAME = os.getenv ("WPD_USERNAME")
+DEFAULT_PASSWORD = os.getenv ("WPD_PASSWORD")
+API_ROOT = os.getenv ("WPD_API_ROOT") + "/api.php?"
+# API_ROOT = 'http://docs.webplatform.org/w/api.php?'
+DEFAULT_PARAMS = {'format': 'json'}
+
+# Usage for this program
+usage = """
+Usage:    wpd command <arguments>
+Commands:
+    ls <prefix>
+        Lists file beginning with optional prefix
+
+    edit <page> <filename>
+        Replaces the content of the specified page, using the file contents
+
+Environment variables:
+    WPD_USERNAME - username to login to wiki
+    WPD_PASSWORD - password to login to wiki
+"""
+
+parser = OptionParser(usage=usage)
+parser.add_option('-u', '--username')
+
+
+class WPDConnection:
+
+  def __init__(self, name=None):
+    self.name = name
+    self.is_logged_in = False
+
+    cookie_handler = urllib2.HTTPCookieProcessor()
+    redirect_handler = urllib2.HTTPRedirectHandler()
+    self.opener = urllib2.build_opener(redirect_handler, cookie_handler)
+
+  def login(self):
+    password = DEFAULT_PASSWORD or getpass.getpass()
+    params = {
+      'action': 'login',
+      'lgname': self.name,
+      'lgpassword': password
+    }
+    params.update(DEFAULT_PARAMS)
+
+    resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
+    params['lgtoken'] = resp['login']['token']
+    # Now use the token to do another request.
+    resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
+    success = resp['login']['result'] == 'Success'
+    if success:
+      self.edit_token = resp['login']['lgtoken']
+      self.is_logged_in = True
+
+  def login_required(self):
+    if not self.is_logged_in:
+      raise Exception, 'user %s is not logged in.' %self.name
+
+  def ls(self, prefix='', offset=0, limit=20):
+    """Lists all pages under the specified prefix. If no prefix is specified,
+    lists all pages"""
+    if not prefix:
+      prefix = ''
+
+    params = {
+        'action': 'query',
+        'list': 'allpages',
+        'apprefix': prefix,
+        'aplimit': limit + 1
+    }
+    params.update(DEFAULT_PARAMS)
+    resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
+    page_json = resp['query']['allpages']
+    page_list = [p['title'] for p in page_json]
+    return page_list
+
+  def get_edit_token(self, page):
+    params = {
+        'action': 'query',
+        'titles': page,
+        'intoken': 'edit',
+        'prop': 'info'
+    }
+    params.update(DEFAULT_PARAMS)
+    url = API_ROOT + urllib.urlencode(params)
+    resp = json.loads(self.opener.open(url).read())
+    pages = resp['query']['pages'];
+    page = pages[pages.keys()[0]]
+    return page['edittoken']
+
+  def edit(self, page, content, section=None):
+    """Replaces the content for the particular page or optionally just the
+    section."""
+    self.login_required()
+    edittoken = self.get_edit_token(page)
+    params = {
+        'action': 'edit',
+        'list': 'allpages',
+        'title': page,
+        'summary': 'summary',
+        'text': content,
+        'token': edittoken
+    }
+    params.update(DEFAULT_PARAMS)
+    resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
+    if (resp['edit']['result'] != 'Success'):
+      raise Exception ("Upload not successful:\n{:}".format (resp))
+    else:
+      print "Success"
+
+if __name__ == '__main__':
+  (options, args) = parser.parse_args()
+  if len(args) == 0:
+    print usage
+    sys.exit(1)
+
+  command = args[0]
+  username = options.username or DEFAULT_USERNAME
+  conn = WPDConnection(username)
+
+  if command == 'ls':
+    prefix = (len(args) == 2 and args[1])
+    print '\n'.join(conn.ls(prefix))
+
+  if command == 'edit':
+    if len(args) != 3:
+      print 'wpd edit <page> <filename>'
+      sys.exit(1)
+    page = args[1]
+    content = open (args[2], 'r').read ()
+    conn.login()
+    conn.edit(page, content)
