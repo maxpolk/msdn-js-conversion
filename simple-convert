@@ -13,12 +13,15 @@ if len (sys.argv) != 3:
     raise Exception ("ERROR: Invalid number of arguments\n{:}".format (usage))
 inputfile = sys.argv[1]
 elementid = sys.argv[2]
-print ("Reading {:} looking for element id {:}".format (inputfile, elementid))
 
 # Parse XML file and find element having given id
 tree = ElementTree.parse (inputfile)
 root = tree.getroot ()
-element = root.find (".//*[@id='{:}']".format (elementid))
+element = root.find (".[@id='{:}']".format (elementid))
+if (element is None):
+    element = root.find (".//*[@id='{:}']".format (elementid, elementid))
+
+# See if we found it
 if (element is None):
     raise Exception ("ERROR: Unable to find element having id {:}".format (elementid))
 
@@ -37,6 +40,20 @@ def allText (element):
         return None
     else:
         return ''.join (textFragments)
+
+def convertLink (href, text):
+    '''
+    Convert a link to either an external link: [http://external.site/whatever Text]
+    or else a page link: [[Page|Text]].
+    '''
+    if (href[:4] == "http"):
+        # External link, space separator
+        return "[{:} {:}]".format (href, text)
+    else:
+        # Internal link, remove the HTML suffix if present, bar separator
+        if (href[-5:] == ".html"):
+            href = href[:-5]
+        return "[[{:}|{:}]]".format (href, text)
 
 def convertText (element):
     '''
@@ -67,11 +84,10 @@ def convertText (element):
                 if (href == ""):
                     href = None
             if (href is not None):
-                frags.append ("[")
-                frags.append (href)
-                frags.append (" ")
-                frags.append (text)
-                frags.append ("]")
+                if (len (frags) > 0):
+                    if (frags[-1][-1] != ' '):
+                        frags.append (" ")
+                frags.append (convertLink (href, text))
                 if (tail is not None):
                     frags.append (tail)
         else:
