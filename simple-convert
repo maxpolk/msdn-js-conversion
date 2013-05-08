@@ -10,7 +10,7 @@ usage = "Usage: simple-convert INPUTFILE ELEMENTID"
 
 # Parse args
 if len (sys.argv) != 3:
-    raise Exception ("ERROR: Invalid number of arguments\n" + usage)
+    raise Exception ("ERROR: Invalid number of arguments\n{:}".format (usage))
 inputfile = sys.argv[1]
 elementid = sys.argv[2]
 print ("Reading {:} looking for element id {:}".format (inputfile, elementid))
@@ -25,6 +25,8 @@ if (element is None):
 def allText (element):
     '''
     Returns whitespace-stripped concatenated child text node values, or None if empty.
+
+    Operates recursively, ignoring element structure.
     '''
     textFragments = []
     for part in element.itertext ():
@@ -35,6 +37,52 @@ def allText (element):
         return None
     else:
         return ''.join (textFragments)
+
+def convertText (element):
+    '''
+    Given an element such as 'p', convert all the text within it recursively into
+    MediaWiki syntax.
+
+    This does more than allText:
+    * Turns anchor hrefs into [http://whatever] style text.
+    '''
+    # First you get item.text, then child element, then child element "tail",
+    # then next child element, next child element "tail", etc.
+    frags = []
+    for item in element.iter ():
+        text = item.text
+        if (text is not None):
+            text = text.strip ()
+            if (text == ""):
+                text = None
+        tail = item.tail
+        if (tail is not None):
+            tail = tail.strip ()
+            if (tail == ""):
+                tail = None
+        if (item.tag == 'a' and text is not None):
+            href = item.attrib.get ('href')
+            if (href is not None):
+                href = href.strip ()
+                if (href == ""):
+                    href = None
+            if (href is not None):
+                frags.append ("[")
+                frags.append (href)
+                frags.append (" ")
+                frags.append (text)
+                frags.append ("]")
+                if (tail is not None):
+                    frags.append (tail)
+        else:
+            if (text is not None):
+                frags.append (text)
+            if (tail is not None):
+                frags.append (tail)
+    if (len (frags) == 0):
+        return None
+    else:
+        return ''.join (frags)
 
 def convertChildren (element, sectionDepth, listDepth, parents):
     '''
@@ -51,7 +99,7 @@ def convert_p (element, sectionDepth, listDepth, parents):
 
     Rule: p becomes double-newline separated paragraphs, using only text node children.
     '''
-    all = allText (element)
+    all = convertText (element)
     # Paragraphs need a normal line ending plus one more blank line
     print all + "\n"
 
@@ -95,7 +143,7 @@ def convert_li (element, sectionDepth, listDepth, parents):
     Rule: ul/li become "* text"
     '''
     #@@@TODO -- ensure parent is "ul"
-    all = allText (element)
+    all = convertText (element)
     # List elements turn into the right number of asterisks
     print "*" * listDepth + " " + all
 
@@ -117,7 +165,7 @@ def convert_dt (element, sectionDepth, listDepth, parents):
           dl/dd becomes ": text" (same line as above)
     '''
     #@@@TODO -- ensure parent is "dl"
-    all = allText (element)
+    all = convertText (element)
     # A semicolon and the definition term, expect a 'dd' afterward
     sys.stdout.write ("; " + all)
 
@@ -129,7 +177,7 @@ def convert_dd (element, sectionDepth, listDepth, parents):
           dl/dd becomes ": text" (same line as above)
     '''
     #@@@TODO -- ensure parent is "dl" (and maybe previous sibling is "dt"?)
-    all = allText (element)
+    all = convertText (element)
     # A definition follows a 'dt' and has a colon and content
     print ": " + all
 
