@@ -9,6 +9,9 @@ command to obtain the source HTML.
 
 For example, run this:
 
+    Edit setenv.sh to point to the wiki you choose, and set username/password.
+    . setenv.sh
+    cd ..
     msdn-js-conversion/complete-convert
 
 That will kick off the entire conversion process.  First it will clone
