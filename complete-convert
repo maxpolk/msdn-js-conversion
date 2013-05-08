@@ -30,6 +30,16 @@ M="msdn-js"
 # Directory of this script (so it can find python scripts next to it)
 SCRIPTDIR=$(ScriptDirectory)
 
+# Done clone a repo inside another repo
+if [ "$(pwd -P)" = "$SCRIPTDIR" ]; then
+    echo "You must run this script from another directory to avoid"
+    echo "mixing files from two repositories together, for example:"
+    echo
+    echo "    cd .."
+    echo "    msdn-js-conversion/complete-convert"
+    exit 1
+fi
+
 # Clone from github if not already present
 if [ -d "${M}" ]; then
     # Ensure we created this directory, so that we don't destroy someone's
