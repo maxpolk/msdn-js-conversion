@@ -1,3 +1,14 @@
+2013-05-07  Max Polk  <maxpolk@gmail.com>
+
+	* complete-convert: doesn't let you checkout other repo into
+	current repo.
+
+	* simple-convert: beginning of recursive text extraction from
+	things like p and li where links can be replaced.
+
+	* modified-wpd: copied 'wpd' from another github repo and modified
+	to be able to run it in batch.
+
 2013-05-06  Max Polk  <maxpolk@gmail.com>
 
 	* simple-convert: Split element processing into their own
