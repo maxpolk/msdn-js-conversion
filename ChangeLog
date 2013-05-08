@@ -1,3 +1,8 @@
+2013-05-08  Max Polk  <maxpolk@gmail.com>
+
+	* simple-convert (convert_text): added comments
+	(convert_table, convert_tr, convert_th, convert_td): new functions
+
 2013-05-07  Max Polk  <maxpolk@gmail.com>
 
 	* complete-convert: doesn't let you checkout other repo into

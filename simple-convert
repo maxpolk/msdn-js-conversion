@@ -67,22 +67,27 @@ def convertText (element):
     # then next child element, next child element "tail", etc.
     frags = []
     for item in element.iter ():
+        # Get the text directly inside the element, if empty make it None
         text = item.text
         if (text is not None):
             text = text.strip ()
             if (text == ""):
                 text = None
+        # Get the text following the element, if empty make it None
         tail = item.tail
         if (tail is not None):
             tail = tail.strip ()
             if (tail == ""):
                 tail = None
+        # Handle an anchor with a valid href
         if (item.tag == 'a' and text is not None):
             href = item.attrib.get ('href')
+            # Turn blank href into None
             if (href is not None):
                 href = href.strip ()
                 if (href == ""):
                     href = None
+            # Convert href into a link
             if (href is not None):
                 if (len (frags) > 0):
                     if (frags[-1][-1] != ' '):
@@ -95,6 +100,7 @@ def convertText (element):
                 frags.append (text)
             if (tail is not None):
                 frags.append (tail)
+    # If text fragments were accumulated, join them into a single string
     if (len (frags) == 0):
         return None
     else:
@@ -197,6 +203,41 @@ def convert_dd (element, sectionDepth, listDepth, parents):
     # A definition follows a 'dt' and has a colon and content
     print ": " + all
 
+def convert_table (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a table into MediaWiki syntax.
+
+    Rule: Surround with "{|" and "|}", and recurse on children.
+    '''
+    print "{| class='wikitable'"
+    convertChildren (element, sectionDepth, listDepth, parents)
+    print "|}"
+
+def convert_tr (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a table row into MediaWiki syntax.
+    '''
+    print "|-"
+    convertChildren (element, sectionDepth, listDepth, parents)
+
+def convert_th (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a table header cell into MediaWiki syntax.
+    '''
+    sys.stdout.write ("! ")
+    text = convertText (element)
+    if (text is not None):
+        print text
+
+def convert_td (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a table data cell into MediaWiki syntax.
+    '''
+    sys.stdout.write ("| ")
+    text = convertText (element)
+    if (text is not None):
+        print text
+
 def convert (element, sectionDepth, listDepth, parents):
     '''
     Convert html element into MediaWiki syntax according to a set of rules.
@@ -221,6 +262,14 @@ def convert (element, sectionDepth, listDepth, parents):
             convert_dt (element, sectionDepth, listDepth, parents)
         elif (element.tag == "dd"):
             convert_dd (element, sectionDepth, listDepth, parents)
+        elif (element.tag == "table"):
+            convert_table (element, sectionDepth, listDepth, parents)
+        elif (element.tag == "tr"):
+            convert_tr (element, sectionDepth, listDepth, parents)
+        elif (element.tag == "th"):
+            convert_th (element, sectionDepth, listDepth, parents)
+        elif (element.tag == "td"):
+            convert_td (element, sectionDepth, listDepth, parents)
 
 # Start walking element recursively applying various rules
 convertChildren (element, sectionDepth=2, listDepth=0, parents=[])
