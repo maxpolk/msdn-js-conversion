@@ -1,5 +1,11 @@
 #! /bin/sh
 
+# Verify the site URL works
+function TestSiteUrl
+{
+    curl "${1}/api.php?action=query&meta=siteinfo&format=xml" 2>/dev/null | xmllint --format - 2>/dev/null | grep -e generator | sed 's/^.*generator="\([^"]*\)".*$/\1/'
+}
+
 #
 # Detect what directory this script is running in, useful to run sibling
 # scripts in the same directory.
@@ -26,6 +32,32 @@ function ScriptDirectory
 
 # Directory of github clone
 M="msdn-js"
+
+# Location of site using environment variable
+if [ -z "$WPD_API_ROOT" ]; then
+    echo "Missing WPD_API_ROOT environment variable for wiki site URL"
+    exit 1
+fi
+
+# User name for login to wiki
+if [ -z "$WPD_USERNAME" ]; then
+    echo "Missing WPD_USERNAME environment variable for user login"
+    exit 1
+fi
+
+# User password for login to wiki
+if [ -z "$WPD_PASSWORD" ]; then
+    echo "Missing WPD_PASSWORD environment variable for user login"
+    exit 1
+fi
+
+echo "Testing wiki..."
+WIKI_VERSION=$(TestSiteUrl "$WPD_API_ROOT")
+if [ -z "$WIKI_VERSION" ]; then
+    echo "ERROR: unable to access site $WPD_API_ROOT"
+    exit 1
+fi
+echo "Success, wiki version: $WIKI_VERSION"
 
 # Directory of this script (so it can find python scripts next to it)
 SCRIPTDIR=$(ScriptDirectory)
@@ -171,22 +203,21 @@ if [ ! -f "ZZZ-simple-convert-test" ]; then
     mv "$TMPFILE" "JavaScript-Reference.wiki"
 fi
 
-# # Extract title of each file to demo reading XML in Python
-# echo "Beginning processing pipeline"
-# echo "Phase 1"
-# for file in *.html; do
-#     echo "==== $file"
-#     if [ "$file" = "js_toc.html" ]; then
-#         echo "Ignoring non-content file"
-#         continue
-#     fi
-# 
-#     "${SCRIPTDIR}/phase-01" "$file"
-#     if [ ! $? = 0 ]; then
-#         echo "ERROR: problem discovered"
-#         exit 1
-#     fi
-# done
+# Upload to the wiki new page versions, using *.wiki
+if [ ! -f "ZZZ-upload-to-wiki" ]; then
+    # Don't repeat this step
+    touch "ZZZ-upload-to-wiki"
+
+    for file in *.wiki; do
+        PAGENAME=${file%%.wiki}
+        echo "==== $file"
+        echo "Uploading new version of $PAGENAME"
+        if ! "${SCRIPTDIR}/modified-wpd" edit "$PAGENAME" "$file"; then
+            echo "ERROR: failed to upload new version of page: $PAGENAME"
+            exit 1
+        fi
+    done
+fi
 
 # Success if we got here without exiting early
-echo "SUCCESS"
+echo "Overall conversion successful"
