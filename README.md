@@ -1,15 +1,18 @@
 msdn-js-conversion
 ==================
 
-Scripts to convert MSDN Javascript page contribution to Web Platform Docs.
+Scripts to convert MSDN JavaScript HTML page contributions to Web Platform Docs.
 
-The driver script is the "complete-convert" bash script.  Run that from
-somewhere OUTSIDE of this directory, because it will issue a git clone
-command to obtain the source HTML.
+This is special one-time project work.  The driver script is the
+"complete-convert" bash script.  Run that from somewhere outside of this
+directory, because it will issue a git clone command to obtain the source
+HTML then begin converting.
 
-For example, run this:
+To run it, edit setenv.sh to point to the wiki you choose, as well as enter
+the wiki username and password used to push new versions of pages to that wiki.
 
-    Edit setenv.sh to point to the wiki you choose, and set username/password.
+Then source the setenv.sh and run the complete-convert script:
+
     . setenv.sh
     cd ..
     msdn-js-conversion/complete-convert
