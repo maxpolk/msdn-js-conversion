@@ -1,3 +1,10 @@
+2013-05-09  Max Polk  <maxpolk@gmail.com>
+
+	* complete-convert (TestSiteUrl): curl can access https now.
+	No longer need to validate well-formed XML.  Improved comments.
+
+	* README.md: improved description of project.
+
 2013-05-08  Max Polk  <maxpolk@gmail.com>
 
 	* simple-convert (convert_text): added comments
