@@ -1,9 +1,13 @@
 #! /bin/sh
 
-# Verify the site URL works
+#
+# Verify the site URL works by extracting from site the wiki version and printing it.
+# Typical function usage: WIKI_VERSION=$(TestSiteUrl "https://site/wiki").
+# Upon error, the error info is returned.
+#
 function TestSiteUrl
 {
-    curl "${1}/api.php?action=query&meta=siteinfo&format=xml" 2>/dev/null | xmllint --format - 2>/dev/null | grep -e generator | sed 's/^.*generator="\([^"]*\)".*$/\1/'
+    curl --insecure "${1}/api.php?action=query&meta=siteinfo&format=xml" 2>/dev/null | xmllint --format - 2>/dev/null | grep -e generator -e error | sed -e 's/^.*generator="\([^"]*\)".*$/\1/' -e 's/^.*error.*info="\([^"]*\)".*$/Error: \1/'
 }
 
 #
@@ -94,26 +98,27 @@ fi
 # Change to cloned repository directory
 cd "${M}"
 
-echo "Verify files are well-formed"
-if [ ! -f "ZZZ-xmllint" ]; then
-    # Don't repeat this step
-    touch "ZZZ-xmllint"
-
-    # Run xmllint on each to ensure each file is well-formed XML
-    for file in *.html; do
-        echo "==== $file"
-        if [ "$file" = "js_toc.html" ]; then
-            echo "Ignoring non-content file"
-            continue
-        fi
-
-        # See if xmllint reports non-well-formed XML
-        if [ ! "$(xmllint --nonet --noout $file 2>&1 | wc -c)" = "0" ]; then
-            echo "ERROR: xmllint reported a problem"
-            exit 1
-        fi
-    done
-fi
+# # Skipping this for now, all files are well-formed
+# echo "Verify files are well-formed"
+# if [ ! -f "ZZZ-xmllint" ]; then
+#     # Don't repeat this step
+#     touch "ZZZ-xmllint"
+# 
+#     # Run xmllint on each to ensure each file is well-formed XML
+#     for file in *.html; do
+#         echo "==== $file"
+#         if [ "$file" = "js_toc.html" ]; then
+#             echo "Ignoring non-content file"
+#             continue
+#         fi
+# 
+#         # See if xmllint reports non-well-formed XML
+#         if [ ! "$(xmllint --nonet --noout $file 2>&1 | wc -c)" = "0" ]; then
+#             echo "ERROR: xmllint reported a problem"
+#             exit 1
+#         fi
+#     done
+# fi
 
 # Fix file name anomaly
 echo "Fixing file name anomaly"
@@ -126,7 +131,10 @@ if [ ! -f "Conditional__Ternary-Operator.html" ]; then
     mv "$TMPFILE" js_toc.html
 fi
 
-# For better readability, reformat the XML
+#
+# For better readability and ease of matching single lines when using grep,
+# reformat the XML.
+#
 echo "Formatting files in place for readability"
 if [ ! -f "ZZZ-reformat" ]; then
     # Don't repeat this step
