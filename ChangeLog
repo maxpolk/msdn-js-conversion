@@ -1,3 +1,10 @@
+2013-05-14  Max Polk  <maxpolk@gmail.com>
+
+	* complete-convert: logs echoed output, then uploads to wiki.
+
+	* extract-mapping: beginning of script to extract page names from
+	table of contents.
+
 2013-05-09  Max Polk  <maxpolk@gmail.com>
 
 	* complete-convert (TestSiteUrl): curl can access https now.
