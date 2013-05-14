@@ -1,5 +1,26 @@
 #! /bin/sh
 
+# Directory of github clone
+M="msdn-js"
+
+# Log output for later wiki page update
+LOGWIKI="msdn-js batch conversion"
+# Absolute path to log file
+LOGFILE=$(pwd -P)"/complete-convert.log"
+echo -n "Batch conversion results of " > "$LOGFILE"
+date >> "$LOGFILE"
+echo "<pre><nowiki>" >> "$LOGFILE"
+
+#
+# echox will echo to stdout but also capture to a log file as well
+# to be uploaded as a kind of batch processor output capture.
+#
+function echox
+{
+    echo $@ >> "$LOGFILE"
+    echo $@
+}
+
 #
 # Verify the site URL works by extracting from site the wiki version and printing it.
 # Typical function usage: WIKI_VERSION=$(TestSiteUrl "https://site/wiki").
@@ -34,45 +55,42 @@ function ScriptDirectory
     echo $DIR
 }
 
-# Directory of github clone
-M="msdn-js"
-
 # Location of site using environment variable
 if [ -z "$WPD_API_ROOT" ]; then
-    echo "Missing WPD_API_ROOT environment variable for wiki site URL"
+    echox "Missing WPD_API_ROOT environment variable for wiki site URL"
     exit 1
 fi
 
 # User name for login to wiki
 if [ -z "$WPD_USERNAME" ]; then
-    echo "Missing WPD_USERNAME environment variable for user login"
+    echox "Missing WPD_USERNAME environment variable for user login"
     exit 1
 fi
 
 # User password for login to wiki
 if [ -z "$WPD_PASSWORD" ]; then
-    echo "Missing WPD_PASSWORD environment variable for user login"
+    echox "Missing WPD_PASSWORD environment variable for user login"
     exit 1
 fi
 
-echo "Testing wiki..."
+echox "Testing wiki..."
 WIKI_VERSION=$(TestSiteUrl "$WPD_API_ROOT")
 if [ -z "$WIKI_VERSION" ]; then
-    echo "ERROR: unable to access site $WPD_API_ROOT"
+    echox "ERROR: unable to access site $WPD_API_ROOT"
     exit 1
 fi
-echo "Success, wiki version: $WIKI_VERSION"
+echox "Success, wiki version: $WIKI_VERSION"
 
 # Directory of this script (so it can find python scripts next to it)
 SCRIPTDIR=$(ScriptDirectory)
 
 # Done clone a repo inside another repo
 if [ "$(pwd -P)" = "$SCRIPTDIR" ]; then
-    echo "You must run this script from another directory to avoid"
-    echo "mixing files from two repositories together, for example:"
-    echo
-    echo "    cd .."
-    echo "    msdn-js-conversion/complete-convert"
+    echox "You must run this script from another directory to avoid"
+    echox "mixing files from two repositories together, for example:"
+    echox
+    echox "    cd .."
+    echox "    msdn-js-conversion/complete-convert"
     exit 1
 fi
 
@@ -81,15 +99,15 @@ if [ -d "${M}" ]; then
     # Ensure we created this directory, so that we don't destroy someone's
     # work in progress
     if [ ! -f "${M}/ZZZ-owned-by-complete-convert" ]; then
-        echo "It doesn't appear this script created the "${M}" directory."
-        echo "To avoid destroying existing files, this script will not continue."
+        echox "It doesn't appear this script created the ${M} directory."
+        echox "To avoid destroying existing files, this script will not continue."
         exit 1
     fi
 else
-    echo "Cloning from github..."
+    echox "Cloning from github..."
     git clone https://github.com/webplatform/msdn-js.git
     if [ ! -d "${M}" ]; then
-        echo "ERROR: Unable to clone source files from github"
+        echox "ERROR: Unable to clone source files from github"
         exit 1
     fi
     touch "${M}/ZZZ-owned-by-complete-convert"
@@ -99,35 +117,46 @@ fi
 cd "${M}"
 
 # # Skipping this for now, all files are well-formed
-# echo "Verify files are well-formed"
+# echox "Verify files are well-formed"
 # if [ ! -f "ZZZ-xmllint" ]; then
 #     # Don't repeat this step
 #     touch "ZZZ-xmllint"
 # 
 #     # Run xmllint on each to ensure each file is well-formed XML
 #     for file in *.html; do
-#         echo "==== $file"
+#         echox "==== $file"
 #         if [ "$file" = "js_toc.html" ]; then
-#             echo "Ignoring non-content file"
+#             echox "Ignoring non-content file"
 #             continue
 #         fi
 # 
 #         # See if xmllint reports non-well-formed XML
 #         if [ ! "$(xmllint --nonet --noout $file 2>&1 | wc -c)" = "0" ]; then
-#             echo "ERROR: xmllint reported a problem"
+#             echox "ERROR: xmllint reported a problem"
 #             exit 1
 #         fi
 #     done
 # fi
 
 # Fix file name anomaly
-echo "Fixing file name anomaly"
+echox "Fixing file name anomaly"
 if [ ! -f "Conditional__Ternary-Operator.html" ]; then
-    echo "Renaming file"
+    echox "Renaming file"
     mv 'Conditional__Ternary)-Operator.html' 'Conditional__Ternary-Operator.html'
-    echo "Editing js_toc.html"
+    echox "Editing js_toc.html"
     TMPFILE=$(mktemp)
     sed 's/a href="Conditional__Ternary.html"/a href="Conditional__Ternary-Operator.html"/' js_toc.html > "$TMPFILE"
+    mv "$TMPFILE" js_toc.html
+fi
+
+# Fix js_toc.html problems: meta tag, byte-order mark, closing tag
+echox "Fixing table of contents problems (js_toc.html)"
+if grep -q '<meta charset="utf-8">' js_toc.html; then
+    TMPFILE=$(mktemp)
+    sed -e 's/^.*DOCTYPE html.*$/<?xml version="1.0"?>/' \
+        -e 's/<meta charset="utf-8">/<meta charset="utf-8"\/>/' \
+        -e 's/<\/body>/<\/body><\/html>/' \
+        js_toc.html > "$TMPFILE"
     mv "$TMPFILE" js_toc.html
 fi
 
@@ -135,17 +164,13 @@ fi
 # For better readability and ease of matching single lines when using grep,
 # reformat the XML.
 #
-echo "Formatting files in place for readability"
+echox "Formatting files in place for readability"
 if [ ! -f "ZZZ-reformat" ]; then
     # Don't repeat this step
     touch "ZZZ-reformat"
 
     for file in *.html; do
-        echo "==== $file"
-        if [ "$file" = "js_toc.html" ]; then
-            echo "Ignoring non-content file"
-            continue
-        fi
+        echox "==== $file"
         TMPFILE=$(mktemp)
         xmllint --nonet --format "$file" > "$TMPFILE"
         mv "$TMPFILE" "$file"
@@ -160,28 +185,37 @@ fi
 # with:
 #   <a href="FILENAME">
 #
-echo "Fix internal links within files"
+echox "Fix internal links within files"
 if [ ! -f "ZZZ-internallinks" ]; then
     # Don't repeat this step
     touch "ZZZ-internallinks"
 
     for file in *.html; do
-        echo "==== $file"
+        echox "==== $file"
         if [ "$file" = "js_toc.html" ]; then
-            echo "Ignoring non-content file"
+            echox "Ignoring non-content file"
             continue
         fi
 
         # Grab the content attribute value from meta element with name="Microsoft.Help.Id"
         HELP_ID=$(grep 'meta name="Microsoft.Help.Id"' $file | sed 's/^.*content="\([^"]*\)".*$/\1/')
-        echo "Fixing links to ${HELP_ID}.htm"
+        echox "Fixing links to ${HELP_ID}.htm"
         for fix in $(grep -l "${HELP_ID}.htm" *.html); do
-            echo "    $fix"
+            echox "    $fix"
             TMPFILE=$(mktemp)
             sed "s/${HELP_ID}.htm/${file}/" "$fix" > "$TMPFILE"
             mv "$TMPFILE" "$fix"
         done
     done
+fi
+
+echox "Determining filename to wiki page name mapping"
+if [ ! -f "ZZZ-mapping" ]; then
+    # Don't repeat this step
+    touch "ZZZ-mapping"
+
+    # Create an "upload-mapping" file containing "FILENAME PAGENAME" lines
+    "${SCRIPTDIR}/extract-mapping" "js_toc.html" "29f83a2c-48c5-49e2-9ae0-7371d2cda2ff" > "upload-mapping"
 fi
 
 #
@@ -196,7 +230,7 @@ fi
 # Rule: dl/dt becomes "; text"
 #       dl/dd becomes ": text" (same line as above)
 #
-echo "Converting JavaScript-Reference.html"
+echox "Converting JavaScript-Reference.html"
 if [ ! -f "ZZZ-simple-convert-test" ]; then
     # Don't repeat this step
     touch "ZZZ-simple-convert-test"
@@ -204,7 +238,7 @@ if [ ! -f "ZZZ-simple-convert-test" ]; then
     TMPFILE=$(mktemp)
     "${SCRIPTDIR}/simple-convert" "JavaScript-Reference.html" "mainBody" > "$TMPFILE"
     if [ ! $? = 0 ]; then
-        echo "ERROR: problem discovered"
+        echox "ERROR: problem discovered"
         rm "$TMPFILE"
         exit 1
     fi
@@ -218,14 +252,24 @@ if [ ! -f "ZZZ-upload-to-wiki" ]; then
 
     for file in *.wiki; do
         PAGENAME=${file%%.wiki}
-        echo "==== $file"
-        echo "Uploading new version of $PAGENAME"
+        echox "==== $file"
+        echox "Uploading new version of $PAGENAME"
         if ! "${SCRIPTDIR}/modified-wpd" edit "$PAGENAME" "$file"; then
-            echo "ERROR: failed to upload new version of page: $PAGENAME"
+            echox "ERROR: failed to upload new version of page: $PAGENAME"
             exit 1
         fi
     done
 fi
 
 # Success if we got here without exiting early
-echo "Overall conversion successful"
+echox "Overall conversion successful"
+
+# END USING echox FROM THIS POINT FORWARD
+echo "</nowiki></pre>" >> "$LOGFILE"
+
+# Try to upload batch conversion results to wiki
+echo "Uploading batch conversion results to wiki page: $LOGWIKI"
+if ! "${SCRIPTDIR}/modified-wpd" edit "$LOGWIKI" "$LOGFILE"; then
+    echo "ERROR: failed to upload batch conversion results"
+    exit 1
+fi
