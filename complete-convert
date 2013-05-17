@@ -216,6 +216,11 @@ if [ ! -f "ZZZ-mapping" ]; then
 
     # Create an "upload-mapping" file containing "FILENAME PAGENAME" lines
     "${SCRIPTDIR}/extract-mapping" "js_toc.html" "29f83a2c-48c5-49e2-9ae0-7371d2cda2ff" > "upload-mapping"
+
+    if ! "${SCRIPTDIR}/modified-wpd" edit "Upload mapping" "upload-mapping"; then
+        echox "ERROR: failed to upload upload mapping description page"
+        exit 1
+    fi
 fi
 
 #
