@@ -1,3 +1,10 @@
+2013-05-16  Max Polk  <maxpolk@gmail.com>
+
+	* complete-convert: upload mapping file to wiki.
+
+	* extract-mapping: creates mapping from table of contents to page
+	and subpage correctly.
+
 2013-05-14  Max Polk  <maxpolk@gmail.com>
 
 	* complete-convert: logs echoed output, then uploads to wiki.
