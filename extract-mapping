@@ -26,19 +26,105 @@ if (element is None):
 if (element is None):
     raise Exception ("ERROR: Unable to find element having id {:}".format (elementid))
 
-def mapChildren (element, subpages):
+def allText (element):
+    '''
+    Returns whitespace-stripped concatenated child text node values, or None if empty.
+
+    Operates recursively, ignoring element structure.
+    '''
+    textFragments = []
+    for part in element.itertext ():
+        less = part.strip ()
+        if (less != ""):
+            textFragments.append (less)
+    if (len (textFragments) == 0):
+        return None
+    else:
+        return ''.join (textFragments)
+
+def hrefCleanup (href, pages):
+    '''
+    Clean up an a href by applying rules to turn, for example, "X_Y.html" into "X Y".
+    '''
+    # Strip off .html suffix
+    index = href.find (".html")
+    if (index > 0):
+        href = href[:index]
+    else:
+        raise Exception ("Anchor href is missing .html suffix")
+    # Replace two underscores with one
+    href = href.replace ("__", "_")
+    # Replace underscore with space
+    href = href.replace ("_", " ")
+    # Replace dash with space
+    href = href.replace ("-", " ")
+    # Remove leading "JavaScript "
+    if (href.find ("JavaScript ") == 0):
+        href = href[11:]
+    # Strip " Objects" from child page names when parent is "Objects"
+    if (len (pages) > 0 and pages[-1] == "Objects" and href[-7:] == " Object"):
+        href = href[:-7]
+    # Strip " XYZ" from child page names when parent is "XYZ" and
+    # Strip " XYZ" from child page names when parent is "XYZs"
+    # such as removing " Array" when parent is "Array"
+    # or removing " Operator" when parent is "Operators"
+    index = href.rfind (' ')
+    if (len (pages) > 0 and index > 0):
+        parent = pages[-1]
+        suffix = href[index + 1:]
+        if (parent == suffix or (parent[-1] == "s" and parent[:-1] == suffix)):
+            href = href[:index]
+    return href
+
+def mapChildren (element, parents, pages):
     '''
     Recurse element children
     '''
     for child in element:
-        prefix='/'.join (subpages)
-        if (prefix is None or prefix == ""):
-            print ("{:}".format (child.tag))
-        else:
-            print ("{:}/{:}".format ('/'.join (subpages), child.tag))
-        subpages.append (child.tag)
-        mapChildren (child, subpages)
-        subpages.pop ()
+        parent = None
+        if (len (parents) > 0):
+            parent = parents[-1]
+
+        path = '/'.join (parents)
+        if (path is None or path == ""):
+            path = ""
+
+        text = child.text
+        if text is None:
+            text = ""
+
+        href = None
+        pageName = None
+        if (child.tag == "a"):
+            href = child.attrib.get ('href')
+            pageName = hrefCleanup (href, pages)
+            if (parent == "li"):
+                # Pay attention to anchors just inside list item elements
+                pagePath = '/'.join (pages)
+                if (pagePath is not None and pagePath != ""):
+                    pagePath += "/"
+                    pagePath += pageName
+                else:
+                    pagePath = pageName
+                print ("|-")
+                print ("| {:} || {:}".format (href, pagePath))
+            else:
+                pageName = None
+
+        # Push parents and maybe page name
+        if (pageName is not None):
+            pages.append (pageName)
+        parents.append (child.tag)
+
+        mapChildren (child, parents, pages)
+
+        # Pop parents and maybe page name if we are leaving a "li"
+        if (len (pages) > 0 and child.tag == "li"):
+            X = pages.pop ()
+        parents.pop ()
 
 # Start walking element recursively applying various rules
-mapChildren (element, subpages=[])
+print ("{| class='wikitable'")
+print ("! Filename !! Page name")
+mapChildren (element, parents=[], pages=[])
+print ("|}")
