@@ -17,8 +17,8 @@ echo "<pre><nowiki>" >> "$LOGFILE"
 #
 function echox
 {
-    echo $@ >> "$LOGFILE"
-    echo $@
+    echo "$@" >> "$LOGFILE"
+    echo "$@"
 }
 
 #
@@ -79,7 +79,7 @@ if [ -z "$WIKI_VERSION" ]; then
     echox "ERROR: unable to access site $WPD_API_ROOT"
     exit 1
 fi
-echox "Success, wiki version: $WIKI_VERSION"
+echox "    Success, wiki version: $WIKI_VERSION"
 
 # Directory of this script (so it can find python scripts next to it)
 SCRIPTDIR=$(ScriptDirectory)
@@ -117,6 +117,7 @@ fi
 cd "${M}"
 
 # # Skipping this for now, all files are well-formed
+# echox ""
 # echox "Verify files are well-formed"
 # if [ ! -f "ZZZ-xmllint" ]; then
 #     # Don't repeat this step
@@ -124,7 +125,7 @@ cd "${M}"
 # 
 #     # Run xmllint on each to ensure each file is well-formed XML
 #     for file in *.html; do
-#         echox "==== $file"
+#         echox "     $file"
 #         if [ "$file" = "js_toc.html" ]; then
 #             echox "Ignoring non-content file"
 #             continue
@@ -139,6 +140,7 @@ cd "${M}"
 # fi
 
 # Fix file name anomaly
+echox ""
 echox "Fixing file name anomaly"
 if [ ! -f "Conditional__Ternary-Operator.html" ]; then
     echox "Renaming file"
@@ -150,6 +152,7 @@ if [ ! -f "Conditional__Ternary-Operator.html" ]; then
 fi
 
 # Fix js_toc.html problems: meta tag, byte-order mark, closing tag
+echox ""
 echox "Fixing table of contents problems (js_toc.html)"
 if grep -q '<meta charset="utf-8">' js_toc.html; then
     TMPFILE=$(mktemp)
@@ -164,13 +167,14 @@ fi
 # For better readability and ease of matching single lines when using grep,
 # reformat the XML.
 #
+echox ""
 echox "Formatting files in place for readability"
 if [ ! -f "ZZZ-reformat" ]; then
     # Don't repeat this step
     touch "ZZZ-reformat"
 
     for file in *.html; do
-        echox "==== $file"
+        echox "     $file"
         TMPFILE=$(mktemp)
         xmllint --nonet --format "$file" > "$TMPFILE"
         mv "$TMPFILE" "$file"
@@ -185,13 +189,14 @@ fi
 # with:
 #   <a href="FILENAME">
 #
+echox ""
 echox "Fix internal links within files"
 if [ ! -f "ZZZ-internallinks" ]; then
     # Don't repeat this step
     touch "ZZZ-internallinks"
 
     for file in *.html; do
-        echox "==== $file"
+        echox "     $file"
         if [ "$file" = "js_toc.html" ]; then
             echox "Ignoring non-content file"
             continue
@@ -199,9 +204,9 @@ if [ ! -f "ZZZ-internallinks" ]; then
 
         # Grab the content attribute value from meta element with name="Microsoft.Help.Id"
         HELP_ID=$(grep 'meta name="Microsoft.Help.Id"' $file | sed 's/^.*content="\([^"]*\)".*$/\1/')
-        echox "Fixing links to ${HELP_ID}.htm"
+        echox "        Fixing links to ${HELP_ID}.htm"
         for fix in $(grep -l "${HELP_ID}.htm" *.html); do
-            echox "    $fix"
+            echox "            In page $fix"
             TMPFILE=$(mktemp)
             sed "s/${HELP_ID}.htm/${file}/" "$fix" > "$TMPFILE"
             mv "$TMPFILE" "$fix"
@@ -209,6 +214,7 @@ if [ ! -f "ZZZ-internallinks" ]; then
     done
 fi
 
+echox ""
 echox "Determining filename to wiki page name mapping"
 if [ ! -f "ZZZ-mapping" ]; then
     # Don't repeat this step
@@ -235,6 +241,7 @@ fi
 # Rule: dl/dt becomes "; text"
 #       dl/dd becomes ": text" (same line as above)
 #
+echox ""
 echox "Converting JavaScript-Reference.html"
 if [ ! -f "ZZZ-simple-convert-test" ]; then
     # Don't repeat this step
@@ -251,13 +258,15 @@ if [ ! -f "ZZZ-simple-convert-test" ]; then
 fi
 
 # Upload to the wiki new page versions, using *.wiki
+echox ""
+echox "Upload to the wiki new page versions"
 if [ ! -f "ZZZ-upload-to-wiki" ]; then
     # Don't repeat this step
     touch "ZZZ-upload-to-wiki"
 
     for file in *.wiki; do
         PAGENAME=${file%%.wiki}
-        echox "==== $file"
+        echox "     $file"
         echox "Uploading new version of $PAGENAME"
         if ! "${SCRIPTDIR}/modified-wpd" edit "$PAGENAME" "$file"; then
             echox "ERROR: failed to upload new version of page: $PAGENAME"
