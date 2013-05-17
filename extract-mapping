@@ -64,16 +64,17 @@ def hrefCleanup (href, pages):
     # Strip " Objects" from child page names when parent is "Objects"
     if (len (pages) > 0 and pages[-1] == "Objects" and href[-7:] == " Object"):
         href = href[:-7]
-    # Strip " XYZ" from child page names when parent is "XYZ" and
-    # Strip " XYZ" from child page names when parent is "XYZs"
-    # such as removing " Array" when parent is "Array"
-    # or removing " Operator" when parent is "Operators"
-    index = href.rfind (' ')
-    if (len (pages) > 0 and index > 0):
+    # Strip " XYZ" from child page names when parent is "XYZ" or "XYZs"
+    # such as removing " Array" when parent is "Array" or
+    # removing " Operator" when parent is "Operators"
+    if (len (pages) > 0 and len (href) > len (pages[-1]) + 1):
         parent = pages[-1]
-        suffix = href[index + 1:]
-        if (parent == suffix or (parent[-1] == "s" and parent[:-1] == suffix)):
-            href = href[:index]
+        index1 = href.rfind (" " + parent)
+        index2 = href.rfind (" " + parent[:-1])
+        if (index1 > 0 and len (href) - index1 == len (parent) + 1):
+            href = href[:index1]
+        elif (index2 > 0 and len (href) - index2 == len (parent)):
+            href = href[:index2]
     return href
 
 def mapChildren (element, parents, pages):
