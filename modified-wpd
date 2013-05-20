@@ -38,6 +38,7 @@ Commands:
 Environment variables:
     WPD_USERNAME - username to login to wiki
     WPD_PASSWORD - password to login to wiki
+    WPD_API_ROOT - root url of wiki api (do not include /api.php at end)
 """
 
 parser = OptionParser(usage=usage)
