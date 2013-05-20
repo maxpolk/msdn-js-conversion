@@ -41,6 +41,20 @@ def allText (element):
     else:
         return ''.join (textFragments)
 
+def surroundWithSpace (frags, text, tail):
+    '''
+    Add space before and/or after text depending on context.
+
+    Rule: if preceding fragment doesn't end with space, add preceding space.
+    Rule: if tail doesn't begin with space, add trailing space.
+    '''
+    if (len (frags) > 0 and frags[-1] is not None):
+        if (frags[-1][-1] != " "):
+            text = " " + text
+    if (tail is not None and tail != "" and tail[0] != " "):
+        text = text + " "
+    return text
+
 def convertLink (href, text):
     '''
     Convert a link to either an external link: [http://external.site/whatever Text]
@@ -54,6 +68,19 @@ def convertLink (href, text):
         if (href[-5:] == ".html"):
             href = href[:-5]
         return "[[{:}|{:}]]".format (href, text)
+
+def convertSpanText (element):
+    '''
+    Given a 'span' element, convert into MediaWiki syntax.
+
+    This is a separate function called from top-level or nested text extraction.
+    '''
+    elementClass = element.attrib.get ("class")
+    if (elementClass is not None and elementClass == "code"):
+        # Do not call convertText, infinite recursion, just grab simple text
+        return "<code>{:}</code>".format (element.text)
+    else:
+        return element.text
 
 def convertText (element):
     '''
@@ -89,12 +116,17 @@ def convertText (element):
                     href = None
             # Convert href into a link
             if (href is not None):
-                if (len (frags) > 0):
-                    if (frags[-1][-1] != ' '):
-                        frags.append (" ")
-                frags.append (convertLink (href, text))
+                frags.append (surroundWithSpace (frags, convertLink (href, text), tail))
                 if (tail is not None):
                     frags.append (tail)
+        elif (item.tag == 'b' and text is not None):
+            frags.append (surroundWithSpace (frags, "'''" + text + "'''", tail))
+            if (tail is not None):
+                frags.append (tail)
+        elif (item.tag == 'span' and text is not None):
+            frags.append (surroundWithSpace (frags, convertSpanText (item), tail))
+            if (tail is not None):
+                frags.append (tail)
         else:
             if (text is not None):
                 frags.append (text)
@@ -125,18 +157,63 @@ def convert_p (element, sectionDepth, listDepth, parents):
     # Paragraphs need a normal line ending plus one more blank line
     print all + "\n"
 
+def convert_span (element, sectionDepth, listDepth, parents):
+    '''
+    Just like convert_p but no newlines at the end.
+
+    Rule: for <span class="code">ABC</span> turn into <code>ABC</code>.
+    '''
+    print convertSpanText (element)
+
+def convert_pre (element, sectionDepth, listDepth, parents):
+    '''
+    Convert a pre into MediaWiki syntax.
+
+    Rule: pre is just verbatim.
+    '''
+    all = convertText (element)
+    print "<pre>{:}</pre>\n".format (all)
+
 def convert_div (element, sectionDepth, listDepth, parents):
     '''
     Convert a paragraph into MediaWiki syntax.
 
     Rule: div id becomes new section but only if it has non-whitespace text node children,
           use the div id as the section name.
+    Rule: For <div class="code"> treat nested child <pre> element as the only content.
+    Rule: For <div id="footer"> omit completely.
+    Rule: For <div class="alert"> header is bold, row is normal text.
     '''
     # sectionName = element.get ('id')
     # if (sectionName is None):
     #     sectionName = "unknown"
     # print "=" * sectionDepth + sectionName + "=" * sectionDepth
-    convertChildren (element, sectionDepth + 1, listDepth, parents)
+    elementClass = element.attrib.get ('class')
+    elementId = element.attrib.get ('id')
+    if (elementClass is not None and elementClass == "code"):
+        pre = element.find (".//pre")
+        if (pre is not None):
+            parents.append ("div")
+            convert_pre (pre, sectionDepth, listDepth, parents)
+            parents.pop ()
+    elif (elementClass is not None and elementClass == "alert"):
+        # Get first row first (header) column
+        alertHeader = element.find ("./table/tr[1]/th")
+        # Get second row first (data) column
+        alertData = element.find ("./table/tr[2]/td")
+        if (alertHeader is not None and alertData is not None):
+            alertHeaderText = convertText (alertHeader)
+            alertDataText = convertText (alertData)
+            # Add extra newline so next output isn't in same paragraph
+            print ("{:} -- {:}\n".format (alertHeaderText, alertDataText))
+        else:
+            # Not in known format, so simply recurse
+            convertChildren (element, sectionDepth + 1, listDepth, parents)
+    elif (elementId is not None and elementId == "footer"):
+        # Skip this div
+        pass
+    else:
+        convertChildren (element, sectionDepth + 1, listDepth, parents)
 
 def convert_h1 (element, sectionDepth, listDepth, parents):
     '''
@@ -250,6 +327,8 @@ def convert (element, sectionDepth, listDepth, parents):
             convert_div (element, sectionDepth, listDepth, parents)
         elif (element.tag == "p"):
             convert_p (element, sectionDepth, listDepth, parents)
+        elif (element.tag == "span"):
+            convert_span (element, sectionDepth, listDepth, parents)
         elif (element.tag == "h1"):
             convert_h1 (element, sectionDepth, listDepth, parents)
         elif (element.tag == "ul"):
