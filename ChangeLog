@@ -1,3 +1,16 @@
+2013-06-09  Max Polk  <maxpolk@gmail.com>
+
+	* complete-convert: added better fixes for links, added
+	transliteration of utf-8 into more normal characters, added
+	support for page name uploading
+
+	* extract-mapping: added manual mapping of main page (JavaScript
+	Reference)
+
+	* simple-convert: improved conversion rules, now escapes mediawiki
+	special chars like | and {{ and XML chars like < and >.
+
+
 2013-05-16  Max Polk  <maxpolk@gmail.com>
 
 	* complete-convert: upload mapping file to wiki.
