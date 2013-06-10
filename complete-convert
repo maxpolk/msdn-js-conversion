@@ -139,15 +139,39 @@ cd "${M}"
 #     done
 # fi
 
-# Fix file name anomaly
+# Fix 1st file name anomaly
 echox ""
-echox "Fixing file name anomaly"
+echox "Fixing 1st file name anomaly"
 if [ ! -f "Conditional__Ternary-Operator.html" ]; then
     echox "Renaming file"
     mv 'Conditional__Ternary)-Operator.html' 'Conditional__Ternary-Operator.html'
     echox "Editing js_toc.html"
     TMPFILE=$(mktemp)
     sed 's/a href="Conditional__Ternary.html"/a href="Conditional__Ternary-Operator.html"/' js_toc.html > "$TMPFILE"
+    mv "$TMPFILE" js_toc.html
+fi
+
+# Fix 2nd file name anomaly
+echox ""
+echox "Fixing 2nd file name anomaly"
+if [ -f "Increment.html" ]; then
+    echox "Renaming file"
+    mv 'Increment.html' 'Increment-and-Decrement-Operators.html'
+    echox "Editing js_toc.html"
+    TMPFILE=$(mktemp)
+    sed 's/Increment-Operators.html/Increment-and-Decrement-Operators.html/' js_toc.html > "$TMPFILE"
+    mv "$TMPFILE" js_toc.html
+fi
+
+# Fix 3rd file name anomaly
+echox ""
+echox "Fixing 3rd file name anomaly"
+if [ -f "Modulus-Assignment-Operator-.html" ]; then
+    echox "Renaming file"
+    mv 'Modulus-Assignment-Operator-.html' 'Modulus-Assignment-Operator.html'
+    echox "Editing js_toc.html"
+    TMPFILE=$(mktemp)
+    sed 's/Modulus-Assignment-Operator-.html/Modulus-Assignment-Operator.html/' js_toc.html > "$TMPFILE"
     mv "$TMPFILE" js_toc.html
 fi
 
@@ -181,36 +205,33 @@ if [ ! -f "ZZZ-reformat" ]; then
     done
 fi
 
-#
-# Fix internal links within files by grabbing from each file "FILENAME":
-#   <meta name="Microsoft.Help.Id" content="ac6ad343-7663-406a-a2b7-4cc5025ca3d6"/>
-# and every anchor linking to that in all files, replace:
-#   <a href="1c46a560-ec8d-41c5-a806-30c4843789c4.htm">
-# with:
-#   <a href="FILENAME">
-#
+# Transliterate unusual characters like magic unicode space to ordinary ascii space
 echox ""
-echox "Fix internal links within files"
-if [ ! -f "ZZZ-internallinks" ]; then
+echox "Transliterating unusual charcters into ordinary characters"
+if [ ! -f "ZZZ-simplify-unicode" ]; then
     # Don't repeat this step
-    touch "ZZZ-internallinks"
+    touch "ZZZ-simplify-unicode"
 
     for file in *.html; do
         echox "     $file"
-        if [ "$file" = "js_toc.html" ]; then
-            echox "Ignoring non-content file"
-            continue
-        fi
+        TMPFILE=$(mktemp)
+        iconv -f UTF-8 -t ascii//TRANSLIT < "$file" > "$TMPFILE"
+        mv "$TMPFILE" "$file"
+    done
+fi
 
-        # Grab the content attribute value from meta element with name="Microsoft.Help.Id"
-        HELP_ID=$(grep 'meta name="Microsoft.Help.Id"' $file | sed 's/^.*content="\([^"]*\)".*$/\1/')
-        echox "        Fixing links to ${HELP_ID}.htm"
-        for fix in $(grep -l "${HELP_ID}.htm" *.html); do
-            echox "            In page $fix"
-            TMPFILE=$(mktemp)
-            sed "s/${HELP_ID}.htm/${file}/" "$fix" > "$TMPFILE"
-            mv "$TMPFILE" "$fix"
-        done
+# Eliminate the "(JavaScript)" from everywhere, we don't need to disambiguate
+echox ""
+echox "Eliminate '(JavaScript)' from everywhere"
+if [ ! -f "ZZZ-remove-disambiguation" ]; then
+    # Don't repeat this step
+    touch "ZZZ-remove-disambiguation"
+
+    for file in $(grep -l "(JavaScript)" *.html); do
+        echox "     $file"
+        TMPFILE=$(mktemp)
+        sed -e 's/ *<i>(JavaScript)<\/i>//g' -e 's/ *(JavaScript)//g' < "$file" > "$TMPFILE"
+        mv "$TMPFILE" "$file"
     done
 fi
 
@@ -230,6 +251,50 @@ if [ ! -f "ZZZ-mapping" ]; then
 fi
 
 #
+# Fix internal links within files by grabbing from each file "FILENAME":
+#   <meta name="Microsoft.Help.Id" content="ac6ad343-7663-406a-a2b7-4cc5025ca3d6"/>
+# and every anchor linking to that in all files, replace:
+#   <a href="1c46a560-ec8d-41c5-a806-30c4843789c4.htm">
+# with:
+#   <a href="FILENAME">
+# also every mshelp:link whose keywords links to that in all files, replace:
+#   <mshelp:link keywords="CE2202BB-7EC9-4F5A-BF48-3A04FEFF283E" tabindex="0">Date Object</mshelp:link>
+# with:
+#   <a href="FILENAME">Date Object</a>
+#
+echox ""
+echox "Fix internal links within files"
+if [ ! -f "ZZZ-internallinks" ]; then
+    # Don't repeat this step
+    touch "ZZZ-internallinks"
+
+    for file in *.html; do
+        echox "     $file"
+        if [ "$file" = "js_toc.html" ]; then
+            echox "Ignoring non-content file"
+            continue
+        fi
+
+        # Grab the content attribute value from meta element with name="Microsoft.Help.Id"
+        HELP_ID=$(grep 'meta name="Microsoft.Help.Id"' $file | sed 's/^.*content="\([^"]*\)".*$/\1/')
+        echox "        Fixing links to ${HELP_ID}"
+        for fix in $(grep -il -e "${HELP_ID}.htm" -e "mshelp:link keywords=.${HELP_ID}" *.html); do
+            echox "            In page $fix"
+            # We need to determine the upload name of the file and use that
+            # instead of the native filename when fixing links
+            PAGENAME=${file%%.html}
+            UPLOADNAME=$(grep "| ${PAGENAME}.html |" upload-mapping | sed 's/^| .* || //')
+            ESCAPEDNAME=${UPLOADNAME//\//\\/}
+            TMPFILE=$(mktemp)
+            sed -e "s/${HELP_ID}.htm/${ESCAPEDNAME}.html/i" \
+                -e "s/<mshelp:link keywords=\"${HELP_ID}\".*>\(.*\)<\/mshelp:link>/<a href='${ESCAPEDNAME}.html'>\1<\/a>/i" \
+                "$fix" > "$TMPFILE"
+            mv "$TMPFILE" "$fix"
+        done
+    done
+fi
+
+#
 # Convert JavaScript-Reference.html, only <div id="mainBody">, into new section
 # of page http://docs.webplatform.org/wiki/javascript
 #
@@ -242,19 +307,27 @@ fi
 #       dl/dd becomes ": text" (same line as above)
 #
 echox ""
-echox "Converting JavaScript-Reference.html"
-if [ ! -f "ZZZ-simple-convert-test" ]; then
+echox "Converting all HTML pages"
+if [ ! -f "ZZZ-convert-all" ]; then
     # Don't repeat this step
-    touch "ZZZ-simple-convert-test"
+    touch "ZZZ-convert-all"
 
-    TMPFILE=$(mktemp)
-    "${SCRIPTDIR}/simple-convert" "JavaScript-Reference.html" "mainBody" > "$TMPFILE"
-    if [ ! $? = 0 ]; then
-        echox "ERROR: problem discovered"
-        rm "$TMPFILE"
-        exit 1
-    fi
-    mv "$TMPFILE" "JavaScript-Reference.wiki"
+    for file in *.html; do
+        echox "     $file"
+        if [ "$file" = "js_toc.html" ]; then
+            echox "Ignoring non-content file"
+            continue
+        fi
+
+        TMPFILE=$(mktemp)
+        "${SCRIPTDIR}/simple-convert" "$file" "mainBody" > "$TMPFILE"
+        if [ ! $? = 0 ]; then
+            echox "ERROR: problem discovered"
+            rm "$TMPFILE"
+            exit 1
+        fi
+        mv "$TMPFILE" "${file%%.html}.wiki"
+   done
 fi
 
 # Upload to the wiki new page versions, using *.wiki
@@ -266,9 +339,9 @@ if [ ! -f "ZZZ-upload-to-wiki" ]; then
 
     for file in *.wiki; do
         PAGENAME=${file%%.wiki}
-        echox "     $file"
-        echox "Uploading new version of $PAGENAME"
-        if ! "${SCRIPTDIR}/modified-wpd" edit "$PAGENAME" "$file"; then
+        UPLOADNAME=$(grep "| ${PAGENAME}.html |" upload-mapping | sed 's/^| .* || //')
+        echox "    $PAGENAME becomes $UPLOADNAME"
+        if ! "${SCRIPTDIR}/modified-wpd" edit "$UPLOADNAME" "$file"; then
             echox "ERROR: failed to upload new version of page: $PAGENAME"
             exit 1
         fi
