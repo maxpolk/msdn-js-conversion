@@ -355,8 +355,4 @@ echox "Overall conversion successful"
 echo "</nowiki></pre>" >> "$LOGFILE"
 
 # Try to upload batch conversion results to wiki
-echo "Uploading batch conversion results to wiki page: $LOGWIKI"
-if ! "${SCRIPTDIR}/modified-wpd" edit "$LOGWIKI" "$LOGFILE"; then
-    echo "ERROR: failed to upload batch conversion results"
-    exit 1
-fi
+echo "Batch conversion results in $LOGFILE"
