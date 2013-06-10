@@ -127,5 +127,7 @@ def mapChildren (element, parents, pages):
 # Start walking element recursively applying various rules
 print ("{| class='wikitable'")
 print ("! Filename !! Page name")
+print ("|-")
+print ("| JavaScript-Reference.html || JavaScript Reference")
 mapChildren (element, parents=[], pages=[])
 print ("|}")
