@@ -35,7 +35,7 @@ def allText (element):
     for part in element.itertext ():
         less = part.strip ()
         if (less != ""):
-            textFragments.append (less)
+            textFragments.append (escapeText (less))
     if (len (textFragments) == 0):
         return None
     else:
@@ -49,9 +49,9 @@ def surroundWithSpace (frags, text, tail):
     Rule: if tail doesn't begin with space, add trailing space.
     '''
     if (len (frags) > 0 and frags[-1] is not None):
-        if (frags[-1][-1] != " "):
+        if (frags[-1][-1] != " " and frags[-1][-1] != "."):
             text = " " + text
-    if (tail is not None and tail != "" and tail[0] != " "):
+    if (tail is not None and tail != "" and tail[0] != " " and tail[0] != "."):
         text = text + " "
     return text
 
@@ -78,9 +78,23 @@ def convertSpanText (element):
     elementClass = element.attrib.get ("class")
     if (elementClass is not None and elementClass == "code"):
         # Do not call convertText, infinite recursion, just grab simple text
-        return "<code>{:}</code>".format (element.text)
+        return "<code>{:}</code>".format (escapeText (element.text))
     else:
-        return element.text
+        return escapeText (element.text)
+
+def escapeText (text):
+    '''
+    Escapes text like | (special table meaning), or {{ (special template meaning),
+    or XML chars like < and >.
+    '''
+    if (text is not None):
+        text = text.replace ('{{', '<nowiki>{{</nowiki>')
+        text = text.replace ('|', '{{!}}')
+        text = text.replace ('&', '&amp;')
+        text = text.replace ('<', '&lt;')
+        text = text.replace ('>', '&gt;')
+        text = text.replace ('>', '&gt;')
+    return text
 
 def convertText (element):
     '''
@@ -89,23 +103,37 @@ def convertText (element):
 
     This does more than allText:
     * Turns anchor hrefs into [http://whatever] style text.
+    * Escapes special chars like | (table syntax) and < and > (xml syntax)
     '''
     # First you get item.text, then child element, then child element "tail",
-    # then next child element, next child element "tail", etc.
+    # then next child element, next child element "tail", etc.  The "element.iter()"
+    # will go deeper but not tell you, so we get number of children "len (item)"
+    # and if there are children, push the tail data off until later in tailStack
+    # to be added after the child returns.
+    tailStack = []
     frags = []
     for item in element.iter ():
+        childrenCount = len (item)
         # Get the text directly inside the element, if empty make it None
-        text = item.text
+        text = escapeText (item.text)
         if (text is not None):
             text = text.strip ()
             if (text == ""):
                 text = None
         # Get the text following the element, if empty make it None
-        tail = item.tail
+        tail = escapeText (item.tail)
         if (tail is not None):
             tail = tail.strip ()
             if (tail == ""):
                 tail = None
+        # If there are children, save the tail data until later
+        if (childrenCount > 0):
+            tailStack.append (tail) # defer to later
+            tail = None             # ignore this for now
+        elif (len (tailStack) > 0):
+            previousTail = tailStack.pop () # get deferred tail
+            if (previousTail is not None):
+                tail = previousTail # use it
         # Handle an anchor with a valid href
         if (item.tag == 'a' and text is not None):
             href = item.attrib.get ('href')
@@ -129,7 +157,7 @@ def convertText (element):
                 frags.append (tail)
         else:
             if (text is not None):
-                frags.append (text)
+                frags.append (surroundWithSpace (frags, text, tail))
             if (tail is not None):
                 frags.append (tail)
     # If text fragments were accumulated, join them into a single string
@@ -154,8 +182,9 @@ def convert_p (element, sectionDepth, listDepth, parents):
     Rule: p becomes double-newline separated paragraphs, using only text node children.
     '''
     all = convertText (element)
-    # Paragraphs need a normal line ending plus one more blank line
-    print all + "\n"
+    if (all is not None):
+        # Paragraphs need a normal line ending plus one more blank line
+        print all + "\n"
 
 def convert_span (element, sectionDepth, listDepth, parents):
     '''
@@ -169,10 +198,14 @@ def convert_pre (element, sectionDepth, listDepth, parents):
     '''
     Convert a pre into MediaWiki syntax.
 
-    Rule: pre is just verbatim.
+    Rule: pre is just verbatim, except convertText might have formatting
+    like bold with triple single-quote, so instead of the pre tag we prepend
+    a space to every line.
     '''
     all = convertText (element)
-    print "<pre>{:}</pre>\n".format (all)
+    if (all is not None):
+        for line in all.splitlines ():
+            print " " + line
 
 def convert_div (element, sectionDepth, listDepth, parents):
     '''
@@ -243,8 +276,9 @@ def convert_li (element, sectionDepth, listDepth, parents):
     '''
     #@@@TODO -- ensure parent is "ul"
     all = convertText (element)
-    # List elements turn into the right number of asterisks
-    print "*" * listDepth + " " + all
+    if (all is not None):
+        # List elements turn into the right number of asterisks
+        print "*" * listDepth + " " + all
 
 def convert_dl (element, sectionDepth, listDepth, parents):
     '''
@@ -265,8 +299,9 @@ def convert_dt (element, sectionDepth, listDepth, parents):
     '''
     #@@@TODO -- ensure parent is "dl"
     all = convertText (element)
-    # A semicolon and the definition term, expect a 'dd' afterward
-    sys.stdout.write ("; " + all)
+    if (all is not None):
+        # A semicolon and the definition term, expect a 'dd' afterward
+        sys.stdout.write ("; " + all)
 
 def convert_dd (element, sectionDepth, listDepth, parents):
     '''
@@ -277,8 +312,9 @@ def convert_dd (element, sectionDepth, listDepth, parents):
     '''
     #@@@TODO -- ensure parent is "dl" (and maybe previous sibling is "dt"?)
     all = convertText (element)
-    # A definition follows a 'dt' and has a colon and content
-    print ": " + all
+    if (all is not None):
+        # A definition follows a 'dt' and has a colon and content
+        print ": " + all
 
 def convert_table (element, sectionDepth, listDepth, parents):
     '''
