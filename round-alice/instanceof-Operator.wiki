@@ -1,0 +1,50 @@
+Returns a Boolean value that indicates whether or not an object is an instance of a particular class.
+
+ result = object instanceof class
+
+==Parameters==
+; result: Required. Any variable.
+; object: Required. Any object expression.
+; class: Required. Any defined object class.
+
+==Remarks==
+The '''instanceof''' operator returns true if object is an instance of class. It returns false if object is not an instance of class , or if object is null.
+
+
+==Example==
+The following example shows how to use the '''instanceof''' operator.
+
+ function objTest(obj){
+     var i, t, s = "";
+     t = new Array();
+     t["Date"] = Date;
+     t["Object"] = Object;
+     t["Array"] = Array;
+         for (i in t){
+             if (obj instanceof t[i]) { 
+                 s += "obj is an instance of " + i + "&lt;br/&gt;";
+             }
+             else {
+                 s += "obj is not an instance of " + i + "&lt;br/&gt;";
+         }
+     }
+     return(s);
+ }
+ 
+ var obj = new Date();
+ document.write(objTest(obj));
+ 
+ // Output: 
+ // obj is an instance of Date
+ // obj is an instance of Object
+ // obj is not an instance of Array
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              

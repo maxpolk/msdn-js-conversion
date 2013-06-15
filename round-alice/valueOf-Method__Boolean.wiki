@@ -1,0 +1,20 @@
+Returns the primitive value of the specified boolean.
+
+ boolean.valueOf()
+
+==Return Value==
+The primitive value (true or false) of the Boolean.
+
+
+==Remarks==
+The following code shows how to use this method.
+
+ var bool = new Boolean("true");
+ var s = bool.valueOf();
+ document.write(s);
+ 
+ // Output: true
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+

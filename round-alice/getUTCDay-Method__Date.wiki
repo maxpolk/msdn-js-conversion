@@ -1,0 +1,34 @@
+Gets the day of the week using Universal Coordinated Time (UTC).
+
+ dateObj.getUTCDay()
+
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+Returns an integer between 0 (Sunday) and 6 (Saturday) that represents the day of the week.
+
+
+==Remarks==
+To get the day of the week using local time, use the '''getDate''' method.
+
+
+==Example==
+The following example shows how to use the '''getUTCDay''' method.
+
+ var date = new Date("2/6/2001");
+ var day = date.getUTCDay();
+ document.write(day);
+ 
+ // Output: 2
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Date|Date Object]]
+
+
+==See Also==
+
+              

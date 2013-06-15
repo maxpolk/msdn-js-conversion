@@ -1,0 +1,27 @@
+Converts all the alphabetic characters in a string to lowercase.
+
+ strVariable.toLowerCase()
+ "String Literal".toLowerCase()
+
+==Remarks==
+The '''toLowerCase''' method has no effect on non-alphabetic characters.
+
+The following example demonstrates the effects of the '''toLowerCase''' method:
+
+ var str1 = "This is a STRING.";
+ var str2 = str1. toLowerCase();
+ document.write(str2);
+ 
+ // Output: this is a string.
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/String|String Object]]
+
+
+==See Also==
+
+              
+
+              

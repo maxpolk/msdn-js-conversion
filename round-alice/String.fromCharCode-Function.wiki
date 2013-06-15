@@ -1,0 +1,25 @@
+Returns a string from a number of Unicode character values.
+
+ String.fromCharCode([ code1 [, code2 [, ...[, codeN ]]]])
+
+==Parameters==
+; String: Required. The String object.
+; code1 , . . . , codeN: Optional. A series of Unicode character values to convert to a string. If no arguments are supplied, the result is the empty string.
+
+==Remarks==
+You call this function on the String object rather than on a string instance.
+
+The following example shows how to use this method:
+
+ var test = String.fromCharCode(112, 108, 97, 105, 110);
+ document.write(test);
+ 
+ // Output: plain
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              

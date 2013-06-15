@@ -1,0 +1,46 @@
+Creates variables used with conditional compilation statements.
+
+'''Caution''' -- Conditional compilation is supported in Internet Explorer only, not in Windows Store apps.
+
+ '''@set''' @ varname = term
+
+==Parameters==
+; varname: Required. Valid JavaScript variable name. Must be preceded by an "@" character at all times.
+; term: Required. Zero or more unary operators followed by a constant, conditional compilation variable, or parenthesized expression.
+
+==Remarks==
+Numeric and Boolean variables are supported for conditional compilation. Strings are not. Variables created using @set are generally used in conditional compilation statements, but can be used anywhere in JavaScript code.
+
+Examples of variable declarations look like this:
+
+ @set @myvar1 = 12 @set @myvar2 = (@myvar1 * 20) @set @myvar3 = @_jscript_version
+The following operators are supported in parenthesized expressions:
+
+* <code>! ~ </code>
+* <code>* / % </code>
+* <code>+ - </code>
+* <code>&lt;&lt; &gt;&gt; &gt;&gt;&gt;</code>
+* <code>&lt; &lt;= &gt; &gt;=</code>
+* <code>== != === !== </code>
+* <code>&amp; ^ {{!}} </code>
+* <code>&amp;&amp; {{!}} {{!}} </code>
+If a variable is used before it has been defined, its value is '''NaN'''.'''NaN''' can be checked for using the @if statement:
+
+ @if (@newVar != @newVar)
+    ...
+This works because '''NaN''' is the only value not equal to itself.
+
+
+==Requirements==
+Supported in all versions of Internet Explorer, but not in Windows Store apps.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              

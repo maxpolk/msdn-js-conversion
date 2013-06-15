@@ -1,0 +1,26 @@
+The size in bytes of each element in the array.
+
+ var arraySize = int8Array.BYTES_PER_ELEMENT;
+
+==Example==
+The following example shows how to get the size of the array elements.
+
+ var req = new XMLHttpRequest();
+     req.open('GET', "http://www.example.com");
+     req.responseType = "arraybuffer";
+     req.send();
+ 
+     req.onreadystatechange = function () {
+         if (req.readyState === 4) {
+             var buffer = req.response;
+             var dataView = new DataView(buffer);
+             var floatArr = new Float64Array(buffer.byteLength / 8);
+             alert(floatArr.BYTES_PER_ELEMENT);
+         }
+     }
+
+==Requirements==
+Supported in the Internet Explorer 10 standards document mode. Also supported in Windows Store apps. See Version Information.
+
+Not supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards.
+

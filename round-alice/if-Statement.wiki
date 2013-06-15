@@ -1,0 +1,52 @@
+Conditionally executes a group of statements, depending on the value of an expression.
+
+'''Caution''' -- Conditional compilation is supported in Internet Explorer only, not in Windows Store apps.
+
+ '''@if''' ( condition1 ) text1 [ '''@elif''' ( condition2 ) text2 ]
+ [ '''@else''' text3 ] '''@end'''
+
+==Parameters==
+; condition1, condition2: Optional. An expression that can be coerced into a Boolean expression.
+; text1: Optional. Text to be parsed if condition1 is '''true'''.
+; text2: Optional. Text to be parsed if condition1 is '''false''' and condition2 is '''true'''.
+; text3: Optional. Text to be parsed if both condition1 and condition2 are '''false'''.
+
+==Remarks==
+When you write an @if statement, you do not have to place each clause on a separate line. You can use multiple '''@elif''' clauses. However, all '''@elif''' clauses must come before an '''@else''' clause.
+
+The @if statement is typically used to determine which text among several options should be used for text output.
+
+It is not common to use conditional compilation variables in scripts written for ASP or ASP.NET pages or command-line programs. This is because the capabilities of the compilers can be determined by using other methods.
+
+When you write a script for a Web page, always add conditional compilation code in comments. This enables hosts that do not support conditional compilation to ignore it.
+
+
+==Example==
+The following example illustrates the use of the '''@if...@elif...@else...@end''' statement.
+
+ /*@cc_on @*/
+ /*@
+     document.write("JavaScript version: " + @_jscript_version + ".");
+     document.write("&lt;br /&gt;");
+     @if (@_win32)
+         document.write("Running on a 32-bit version of Windows.");
+     @elif (@_win16)
+         document.write("Running on a 16-bit version of Windows.");
+     @else
+         document.write("Running on a different operating system.");
+     @end
+ @*/
+
+==Requirements==
+Supported in all versions of Internet Explorer, but not in Windows Store apps.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              

@@ -1,0 +1,43 @@
+Determines whether an object is an array.
+
+ Array.isArray( object )
+
+==Parameters==
+; object: Required. The object to test.
+
+==Return Value==
+true if object is an array; otherwise, false. If the object argument is not an object, false is returned.
+
+
+==Example==
+The following example illustrates the use of the '''Array.isArray''' function.
+
+ var ar = [];
+ var result = Array.isArray(ar);
+ // Output: true
+ 
+ var ar = new Array();
+ var result = Array.isArray(ar);
+ // Output: true
+ 
+ var ar = [1, 2, 3];
+ var result = Array.isArray(ar);
+ // Output: true
+ 
+ var result = Array.isArray("an array");
+ document.write(result);
+ // Output: false
+
+==Requirements==
+Supported in the following document modes: Internet Explorer 9 standards and Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+Not supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards.
+
+
+==See Also==
+
+              
+
+              
+
+              

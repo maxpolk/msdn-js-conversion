@@ -1,0 +1,35 @@
+Gets the unencoded version of an encoded component of a Uniform Resource Identifier (URI).
+
+ decodeURIComponent( encodedURIString ''')'''
+
+==Remarks==
+The required encodedURIString argument is a value representing an encoded URI component.
+
+A URIComponent is part of a complete URI.
+
+If the encodedURIString is not valid, a URIError occurs.
+
+
+==Example==
+The following code first encodes and then decodes a URI.
+
+ var uriEncode = encodeURI ("http://www.Not a URL.com");
+ var uriDecode = decodeURIComponent(uriEncode);
+ 
+ document.write (uriEncode);
+ document.write("&lt;br/&gt;");
+ document.write (uriDecode);
+ 
+ // Output:
+ // http://www.Not%20a%20URL.com
+ // http://www.Not a URL.com
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              

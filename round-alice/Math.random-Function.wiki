@@ -1,0 +1,17 @@
+Returns a pseudorandom number between 0 and 1.
+
+ '''Math.random( )'''
+
+==Remarks==
+The pseudorandom number generated is from 0 (inclusive) to 1 (exclusive), that is, the returned number can be zero, but it will always be less than one. The random number generator is seeded automatically when JavaScript is first loaded.
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Math|Math Object]]
+
+
+==See Also==
+
+              

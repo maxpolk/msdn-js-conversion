@@ -1,0 +1,30 @@
+Performs a bitwise exclusive OR on two expressions.
+
+ result '''=''' expression1 '''^''' expression2
+
+==Parameters==
+; result: Any variable.
+; expression1: Any expression.
+; expression2: Any expression.
+
+==Remarks==
+The '''^''' operator looks at the binary representation of the values of two expressions and does a bitwise exclusive OR operation on them. The result of this operation behaves as follows:
+
+ 0101   (expression1)
+ 1100   (expression2)
+ ----
+ 1001   (result)
+When one, and only one, of the expressions has a 1 in a digit, the result has a 1 in that digit. Otherwise, the result has a 0 in that digit.
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              
+
+              

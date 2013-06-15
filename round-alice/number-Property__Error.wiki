@@ -1,0 +1,52 @@
+Returns or sets the numeric value associated with a specific error. The Error object's default property is '''number'''.
+
+ object '''.number''' [ '''=''' errorNumber ]
+
+==Parameters==
+; Object: Any instance of the Error object.
+; errorNumber: An integer representing an error.
+
+==Remarks==
+An error number is a 32-bit value. The upper 16-bit word is the facility code, and the lower word is the error code. To determine the error code, use the &amp; (bitwise And) operator to combine the number property with the hexadecimal number <code>0xFFFF</code>.
+
+
+==Example==
+The following example causes an exception to be thrown and displays the error code that is derived from the error number.
+
+ try
+     {
+     // Cause an error.
+     var x = y;
+     }
+ catch(e)
+     {
+     document.write ("Error Code: ");
+     document.write (e.number &amp; 0xFFFF)
+     document.write ("&lt;br /&gt;");
+     
+     document.write ("Facility Code: ")
+     document.write(e.number&gt;&gt;16 &amp; 0x1FFF)
+     document.write ("&lt;br /&gt;");
+  
+     document.write ("Error Message: ")
+     document.write (e.message)
+     }
+The output of this code is as follows.
+
+ Error Code: 5009
+ Facility Code: 10
+ Error Message: 'y' is undefined
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Error|Error Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              

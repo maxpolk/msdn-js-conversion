@@ -1,0 +1,38 @@
+Tests for the existence of a property in an object.
+
+ result = property in object
+
+==Parameters==
+; result: Required. Any variable.
+; property: Required. An expression that evaluates to a string expression.
+; object: Required. Any object.
+
+==Remarks==
+The '''in''' operator determines whether an object has a property named property. It also determines whether the property is part of the object's prototype chain. For more information about object prototypes, see Prototypes and Prototype Inheritance.
+
+
+==Example==
+The following example shows how to use the '''in''' operator:
+
+ // Create an object that has some properties.
+ var myObject = new Object();
+ myObject.name = "James";
+ myObject.age = "22";
+ myObject.phone = "555 0234";
+ 
+ if ("phone" in myObject)
+    document.write ("property is present");
+ else
+    document.write ("property is not present");
+ 
+ // Output: property is present
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              

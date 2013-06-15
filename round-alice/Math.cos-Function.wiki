@@ -1,0 +1,27 @@
+Returns the cosine of a number.
+
+ '''Math'''.'''cos(''' radians ''')'''
+
+==Remarks==
+The required radians argument is a numeric expression that contains an angle measured in radians.
+
+The return value is the cosine of the numeric argument of radians.
+
+'''Applies To''' : [[Objects/Math|Math Object]]
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              

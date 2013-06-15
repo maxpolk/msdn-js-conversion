@@ -1,0 +1,42 @@
+Sets the hour value in the Date object using local time.
+
+ dateObj.'''setHours(''' numHours [ ''',''' numMin [ ''',''' numSec [ ''',''' numMilli ]]] ''')'''
+
+==Parameters==
+; dateObj: Required. Any Date object.
+; numHours: Required. A numeric value equal to the hours value.
+; numMin: Optional. A numeric value equal to the minutes value. Must be supplied if either of the following arguments is used.
+; numSec: Optional. A numeric value equal to the seconds value. Must be supplied if the following argument is used.
+; numMilli: Optional. A numeric value equal to the milliseconds value.
+
+==Remarks==
+All '''set''' methods taking optional arguments use the value returned from corresponding '''get''' methods, if you do not specify an optional argument. For example, if the numMinutes argument is not specified, JavaScript uses the value returned from the '''getMinutes''' method.
+
+To set the hours value using Universal Coordinated Time (UTC), use the '''setUTCHours''' method.
+
+If the value of an argument is greater than its range or is a negative number, other stored values are modified accordingly. For example, if the stored date is "Jan 5, 1996 00:00:00", and '''setHours(30)''' is called, the date is changed to "Jan 6, 1996 06:00:00." Negative numbers have a similar behavior.
+
+
+==Example==
+The following example illustrates the use of the '''setHours''' method.
+
+ function SetHoursDemo(nhr, nmin, nsec){
+    var d, s;                     //Declare variables.
+    d = new Date();               //Create Date object.d.setHours( nhr , nmin , nsec ) ;  //Set hours, minutes, &amp; seconds.
+    s = "Current setting is " + d.toLocaleString() 
+    return(s);                    //Return new date setting.
+ }
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Date|Date Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              

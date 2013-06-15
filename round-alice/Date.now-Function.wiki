@@ -1,0 +1,39 @@
+Gets the current date and time.
+
+ Date.now()
+
+==Return Value==
+The number of milliseconds between midnight, January 1, 1970, and the current date and time.
+
+
+==Remarks==
+The [[Objects/Date/getTime Method|getTime method]] returns the number of milliseconds between January 1, 1970, and a specified date.
+
+For information about how to calculate elapsed time and compare dates, see Date and Time Calculations (Windows Scripting - JScript).
+
+
+==Example==
+The following example illustrates the use of the '''now''' method.
+
+ var start = Date.now();
+ var response = prompt("What is your name?", "");
+ var end = Date.now();
+ var elapsed = (end - start) / 1000;
+ document.write("You took " + elapsed + " seconds" + " to type: " + response);
+ 
+ // Output:
+ // You took &lt;seconds&gt; seconds to type: &lt;name&gt;
+
+==Requirements==
+Not supported in installed versions earlier than Internet Explorer 9. However, it is supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              

@@ -1,0 +1,26 @@
+Returns the larger of a set of supplied numeric expressions.
+
+ Math.max([ number1 [, number2 [... [, numberN ]]]])
+
+==Remarks==
+The optional number1, number2, ..., numberN arguments are numeric expressions to be evaluated.
+
+If no arguments are provided, the return value is equal to [[Objects/Number/Number Constants|Number.NEGATIVE_INFINITY]]. If any argument is '''NaN''' , the return value is also '''NaN'''.
+
+
+==Example==
+The following code shows how to get the larger of two expressions.
+
+ var x = Math.max(107 - 3,  48 * 90);
+ document.write(x);
+ 
+ // Output:
+ // 4320
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              

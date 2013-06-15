@@ -1,0 +1,75 @@
+The following table lists JavaScript statements.
+
+
+==Statements==
+{| class='wikitable'
+|-
+! Description
+! Language Element
+|-
+| Terminates the current loop, or if in conjunction with a label , terminates the associated statement.
+| [[Statements/break|break Statement]]
+|-
+| Contains statements to execute when an error occurs in code within the '''try''' block.
+| [[Statements/try catch finally|catch Statement]]
+|-
+| Activates conditional compilation support.
+| [[Statements/cc on|@cc_on Statement]]
+|-
+| Causes comments to be ignored by the JavaScript parser.
+| [[Statements/Comment|Comment Statements]]
+|-
+| Stops the current iteration of a loop, and starts a new iteration.
+| [[Statements/continue|continue Statement]]
+|-
+| Starts the debugger.
+| [[Statements/debugger|debugger Statement]]
+|-
+| Executes a statement block once, and then repeats execution of the loop until a condition expression evaluates to '''false'''.
+| [[Statements/do while|do...while Statement]]
+|-
+| Executes a block of statements for as long as a specified condition is '''true'''.
+| [[Statements/for|for Statement]]
+|-
+| Executes one or more statements for each element of an object or array.
+| [[Statements/for in|for...in Statement]]
+|-
+| Declares a new function.
+| [[Statements/function|function Statement]]
+|-
+| Conditionally executes a group of statements, depending on the value of an expression.
+| [[Statements/if|@if Statement]]
+|-
+| Conditionally executes a group of statements, depending on the value of an expression.
+| [[Statements/if else|if...else Statement]]
+|-
+| Provides an identifier for a statement.
+| [[Statements/Labeled|Labeled Statement]]
+|-
+| Exits from the current function and returns a value from that function.
+| [[Statements/return|return Statement]]
+|-
+| Creates variables used with conditional compilation statements.
+| [[Statements/set|@set Statement]]
+|-
+| Enables the execution of one or more statements when a specified expression's value matches a label.
+| [[Statements/switch|switch Statement]]
+|-
+| Refers to the current object.
+| [[Statements/this|this Statement]]
+|-
+| Generates an error condition that can be handled by a '''try...catch''' statement.
+| [[Statements/throw|throw Statement]]
+|-
+| Implements error handling for JavaScript.
+| [[Statements/try catch finally|try Statement]]
+|-
+| Declares a variable.
+| [[Statements/var|var Statement]]
+|-
+| Executes a statement until a specified condition is '''false'''.
+| [[Statements/while|while Statement]]
+|-
+| Establishes the default object for a statement.
+| [[Statements/with|with Statement]]
+|}

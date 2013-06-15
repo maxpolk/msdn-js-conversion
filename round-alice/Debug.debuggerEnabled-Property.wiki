@@ -1,0 +1,9 @@
+Determines whether debugging is enabled for the script context. Debugging may be enabled or disabled whether or not a debugger is attached.
+
+ var dbgEnabled = Debug.debuggerEnabled;
+
+==Requirements==
+Supported in the Internet Explorer 10 standards document mode. Also supported in Windows Store apps. See Version Information.
+
+Not supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards.
+

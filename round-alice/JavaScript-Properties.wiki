@@ -1,0 +1,124 @@
+The following table lists JavaScript properties.
+
+
+==Properties==
+{| class='wikitable'
+|-
+! Property
+! Description
+! JavaScript object
+|-
+| [[Objects/arguments/0 n Properties|0...n Properties]]
+| Returns the value of individual arguments from an '''arguments''' object.
+| '''arguments'''
+|-
+| [[Objects/RegExp/1 9 Properties|$1...$9 Properties]]
+| Returns the nine most-recently memorized portions found during pattern matching.
+| '''RegExp'''
+|-
+| [[Objects/Function/arguments Property|arguments Property]]
+| Returns an array containing each argument passed to the currently executing function.
+| '''Function'''
+|-
+| [[Objects/arguments/callee Property|callee Property]]
+| Returns the Function object being executed.
+| '''arguments'''
+|-
+| [[Objects/Function/caller Property|caller Property]]
+| Returns a reference to the function that invoked the current function.
+| '''Function'''
+|-
+| [[Objects/Object/constructor Property|constructor Property]]
+| Specifies the function that creates an object.
+| Multiple
+|-
+| [[Objects/Error/description Property|description Property]]
+| Returns or sets the descriptive string associated with a specific error.
+| '''Error'''
+|-
+| [[Objects/Regular Expression/global Property|global Property]]
+| Returns a Boolean value indicating the state of the global flag ( '''g''' ) used with a regular expression.
+| '''Regular Expression'''
+|-
+| [[Objects/Regular Expression/ignoreCase Property|ignoreCase Property]]
+| Returns a Boolean value indicating the state of the ignoreCase flag ( '''i''' ) used with a regular expression.
+| '''Regular Expression'''
+|-
+| [[Objects/RegExp/index Property|index Property]]
+| Returns the character position where the first successful match begins in a searched string.
+| '''RegExp'''
+|-
+| [[Objects/RegExp/input Property|input Property]]
+| Returns the string against which a search was performed.
+| '''RegExp'''
+|-
+| [[Objects/RegExp/lastIndex Property|lastIndex Property]]
+| Returns the character position where the last successful match begins in a searched string.
+| '''RegExp'''
+|-
+| [[Objects/RegExp/lastMatch Property|lastMatch Property]]
+| Returns the last matched characters from any regular expression search.
+| '''RegExp'''
+|-
+| [[Objects/RegExp/lastParen Property|lastParen Property]]
+| Returns the last parenthesized submatch from any regular expression search, if any.
+| '''RegExp'''
+|-
+| [[Objects/RegExp/leftContext Property|leftContext Property]]
+| Returns the characters from the beginning of a searched string up to the position before the beginning of the last match.
+| '''RegExp'''
+|-
+| [[Objects/arguments/length Property|length Property (arguments)]]
+| Returns the actual number of arguments passed to a function by the caller.
+| '''arguments'''
+|-
+| [[Objects/Array/length Property|length Property (Array)]]
+| Returns an integer value one higher than the highest element defined in an array.
+| '''Array'''
+|-
+| [[Objects/Function/length Property|length Property (Function)]]
+| Returns the number of arguments defined for a function.
+| '''Function'''
+|-
+| [[Objects/String/length Property|length Property (String)]]
+| Returns the length of a String object.
+| '''String'''
+|-
+| [[Objects/Error/message Property|message Property]]
+| Returns an error message string.
+| '''Error'''
+|-
+| [[Objects/Regular Expression/multiline Property|multiline Property]]
+| Returns a Boolean value indicating the state of the multiline flag ( '''m''' ) used with a regular expression.
+| '''Regular Expression'''
+|-
+| [[Objects/Error/name Property|name Property]]
+| Returns the name of an error.
+| '''Error'''
+|-
+| [[Objects/Error/number Property|number Property]]
+| Returns or sets the numeric value associated with a specific error.
+| '''Error'''
+|-
+| [[Objects/Object/prototype Property|prototype Property]]
+| Returns a reference to the prototype for a class of objects.
+| Multiple
+|-
+| [[Objects/RegExp/rightContext Property|rightContext Property]]
+| Returns the characters from the position following the last match to the end of the searched string.
+| '''RegExp'''
+|-
+| [[Objects/Regular Expression/source Property|source Property]]
+| Returns a copy of the text of the regular expression pattern.
+| '''Regular Expression'''
+|}
+
+==See Also==
+
+              
+
+              
+
+              
+
+              

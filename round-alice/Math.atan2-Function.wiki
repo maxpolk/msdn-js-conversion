@@ -1,0 +1,25 @@
+Returns the angle (in radians) from the X axis to a point ( y , x ).
+
+ '''Math'''.'''atan2(''' y , x ''')'''
+
+==Parameters==
+; x: Required. A numeric expression representing the cartesian x-coordinate.
+; y: Required. A numeric expression representing the cartesian y-coordinate.
+
+==Remarks==
+The return value is between -pi and pi. It represents the angle of the supplied ( y , x ) point, in radians.
+
+'''Applies To''' : [[Objects/Math|Math Object]]
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              
+
+              

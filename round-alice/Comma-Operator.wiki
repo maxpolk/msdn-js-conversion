@@ -1,0 +1,30 @@
+Causes two expressions to be executed sequentially.
+
+ expression1 , expression2
+
+==Parameters==
+; expression1: Any expression.
+; expression2: Any expression.
+
+==Remarks==
+The ''',''' operator causes the expressions to be executed in left-to-right order. A common use for the ''',''' operator is in the increment expression of a '''for''' loop. For example:
+
+ j=25;
+ for (i = 0; i &lt; 10; i++, j++)
+ {
+    k = i + j;
+ }
+The '''for''' statement allows only a single expression to be executed at the end of every pass through a loop. The ''',''' operator allows multiple expressions to be treated as a single expression, so both variables can be incremented.
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              
+
+              

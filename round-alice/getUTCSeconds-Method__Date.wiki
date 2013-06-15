@@ -1,0 +1,37 @@
+Gets the seconds of a '''Date''' object using Universal Coordinated Time (UTC).
+
+ dateObj.getUTCSeconds()
+
+==Parameters==
+The required dateObj reference is a '''Date''' object.
+
+
+==Return Value==
+Returns an integer between 0 and 59. Zero is returned when the time is less than one second into the current minute. If a '''Date''' object was created without specifying the time, by default the UTC seconds value is 0.
+
+
+==Remarks==
+To get the number of seconds in local time, use the '''getSeconds''' method.
+
+
+==Example==
+The following example shows how to use the '''getUTCSeconds''' method.
+
+ var date = new Date("1/1/2001");
+ document.write(date. getUTCSeconds());
+ 
+ // Output: 0
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Date|Date Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              

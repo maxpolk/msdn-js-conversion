@@ -1,0 +1,105 @@
+Prevents the addition of new properties to an object.
+
+ Object.preventExtensions( object )
+
+==Parameters==
+; object: Required. The object to make non-extensible.
+
+==Return Value==
+The object that is passed to the function.
+
+
+==Exceptions==
+If the object argument is not an object, a TypeError exception is thrown.
+
+
+==Remarks==
+The '''Object.preventExtensions''' function makes an object non-extensible, so that new named properties cannot be added to it. After an object is made non-extensible, it cannot be made extensible.
+
+For information about how to set property attributes, see [[Objects/Object/Object.defineProperty Function|Object.defineProperty Function]].
+
+The following related functions prevent the modification of object attributes.
+
+{| class='wikitable'
+|-
+! Function
+! Object is made non-extensible
+! configurable is set to false for each property
+! writable is set to false for each property
+|-
+| '''Object.preventExtensions'''
+| Yes
+| No
+| No
+|-
+| [[Objects/Object/Object.seal Function|Object.seal]]
+| Yes
+| Yes
+| No
+|-
+| [[Objects/Object/Object.freeze Function|Object.freeze]]
+| Yes
+| Yes
+| Yes
+|}
+The following functions return true if all of the conditions marked in the following table are true.
+
+{| class='wikitable'
+|-
+! Function
+! Object is extensible?
+! configurable is false for all properties?
+! writable is false for all data properties?
+|-
+| [[Objects/Object/Object.isExtensible Function|Object.isExtensible]]
+| Yes
+| No
+| No
+|-
+| [[Objects/Object/Object.isSealed Function|Object.isSealed]]
+| No
+| Yes
+| No
+|-
+| [[Objects/Object/Object.isFrozen Function|Object.isFrozen]]
+| No
+| Yes
+| Yes
+|}
+
+==Example==
+The following example illustrates the use of the '''Object.preventExtensions''' function.
+
+ // Create an object that has two properties.
+ var obj = { pasta: "spaghetti", length: 10 };
+ 
+ // Make the object non-extensible.
+ Object.preventExtensions(obj);
+ document.write(Object.isExtensible(obj));
+ document.write("&lt;br/&gt;");
+ 
+ // Try to add a new property, and then verify that it is not added.
+ obj.newProp = 50;
+ document.write(obj.newProp);
+ 
+ // Output:
+ // false
+ // undefined
+
+==Requirements==
+Supported in the following document modes: Internet Explorer 9 standards and Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+Not supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              

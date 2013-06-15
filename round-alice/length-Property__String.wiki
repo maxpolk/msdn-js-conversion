@@ -1,0 +1,33 @@
+Returns the length of a '''String''' object.
+
+'''Caution''' -- JavaScript strings are immutable, so the length of a string cannot be modified.
+
+ strVariable.length
+ "String Literal".length
+
+==Remarks==
+The '''length''' property contains an integer that indicates the number of characters in the '''String''' object. The last character in the '''String''' object has an index of i '''length''' - 1.
+
+
+==Example==
+The following code shows how to use '''length'''. JavaScript strings are immutable and cannot be modified in place. However, you can write the reversed string to an array and then call '''join''' with the empty character, which produces a string with no separator characters.
+
+ var str = "every good boy does fine";
+         var start = 0;
+         var end = str.length - 1;
+         var tmp = "";
+         var arr = new Array(end);
+ 
+         while (end &gt;= 0) {
+             arr[start++] = str.charAt(end--);
+         }
+ 
+ // Join the elements of the array with a 
+         var str2 = arr.join('');
+         document.write(str2);
+ 
+ // Output: enif seod yob doog yreve
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+

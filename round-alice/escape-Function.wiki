@@ -1,0 +1,29 @@
+Encodes strings so they can be read on all computers. Deprecated.
+
+ escape( charString ''')'''
+
+==Remarks==
+The required charString argument is any '''String''' object or literal to be encoded.
+
+The '''escape''' function returns a string value (in Unicode format) that contains the contents of charstring. All spaces, punctuation, accented characters, and any other non-ASCII characters are replaced with % xx encoding, where xx is equivalent to the hexadecimal number representing the character. For example, a space is returned as "%20."
+
+Characters with a value greater than 255 are stored using the '''%u''' xxxx format.
+
+'''Note''' -- The '''escape''' function should not be used to encode Uniform Resource Identifiers (URI). Use '''encodeURI''' and '''encodeURIComponent''' functions instead.
+
+'''Applies To''' : [[Objects/Global|Global Object]]
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              

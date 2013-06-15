@@ -1,0 +1,22 @@
+Returns a string representation of an object.
+
+ boolean.toString()
+
+==Parameters==
+; boolean: Required. An object for which to get a string representation.
+
+==Return Value==
+If the Boolean value is true , returns "true". Otherwise, returns "false".
+
+
+==Example==
+The following example illustrates the use of the '''toString''' method.
+
+ var s = new Boolean(0);
+ document.write(s.toString());
+ 
+ // Output: false;
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+

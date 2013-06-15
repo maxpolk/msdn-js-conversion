@@ -1,0 +1,37 @@
+Gets the year using Universal Coordinated Time (UTC).
+
+ dateObj.getUTCFullYear()
+
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+Returns the year as a four-digit number. Years specified as two digits in the '''Date''' constructor or in '''setFullYear''' are assumed to be in the twentieth century, so given "5/14/12", '''getUTCFullYear''' returns "1912".
+
+
+==Remarks==
+To get the year using local time, use the '''getFullYear''' method.
+
+
+==Example==
+The following example shows how to use the '''getUTCFullYear''' method.
+
+ var date = new Date("1/9/36");
+ document.write(date.getUTCFullYear());
+ 
+ // Output: 1936
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Date|Date Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              

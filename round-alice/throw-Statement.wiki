@@ -1,0 +1,27 @@
+Generates an error condition that can be handled by a try...catch...finally statement.
+
+ throw exception
+
+==Remarks==
+The required exception argument can be any expression.
+
+The following example throws an error inside a try block, and it is caught in the catch block.
+
+ try {
+         throw new Error(200, "x equals zero");
+ }
+ catch (e) {
+     document.write(e.message);
+ }
+ 
+ // Output: x equals zero.
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              

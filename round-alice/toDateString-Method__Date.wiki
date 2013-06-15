@@ -1,0 +1,21 @@
+Returns a date as a string value.
+
+ objDate.'''toDateString( )'''
+
+==Remarks==
+The required objDate reference is a Date object.
+
+The '''toDateString''' method returns a string value containing the date, in the current time zone, in a convenient, easily read format.
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Date|Date Object]]
+
+
+==See Also==
+
+              
+
+              

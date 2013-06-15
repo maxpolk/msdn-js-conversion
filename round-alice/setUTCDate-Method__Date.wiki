@@ -1,0 +1,39 @@
+Sets the numeric day of the month in the Date object using Universal Coordinated Time (UTC).
+
+ dateObj.'''setUTCDate(''' numDate ''')'''
+
+==Parameters==
+; dateObj: Required. Any Date object.
+; numDate: Required. A numeric value equal to the day of the month.
+
+==Remarks==
+To set the day of the month using local time, use the '''setDate''' method.
+
+If the value of numDate is greater than the number of days in the month stored in the '''Date''' object or is a negative number, the date is set to a date equal to numDate minus the number of days in the stored month. For example, if the stored date is January 5, 1996, and '''setUTCDate(32)''' is called, the date changes to February 1, 1996. Negative numbers have a similar behavior.
+
+The '''setUTCFullYear''' method can be used to set the year, month, and day of the month.
+
+
+==Example==
+The following example illustrates the use of the '''setUTCDate''' method.
+
+ function SetUTCDateDemo(newdayofmonth){
+    var d = new Date();           // Create Date object.d.setUTCDate( newdayofmonth ) ;  // Set UTC day of month.
+    var s = "Current setting is ";
+    s += d.toUTCString(); 
+    return(s);                    // Return new setting.
+ }
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Date|Date Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              

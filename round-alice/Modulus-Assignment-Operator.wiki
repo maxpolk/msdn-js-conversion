@@ -1,0 +1,24 @@
+Divides the value of a variable by the value of an expression, and assigns the remainder to the variable.
+
+ result %= expression
+
+==Arguments==
+; result: Any variable.
+; expression: Any numeric expression.
+
+==Remarks==
+Using the '''%=''' operator is exactly the same as specifying:
+
+ result = result % expression
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              
+
+              

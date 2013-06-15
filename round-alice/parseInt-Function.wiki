@@ -1,0 +1,33 @@
+Converts a string to an integer.
+
+ parseInt( numString , [ radix ])
+
+==Parameters==
+; numString: Required. A string to convert into a number.
+; radix: Optional. A value between 2 and 36 that specifies the base of the number in numString. If this argument is not supplied, strings with a prefix of '0x' are considered hexadecimal. All other strings are considered decimal.
+
+==Remarks==
+The '''parseInt''' function returns an integer value equal to the number contained in numString. If no prefix of numString can be successfully parsed into an integer, '''NaN''' (not a number) is returned.
+
+ parseInt("abc");     // Returns NaN.
+ parseInt("12abc");   // Returns 12.
+You can test for '''NaN''' using the '''isNaN''' function.
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Global|Global Object]]
+
+'''Note''' -- Starting in Internet Explorer 9 standards mode, the '''parseInt''' function does not treat a string that has a prefix of '0' as an octal. When you are not using the '''parseInt''' function, however, strings with a prefix of '0' can still be interpreted as octals. See Data Types (JScript) for information about octal integers.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              

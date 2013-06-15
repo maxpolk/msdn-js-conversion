@@ -1,0 +1,31 @@
+Returns the arctangent of a number.
+
+ '''Math'''.'''atan(''' number ''')'''
+
+==Remarks==
+The required number argument is a numeric expression for which the arctangent is needed.
+
+The return value is the arctangent of the number argument, in radians.
+
+'''Applies To''' : [[Objects/Math|Math Object]]
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              

@@ -1,0 +1,12 @@
+The following table lists JavaScript directives.
+
+
+==Directives==
+{| class='wikitable'
+|-
+! Description
+! Language Element
+|-
+| Adds certain syntactic and semantic restrictions. Supported in Internet Explorer 10 and Windows Store apps.
+| [[Directives/use strict|use strict]]
+|}

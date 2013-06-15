@@ -1,0 +1,12 @@
+In JavaScript, future reserved keywords must not be used as identifiers, even though they have no special meaning in the current version.
+
+For a list of reserved words in JavaScript, see [[Reserved Words|JavaScript Reserved Words]].
+
+
+==Future reserved words==
+The following are future reserved words:
+
+
+==Future reserved words in strict mode==
+The following are future reserved words only in strict mode. For more information about strict mode, see [[Directives/use strict|use strict Directive]].
+

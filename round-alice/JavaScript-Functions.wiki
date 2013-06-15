@@ -1,0 +1,248 @@
+The following table lists JavaScript functions.
+
+
+==Functions==
+{| class='wikitable'
+|-
+! Function
+! Description
+! JavaScript object
+|-
+| [[Objects/Math/Math.abs Function|abs Function]]
+| Returns the absolute value of a number.
+| '''Math'''
+|-
+| [[Objects/Math/Math.acos Function|acos Function]]
+| Returns the arccosine of a number.
+| '''Math'''
+|-
+| [[Objects/Math/Math.asin Function|asin Function]]
+| Returns the arcsine of a number.
+| '''Math'''
+|-
+| [[Objects/Math/Math.atan Function|atan Function]]
+| Returns the arctangent of a number.
+| '''Math'''
+|-
+| [[Objects/Math/Math.atan2 Function|atan2 Function]]
+| Returns the angle (in radians) from the X axis to a point (y,x).
+| '''Math'''
+|-
+| [[Objects/Math/Math.ceil Function|ceil Function]]
+| Returns the smallest integer greater than or equal to its numeric argument.
+| '''Math'''
+|-
+| [[Objects/Math/Math.cos Function|cos Function]]
+| Returns the cosine of a number.
+| '''Math'''
+|-
+| [[Objects/Object/Object.create Function|create Function]]
+| Creates an object that has a specified prototype, and that optionally contains specified properties.
+| '''Object'''
+|-
+| [[Objects/Global/decodeURI Function|decodeURI Function]]
+| Returns the unencoded version of an encoded Uniform Resource Identifier.
+| '''Global'''
+|-
+| [[Objects/Global/decodeURIComponent Function|decodeURIComponent Function]]
+| Returns the unencoded version of an encoded component of a Uniform Resource Identifier.
+| '''Global'''
+|-
+| [[Objects/Object/Object.defineProperties Function|defineProperties Function]]
+| Adds one or more properties to an object, and/or modifies attributes of existing properties.
+| '''Object'''
+|-
+| [[Objects/Object/Object.defineProperty Function|defineProperty Function]]
+| Adds a property to an object, or modifies attributes of an existing property.
+| '''Object'''
+|-
+| [[Objects/Global/encodeURI Function|encodeURI Function]]
+| Encodes a text string as a valid Uniform Resource Identifier.
+| '''Global'''
+|-
+| [[Objects/Global/encodeURIComponent Function|encodeURIComponent Function]]
+| Encodes a text string as a valid component of a Uniform Resource Identifier.
+| '''Global'''
+|-
+| [[Objects/Global/escape Function|escape Function]]
+| Encodes String objects so they can be read on all computers.
+| '''Global'''
+|-
+| [[Objects/Global/eval Function|eval Function]]
+| Evaluates JavaScript code and executes it.
+| '''Global'''
+|-
+| [[Objects/Math/Math.exp Function|exp Function]]
+| Returns e (the base of natural logarithms) raised to a power.
+| '''Math'''
+|-
+| [[Objects/Math/Math.floor Function|floor Function]]
+| Returns the greatest integer less than or equal to its numeric argument.
+| '''Math'''
+|-
+| [[Objects/Object/Object.freeze Function|freeze Function]]
+| Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
+| '''Object'''
+|-
+| [[Objects/String/String.fromCharCode Function|fromCharCode Function]]
+| Returns a string from a number of Unicode character values.
+| '''String'''
+|-
+| [[Objects/Global/GetObject Function|GetObject Function]]
+| Returns a reference to an Automation object from a file.
+| '''Global'''
+|-
+| [[Objects/Object/Object.getOwnPropertyDescriptor Function|getOwnPropertyDescriptor Function]]
+| Returns the definition of a data property or an accessor property.
+| '''Object'''
+|-
+| [[Objects/Object/Object.getOwnPropertyNames Function|getOwnPropertyNames Function]]
+| Returns the names of the properties and methods of an object.
+| '''Object'''
+|-
+| [[Objects/Object/Object.getPrototypeOf Function|getPrototypeOf Function]]
+| Returns the prototype of an object.
+| '''Object'''
+|-
+| [[Objects/Array/Array.isArray Function|isArray Function]]
+| Returns a Boolean value that indicates whether an object is an array.
+| '''Array'''
+|-
+| [[Objects/Object/Object.isExtensible Function|isExtensible Function]]
+| Returns a value that indicates whether new properties can be added to an object.
+| '''Object'''
+|-
+| [[Objects/Global/isFinite Function|isFinite Function]]
+| Returns a Boolean value that indicates if a supplied number is finite.
+| '''Global'''
+|-
+| [[Objects/Object/Object.isFrozen Function|isFrozen Function]]
+| Returns true if existing property attributes and values cannot be modified in an object and new properties cannot be added to the object.
+| '''Object'''
+|-
+| [[Objects/Global/isNaN Function|isNaN Function]]
+| Returns a Boolean value that indicates whether a value is the reserved value '''NaN''' (not a number).
+| '''Global'''
+|-
+| [[Objects/Object/Object.isSealed Function|isSealed Function]]
+| Returns true if existing property attributes cannot be modified in an object and new properties cannot be added to the object.
+| '''Object'''
+|-
+| [[Objects/Object/Object.keys Function|keys Function]]
+| Returns the names of the enumerable properties and methods of an object.
+| '''Object'''
+|-
+| [[Objects/Math/Math.log Function|log Function]]
+| Returns the natural logarithm of a number.
+| '''Math'''
+|-
+| [[Objects/Math/Math.max Function|max Function]]
+| Returns the greater of two supplied numeric expressions.
+| '''Math'''
+|-
+| [[Objects/Math/Math.min Function|min Function]]
+| Returns the lesser of two supplied numbers.
+| '''Math'''
+|-
+| [[Objects/Date/Date.now Function|now Function]]
+| Returns the number of milliseconds between January 1, 1970, and the current date and time.
+| '''Date'''
+|-
+| [[Objects/Date/Date.parse Function|parse Function (Date)]]
+| Parses a string containing a date, and returns the number of milliseconds between that date and midnight, January 1, 1970.
+| '''Date'''
+|-
+| [[Objects/JSON/JSON.parse Function|parse Function (JSON)]]
+| De-serializes JSON text to produce an in-memory object or array.
+| '''JSON'''
+|-
+| [[Objects/Global/parseFloat Function|parseFloat Function]]
+| Returns a floating-point number converted from a string.
+| '''Global'''
+|-
+| [[Objects/Global/parseInt Function|parseInt Function]]
+| Returns an integer converted from a string.
+| '''Global'''
+|-
+| [[Objects/Math/Math.pow Function|pow Function]]
+| Returns the value of a base expression raised to a specified power.
+| '''Math'''
+|-
+| [[Objects/Object/Object.preventExtensions Function|preventExtensions Function]]
+| Prevents the addition of new properties to an object.
+| '''Object'''
+|-
+| [[Objects/Math/Math.random Function|random Function]]
+| Returns a pseudorandom number between 0 and 1.
+| '''Math'''
+|-
+| [[Objects/Math/Math.round Function|round Function]]
+| Returns a specified numeric expression rounded to the nearest integer.
+| '''Math'''
+|-
+| [[Objects/Global/ScriptEngine Function|ScriptEngine Function]]
+| Returns a string representing the scripting language in use.
+| '''Global'''
+|-
+| [[Objects/Global/ScriptEngineBuildVersion Function|ScriptEngineBuildVersion Function]]
+| Returns the build version number of the scripting engine in use.
+| '''Global'''
+|-
+| [[Objects/Global/ScriptEngineMajorVersion Function|ScriptEngineMajorVersion Function]]
+| Returns the major version number of the scripting engine in use.
+| '''Global'''
+|-
+| [[Objects/Global/ScriptEngineMinorVersion Function|ScriptEngineMinorVersion Function]]
+| Returns the minor version number of the scripting engine in use.
+| '''Global'''
+|-
+| [[Objects/Object/Object.seal Function|seal Function]]
+| Prevents the modification of attributes of existing properties, and prevents the addition of new properties.
+| '''Object'''
+|-
+| [[Objects/Math/Math.sin Function|sin Function]]
+| Returns the sine of a number.
+| '''Math'''
+|-
+| [[Objects/Math/Math.sqrt Function|sqrt Function]]
+| Returns the square root of a number.
+| '''Math'''
+|-
+| [[Objects/JSON/JSON.stringify Function|stringify Function]]
+| Serializes an object or array into JavaScript Object Notation (JSON) text.
+| '''JSON'''
+|-
+| [[Objects/Math/Math.tan Function|tan Function]]
+| Returns the tangent of a number.
+| '''Math'''
+|-
+| [[Objects/Global/unescape Function|unescape Function]]
+| Decodes String objects encoded with the '''escape''' method.
+| '''Global'''
+|-
+| [[Objects/Date/Date.UTC Function|UTC Function]]
+| Returns the number of milliseconds between midnight, January 1, 1970 Universal Coordinated Time (UTC) (or GMT) and the supplied date.
+| '''Date'''
+|-
+| [[Objects/Debug/Debug.write Function|write Function]]
+| Sends strings to the script debugger.
+| '''Debug'''
+|-
+| [[Objects/Debug/Debug.writeln Function|writeln Function]]
+| Sends strings to the script debugger, followed with a newline character.
+| '''Debug'''
+|}
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              

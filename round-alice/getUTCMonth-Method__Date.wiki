@@ -1,0 +1,37 @@
+Gets the month of a Date object using Universal Coordinated Time (UTC).
+
+ dateObj.getUTCMonth()
+
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+Returns an integer between 0 (January) and 11 (December).
+
+
+==Remarks==
+To get the month in local time, use the '''getMonth''' method.
+
+
+==Example==
+The following example shows how to use the '''getUTCMonth''' method.
+
+ var date = new Date("2/2/2002");
+ document.write(date.getUTCMonth());
+ 
+ // Output: 1
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Date|Date Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              

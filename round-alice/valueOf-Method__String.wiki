@@ -1,0 +1,29 @@
+Returns the string.
+
+ string.valueOf()
+
+==Parameters==
+This method has no parameters.
+
+
+==Return Value==
+Returns the string value.
+
+
+==Remarks==
+In the following example, the string object is the same as the return value.
+
+ var str = "every good boy does fine";
+ var strStr = str.valueOf();
+ 
+ if (str === strStr)
+ document.write("same");
+ else
+ document.write("different");
+ 
+ // Output:
+ // same
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+

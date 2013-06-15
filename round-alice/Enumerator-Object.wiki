@@ -1,0 +1,69 @@
+Enables enumeration of items in a collection.
+
+'''Caution''' -- This object is supported in Internet Explorer only, not in Windows Store apps.
+
+ enumObj = new '''Enumerator(''' [ collection ])
+
+==Parameters==
+; enumObj: Required. The variable name to which the '''Enumerator''' object is assigned.
+; collection: Optional. Any Collection object.
+
+==Remarks==
+Collections differ from arrays in that the members of a collection are not directly accessible. Instead of using indexes, as you would with arrays, you can move the current item pointer only to the first or next element of a collection.
+
+The '''Enumerator''' object provides a way to access any member of a collection and behaves similarly to the '''For...Each''' statement in VBScript.
+
+
+==Example==
+The following code shows the usage of the '''Enumerator''' object:
+
+ var bytesPerGB = 1024 * 1024 * 1024;
+ 
+ var fso = new ActiveXObject("Scripting.FileSystemObject");
+ 
+ document.write(fso.Drives);
+ var e = new Enumerator(fso.Drives);
+ 
+ var driveString = "";
+ 
+ e.moveFirst();
+ while (e.atEnd() == false)
+ {
+     var drv = e.item();
+ 
+     driveString += drv.Path + " - ";
+ 
+     if (drv.IsReady){
+         var freeGB = drv.FreeSpace / bytesPerGB;
+         var totalGB = drv.TotalSize / bytesPerGB;
+ 
+         driveString += freeGB.toFixed(3) + " GB free of ";
+         driveString += totalGB.toFixed(3) + " GB";
+     }
+     else{
+         driveString += "Not Ready";
+     }
+ 
+     driveString += "&lt;br /&gt;";;
+ 
+     e.moveNext();
+ }
+ document.write(driveString);
+ 
+ // Output: &lt;drive information
+
+==Properties==
+The '''Enumerator''' object has no properties.
+
+
+==Methods==
+[[Objects/Enumerator/atEnd Method|moveNext Method]]
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, and Internet Explorer 10 standards. Not supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              

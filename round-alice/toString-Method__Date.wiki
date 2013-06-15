@@ -1,0 +1,26 @@
+Returns a string representation of a date. The format of the string depends on the locale. For U.S. English (en-us), it is as follows:
+
+day of the week month day hour : minute : second time zone year
+
+ date.toString()
+
+==Parameters==
+; date: Required. The date to represent as a string.
+
+==Return Value==
+Returns the string representation of the date.
+
+
+==Example==
+The following example illustrates the use of the '''toString''' method with a date.
+
+ var myDate = new Date();
+ myDate.setFullYear(2100, 5, 5);
+ var dateString = myDate.toString();
+ document.write(dateString);
+ 
+ // Output: &lt;date&gt;
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+

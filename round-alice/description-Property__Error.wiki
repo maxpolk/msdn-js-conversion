@@ -1,0 +1,50 @@
+Returns or sets the descriptive string associated with a specific error.
+
+ object '''.description''' [ '''=''' stringExpression ]
+
+==Parameters==
+; object: Required. Any instance of an Error object.
+; stringExpression: Optional. A string expression containing a description of the error.
+
+==Remarks==
+The '''description''' property contains the error message string associated with a specific error. Use the value contained in this property to alert a user to an error.
+
+The '''description''' and '''message''' properties provide the same functionality; the '''description''' property provides backward compatibility; the '''message''' property complies with the ECMA standard.
+
+
+==Example==
+The following example illustrates the use of the '''description''' property.
+
+ try
+ {
+ // Cause an error:
+     x = y   
+ }
+ catch(e)
+ {
+ // Prints "[object Error]":
+     document.write(e)
+     document.write (" ");
+ // Prints 5009:
+     document.write((e.number &amp; 0xFFFF))  
+     document.write (" ");
+ // Prints "'y' is undefined":
+     document.write(e.description);
+     document.write (" ");
+ // Prints "'y' is undefined":
+     document.write(e.message)
+ }
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Error|Error Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              

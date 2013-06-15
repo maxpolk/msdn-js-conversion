@@ -1,0 +1,17 @@
+A number that is larger than the largest floating point number. Returns an initial value of '''Number.POSITIVE_INFINITY'''. Negative Infinity (-Infinity) is smaller than the smallest floating point number.
+
+ Infinity
+
+==Remarks==
+The '''Infinity''' constant is a member of the '''Global''' object, and is made available when the scripting engine is initialized.
+
+
+==Requirements==
+The '''Infinity''' property was introduced in Internet Explorer before Internet Explorer 6 and was made read-only in Internet Explorer 9 standards mode.
+
+'''Applies To''' : [[Objects/Global|Global Object]]
+
+
+==See Also==
+
+              

@@ -1,0 +1,55 @@
+Gets or sets the error stack as a string that contains the stack trace frames.
+
+ object '''.stack'''
+
+==Remarks==
+The '''stack''' property is set to undefined when the error is constructed, and gets the trace information when the error is raised. If an error is raised multiple times, the '''stack''' property is updated each time the error is raised.
+
+Stack frames are displayed in the following format: at FunctionName (&lt;Fully-qualified name/URL&gt;:&lt;line number&gt;:&lt;column number&gt;)
+
+If you create your own Error object and set the stack trace to a value, the value won't be overwritten when the error is thrown.
+
+The '''stack''' property does not show inline functions in its frames. It shows only the physical stack.
+
+
+==Example==
+The following example shows how to get the stack when you're catching an error.
+
+ try
+     {
+         var x = y.name;
+     }
+ catch(e)
+     {
+         document.write ("Error stack: ")
+         document.write (e.stack);
+     }
+The following example shows how to set and then get the stack.
+
+ try
+     {
+         var err = Error("my error");
+         err.stack = "my stack trace";
+         throw err;
+     }
+ catch(e)
+     {
+         document.write ("Error stack: ")
+         document.write (e.stack);
+     }
+
+==Requirements==
+Supported in Internet Explorer 10 and in Windows Store apps.
+
+'''Applies To''' : [[Objects/Error|Error Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              

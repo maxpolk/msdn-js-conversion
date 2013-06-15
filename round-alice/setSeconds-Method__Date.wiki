@@ -1,0 +1,42 @@
+Sets the seconds value in the Date object using local time.
+
+ dateObj '''.setSeconds(''' numSeconds [ ''',''' numMilli ] ''')'''
+
+==Parameters==
+; dateObj: Required. Any Date object.
+; numSeconds: Required. A numeric value equal to the seconds value.
+; numMilli: Optional. A numeric value equal to the milliseconds value.
+
+==Remarks==
+All '''set''' methods taking optional arguments use the value returned from corresponding '''get''' methods, if you do not specify an optional argument. For example, if the numMilli argument is not specified, JavaScript uses the value returned from the '''getMilliseconds''' method.
+
+To set the seconds value using Universal Coordinated Time (UTC), use the '''setUTCSeconds''' method.
+
+If the value of an argument is greater than its range or is a negative number, other stored values are modified accordingly. For example, if the stored date is "Jan 5, 1996 00:00:00" and '''setSeconds(150)''' is called, the date is changed to "Jan 5, 1996 00:02:30."
+
+The setHours method can be used to set the hours, minutes, seconds, and milliseconds.
+
+
+==Example==
+The following example illustrates the use of the '''setSeconds''' method.
+
+ function SetSecondsDemo(nsec){
+    var d = new Date();         //Create Date object.d.setSeconds( nsec ) ;         //Set seconds.
+    var s = "Current setting is ";
+    s += d.toLocaleString();
+    return(s);                  //Return new setting.
+ }
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Date|Date Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              

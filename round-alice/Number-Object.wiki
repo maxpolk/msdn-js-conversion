@@ -1,0 +1,78 @@
+An object that represents a number of any kind. All JavaScript numbers are 64-bit floating-point numbers.
+
+ numObj = new Number( value )
+
+==Parameters==
+; numObj: Required. The variable name to which the '''Number''' object is assigned.
+; value: Required. The numeric value.
+
+==Remarks==
+JavaScript creates '''Number''' objects when a variable is set to a number value, for example <code>var num = 255.336;</code>. It is seldom necessary to create '''Number''' objects explicitly.
+
+The '''Number''' object has its own properties and methods, in addition to the properties and methods inherited from '''Object'''. Numbers are converted into strings under certain circumstances, for example when a number is added or concatenated with a string, as well as by means of the '''toString''' method. For more information, see [[Operators/Addition|Addition Operator (+)]].
+
+JavaScript has several number constants. For a complete list, see [[Objects/Number/Number Constants|Number Constants]].
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==Properties==
+The following table lists the properties of the '''Number''' object.
+
+{| class='wikitable'
+|-
+! Property
+! Description
+|-
+| [[Objects/Object/constructor Property|constructor Property]]
+| Specifies the function that creates an object.
+|-
+| [[Objects/Object/prototype Property|prototype Property]]
+| Returns a reference to the prototype for a class of objects.
+|}
+
+==Methods==
+The following table lists the methods of the '''Number''' object.
+
+{| class='wikitable'
+|-
+! Method
+! Description
+|-
+| [[Objects/Object/hasOwnProperty Method|hasOwnProperty Method]]
+| Returns a Boolean value that indicates whether an object has a property with the specified name.
+|-
+| [[Objects/Object/isPrototypeOf Method|isPrototypeOf Method]]
+| Returns a Boolean value that indicates whether an object exists in another object's prototype hierarchy.
+|-
+| [[Objects/Object/propertyIsEnumerable Method|propertyIsEnumerable Method]]
+| Returns a Boolean value that indicates whether a specified property is part of an object and whether it is enumerable.
+|-
+| [[Objects/Number/toExponential Method|toExponential method]]
+| Returns a string that contains a number represented in exponential notation.
+|-
+| [[Objects/Number/toFixed Method|toFixed method]]
+| Returns a string that represents a number in fixed-point notation.
+|-
+| [[Objects/Object/toLocaleString Method|toLocaleString Method]]
+| Returns an object converted to a string based on the current locale.
+|-
+| [[Objects/Number/toPrecision Method|toPrecision method]]
+| Returns a string that contains a number that is represented in either exponential or fixed-point notation and that has a specified number of digits.
+|-
+| [[Objects/Object/toString Method|toString Method]]
+| Returns a string representation of an object.
+|-
+| [[Objects/Object/valueOf Method|valueOf Method]]
+| Returns the primitive value of the specified object.
+|}
+
+==See Also==
+
+              
+
+              
+
+              

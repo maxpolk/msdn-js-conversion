@@ -1,0 +1,26 @@
+Specifies the function that creates a Boolean.
+
+ boolean.constructor([[ value ])
+
+==Parameters==
+; boolean: The name of the Boolean.
+; value: Optional. Specifies the value of the Boolean. This can be the numbers 1 or 0, or the strings "true" or "false".
+
+==Remarks==
+The '''constructor''' property contains a reference to the function that constructs instances of the Boolean object.
+
+
+==Example==
+The following example illustrates the use of the constructor property.
+
+ var x = new Boolean("true");
+ 
+ if (x.constructor == Boolean)
+     document.write("Object is a Boolelan.");
+ 
+ // Output:
+ // Object is a Boolean.
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+

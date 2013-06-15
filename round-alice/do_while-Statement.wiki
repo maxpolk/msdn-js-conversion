@@ -1,0 +1,54 @@
+Executes a statement block once, and then repeats execution of the loop until a condition expression evaluates to false.
+
+ do {
+     statement
+ }
+ while (expression) ;
+
+==Parameters==
+; statement: Required. The statement to be executed if expression is true. Can be a compound statement.
+; expression: Required. An expression that can be coerced to Boolean true or false. If expression is true , the loop is executed again. If expression is false , the loop is terminated.
+
+==Remarks==
+Unlike the while statement, a do...while loop is executed one time before the conditional expression is evaluated.
+
+On any line in a do...while block, you can use the break statement to cause the program flow to exit the loop, or you can use the continue statement to go directly to the while expression.
+
+
+==Example==
+In the following example, the statements in the do...while loop continue to execute as long as the variable <code>i</code> is less than 10.
+
+ var i = 0;
+ do {
+     document.write(i + " ");
+     i++;
+ } while (i &lt; 10);
+ 
+ // Output: 0 1 2 3 4 5 6 7 8 9
+In the following example, the statements inside the loop are executed once even though the condition is not met.
+
+ var i = 10;
+ do {
+     document.write(i + " ");
+     i++;
+ } while (i &lt; 10);
+ 
+ // Output: 10
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              

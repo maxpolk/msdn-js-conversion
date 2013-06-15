@@ -1,0 +1,29 @@
+Returns a VT_DATE value from a Date object.
+
+'''Caution''' -- This method is supported in Internet Explorer only.
+
+ dateObj.getVarDate()
+
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+Returns a VT_DATE value.
+
+
+==Remarks==
+The '''getVarDate''' method is used when JavaScript code interacts with COM objects, ActiveX objects, or other objects that accept and return date values in VT_DATE format. These include objects in Visual Basic and Visual Basic Scripting Edition (VBScript). The actual format of the returned value depends on regional settings.
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, and Internet Explorer 10 standards. Not supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Date|Date Object]]
+
+
+==See Also==
+
+              
+
+              

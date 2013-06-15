@@ -1,0 +1,59 @@
+Gets the own property descriptor of the specified object. An own property descriptor is one that is defined directly on the object and is not inherited from the object's prototype.
+
+ Object.getOwnPropertyDescriptor( object , propertyname )
+
+==Parameters==
+; object: Required. The object that contains the property.
+; propertyname: Required. The name of the property.
+
+==Return Value==
+The descriptor of the property.
+
+
+==Remarks==
+You can use the '''Object.getOwnPropertyDescriptor''' function to obtain a descriptor object that describes attributes of the property.
+
+The [[Objects/Object/Object.defineProperty Function|Object.defineProperty Function]] is used to add or modify properties.
+
+
+==Data Property Example==
+The following example gets a data property descriptor and uses it to make the property read-only.
+
+ // Create a user-defined object.
+ var obj = {};
+ 
+ // Add a data property.
+ obj.newDataProperty = "abc";
+ 
+ // Get the property descriptor.
+ var descriptor = Object.getOwnPropertyDescriptor(obj, "newDataProperty");
+ 
+ // Change a property attribute.
+ descriptor.writable = false;
+ Object.defineProperty(obj, "newDataProperty", descriptor);
+To list the property attributes, you can add the following code to this example.
+
+ // Get the descriptor from the object.
+ var desc2 = Object.getOwnPropertyDescriptor(obj, "newDataProperty");
+ 
+ // List the descriptor attributes.
+ for (var prop in desc2) {
+     document.write(prop + ': ' + desc2[prop]);
+     document.write("&lt;br /&gt;");
+ }
+ 
+ // Output:
+ // value: abc
+ // writable: false
+ // enumerable: true
+ // configurable: true
+
+==Requirements==
+All features are supported in Internet Explorer 9 standards mode, Internet Explorer 10 standards mode, and win8_appname_long apps.
+
+Internet Explorer 8 standards mode supports DOM objects but not user-defined objects. The enumerable and configurable attributes can be specified, but they are not used.
+
+
+==See Also==
+
+              

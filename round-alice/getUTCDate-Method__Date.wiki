@@ -1,0 +1,37 @@
+Gets the day-of-the-month, using Universal Coordinated Time (UTC).
+
+ dateObj.getUTCDate()
+
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+Returns an integer between 1 and 31 that represents the day-of-the-month.
+
+
+==Remarks==
+To get the day of the month using local time, use the '''getDate''' method.
+
+
+==Example==
+The following example shows how to use the '''getUTCDate''' method.
+
+ var date = new Date("1/23/2001");
+ document.write(date.getUTCDate());
+ 
+ // Output: 23
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+'''Applies To''' : [[Objects/Date|Date Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              

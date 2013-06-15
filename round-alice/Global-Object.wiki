@@ -1,0 +1,22 @@
+An intrinsic object whose purpose is to collect global functions and constants into one object.
+
+
+==Remarks==
+The '''Global''' object is never used directly, and cannot be created using the new operator. It is created when the scripting engine is initialized, thus making its functions and constants available immediately.
+
+
+==Requirements==
+Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
+
+
+==Constants==
+[[Objects/Global/Infinity Constant|undefined Constant]]
+
+
+==Functions==
+[[Objects/Global/decodeURI Function|decodeURI Function]] {{!}} [[Objects/Global/decodeURIComponent Function|unescape Function]]
+
+
+==See Also==
+
+              

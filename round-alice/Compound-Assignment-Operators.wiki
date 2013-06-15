@@ -1,0 +1,46 @@
+The following table lists JavaScript assignment operators.
+
+
+==Assignment Operators==
+{| class='wikitable'
+|-
+! Operator
+! Symbol
+|-
+| [[Operators/Addition Assignment|Addition]]
+| +=
+|-
+| [[Operators/Bitwise AND Assignment|Bitwise AND]]
+| &amp;=
+|-
+| [[Operators/Bitwise OR Assignment|Bitwise Or]]
+| {{!}}=
+|-
+| [[Operators/Bitwise XOR Assignment|Bitwise XOR]]
+| ^=
+|-
+| [[Operators/Division Assignment|Division]]
+| /=
+|-
+| [[Operators/Left Shift Assignment|Left Shift]]
+| &lt;&lt;=
+|-
+| [[Operators/Modulus Assignment|Modulus]]
+| %=
+|-
+| [[Operators/Multiplication Assignment|Multiplication]]
+| *=
+|-
+| [[Operators/Right Shift Assignment|Right Shift]]
+| &gt;&gt;=
+|-
+| [[Operators/Subtraction Assignment|Subtraction]]
+| -=
+|-
+| [[Operators/Unsigned Right Shift Assignment|Unsigned Right Shift]]
+| &gt;&gt;&gt;=
+|}
+
+==See Also==
+
+              
