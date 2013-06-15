@@ -3,6 +3,13 @@
 # Directory of github clone
 M="msdn-js"
 
+#
+# This script places *.wiki and upload-mapping.wiki into this directory,
+# which will become a subdirectory of this script.  This lends itself to
+# performing round after round of successive refinement of output.
+#
+ROUND="round-alice"
+
 # Log output for later wiki page update
 LOGWIKI="msdn-js batch conversion"
 # Absolute path to log file
@@ -84,7 +91,18 @@ echox "    Success, wiki version: $WIKI_VERSION"
 # Directory of this script (so it can find python scripts next to it)
 SCRIPTDIR=$(ScriptDirectory)
 
-# Done clone a repo inside another repo
+# Actual directory of ROUND output, ensure it exists
+ROUNDDIR="${SCRIPTDIR}/${ROUND}"
+if [ ! -d "$ROUNDDIR" ]; then
+    echox "Creating directory $ROUNDDIR"
+    mkdir "$ROUNDDIR"
+    if [ ! -d "$ROUNDDIR" ]; then
+        echox "Unable to create directory $ROUNDDIR"
+        exit 1
+    fi
+fi
+
+# Don't clone a repo inside another repo
 if [ "$(pwd -P)" = "$SCRIPTDIR" ]; then
     echox "You must run this script from another directory to avoid"
     echox "mixing files from two repositories together, for example:"
@@ -241,13 +259,9 @@ if [ ! -f "ZZZ-mapping" ]; then
     # Don't repeat this step
     touch "ZZZ-mapping"
 
-    # Create an "upload-mapping" file containing "FILENAME PAGENAME" lines
-    "${SCRIPTDIR}/extract-mapping" "js_toc.html" "29f83a2c-48c5-49e2-9ae0-7371d2cda2ff" > "upload-mapping"
-
-    if ! "${SCRIPTDIR}/modified-wpd" edit "Upload mapping" "upload-mapping"; then
-        echox "ERROR: failed to upload upload mapping description page"
-        exit 1
-    fi
+    # Create an "upload-mapping.wiki" file containing "FILENAME PAGENAME" lines
+    echox "    Creating upload-mapping.wiki"
+    "${SCRIPTDIR}/extract-mapping" "js_toc.html" "29f83a2c-48c5-49e2-9ae0-7371d2cda2ff" > "upload-mapping.wiki"
 fi
 
 #
@@ -283,7 +297,7 @@ if [ ! -f "ZZZ-internallinks" ]; then
             # We need to determine the upload name of the file and use that
             # instead of the native filename when fixing links
             PAGENAME=${file%%.html}
-            UPLOADNAME=$(grep "| ${PAGENAME}.html |" upload-mapping | sed 's/^| .* || //')
+            UPLOADNAME=$(grep "| ${PAGENAME}.html |" upload-mapping.wiki | sed 's/^| .* || //')
             ESCAPEDNAME=${UPLOADNAME//\//\\/}
             TMPFILE=$(mktemp)
             sed -e "s/${HELP_ID}.htm/${ESCAPEDNAME}.html/i" \
@@ -338,8 +352,13 @@ if [ ! -f "ZZZ-upload-to-wiki" ]; then
     touch "ZZZ-upload-to-wiki"
 
     for file in *.wiki; do
-        PAGENAME=${file%%.wiki}
-        UPLOADNAME=$(grep "| ${PAGENAME}.html |" upload-mapping | sed 's/^| .* || //')
+        if [ "$file" = "upload-mapping.wiki" ]; then
+            PAGENAME="upload-mapping.wiki"
+            UPLOADNAME="Upload mapping"
+        else
+            PAGENAME=${file%%.wiki}
+            UPLOADNAME=$(grep "| ${PAGENAME}.html |" upload-mapping.wiki | sed 's/^| .* || //')
+        fi
         echox "    $PAGENAME becomes $UPLOADNAME"
         if ! "${SCRIPTDIR}/modified-wpd" edit "$UPLOADNAME" "$file"; then
             echox "ERROR: failed to upload new version of page: $PAGENAME"
@@ -348,8 +367,22 @@ if [ ! -f "ZZZ-upload-to-wiki" ]; then
     done
 fi
 
+#
+# Move the wiki pages and upload mapping into the ROUNDDIR subdirectory
+# to commit for further processing in the next round.
+#
+echox ""
+echox "Copy the wiki pages and upload mapping wiki page to the round subdirectory"
+if [ ! -f "ZZZ-move-to-round" ]; then
+    # Don't repeat this step
+    touch "ZZZ-move-to-round"
+
+    cp *.wiki "$ROUNDDIR"
+fi
+
 # Success if we got here without exiting early
-echox "Overall conversion successful"
+echox "Overall conversion successful, remember to commit files in:"
+echox "    $ROUNDDIR"
 
 # END USING echox FROM THIS POINT FORWARD
 echo "</nowiki></pre>" >> "$LOGFILE"
