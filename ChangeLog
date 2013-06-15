@@ -1,3 +1,8 @@
+2013-06-15  Max Polk  <maxpolk@gmail.com>
+
+	* complete-convert: now outputs wiki pages into a subdir of this
+	directory for further rounds of refinement
+
 2013-06-09  Max Polk  <maxpolk@gmail.com>
 
 	* complete-convert: added better fixes for links, added
