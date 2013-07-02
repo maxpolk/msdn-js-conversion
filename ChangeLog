@@ -1,3 +1,7 @@
+2013-07-02  Max Polk  <maxpolk@gmail.com>
+
+	* README-page-naming.md: describes plan to name pages
+
 2013-06-15  Max Polk  <maxpolk@gmail.com>
 
 	* complete-convert: now outputs wiki pages into a subdir of this
