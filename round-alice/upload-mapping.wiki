@@ -9,11 +9,11 @@
 |-
 | Array-Object.wiki || Objects/Array
 |-
-| constructor-Property__Array.wiki || Objects/Array/constructor Property
+| constructor-Property__Array.wiki || Objects/Array/constructor
 |-
-| length-Property__Array.wiki || Objects/Array/length Property
+| length-Property__Array.wiki || Objects/Array/length
 |-
-| prototype-Property__Array.wiki || Objects/Array/prototype Property
+| prototype-Property__Array.wiki || Objects/Array/prototype
 |-
 | Array.isArray-Function.wiki || Objects/Array/Array.isArray Function
 |-
@@ -61,21 +61,21 @@
 |-
 | ArrayBuffer-Object.wiki || Objects/ArrayBuffer
 |-
-| byteLength-Property__ArrayBuffer.wiki || Objects/ArrayBuffer/byteLength Property
+| byteLength-Property__ArrayBuffer.wiki || Objects/ArrayBuffer/byteLength
 |-
 | arguments-Object.wiki || Objects/arguments
 |-
 | 0_n-Properties__arguments.wiki || Objects/arguments/0 n Properties
 |-
-| callee-Property__arguments.wiki || Objects/arguments/callee Property
+| callee-Property__arguments.wiki || Objects/arguments/callee
 |-
-| length-Property__arguments.wiki || Objects/arguments/length Property
+| length-Property__arguments.wiki || Objects/arguments/length
 |-
 | Boolean-Object.wiki || Objects/Boolean
 |-
-| constructor-Property__Boolean.wiki || Objects/Boolean/constructor Property
+| constructor-Property__Boolean.wiki || Objects/Boolean/constructor
 |-
-| prototype-Property__Boolean.wiki || Objects/Boolean/prototype Property
+| prototype-Property__Boolean.wiki || Objects/Boolean/prototype
 |-
 | toString-Method__Boolean.wiki || Objects/Boolean/toString Method
 |-
@@ -83,11 +83,11 @@
 |-
 | DataView-Object.wiki || Objects/DataView
 |-
-| buffer-Property__DataView.wiki || Objects/DataView/buffer Property
+| buffer-Property__DataView.wiki || Objects/DataView/buffer
 |-
-| byteLength-Property__DataView.wiki || Objects/DataView/byteLength Property
+| byteLength-Property__DataView.wiki || Objects/DataView/byteLength
 |-
-| byteOffset-Property__DataView.wiki || Objects/DataView/byteOffset Property
+| byteOffset-Property__DataView.wiki || Objects/DataView/byteOffset
 |-
 | getInt8-Method__DataView.wiki || Objects/DataView/getInt8 Method
 |-
@@ -123,9 +123,9 @@
 |-
 | Date-Object.wiki || Objects/Date
 |-
-| constructor-Property__Date.wiki || Objects/Date/constructor Property
+| constructor-Property__Date.wiki || Objects/Date/constructor
 |-
-| prototype-Property__Date.wiki || Objects/Date/prototype Property
+| prototype-Property__Date.wiki || Objects/Date/prototype
 |-
 | Date.now-Function.wiki || Objects/Date/Date.now Function
 |-
@@ -227,9 +227,9 @@
 |-
 | Debug-Object.wiki || Objects/Debug
 |-
-| Debug.debuggerEnabled-Property.wiki || Objects/Debug/Debug.debuggerEnabled Property
+| Debug.debuggerEnabled-Property.wiki || Objects/Debug/Debug.debuggerEnabled
 |-
-| Debug.setNonUserCodeExceptions-Property.wiki || Objects/Debug/Debug.setNonUserCodeExceptions Property
+| Debug.setNonUserCodeExceptions-Property.wiki || Objects/Debug/Debug.setNonUserCodeExceptions
 |-
 | Debug.write-Function.wiki || Objects/Debug/Debug.write Function
 |-
@@ -247,21 +247,21 @@
 |-
 | Error-Object.wiki || Objects/Error
 |-
-| constructor-Property__Error.wiki || Objects/Error/constructor Property
+| constructor-Property__Error.wiki || Objects/Error/constructor
 |-
-| prototype-Property__Error.wiki || Objects/Error/prototype Property
+| prototype-Property__Error.wiki || Objects/Error/prototype
 |-
-| description-Property__Error.wiki || Objects/Error/description Property
+| description-Property__Error.wiki || Objects/Error/description
 |-
-| message-Property__Error.wiki || Objects/Error/message Property
+| message-Property__Error.wiki || Objects/Error/message
 |-
-| name-Property__Error.wiki || Objects/Error/name Property
+| name-Property__Error.wiki || Objects/Error/name
 |-
-| number-Property__Error.wiki || Objects/Error/number Property
+| number-Property__Error.wiki || Objects/Error/number
 |-
-| stack-Property__Error.wiki || Objects/Error/stack Property
+| stack-Property__Error.wiki || Objects/Error/stack
 |-
-| stackTraceLimit-Property__Error.wiki || Objects/Error/stackTraceLimit Property
+| stackTraceLimit-Property__Error.wiki || Objects/Error/stackTraceLimit
 |-
 | toString-Method__Error.wiki || Objects/Error/toString Method
 |-
@@ -271,13 +271,13 @@
 |-
 | BYTES_PER_ELEMENT-Constant__Float32Array.wiki || Objects/Float32Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Float32Array.wiki || Objects/Float32Array/buffer Property
+| buffer-Property__Float32Array.wiki || Objects/Float32Array/buffer
 |-
-| byteLength-Property__Float32Array.wiki || Objects/Float32Array/byteLength Property
+| byteLength-Property__Float32Array.wiki || Objects/Float32Array/byteLength
 |-
-| byteOffset-Property__Float32Array.wiki || Objects/Float32Array/byteOffset Property
+| byteOffset-Property__Float32Array.wiki || Objects/Float32Array/byteOffset
 |-
-| length-Property__Float32Array.wiki || Objects/Float32Array/length Property
+| length-Property__Float32Array.wiki || Objects/Float32Array/length
 |-
 | get-Method__Float32Array.wiki || Objects/Float32Array/get Method
 |-
@@ -289,13 +289,13 @@
 |-
 | BYTES_PER_ELEMENT-Constant__Float64Array.wiki || Objects/Float64Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Float64Array.wiki || Objects/Float64Array/buffer Property
+| buffer-Property__Float64Array.wiki || Objects/Float64Array/buffer
 |-
-| byteLength-Property__Float64Array.wiki || Objects/Float64Array/byteLength Property
+| byteLength-Property__Float64Array.wiki || Objects/Float64Array/byteLength
 |-
-| bufferOffset-Property__Float64Array.wiki || Objects/Float64Array/bufferOffset Property
+| bufferOffset-Property__Float64Array.wiki || Objects/Float64Array/bufferOffset
 |-
-| length-Property__Float64Array.wiki || Objects/Float64Array/length Property
+| length-Property__Float64Array.wiki || Objects/Float64Array/length
 |-
 | get-Method__Float64Array.wiki || Objects/Float64Array/get Method
 |-
@@ -305,11 +305,11 @@
 |-
 | Function-Object.wiki || Objects/Function
 |-
-| arguments-Property__Function.wiki || Objects/Function/arguments Property
+| arguments-Property__Function.wiki || Objects/Function/arguments
 |-
-| caller-Property__Function.wiki || Objects/Function/caller Property
+| caller-Property__Function.wiki || Objects/Function/caller
 |-
-| length-Property__Function.wiki || Objects/Function/length Property
+| length-Property__Function.wiki || Objects/Function/length
 |-
 | apply-Method__Function.wiki || Objects/Function/apply Method
 |-
@@ -363,13 +363,13 @@
 |-
 | BYTES_PER_ELEMENT-Constant__Int8Array.wiki || Objects/Int8Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Int8Array.wiki || Objects/Int8Array/buffer Property
+| buffer-Property__Int8Array.wiki || Objects/Int8Array/buffer
 |-
-| byteLength-Property__Int8Array.wiki || Objects/Int8Array/byteLength Property
+| byteLength-Property__Int8Array.wiki || Objects/Int8Array/byteLength
 |-
-| byteOffset-Property__Int8Array.wiki || Objects/Int8Array/byteOffset Property
+| byteOffset-Property__Int8Array.wiki || Objects/Int8Array/byteOffset
 |-
-| length-Property__Int8Array.wiki || Objects/Int8Array/length Property
+| length-Property__Int8Array.wiki || Objects/Int8Array/length
 |-
 | get-Method__Int8Array.wiki || Objects/Int8Array/get Method
 |-
@@ -381,13 +381,13 @@
 |-
 | BYTES_PER_ELEMENT-Constant__Int16Array.wiki || Objects/Int16Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Int16Array.wiki || Objects/Int16Array/buffer Property
+| buffer-Property__Int16Array.wiki || Objects/Int16Array/buffer
 |-
-| byteLength-Property__Int16Array.wiki || Objects/Int16Array/byteLength Property
+| byteLength-Property__Int16Array.wiki || Objects/Int16Array/byteLength
 |-
-| byteOffset-Property__Int16Array.wiki || Objects/Int16Array/byteOffset Property
+| byteOffset-Property__Int16Array.wiki || Objects/Int16Array/byteOffset
 |-
-| length-Property__Int16Array.wiki || Objects/Int16Array/length Property
+| length-Property__Int16Array.wiki || Objects/Int16Array/length
 |-
 | get-Method__Int16Array.wiki || Objects/Int16Array/get Method
 |-
@@ -399,13 +399,13 @@
 |-
 | BYTES_PER_ELEMENT-Constant__Int32Array.wiki || Objects/Int32Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Int32Array.wiki || Objects/Int32Array/buffer Property
+| buffer-Property__Int32Array.wiki || Objects/Int32Array/buffer
 |-
-| byteLength-Property__Int32Array.wiki || Objects/Int32Array/byteLength Property
+| byteLength-Property__Int32Array.wiki || Objects/Int32Array/byteLength
 |-
-| byteOffset-Property__Int32Array.wiki || Objects/Int32Array/byteOffset Property
+| byteOffset-Property__Int32Array.wiki || Objects/Int32Array/byteOffset
 |-
-| length-Property__Int32Array.wiki || Objects/Int32Array/length Property
+| length-Property__Int32Array.wiki || Objects/Int32Array/length
 |-
 | get-Method__Int32Array.wiki || Objects/Int32Array/get Method
 |-
@@ -463,9 +463,9 @@
 |-
 | Number-Constants.wiki || Objects/Number/Number Constants
 |-
-| constructor-Property__Number.wiki || Objects/Number/constructor Property
+| constructor-Property__Number.wiki || Objects/Number/constructor
 |-
-| prototype-Property__Number.wiki || Objects/Number/prototype Property
+| prototype-Property__Number.wiki || Objects/Number/prototype
 |-
 | toExponential-Method__Number.wiki || Objects/Number/toExponential Method
 |-
@@ -479,9 +479,9 @@
 |-
 | Object-Object.wiki || Objects/Object
 |-
-| constructor-Property__Object.wiki || Objects/Object/constructor Property
+| constructor-Property__Object.wiki || Objects/Object/constructor
 |-
-| prototype-Property__Object.wiki || Objects/Object/prototype Property
+| prototype-Property__Object.wiki || Objects/Object/prototype
 |-
 | Object.create-Function.wiki || Objects/Object/Object.create Function
 |-
@@ -525,29 +525,29 @@
 |-
 | 1_9-Properties__RegExp.wiki || Objects/RegExp/1 9 Properties
 |-
-| index-Property__RegExp.wiki || Objects/RegExp/index Property
+| index-Property__RegExp.wiki || Objects/RegExp/index
 |-
-| input-Property.wiki || Objects/RegExp/input Property
+| input-Property.wiki || Objects/RegExp/input
 |-
-| lastIndex-Property__RegExp.wiki || Objects/RegExp/lastIndex Property
+| lastIndex-Property__RegExp.wiki || Objects/RegExp/lastIndex
 |-
-| lastMatch-Property.wiki || Objects/RegExp/lastMatch Property
+| lastMatch-Property.wiki || Objects/RegExp/lastMatch
 |-
-| lastParen-Property.wiki || Objects/RegExp/lastParen Property
+| lastParen-Property.wiki || Objects/RegExp/lastParen
 |-
-| leftContext-Property.wiki || Objects/RegExp/leftContext Property
+| leftContext-Property.wiki || Objects/RegExp/leftContext
 |-
-| rightContext-Property.wiki || Objects/RegExp/rightContext Property
+| rightContext-Property.wiki || Objects/RegExp/rightContext
 |-
 | Regular-Expression-Object.wiki || Objects/Regular Expression
 |-
-| global-Property__Regular-Expression.wiki || Objects/Regular Expression/global Property
+| global-Property__Regular-Expression.wiki || Objects/Regular Expression/global
 |-
-| ignoreCase-Property__Regular-Expression.wiki || Objects/Regular Expression/ignoreCase Property
+| ignoreCase-Property__Regular-Expression.wiki || Objects/Regular Expression/ignoreCase
 |-
-| multiline-Property__Regular-Expression.wiki || Objects/Regular Expression/multiline Property
+| multiline-Property__Regular-Expression.wiki || Objects/Regular Expression/multiline
 |-
-| source-Property__Regular-Expression.wiki || Objects/Regular Expression/source Property
+| source-Property__Regular-Expression.wiki || Objects/Regular Expression/source
 |-
 | compile-Method__Regular-Expression.wiki || Objects/Regular Expression/compile Method
 |-
@@ -557,11 +557,11 @@
 |-
 | String-Object.wiki || Objects/String
 |-
-| constructor-Property__String.wiki || Objects/String/constructor Property
+| constructor-Property__String.wiki || Objects/String/constructor
 |-
-| length-Property__String.wiki || Objects/String/length Property
+| length-Property__String.wiki || Objects/String/length
 |-
-| prototype-Property__String.wiki || Objects/String/prototype Property
+| prototype-Property__String.wiki || Objects/String/prototype
 |-
 | String.fromCharCode-Function.wiki || Objects/String/String.fromCharCode Function
 |-
@@ -611,13 +611,13 @@
 |-
 | BYTES_PER_ELEMENT-Constant__Uint8Array.wiki || Objects/Uint8Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Uint8Array.wiki || Objects/Uint8Array/buffer Property
+| buffer-Property__Uint8Array.wiki || Objects/Uint8Array/buffer
 |-
-| byteLength-Property__Uint8Array.wiki || Objects/Uint8Array/byteLength Property
+| byteLength-Property__Uint8Array.wiki || Objects/Uint8Array/byteLength
 |-
-| byteOffset-Property__Uint8Array.wiki || Objects/Uint8Array/byteOffset Property
+| byteOffset-Property__Uint8Array.wiki || Objects/Uint8Array/byteOffset
 |-
-| length-Property__Uint8Array.wiki || Objects/Uint8Array/length Property
+| length-Property__Uint8Array.wiki || Objects/Uint8Array/length
 |-
 | get-Method__Uint8Array.wiki || Objects/Uint8Array/get Method
 |-
@@ -629,13 +629,13 @@
 |-
 | BYTES_PER_ELEMENT-Constant__Uint16Array.wiki || Objects/Uint16Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Uint16Array.wiki || Objects/Uint16Array/buffer Property
+| buffer-Property__Uint16Array.wiki || Objects/Uint16Array/buffer
 |-
-| byteLength-Property__Uint16Array.wiki || Objects/Uint16Array/byteLength Property
+| byteLength-Property__Uint16Array.wiki || Objects/Uint16Array/byteLength
 |-
-| byteOffset-Property__Uint16Array.wiki || Objects/Uint16Array/byteOffset Property
+| byteOffset-Property__Uint16Array.wiki || Objects/Uint16Array/byteOffset
 |-
-| length-Property__UInt16Array.wiki || Objects/Uint16Array/length Property
+| length-Property__UInt16Array.wiki || Objects/Uint16Array/length
 |-
 | get-Method__Uint16Array.wiki || Objects/Uint16Array/get Method
 |-
@@ -647,13 +647,13 @@
 |-
 | BYTES_PER_ELEMENT-Constant__Uint32Array.wiki || Objects/Uint32Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Uint32Array.wiki || Objects/Uint32Array/buffer Property
+| buffer-Property__Uint32Array.wiki || Objects/Uint32Array/buffer
 |-
-| byteLength-Property__UInt32Array.wiki || Objects/Uint32Array/byteLength Property
+| byteLength-Property__UInt32Array.wiki || Objects/Uint32Array/byteLength
 |-
-| byteOffset-Property__UInt32Array.wiki || Objects/Uint32Array/byteOffset Property
+| byteOffset-Property__UInt32Array.wiki || Objects/Uint32Array/byteOffset
 |-
-| length-Property__Uint32Array.wiki || Objects/Uint32Array/length Property
+| length-Property__Uint32Array.wiki || Objects/Uint32Array/length
 |-
 | get-Method__Uint32Array.wiki || Objects/Uint32Array/get Method
 |-
