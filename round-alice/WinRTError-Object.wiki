@@ -20,7 +20,7 @@ The WinRTError object has no methods.
 
 
 ==Properties==
-The WinRTError object has the same properties as the [[Objects/Error|Error Object]] object.
+The WinRTError object has the same properties as the [[Error|Error Object]] object.
 
 
 ==Requirements==

@@ -37,7 +37,7 @@ The following example shows how to use the '''undefined''' constant.
 ==Requirements==
 The '''undefined''' property was introduced in Internet Explorer before Internet Explorer 6, and was made read-only in Internet Explorer 9 standards mode.
 
-'''Applies To''' : [[Objects/Global|Global Object]]
+'''Applies To''' : [[Global|Global Object]]
 
 
 ==See Also==

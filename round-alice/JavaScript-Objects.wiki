@@ -8,91 +8,91 @@ The following table listsJavaScript Objects.
 ! Language Element
 |-
 | Enables and returns a reference to an Automation object. This object is supported in Internet Explorer only.
-| [[Objects/ActiveXObject|ActiveXObject Object]]
+| [[ActiveXObject|ActiveXObject Object]]
 |-
 | Provides support for creation of arrays of any data type.
-| [[Objects/Array|Array Object]]
+| [[Array|Array Object]]
 |-
 | Represents a raw buffer of binary data, which is used to store data for the different typed arrays. ArrayBuffers cannot be read from or written to directly, but can be passed to a typed array or DataView to interpret the raw buffer as needed.
-| [[Objects/ArrayBuffer|ArrayBuffer Object]]
+| [[ArrayBuffer|ArrayBuffer Object]]
 |-
 | An object representing the arguments to the currently executing function, and the functions that called it.
-| [[Objects/arguments|arguments Object]]
+| [[arguments|arguments Object]]
 |-
 | Creates a new Boolean value.
-| [[Objects/Boolean|Boolean Object]]
+| [[Boolean|Boolean Object]]
 |-
 | Used to read and write different kinds of binary data to any location in the ArrayBuffer.
-| [[Objects/DataView|DataView Object]]
+| [[DataView|DataView Object]]
 |-
 | Enables basic storage and retrieval of dates and times.
-| [[Objects/Date|Date Object]]
+| [[Date|Date Object]]
 |-
 | An intrinsic object that can send output to a script debugger.
-| [[Objects/Debug|Debug Object]]
+| [[Debug|Debug Object]]
 |-
 | Enables enumeration of items in a collection. This object is supported in Internet Explorer only.
-| [[Objects/Enumerator|Enumerator Object]]
+| [[Enumerator|Enumerator Object]]
 |-
 | An object that contains information about errors that occur while JavaScript code is running.
-| [[Objects/Error|Error Object]]
+| [[Error|Error Object]]
 |-
 | A typed array of 32-bit float values.
-| [[Objects/Float32Array|Float32Array Object]]
+| [[Float32Array|Float32Array Object]]
 |-
 | A typed array of 64-bit float values.
-| [[Objects/Float64Array|Float64Array Object]]
+| [[Float64Array|Float64Array Object]]
 |-
 | Creates a new function.
-| [[Objects/Function|Function Object]]
+| [[Function|Function Object]]
 |-
 | An intrinsic object whose purpose is to collect global methods into one object.
-| [[Objects/Global|Global Object]]
+| [[Global|Global Object]]
 |-
 | A typed array of 8-bit integer values
-| [[Objects/Int8Array|Int8Array Object]]
+| [[Int8Array|Int8Array Object]]
 |-
 | A typed array of 16-bit integer values
-| [[Objects/Int16Array|Int16Array Object]]
+| [[Int16Array|Int16Array Object]]
 |-
 | A typed array of 32-bit integer values
-| [[Objects/Int32Array|Int32Array Object]]
+| [[Int32Array|Int32Array Object]]
 |-
 | An intrinsic object that provides two methods to convert to and from the JavaScript Object Notation (JSON) format.
-| [[Objects/JSON|JSON Object]]
+| [[JSON|JSON Object]]
 |-
 | An intrinsic object that provides basic mathematics functionality and constants.
-| [[Objects/Math|Math Object]]
+| [[Math|Math Object]]
 |-
 | An object representation of the number data type and placeholder for numeric constants.
-| [[Objects/Number|Number Object]]
+| [[Number|Number Object]]
 |-
 | Provides functionality common to allJavaScript objects.
-| [[Objects/Object|Object Object]]
+| [[Object|Object Object]]
 |-
 | Stores information on regular expression pattern searches.
-| [[Objects/RegExp|RegExp Object]]
+| [[RegExp|RegExp Object]]
 |-
 | Contains a regular expression pattern.
-| [[Objects/Regular Expression|Regular Expression Object]]
+| [[Regular Expression|Regular Expression Object]]
 |-
 | Allows manipulation and formatting of text strings and determination and location of substrings within strings.
-| [[Objects/String|String Object]]
+| [[String|String Object]]
 |-
 | A typed array of 8-bit unsigned integer values,
-| [[Objects/Uint8Array|Uint8Array Object]]
+| [[Uint8Array|Uint8Array Object]]
 |-
 | A typed array of 16-bit unsigned integer values
-| [[Objects/Uint16Array|Uint16Array Object]]
+| [[Uint16Array|Uint16Array Object]]
 |-
 | A typed array of 32-bit unsigned integer values
-| [[Objects/Uint32Array|Uint32Array Object]]
+| [[Uint32Array|Uint32Array Object]]
 |-
 | Provides access to Visual Basic safe arrays.
-| [[Objects/VBArray|VBArray Object]]
+| [[VBArray|VBArray Object]]
 |-
 | An error that originates in Windows Runtime functions and methods.
-| [[Objects/WinRTError|WinRTError Object]]
+| [[WinRTError|WinRTError Object]]
 |}
 
 ==Related Reference==

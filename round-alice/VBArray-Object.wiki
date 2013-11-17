@@ -65,7 +65,7 @@ The '''VBArray''' object has no properties.
 
 
 ==Methods==
-[[Objects/VBArray/dimensions|ubound Method]]
+[[VBArray/dimensions|ubound Method]]
 
 
 ==Requirements==

@@ -18,7 +18,7 @@ The following table lists the constants of the '''Uint16Array''' object.
 ! Constant
 ! Description
 |-
-| [[Objects/Uint16Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
+| [[Uint16Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
 | The size in bytes of each element in the array.
 |}
 
@@ -30,16 +30,16 @@ The following table lists the constants of the '''Uint16Array''' object.
 ! Property
 ! Description
 |-
-| [[Objects/Uint16Array/buffer|buffer Property]]
+| [[Uint16Array/buffer|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this array.
 |-
-| [[Objects/Uint16Array/byteLength|byteLength Property]]
+| [[Uint16Array/byteLength|byteLength Property]]
 | Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/Uint16Array/byteOffset|byteOffset Property]]
+| [[Uint16Array/byteOffset|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/Uint16Array/length|length Property]]
+| [[Uint16Array/length|length Property]]
 | The length of the array.
 |}
 
@@ -51,13 +51,13 @@ The following table lists the methods of the '''Uint16Array''' object.
 ! Method
 ! Description
 |-
-| [[Objects/Uint16Array/get|get Method]]
+| [[Uint16Array/get|get Method]]
 | Omittable. Gets the element at the specified index.
 |-
-| [[Objects/Uint16Array/set|set Method (Uint16Array)]]
+| [[Uint16Array/set|set Method (Uint16Array)]]
 | Sets a value or an array of values.
 |-
-| [[Objects/Uint16Array/subarray|subarray Method (Uint16Array)]]
+| [[Uint16Array/subarray|subarray Method (Uint16Array)]]
 | Gets a new Uint16Array view of the ArrayBuffer store for this array.
 |}
 

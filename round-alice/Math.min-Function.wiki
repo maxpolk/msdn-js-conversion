@@ -5,7 +5,7 @@ Returns the smaller of a set of numeric expressions.
 ==Remarks==
 The optional number1, number2, ..., numberN arguments are numeric expressions to be evaluated.
 
-If no arguments are provided, the return value is equal to [[Objects/Number/Number Constants|Number.POSITIVE_INFINITY]]. If any argument is '''NaN''' , the return value is also '''NaN'''.
+If no arguments are provided, the return value is equal to [[Number/Number Constants|Number.POSITIVE_INFINITY]]. If any argument is '''NaN''' , the return value is also '''NaN'''.
 
 
 ==Example==

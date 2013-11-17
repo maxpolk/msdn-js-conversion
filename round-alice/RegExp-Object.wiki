@@ -105,7 +105,7 @@ The following example performs a regular expression search. It displays matches 
  //  3: com
 
 ==Properties==
-[[Objects/RegExp/1 9 Properties|rightContext Property]]
+[[RegExp/1 9 Properties|rightContext Property]]
 
 
 ==Methods==

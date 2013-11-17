@@ -18,7 +18,7 @@ The following table lists the constants of the '''Float32Array''' object.
 ! Constant
 ! Description
 |-
-| [[Objects/Float32Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
+| [[Float32Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
 | The size in bytes of each element in the array.
 |}
 
@@ -30,16 +30,16 @@ The following table lists the constants of the '''Float32Array''' object.
 ! Property
 ! Description
 |-
-| [[Objects/Float32Array/buffer|buffer Property]]
+| [[Float32Array/buffer|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this array.
 |-
-| [[Objects/Float32Array/byteLength|byteLength Property]]
+| [[Float32Array/byteLength|byteLength Property]]
 | Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/Float32Array/byteOffset|byteOffset Property]]
+| [[Float32Array/byteOffset|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/Float32Array/length|length Property]]
+| [[Float32Array/length|length Property]]
 | The length of the array.
 |}
 
@@ -51,13 +51,13 @@ The following table lists the methods of the '''Float32Array''' object.
 ! Method
 ! Description
 |-
-| [[Objects/Float32Array/get|get Method]]
+| [[Float32Array/get|get Method]]
 | Omittable. Gets the element at the specified index.
 |-
-| [[Objects/Float32Array/set|set Method (Float32Array)]]
+| [[Float32Array/set|set Method (Float32Array)]]
 | Sets a value or an array of values.
 |-
-| [[Objects/Float32Array/subarray|subarray Method (Float32Array)]]
+| [[Float32Array/subarray|subarray Method (Float32Array)]]
 | Gets a new Float32Array view of the ArrayBuffer store for this array.
 |}
 

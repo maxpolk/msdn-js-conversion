@@ -7,7 +7,7 @@ The number of milliseconds between midnight, January 1, 1970, and the current da
 
 
 ==Remarks==
-The [[Objects/Date/getTime|getTime method]] returns the number of milliseconds between January 1, 1970, and a specified date.
+The [[Date/getTime|getTime method]] returns the number of milliseconds between January 1, 1970, and a specified date.
 
 For information about how to calculate elapsed time and compare dates, see Date and Time Calculations (Windows Scripting - JScript).
 

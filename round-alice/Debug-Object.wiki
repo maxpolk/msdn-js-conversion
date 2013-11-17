@@ -23,11 +23,11 @@ Supported in the following document modes: Quirks, Internet Explorer 6 standards
 
 
 ==Properties==
-[[Objects/Debug/Debug.debuggerEnabled|Debug.debuggerEnabled Property]] {{!}} [[Objects/Debug/Debug.setNonUserCodeExceptions Property|Debug.setNonUserCodeExceptions Property]]
+[[Debug/Debug.debuggerEnabled|Debug.debuggerEnabled Property]] {{!}} [[Debug/Debug.setNonUserCodeExceptions Property|Debug.setNonUserCodeExceptions Property]]
 
 
 ==Functions==
-[[Objects/Debug/Debug.write|Debug.write Function]] {{!}} [[Objects/Debug/Debug.writeln Function|Debug.writeln Function]]
+[[Debug/Debug.write|Debug.write Function]] {{!}} [[Debug/Debug.writeln Function|Debug.writeln Function]]
 
 
 ==See Also==

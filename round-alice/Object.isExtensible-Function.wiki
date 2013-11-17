@@ -14,7 +14,7 @@ If the object argument is not an object, a TypeError exception is thrown.
 
 
 ==Remarks==
-For information about how to set property attributes, see [[Objects/Object/Object.defineProperty|Object.defineProperty Function]]. To obtain the attributes of a property, you can use the [[Objects/Object/Object.getOwnPropertyDescriptor Function|Object.getOwnPropertyDescriptor Function]].
+For information about how to set property attributes, see [[Object/Object.defineProperty|Object.defineProperty Function]]. To obtain the attributes of a property, you can use the [[Object/Object.getOwnPropertyDescriptor Function|Object.getOwnPropertyDescriptor Function]].
 
 The following related functions prevent the modification of object attributes.
 
@@ -25,17 +25,17 @@ The following related functions prevent the modification of object attributes.
 ! configurable is set to false for each property
 ! writable is set to false for each property
 |-
-| [[Objects/Object/Object.preventExtensions|Object.preventExtensions]]
+| [[Object/Object.preventExtensions|Object.preventExtensions]]
 | Yes
 | No
 | No
 |-
-| [[Objects/Object/Object.seal|Object.seal]]
+| [[Object/Object.seal|Object.seal]]
 | Yes
 | Yes
 | No
 |-
-| [[Objects/Object/Object.freeze|Object.freeze]]
+| [[Object/Object.freeze|Object.freeze]]
 | Yes
 | Yes
 | Yes
@@ -54,12 +54,12 @@ The following functions return true if all of the conditions marked in the follo
 | No
 | No
 |-
-| [[Objects/Object/Object.isSealed|Object.isSealed]]
+| [[Object/Object.isSealed|Object.isSealed]]
 | No
 | Yes
 | No
 |-
-| [[Objects/Object/Object.isFrozen|Object.isFrozen]]
+| [[Object/Object.isFrozen|Object.isFrozen]]
 | No
 | Yes
 | Yes

@@ -29,7 +29,7 @@ The following example illustrates the use of the '''setMinutes''' method.
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Objects/Date|Date Object]]
+'''Applies To''' : [[Date|Date Object]]
 
 
 ==See Also==

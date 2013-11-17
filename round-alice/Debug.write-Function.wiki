@@ -22,7 +22,7 @@ This example uses the '''Debug.write''' function to display the value of the var
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Objects/Debug|Debug Object]]
+'''Applies To''' : [[Debug|Debug Object]]
 
 
 ==See Also==

@@ -20,13 +20,13 @@ The following table lists the properties of the '''DataView''' object.
 ! Property
 ! Description
 |-
-| [[Objects/DataView/buffer|buffer Property]]
+| [[DataView/buffer|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this view.
 |-
-| [[Objects/DataView/byteLength|byteLength Property]]
+| [[DataView/byteLength|byteLength Property]]
 | Read-only. The length of this view from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/DataView/byteOffset|byteOffset Property]]
+| [[DataView/byteOffset|byteOffset Property]]
 | Read-only. The offset of this view from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |}
 
@@ -38,52 +38,52 @@ The following table lists the methods of the '''DataView''' object.
 ! Method
 ! Description
 |-
-| [[Objects/DataView/getInt8|getInt8 Method]]
+| [[DataView/getInt8|getInt8 Method]]
 | Gets the Int8 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/getUint8|getUint8 Method (DataView)]]
+| [[DataView/getUint8|getUint8 Method (DataView)]]
 | Gets the Uint8 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/getInt16|getInt16 Method (DataView)]]
+| [[DataView/getInt16|getInt16 Method (DataView)]]
 | Gets the Int16 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/getUint16|getUint16 Method (DataView)]]
+| [[DataView/getUint16|getUint16 Method (DataView)]]
 | Gets the Uint16 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/getInt32|getInt32 Method (DataView)]]
+| [[DataView/getInt32|getInt32 Method (DataView)]]
 | Gets the Int32 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/getUint32|getUint32 Method (DataView)]]
+| [[DataView/getUint32|getUint32 Method (DataView)]]
 | Gets the Uint32 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/getFloat32|getFloat32 Method (DataView)]]
+| [[DataView/getFloat32|getFloat32 Method (DataView)]]
 | Gets the Float32 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/getFloat64|getFloat64 Method (DataView)]]
+| [[DataView/getFloat64|getFloat64 Method (DataView)]]
 | Gets the Float64 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/setInt8|setInt8 Method (DataView)]]
+| [[DataView/setInt8|setInt8 Method (DataView)]]
 | Stores a Int8 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/setUint8|setUint8 Method (DataView)]]
+| [[DataView/setUint8|setUint8 Method (DataView)]]
 | Stores a Uint8 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/setInt16|setInt16 Method (DataView)]]
+| [[DataView/setInt16|setInt16 Method (DataView)]]
 | Stores a Int16 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/setUint16|setUint16 Method (DataView)]]
+| [[DataView/setUint16|setUint16 Method (DataView)]]
 | Stores a Uint16 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/setInt32|setInt32 Method (DataView)]]
+| [[DataView/setInt32|setInt32 Method (DataView)]]
 | Stores a Int32 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/setUint32|setUint32 Method (DataView)]]
+| [[DataView/setUint32|setUint32 Method (DataView)]]
 | Stores a Uint32 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/setFloat32|setFloat32 Method (DataView)]]
+| [[DataView/setFloat32|setFloat32 Method (DataView)]]
 | Stores a Float32 value at the specified byte offset from the start of the view.
 |-
-| [[Objects/DataView/setFloat64|setFloat64 Method (DataView)]]
+| [[DataView/setFloat64|setFloat64 Method (DataView)]]
 | Stores a Float64 value at the specified byte offset from the start of the view.
 |}
 

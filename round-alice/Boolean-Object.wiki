@@ -20,10 +20,10 @@ The following table lists the properties of the '''Boolean''' object.
 ! Property
 ! Description
 |-
-| [[Objects/Boolean/constructor|constructor Property]]
+| [[Boolean/constructor|constructor Property]]
 | Specifies the function that creates a Boolean.
 |-
-| [[Objects/Boolean/prototype|prototype Property]]
+| [[Boolean/prototype|prototype Property]]
 | Returns a reference to the prototype for a Boolean.
 |}
 
@@ -35,10 +35,10 @@ The following table lists the methods of the '''Boolean''' object.
 ! Method
 ! Description
 |-
-| [[Objects/Boolean/toString|toString Method]]
+| [[Boolean/toString|toString Method]]
 | Returns a string representation of a Boolean.
 |-
-| [[Objects/Boolean/valueOf|valueOf Method]]
+| [[Boolean/valueOf|valueOf Method]]
 | Gets a reference to the Boolean.
 |}
 

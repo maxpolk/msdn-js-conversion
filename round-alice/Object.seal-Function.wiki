@@ -22,7 +22,7 @@ When the configurable attribute is false , property attributes cannot be changed
 
 The '''Object.seal''' function does not change the writable attribute.
 
-For more information about how to set property attributes, see [[Objects/Object/Object.defineProperty|Object.defineProperty Function]]. To get the attributes of a property, you can use the [[Objects/Object/Object.getOwnPropertyDescriptor Function|Object.getOwnPropertyDescriptor Function]].
+For more information about how to set property attributes, see [[Object/Object.defineProperty|Object.defineProperty Function]]. To get the attributes of a property, you can use the [[Object/Object.getOwnPropertyDescriptor Function|Object.getOwnPropertyDescriptor Function]].
 
 The following related functions prevent the modification of object attributes.
 
@@ -33,7 +33,7 @@ The following related functions prevent the modification of object attributes.
 ! configurable is set to false for each property
 ! writable is set to false for each property
 |-
-| [[Objects/Object/Object.preventExtensions|Object.preventExtensions]]
+| [[Object/Object.preventExtensions|Object.preventExtensions]]
 | Yes
 | No
 | No
@@ -43,7 +43,7 @@ The following related functions prevent the modification of object attributes.
 | Yes
 | No
 |-
-| [[Objects/Object/Object.freeze|Object.freeze]]
+| [[Object/Object.freeze|Object.freeze]]
 | Yes
 | Yes
 | Yes
@@ -57,17 +57,17 @@ The following functions return true if all of the conditions marked in the follo
 ! configurable is false for all properties?
 ! writable is false for all data properties?
 |-
-| [[Objects/Object/Object.isExtensible|Object.isExtensible]]
+| [[Object/Object.isExtensible|Object.isExtensible]]
 | Yes
 | No
 | No
 |-
-| [[Objects/Object/Object.isSealed|Object.isSealed]]
+| [[Object/Object.isSealed|Object.isSealed]]
 | No
 | Yes
 | No
 |-
-| [[Objects/Object/Object.isFrozen|Object.isFrozen]]
+| [[Object/Object.isFrozen|Object.isFrozen]]
 | No
 | Yes
 | Yes

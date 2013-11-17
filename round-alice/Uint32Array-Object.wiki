@@ -18,7 +18,7 @@ The following table lists the constants of the '''Uint32Array''' object.
 ! Constant
 ! Description
 |-
-| [[Objects/Uint32Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
+| [[Uint32Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
 | The size in bytes of each element in the array.
 |}
 
@@ -30,16 +30,16 @@ The following table lists the constants of the '''Uint32Array''' object.
 ! Property
 ! Description
 |-
-| [[Objects/Uint32Array/buffer|buffer Property]]
+| [[Uint32Array/buffer|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this array.
 |-
-| [[Objects/Uint32Array/byteLength|byteLength Property]]
+| [[Uint32Array/byteLength|byteLength Property]]
 | Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/Uint32Array/byteOffset|byteOffset Property]]
+| [[Uint32Array/byteOffset|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/Uint32Array/length|length Property]]
+| [[Uint32Array/length|length Property]]
 | The length of the array.
 |}
 
@@ -51,13 +51,13 @@ The following table lists the methods of the '''Uint32Array''' object.
 ! Method
 ! Description
 |-
-| [[Objects/Uint32Array/get|get Method]]
+| [[Uint32Array/get|get Method]]
 | Omittable. Gets the element at the specified index.
 |-
-| [[Objects/Uint32Array/set|set Method (Uint32Array)]]
+| [[Uint32Array/set|set Method (Uint32Array)]]
 | Sets a value or an array of values.
 |-
-| [[Objects/Uint32Array/subarray|subarray Method (Uint32Array)]]
+| [[Uint32Array/subarray|subarray Method (Uint32Array)]]
 | Gets a new Uint32Array view of the ArrayBuffer store for this array.
 |}
 

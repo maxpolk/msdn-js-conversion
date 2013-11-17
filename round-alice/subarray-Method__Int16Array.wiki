@@ -1,4 +1,4 @@
-Gets a new Int16Array view of the [[Objects/ArrayBuffer|ArrayBuffer Object]] store for this array, specifying the first and last members of the subarray.
+Gets a new Int16Array view of the [[ArrayBuffer|ArrayBuffer Object]] store for this array, specifying the first and last members of the subarray.
 
  var newInt16Array = int16Array.subarray(begin, end);
 

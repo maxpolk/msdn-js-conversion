@@ -22,28 +22,28 @@ The following table lists the constants of the '''Math''' object.
 ! Constant
 ! Description
 |-
-| [[Objects/Math/Math Constants|Math.E Constant]]
+| [[Math/Math Constants|Math.E Constant]]
 | The mathematical constant e. This is Euler's number, the base of natural logarithms.
 |-
-| [[Objects/Math/Math Constants|Math.LN2 Constant]]
+| [[Math/Math Constants|Math.LN2 Constant]]
 | The natural logarithm of 2.
 |-
-| [[Objects/Math/Math Constants|Math.LN10 Constant]]
+| [[Math/Math Constants|Math.LN10 Constant]]
 | The natural logarithm of 10.
 |-
-| [[Objects/Math/Math Constants|Math.LOG2E Constant]]
+| [[Math/Math Constants|Math.LOG2E Constant]]
 | The base-2 logarithm of e.
 |-
-| [[Objects/Math/Math Constants|Math.LOG10E Constant]]
+| [[Math/Math Constants|Math.LOG10E Constant]]
 | The base-10 logarithm of e.
 |-
-| [[Objects/Math/Math Constants|Math.PI Constant]]
+| [[Math/Math Constants|Math.PI Constant]]
 | Pi. This is the ratio of the circumference of a circle to its diameter.
 |-
-| [[Objects/Math/Math Constants|Math.SQRT1_2 Constant]]
+| [[Math/Math Constants|Math.SQRT1_2 Constant]]
 | The square root of 0.5, or, equivalently, one divided by the square root of 2.
 |-
-| [[Objects/Math/Math Constants|Math.SQRT2 Constant]]
+| [[Math/Math Constants|Math.SQRT2 Constant]]
 | The square root of 2.
 |}
 
@@ -55,58 +55,58 @@ The following table lists the functions of the '''Math''' object.
 ! Function
 ! Description
 |-
-| [[Objects/Math/Math.abs|Math.abs Function]]
+| [[Math/Math.abs|Math.abs Function]]
 | Returns the absolute value of a number.
 |-
-| [[Objects/Math/Math.acos|Math.acos Function]]
+| [[Math/Math.acos|Math.acos Function]]
 | Returns the arccosine of a number.
 |-
-| [[Objects/Math/Math.asin|Math.asin Function]]
+| [[Math/Math.asin|Math.asin Function]]
 | Returns the arcsine of a number.
 |-
-| [[Objects/Math/Math.atan|Math.atan Function]]
+| [[Math/Math.atan|Math.atan Function]]
 | Returns the arctangent of a number.
 |-
-| [[Objects/Math/Math.atan2|Math.atan2 Function]]
+| [[Math/Math.atan2|Math.atan2 Function]]
 | Returns the angle (in radians) from the X axis to a point represented by the supplied y and x coordinates.
 |-
-| [[Objects/Math/Math.ceil|Math.ceil Function]]
+| [[Math/Math.ceil|Math.ceil Function]]
 | Returns the smallest integer that is greater than or equal to the supplied numeric expression.
 |-
-| [[Objects/Math/Math.cos|Math.cos Function]]
+| [[Math/Math.cos|Math.cos Function]]
 | Returns the cosine of a number.
 |-
-| [[Objects/Math/Math.exp|Math.exp Function]]
+| [[Math/Math.exp|Math.exp Function]]
 | Returns e (the base of natural logarithms) raised to a power.
 |-
-| [[Objects/Math/Math.floor|Math.floor Function]]
+| [[Math/Math.floor|Math.floor Function]]
 | Returns the greatest integer that is less than or equal to the supplied numeric expression.
 |-
-| [[Objects/Math/Math.log|Math.log Function]]
+| [[Math/Math.log|Math.log Function]]
 | Returns the natural logarithm of a number.
 |-
-| [[Objects/Math/Math.max|Math.max Function]]
+| [[Math/Math.max|Math.max Function]]
 | Returns the greater of two supplied numeric expressions.
 |-
-| [[Objects/Math/Math.min|Math.min Function]]
+| [[Math/Math.min|Math.min Function]]
 | Returns the lesser of two supplied numbers.
 |-
-| [[Objects/Math/Math.pow|Math.pow Function]]
+| [[Math/Math.pow|Math.pow Function]]
 | Returns the value of a base expression raised to a specified power.
 |-
-| [[Objects/Math/Math.random|Math.random Function]]
+| [[Math/Math.random|Math.random Function]]
 | Returns a pseudorandom number between 0 and 1.
 |-
-| [[Objects/Math/Math.round|Math.round Function]]
+| [[Math/Math.round|Math.round Function]]
 | Returns a specified numeric expression rounded to the nearest integer.
 |-
-| [[Objects/Math/Math.sin|Math.sin Function]]
+| [[Math/Math.sin|Math.sin Function]]
 | Returns the sine of a number.
 |-
-| [[Objects/Math/Math.sqrt|Math.sqrt Function]]
+| [[Math/Math.sqrt|Math.sqrt Function]]
 | Returns the square root of a number.
 |-
-| [[Objects/Math/Math.tan|Math.tan Function]]
+| [[Math/Math.tan|Math.tan Function]]
 | Returns the tangent of a number.
 |}
 

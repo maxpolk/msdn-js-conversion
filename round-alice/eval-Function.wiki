@@ -12,7 +12,7 @@ The codeString string is parsed by the JavaScript parser and executed.
 
 The code passed to the '''eval''' function is executed in the same context as the call to the '''eval''' function.
 
-Whenever possible, use the [[Objects/JSON/JSON.parse|JSON.parse function]] to de-serialize JavaScript Object Notation (JSON) text. The '''JSON.parse''' function is more secure and executes faster than the '''eval''' function.
+Whenever possible, use the [[JSON/JSON.parse|JSON.parse function]] to de-serialize JavaScript Object Notation (JSON) text. The '''JSON.parse''' function is more secure and executes faster than the '''eval''' function.
 
 
 ==Example==
@@ -29,7 +29,7 @@ The following code initializes the variable <code>myDate</code> to a test date.
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Objects/Global|Global Object]]
+'''Applies To''' : [[Global|Global Object]]
 
 
 ==See Also==

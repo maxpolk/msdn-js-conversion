@@ -33,7 +33,7 @@ The callback function is not called for missing elements of the array.
 
 In addition to array objects, the '''every''' method can be used by any object that has a length property and that has numerically indexed property names.
 
-'''Note''' -- You can use the [[Objects/Array/some|some Method (Array)]] to check whether the callback function returns true for any element of an array.
+'''Note''' -- You can use the [[Array/some|some Method (Array)]] to check whether the callback function returns true for any element of an array.
 
 The syntax of the callback function is as follows:
 

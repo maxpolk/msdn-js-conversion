@@ -7,7 +7,7 @@ The required radians argument is a numeric expression that contains an angle mea
 
 The return value is the cosine of the numeric argument of radians.
 
-'''Applies To''' : [[Objects/Math|Math Object]]
+'''Applies To''' : [[Math|Math Object]]
 
 
 ==Requirements==

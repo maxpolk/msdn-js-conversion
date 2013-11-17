@@ -9,7 +9,7 @@ The pseudorandom number generated is from 0 (inclusive) to 1 (exclusive), that i
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Objects/Math|Math Object]]
+'''Applies To''' : [[Math|Math Object]]
 
 
 ==See Also==

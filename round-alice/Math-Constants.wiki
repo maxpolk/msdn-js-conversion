@@ -2,7 +2,7 @@ Math constants return constant values that are properties of the '''Math''' obje
 
 
 ==Math Object Constants==
-The following table lists constant values that are properties of the [[Objects/Math|Math object]].
+The following table lists constant values that are properties of the [[Math|Math object]].
 
 {| class='wikitable'
 |-
@@ -55,7 +55,7 @@ The following example illustrates how to use the '''Math.PI''' constant.
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Objects/Math|Math Object]]
+'''Applies To''' : [[Math|Math Object]]
 
 
 ==See Also==

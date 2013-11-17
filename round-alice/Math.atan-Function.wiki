@@ -7,7 +7,7 @@ The required number argument is a numeric expression for which the arctangent is
 
 The return value is the arctangent of the number argument, in radians.
 
-'''Applies To''' : [[Objects/Math|Math Object]]
+'''Applies To''' : [[Math|Math Object]]
 
 
 ==Requirements==

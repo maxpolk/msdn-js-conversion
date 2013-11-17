@@ -16,7 +16,7 @@ If the object argument is not an object, a TypeError exception is thrown.
 ==Remarks==
 The '''Object.preventExtensions''' function makes an object non-extensible, so that new named properties cannot be added to it. After an object is made non-extensible, it cannot be made extensible.
 
-For information about how to set property attributes, see [[Objects/Object/Object.defineProperty|Object.defineProperty Function]].
+For information about how to set property attributes, see [[Object/Object.defineProperty|Object.defineProperty Function]].
 
 The following related functions prevent the modification of object attributes.
 
@@ -32,12 +32,12 @@ The following related functions prevent the modification of object attributes.
 | No
 | No
 |-
-| [[Objects/Object/Object.seal|Object.seal]]
+| [[Object/Object.seal|Object.seal]]
 | Yes
 | Yes
 | No
 |-
-| [[Objects/Object/Object.freeze|Object.freeze]]
+| [[Object/Object.freeze|Object.freeze]]
 | Yes
 | Yes
 | Yes
@@ -51,17 +51,17 @@ The following functions return true if all of the conditions marked in the follo
 ! configurable is false for all properties?
 ! writable is false for all data properties?
 |-
-| [[Objects/Object/Object.isExtensible|Object.isExtensible]]
+| [[Object/Object.isExtensible|Object.isExtensible]]
 | Yes
 | No
 | No
 |-
-| [[Objects/Object/Object.isSealed|Object.isSealed]]
+| [[Object/Object.isSealed|Object.isSealed]]
 | No
 | Yes
 | No
 |-
-| [[Objects/Object/Object.isFrozen|Object.isFrozen]]
+| [[Object/Object.isFrozen|Object.isFrozen]]
 | No
 | Yes
 | Yes

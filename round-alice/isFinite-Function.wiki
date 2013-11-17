@@ -11,7 +11,7 @@ The '''isFinite''' function returns true if number is any value other than '''Na
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Objects/Global|Global Object]]
+'''Applies To''' : [[Global|Global Object]]
 
 
 ==See Also==

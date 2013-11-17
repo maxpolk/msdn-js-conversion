@@ -13,7 +13,7 @@ The descriptor of the property.
 ==Remarks==
 You can use the '''Object.getOwnPropertyDescriptor''' function to obtain a descriptor object that describes attributes of the property.
 
-The [[Objects/Object/Object.defineProperty|Object.defineProperty Function]] is used to add or modify properties.
+The [[Object/Object.defineProperty|Object.defineProperty Function]] is used to add or modify properties.
 
 
 ==Data Property Example==

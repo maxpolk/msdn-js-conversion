@@ -41,7 +41,7 @@ The following example shows how to set and then get the stack.
 ==Requirements==
 Supported in Internet Explorer 10 and in Windows Store apps.
 
-'''Applies To''' : [[Objects/Error|Error Object]]
+'''Applies To''' : [[Error|Error Object]]
 
 
 ==See Also==

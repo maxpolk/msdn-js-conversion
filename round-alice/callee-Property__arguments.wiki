@@ -21,7 +21,7 @@ The initial value of the '''callee''' property is the Function object being exec
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Objects/arguments|arguments Object]] {{!}} [[Objects/Function|Function Object]]
+'''Applies To''' : [[arguments|arguments Object]] {{!}} [[Function|Function Object]]
 
 
 ==See Also==

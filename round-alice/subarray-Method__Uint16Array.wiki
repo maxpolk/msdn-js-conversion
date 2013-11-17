@@ -1,4 +1,4 @@
-Gets a new Uint16Array view of the [[Objects/ArrayBuffer|ArrayBuffer Object]] store for this array, specifying the first and last members of the subarray.
+Gets a new Uint16Array view of the [[ArrayBuffer|ArrayBuffer Object]] store for this array, specifying the first and last members of the subarray.
 
  var newUint16Array = uint16Array.subarray(begin, end);
 

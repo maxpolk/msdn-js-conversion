@@ -51,10 +51,10 @@ The following table lists properties of the '''Date Object'''.
 ! Property
 ! Description
 |-
-| [[Objects/Date/constructor|constructor Property]]
+| [[Date/constructor|constructor Property]]
 | Specifies the function that creates an object.
 |-
-| [[Objects/Date/prototype|prototype Property]]
+| [[Date/prototype|prototype Property]]
 | Returns a reference to the prototype for a class of objects.
 |}
 
@@ -66,13 +66,13 @@ The following table lists functions of the '''Date Object'''.
 ! Functions
 ! Description
 |-
-| [[Objects/Date/Date.now|Date.now Function]]
+| [[Date/Date.now|Date.now Function]]
 | Returns the number of milliseconds between January 1, 1970, and the current date and time.
 |-
-| [[Objects/Date/Date.parse|Date.parse Function]]
+| [[Date/Date.parse|Date.parse Function]]
 | Parses a string containing a date, and returns the number of milliseconds between that date and midnight, January 1, 1970.
 |-
-| [[Objects/Date/Date.UTC|Date.UTC Function]]
+| [[Date/Date.UTC|Date.UTC Function]]
 | Returns the number of milliseconds between midnight, January 1, 1970 Universal Coordinated Time (UTC) (or GMT) and the supplied date.
 |}
 
@@ -84,154 +84,154 @@ The following table lists methods of the '''Date Object'''.
 ! Method
 ! Description
 |-
-| [[Objects/Date/getDate|getDate Method]]
+| [[Date/getDate|getDate Method]]
 | Returns the day-of-the-month value using local time.
 |-
-| [[Objects/Date/getDay|getDay Method]]
+| [[Date/getDay|getDay Method]]
 | Returns the day-of-the-week value using local time.
 |-
-| [[Objects/Date/getFullYear|getFullYear Method]]
+| [[Date/getFullYear|getFullYear Method]]
 | Returns the year value using local time.
 |-
-| [[Objects/Date/getHours|getHours Method]]
+| [[Date/getHours|getHours Method]]
 | Returns the hours value using local time.
 |-
-| [[Objects/Date/getMilliseconds|getMilliseconds Method]]
+| [[Date/getMilliseconds|getMilliseconds Method]]
 | Returns the milliseconds value using local time.
 |-
-| [[Objects/Date/getMinutes|getMinutes Method]]
+| [[Date/getMinutes|getMinutes Method]]
 | Returns the minutes value using local time.
 |-
-| [[Objects/Date/getMonth|getMonth Method]]
+| [[Date/getMonth|getMonth Method]]
 | Returns the month value using local time.
 |-
-| [[Objects/Date/getSeconds|getSeconds Method]]
+| [[Date/getSeconds|getSeconds Method]]
 | Returns seconds value using local time.
 |-
-| [[Objects/Date/getTime|getTime Method]]
+| [[Date/getTime|getTime Method]]
 | Returns the time value in a Date Object as the number of milliseconds since midnight January 1, 1970.
 |-
-| [[Objects/Date/getTimezoneOffset|getTimezoneOffset Method]]
+| [[Date/getTimezoneOffset|getTimezoneOffset Method]]
 | Returns the difference in minutes between the time on the host computer and Universal Coordinated Time (UTC).
 |-
-| [[Objects/Date/getUTCDate|getUTCDate Method]]
+| [[Date/getUTCDate|getUTCDate Method]]
 | Returns the day-of-the-month value using UTC.
 |-
-| [[Objects/Date/getUTCDay|getUTCDay Method]]
+| [[Date/getUTCDay|getUTCDay Method]]
 | Returns the day-of-the-week value using UTC.
 |-
-| [[Objects/Date/getUTCFullYear|getUTCFullYear Method]]
+| [[Date/getUTCFullYear|getUTCFullYear Method]]
 | Returns the year value using UTC.
 |-
-| [[Objects/Date/getUTCHours|getUTCHours Method]]
+| [[Date/getUTCHours|getUTCHours Method]]
 | Returns the hours value using UTC.
 |-
-| [[Objects/Date/getUTCMilliseconds|getUTCMilliseconds Method]]
+| [[Date/getUTCMilliseconds|getUTCMilliseconds Method]]
 | Returns the milliseconds value using UTC.
 |-
-| [[Objects/Date/getUTCMinutes|getUTCMinutes Method]]
+| [[Date/getUTCMinutes|getUTCMinutes Method]]
 | Returns the minutes value using UTC.
 |-
-| [[Objects/Date/getUTCMonth|getUTCMonth Method]]
+| [[Date/getUTCMonth|getUTCMonth Method]]
 | Returns the month value using UTC.
 |-
-| [[Objects/Date/getUTCSeconds|getUTCSeconds Method]]
+| [[Date/getUTCSeconds|getUTCSeconds Method]]
 | Returns the seconds value using UTC.
 |-
-| [[Objects/Date/getVarDate|getVarDate Method]]
+| [[Date/getVarDate|getVarDate Method]]
 | Returns the VT_DATE value in a Date object.
 |-
-| [[Objects/Date/getYear|getYear Method]]
+| [[Date/getYear|getYear Method]]
 | Returns the year value .
 |-
-| [[Objects/Object/hasOwnProperty|hasOwnProperty Method]]
+| [[Object/hasOwnProperty|hasOwnProperty Method]]
 | Returns a Boolean value that indicates whether an object has a property with the specified name.
 |-
-| [[Objects/Object/isPrototypeOf|isPrototypeOf Method]]
+| [[Object/isPrototypeOf|isPrototypeOf Method]]
 | Returns a Boolean value that indicates whether an object exists in another object's prototype chain.
 |-
-| [[Objects/Object/propertyIsEnumerable|propertyIsEnumerable Method]]
+| [[Object/propertyIsEnumerable|propertyIsEnumerable Method]]
 | Returns a Boolean value that indicates whether a specified property is part of an object and whether it is enumerable.
 |-
-| [[Objects/Date/setDate|setDate Method]]
+| [[Date/setDate|setDate Method]]
 | Sets the numeric day of the month using local time.
 |-
-| [[Objects/Date/setFullYear|setFullYear Method]]
+| [[Date/setFullYear|setFullYear Method]]
 | Sets the year value using local time.
 |-
-| [[Objects/Date/setHours|setHours Method]]
+| [[Date/setHours|setHours Method]]
 | Sets the hours value using local time.
 |-
-| [[Objects/Date/setMilliseconds|setMilliseconds Method]]
+| [[Date/setMilliseconds|setMilliseconds Method]]
 | Sets the milliseconds value using local time.
 |-
-| [[Objects/Date/setMinutes|setMinutes Method]]
+| [[Date/setMinutes|setMinutes Method]]
 | Sets the minutes value using local time.
 |-
-| [[Objects/Date/setMonth|setMonth Method]]
+| [[Date/setMonth|setMonth Method]]
 | Sets the month value using local time.
 |-
-| [[Objects/Date/setSeconds|setSeconds Method]]
+| [[Date/setSeconds|setSeconds Method]]
 | Sets the seconds value using local time.
 |-
-| [[Objects/Date/setTime|setTime Method]]
+| [[Date/setTime|setTime Method]]
 | Sets the date and time value in the Date object.
 |-
-| [[Objects/Date/setUTCDate|setUTCDate Method]]
+| [[Date/setUTCDate|setUTCDate Method]]
 | Sets the numeric day of the month using UTC.
 |-
-| [[Objects/Date/setUTCFullYear|setUTCFullYear Method]]
+| [[Date/setUTCFullYear|setUTCFullYear Method]]
 | Sets the year value using UTC.
 |-
-| [[Objects/Date/setUTCHours|setUTCHours Method]]
+| [[Date/setUTCHours|setUTCHours Method]]
 | Sets the hours value using UTC.
 |-
-| [[Objects/Date/setUTCMilliseconds|setUTCMilliseconds Method]]
+| [[Date/setUTCMilliseconds|setUTCMilliseconds Method]]
 | Sets the milliseconds value using UTC.
 |-
-| [[Objects/Date/setUTCMinutes|setUTCMinutes Method]]
+| [[Date/setUTCMinutes|setUTCMinutes Method]]
 | Sets the minutes value using UTC.
 |-
-| [[Objects/Date/setUTCMonth|setUTCMonth Method]]
+| [[Date/setUTCMonth|setUTCMonth Method]]
 | Sets the month value using UTC.
 |-
-| [[Objects/Date/setUTCSeconds|setUTCSeconds Method]]
+| [[Date/setUTCSeconds|setUTCSeconds Method]]
 | Sets the seconds value using UTC.
 |-
-| [[Objects/Date/setYear|setYear Method]]
+| [[Date/setYear|setYear Method]]
 | Sets the year value using local time.
 |-
-| [[Objects/Date/toDateString|toDateString Method]]
+| [[Date/toDateString|toDateString Method]]
 | Returns a date as a string value.
 |-
-| [[Objects/Date/toGMTString|toGMTString Method]]
+| [[Date/toGMTString|toGMTString Method]]
 | Returns a date converted to a string using Greenwich Mean Time (GMT).
 |-
-| [[Objects/Date/toISOString|toISOString Method]]
+| [[Date/toISOString|toISOString Method]]
 | Returns a date as a string value in ISO format.
 |-
-| [[Objects/Date/toJSON|toJSON Method]]
+| [[Date/toJSON|toJSON Method]]
 | Used to transform data of an object type before the JSON serialization.
 |-
-| [[Objects/Date/toLocaleDateString|toLocaleDateString Method]]
+| [[Date/toLocaleDateString|toLocaleDateString Method]]
 | Returns a date as a string value appropriate to the host environment's current locale.
 |-
-| [[Objects/Object/toLocaleString|toLocaleString Method]]
+| [[Object/toLocaleString|toLocaleString Method]]
 | Returns an object converted to a string using the current locale.
 |-
-| [[Objects/Date/toLocaleTimeString|toLocaleTimeString Method]]
+| [[Date/toLocaleTimeString|toLocaleTimeString Method]]
 | Returns a time as a string value appropriate to the host environment's current locale.
 |-
-| [[Objects/Date/toString|toString Method]]
+| [[Date/toString|toString Method]]
 | Returns a string representation of an object.
 |-
-| [[Objects/Date/toTimeString|toTimeString Method]]
+| [[Date/toTimeString|toTimeString Method]]
 | Returns a time as a string value.
 |-
-| [[Objects/Date/toUTCString|toUTCString Method]]
+| [[Date/toUTCString|toUTCString Method]]
 | Returns a date converted to a string using UTC.
 |-
-| [[Objects/Date/valueOf|valueOf Method]]
+| [[Date/valueOf|valueOf Method]]
 | Returns the primitive value of the specified object.
 |}
 
