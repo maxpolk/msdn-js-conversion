@@ -27,7 +27,7 @@ DEFAULT_PARAMS = {'format': 'json'}
 
 # Usage for this program
 usage = """
-Usage:    wpd command <arguments>
+Usage:    modified-wpd command <arguments>
 Commands:
     ls <prefix>
         Lists file beginning with optional prefix
