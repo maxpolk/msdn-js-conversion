@@ -20,5 +20,5 @@ for file in *.wiki; do
     #     [[Objects/Object/toString|toString method]]
     # Do the same for " Function", " Method", " Property"
     #
-    sed -i -r -e "s/(\[\[.*) (Function|Method|Property)([]\|].*$)/\1\3/"
+    sed -i -r -e "s/(\[\[[^]\|]*) (Function|Method|Property)([]\|].*$)/\1\3/" $file
 done
