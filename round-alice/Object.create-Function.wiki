@@ -4,7 +4,7 @@ Creates an object that has the specified prototype, and that optionally contains
 
 ==Parameters==
 ; prototype: Required. The object to use as a prototype. May be null.
-; descriptors: Optional. A JavaScript object that contains one or more property descriptors.A data property is a property that can get and set a value. A data property descriptor contains a value attribute, plus writable , enumerable , and configurable attributes. If the last three attributes are not specified, they default to false. An accessor property calls a user-provided function every time the value is retrieved or set. An accessor property descriptor contains a set attribute, a get attribute, or both. For more information, see [[Objects/Object/Object.defineProperty Function|Object.defineProperty Function]].
+; descriptors: Optional. A JavaScript object that contains one or more property descriptors.A data property is a property that can get and set a value. A data property descriptor contains a value attribute, plus writable , enumerable , and configurable attributes. If the last three attributes are not specified, they default to false. An accessor property calls a user-provided function every time the value is retrieved or set. An accessor property descriptor contains a set attribute, a get attribute, or both. For more information, see [[Objects/Object/Object.defineProperty|Object.defineProperty Function]].
 
 ==Return Value==
 A new object that has the specified internal prototype and contains the specified properties, if any.
@@ -43,7 +43,7 @@ The following example creates an object using a null prototype and adds two enum
  // large
  // round
  // null
-The following example creates an object that has the same internal prototype as the Object object. You can see that it has the same prototype as an object created by using an object literal. The [[Objects/Object/Object.getPrototypeOf Function|Object.getPrototypeOf]] function gets the prototype of the original object. To get the object's property descriptor, you can use [[Objects/Object/Object.getOwnPropertyDescriptor Function|Object.getOwnPropertyDescriptor Function]].
+The following example creates an object that has the same internal prototype as the Object object. You can see that it has the same prototype as an object created by using an object literal. The [[Objects/Object/Object.getPrototypeOf|Object.getPrototypeOf]] function gets the prototype of the original object. To get the object's property descriptor, you can use [[Objects/Object/Object.getOwnPropertyDescriptor Function|Object.getOwnPropertyDescriptor Function]].
 
  var firstLine = { x: undefined, y: undefined };
  

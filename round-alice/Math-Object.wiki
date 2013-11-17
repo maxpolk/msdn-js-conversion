@@ -55,58 +55,58 @@ The following table lists the functions of the '''Math''' object.
 ! Function
 ! Description
 |-
-| [[Objects/Math/Math.abs Function|Math.abs Function]]
+| [[Objects/Math/Math.abs|Math.abs Function]]
 | Returns the absolute value of a number.
 |-
-| [[Objects/Math/Math.acos Function|Math.acos Function]]
+| [[Objects/Math/Math.acos|Math.acos Function]]
 | Returns the arccosine of a number.
 |-
-| [[Objects/Math/Math.asin Function|Math.asin Function]]
+| [[Objects/Math/Math.asin|Math.asin Function]]
 | Returns the arcsine of a number.
 |-
-| [[Objects/Math/Math.atan Function|Math.atan Function]]
+| [[Objects/Math/Math.atan|Math.atan Function]]
 | Returns the arctangent of a number.
 |-
-| [[Objects/Math/Math.atan2 Function|Math.atan2 Function]]
+| [[Objects/Math/Math.atan2|Math.atan2 Function]]
 | Returns the angle (in radians) from the X axis to a point represented by the supplied y and x coordinates.
 |-
-| [[Objects/Math/Math.ceil Function|Math.ceil Function]]
+| [[Objects/Math/Math.ceil|Math.ceil Function]]
 | Returns the smallest integer that is greater than or equal to the supplied numeric expression.
 |-
-| [[Objects/Math/Math.cos Function|Math.cos Function]]
+| [[Objects/Math/Math.cos|Math.cos Function]]
 | Returns the cosine of a number.
 |-
-| [[Objects/Math/Math.exp Function|Math.exp Function]]
+| [[Objects/Math/Math.exp|Math.exp Function]]
 | Returns e (the base of natural logarithms) raised to a power.
 |-
-| [[Objects/Math/Math.floor Function|Math.floor Function]]
+| [[Objects/Math/Math.floor|Math.floor Function]]
 | Returns the greatest integer that is less than or equal to the supplied numeric expression.
 |-
-| [[Objects/Math/Math.log Function|Math.log Function]]
+| [[Objects/Math/Math.log|Math.log Function]]
 | Returns the natural logarithm of a number.
 |-
-| [[Objects/Math/Math.max Function|Math.max Function]]
+| [[Objects/Math/Math.max|Math.max Function]]
 | Returns the greater of two supplied numeric expressions.
 |-
-| [[Objects/Math/Math.min Function|Math.min Function]]
+| [[Objects/Math/Math.min|Math.min Function]]
 | Returns the lesser of two supplied numbers.
 |-
-| [[Objects/Math/Math.pow Function|Math.pow Function]]
+| [[Objects/Math/Math.pow|Math.pow Function]]
 | Returns the value of a base expression raised to a specified power.
 |-
-| [[Objects/Math/Math.random Function|Math.random Function]]
+| [[Objects/Math/Math.random|Math.random Function]]
 | Returns a pseudorandom number between 0 and 1.
 |-
-| [[Objects/Math/Math.round Function|Math.round Function]]
+| [[Objects/Math/Math.round|Math.round Function]]
 | Returns a specified numeric expression rounded to the nearest integer.
 |-
-| [[Objects/Math/Math.sin Function|Math.sin Function]]
+| [[Objects/Math/Math.sin|Math.sin Function]]
 | Returns the sine of a number.
 |-
-| [[Objects/Math/Math.sqrt Function|Math.sqrt Function]]
+| [[Objects/Math/Math.sqrt|Math.sqrt Function]]
 | Returns the square root of a number.
 |-
-| [[Objects/Math/Math.tan Function|Math.tan Function]]
+| [[Objects/Math/Math.tan|Math.tan Function]]
 | Returns the tangent of a number.
 |}
 

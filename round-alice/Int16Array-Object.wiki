@@ -30,16 +30,16 @@ The following table lists the constants of the '''Int16Array''' object.
 ! Property
 ! Description
 |-
-| [[Objects/Int16Array/buffer Property|buffer Property]]
+| [[Objects/Int16Array/buffer|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this array.
 |-
-| [[Objects/Int16Array/byteOffset Property|byteLength Property]]
+| [[Objects/Int16Array/byteOffset|byteLength Property]]
 | Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/Int8Array/byteOffset Property|byteOffset Property]]
+| [[Objects/Int8Array/byteOffset|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/Float32Array/length Property|length Property]]
+| [[Objects/Float32Array/length|length Property]]
 | The length of the array.
 |}
 
@@ -51,13 +51,13 @@ The following table lists the methods of the '''Int16Array''' object.
 ! Method
 ! Description
 |-
-| [[Objects/Int16Array/get Method|get Method]]
+| [[Objects/Int16Array/get|get Method]]
 | Omittable. Gets the element at the specified index.
 |-
-| [[Objects/Int16Array/set Method|set Method (Int16Array)]]
+| [[Objects/Int16Array/set|set Method (Int16Array)]]
 | Sets a value or an array of values.
 |-
-| [[Objects/Int16Array/subarray Method|subarray Method (Int16Array)]]
+| [[Objects/Int16Array/subarray|subarray Method (Int16Array)]]
 | Gets a new Int16Array view of the ArrayBuffer store for this array.
 |}
 

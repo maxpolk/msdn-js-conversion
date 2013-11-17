@@ -16,7 +16,7 @@ The following table lists the properties of the '''ArrayBuffer''' object.
 ! Property
 ! Description
 |-
-| [[Objects/ArrayBuffer/byteLength Property|byteLength Property]]
+| [[Objects/ArrayBuffer/byteLength|byteLength Property]]
 | Read-only. The length of the ArrayBuffer (in bytes).
 |}
 

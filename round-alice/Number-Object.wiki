@@ -26,10 +26,10 @@ The following table lists the properties of the '''Number''' object.
 ! Property
 ! Description
 |-
-| [[Objects/Object/constructor Property|constructor Property]]
+| [[Objects/Object/constructor|constructor Property]]
 | Specifies the function that creates an object.
 |-
-| [[Objects/Object/prototype Property|prototype Property]]
+| [[Objects/Object/prototype|prototype Property]]
 | Returns a reference to the prototype for a class of objects.
 |}
 
@@ -41,31 +41,31 @@ The following table lists the methods of the '''Number''' object.
 ! Method
 ! Description
 |-
-| [[Objects/Object/hasOwnProperty Method|hasOwnProperty Method]]
+| [[Objects/Object/hasOwnProperty|hasOwnProperty Method]]
 | Returns a Boolean value that indicates whether an object has a property with the specified name.
 |-
-| [[Objects/Object/isPrototypeOf Method|isPrototypeOf Method]]
+| [[Objects/Object/isPrototypeOf|isPrototypeOf Method]]
 | Returns a Boolean value that indicates whether an object exists in another object's prototype hierarchy.
 |-
-| [[Objects/Object/propertyIsEnumerable Method|propertyIsEnumerable Method]]
+| [[Objects/Object/propertyIsEnumerable|propertyIsEnumerable Method]]
 | Returns a Boolean value that indicates whether a specified property is part of an object and whether it is enumerable.
 |-
-| [[Objects/Number/toExponential Method|toExponential method]]
+| [[Objects/Number/toExponential|toExponential method]]
 | Returns a string that contains a number represented in exponential notation.
 |-
-| [[Objects/Number/toFixed Method|toFixed method]]
+| [[Objects/Number/toFixed|toFixed method]]
 | Returns a string that represents a number in fixed-point notation.
 |-
-| [[Objects/Object/toLocaleString Method|toLocaleString Method]]
+| [[Objects/Object/toLocaleString|toLocaleString Method]]
 | Returns an object converted to a string based on the current locale.
 |-
-| [[Objects/Number/toPrecision Method|toPrecision method]]
+| [[Objects/Number/toPrecision|toPrecision method]]
 | Returns a string that contains a number that is represented in either exponential or fixed-point notation and that has a specified number of digits.
 |-
-| [[Objects/Object/toString Method|toString Method]]
+| [[Objects/Object/toString|toString Method]]
 | Returns a string representation of an object.
 |-
-| [[Objects/Object/valueOf Method|valueOf Method]]
+| [[Objects/Object/valueOf|valueOf Method]]
 | Returns the primitive value of the specified object.
 |}
 

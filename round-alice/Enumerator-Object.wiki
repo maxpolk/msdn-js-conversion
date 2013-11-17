@@ -57,7 +57,7 @@ The '''Enumerator''' object has no properties.
 
 
 ==Methods==
-[[Objects/Enumerator/atEnd Method|moveNext Method]]
+[[Objects/Enumerator/atEnd|moveNext Method]]
 
 
 ==Requirements==

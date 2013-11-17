@@ -38,7 +38,7 @@ In either case, you call the function with a line of code similar to the followi
 
 
 ==Methods==
-[[Objects/Function/apply Method|valueOf Method]]
+[[Objects/Function/apply|valueOf Method]]
 
 
 ==Requirements==

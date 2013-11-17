@@ -61,13 +61,13 @@ The following table lists the properties of the '''String''' object.
 ! Property
 ! Description
 |-
-| [[Objects/String/constructor Property|constructor Property]]
+| [[Objects/String/constructor|constructor Property]]
 | Specifies the function that creates an object.
 |-
-| [[Objects/String/length Property|length Property (String)]]
+| [[Objects/String/length|length Property (String)]]
 | Returns the length of a String object.
 |-
-| [[Objects/String/prototype Property|prototype Property]]
+| [[Objects/String/prototype|prototype Property]]
 | Returns a reference to the prototype for a class of objects.
 |}
 
@@ -79,7 +79,7 @@ The following table lists the functions of the '''String''' object.
 ! Function
 ! Description
 |-
-| [[Objects/String/String.fromCharCode Function|String.fromCharCode Function]]
+| [[Objects/String/String.fromCharCode|String.fromCharCode Function]]
 | Returns a string from a number of Unicode character values.
 |}
 
@@ -103,13 +103,13 @@ The following table lists the methods of the '''String''' object.
 | [[Objects/String/HTML Tag Methods|bold Method]]
 | Places HTML &lt;B&gt; tags around text.
 |-
-| [[Objects/String/charAt Method|charAt Method]]
+| [[Objects/String/charAt|charAt Method]]
 | Returns the character at the specified index.
 |-
-| [[Objects/String/charCodeAt Method|charCodeAt Method]]
+| [[Objects/String/charCodeAt|charCodeAt Method]]
 | Returns the Unicode encoding of the specified character.
 |-
-| [[Objects/String/concat Method|concat Method (String)]]
+| [[Objects/String/concat|concat Method (String)]]
 | Returns a string that contains the concatenation of two supplied strings.
 |-
 | [[Objects/String/HTML Tag Methods|fixed Method]]
@@ -121,46 +121,46 @@ The following table lists the methods of the '''String''' object.
 | [[Objects/String/HTML Tag Methods|fontsize Method]]
 | Places HTML &lt;FONT&gt; tags with a SIZE attribute around text.
 |-
-| [[Objects/Object/hasOwnProperty Method|hasOwnProperty Method]]
+| [[Objects/Object/hasOwnProperty|hasOwnProperty Method]]
 | Returns a Boolean value that indicates whether an object has a property with the specified name.
 |-
-| [[Objects/String/indexOf Method|indexOf Method (String)]]
+| [[Objects/String/indexOf|indexOf Method (String)]]
 | Returns the character position where the first occurrence of a substring occurs within a string.
 |-
-| [[Objects/Object/isPrototypeOf Method|isPrototypeOf Method]]
+| [[Objects/Object/isPrototypeOf|isPrototypeOf Method]]
 | Returns a Boolean value that indicates whether an object exists in another object's prototype chain.
 |-
 | [[Objects/String/HTML Tag Methods|italics Method]]
 | Places HTML &lt;I&gt; tags around text.
 |-
-| [[Objects/String/lastIndexOf Method|lastIndexOf Method (String)]]
+| [[Objects/String/lastIndexOf|lastIndexOf Method (String)]]
 | Returns the last occurrence of a substring within a string.
 |-
 | [[Objects/String/HTML Tag Methods|link Method]]
 | Places an HTML anchor that has an HREF attribute around text.
 |-
-| [[Objects/String/localeCompare Method|localeCompare Method]]
+| [[Objects/String/localeCompare|localeCompare Method]]
 | Returns a value that indicates whether two strings are equivalent in the current locale.
 |-
-| [[Objects/String/match Method|match Method]]
+| [[Objects/String/match|match Method]]
 | Searches a string by using a supplied '''Regular Expression''' object and returns the results as an array.
 |-
-| [[Objects/Object/propertyIsEnumerable Method|propertyIsEnumerable Method]]
+| [[Objects/Object/propertyIsEnumerable|propertyIsEnumerable Method]]
 | Returns a Boolean value that indicates whether a specified property is part of an object and whether it is enumerable.
 |-
-| [[Objects/String/replace Method|replace Method]]
+| [[Objects/String/replace|replace Method]]
 | Uses a regular expression to replace text in a string and returns the result.
 |-
-| [[Objects/String/search Method|search Method]]
+| [[Objects/String/search|search Method]]
 | Returns the position of the first substring match in a regular expression search.
 |-
-| [[Objects/String/slice Method|slice Method (String)]]
+| [[Objects/String/slice|slice Method (String)]]
 | Returns a section of a string.
 |-
 | [[Objects/String/HTML Tag Methods|small Method]]
 | Places HTML &lt;SMALL&gt; tags around text.
 |-
-| [[Objects/String/split Method|split Method]]
+| [[Objects/String/split|split Method]]
 | Returns the array of strings that results when a string is separated into substrings.
 |-
 | [[Objects/String/HTML Tag Methods|strike Method]]
@@ -169,37 +169,37 @@ The following table lists the methods of the '''String''' object.
 | [[Objects/String/HTML Tag Methods|sub Method]]
 | Places HTML &lt;SUB&gt; tags around text.
 |-
-| [[Objects/String/substr Method|substr Method]]
+| [[Objects/String/substr|substr Method]]
 | Returns a substring beginning at a specified location and having a specified length.
 |-
-| [[Objects/String/substring Method|substring Method]]
+| [[Objects/String/substring|substring Method]]
 | Returns the substring at a specified location within a String object.
 |-
 | [[Objects/String/HTML Tag Methods|sup Method]]
 | Places HTML &lt;SUP&gt; tags around text.
 |-
-| [[Objects/String/toLocaleLowerCase Method|toLocaleLowerCase Method]]
+| [[Objects/String/toLocaleLowerCase|toLocaleLowerCase Method]]
 | Returns a string in which all alphabetic characters are converted to lowercase, taking into account the host environment's current locale.
 |-
-| [[Objects/Object/toLocaleString Method|toLocaleString Method]]
+| [[Objects/Object/toLocaleString|toLocaleString Method]]
 | Returns an object converted to a string, using the current locale.
 |-
-| [[Objects/String/toLocaleUpperCase Method|toLocaleUpperCase Method]]
+| [[Objects/String/toLocaleUpperCase|toLocaleUpperCase Method]]
 | Returns a string in which all alphabetic characters are converted to uppercase, taking into account the host environment's current locale.
 |-
-| [[Objects/String/toLowerCase Method|toLowerCase Method]]
+| [[Objects/String/toLowerCase|toLowerCase Method]]
 | Returns a string in which all alphabetic characters are converted to lowercase.
 |-
-| [[Objects/String/toString Method|toString Method]]
+| [[Objects/String/toString|toString Method]]
 | Returns the string.
 |-
-| [[Objects/String/toUpperCase Method|toUpperCase Method]]
+| [[Objects/String/toUpperCase|toUpperCase Method]]
 | Returns a string in which all alphabetic characters are converted to uppercase.
 |-
-| [[Objects/String/trim Method|trim Method]]
+| [[Objects/String/trim|trim Method]]
 | Returns a string with leading and trailing white space and line terminator characters removed.
 |-
-| [[Objects/String/valueOf Method|valueOf Method]]
+| [[Objects/String/valueOf|valueOf Method]]
 | Returns the string.
 |}
 

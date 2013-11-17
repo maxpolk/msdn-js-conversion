@@ -35,7 +35,7 @@ The return value of the callback function is provided as the previousValue argum
 
 The callback function is not called for missing elements of the array.
 
-'''Note''' -- The [[Objects/Array/reduceRight Method|reduceRight Method (Array)]] processes the elements in descending index order.
+'''Note''' -- The [[Objects/Array/reduceRight|reduceRight Method (Array)]] processes the elements in descending index order.
 
 The syntax of the callback function is as follows:
 

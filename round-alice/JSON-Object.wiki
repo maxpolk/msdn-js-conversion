@@ -19,9 +19,9 @@ In the previous example, <code>!this.JSON</code> evaluates to false in Internet 
 
 
 ==Functions==
-[[Objects/JSON/JSON.parse Function|JSON.parse Function]]
+[[Objects/JSON/JSON.parse|JSON.parse Function]]
 
-[[Objects/JSON/JSON.stringify Function|JSON.stringify Function]]
+[[Objects/JSON/JSON.stringify|JSON.stringify Function]]
 
 
 ==Requirements==

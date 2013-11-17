@@ -21,7 +21,7 @@ If the value supplied for the object argument is not the name of an object, a Ty
 
 
 ==Remarks==
-The '''getOwnPropertyNames''' method returns the names of both enumerable and non-enumerable properties and methods. To return only the names of enumerable properties and methods, you can use the [[Objects/Object/Object.keys Function|Object.keys Function]].
+The '''getOwnPropertyNames''' method returns the names of both enumerable and non-enumerable properties and methods. To return only the names of enumerable properties and methods, you can use the [[Objects/Object/Object.keys|Object.keys Function]].
 
 
 ==Example==

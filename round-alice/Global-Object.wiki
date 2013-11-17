@@ -14,7 +14,7 @@ Supported in the following document modes: Quirks, Internet Explorer 6 standards
 
 
 ==Functions==
-[[Objects/Global/decodeURI Function|decodeURI Function]] {{!}} [[Objects/Global/decodeURIComponent Function|unescape Function]]
+[[Objects/Global/decodeURI|decodeURI Function]] {{!}} [[Objects/Global/decodeURIComponent Function|unescape Function]]
 
 
 ==See Also==

@@ -24,10 +24,10 @@ The following table lists properties of the '''Object Object'''.
 ! Property
 ! Description
 |-
-| [[Objects/Object/constructor Property|constructor Property]]
+| [[Objects/Object/constructor|constructor Property]]
 | Specifies the function that creates an object.
 |-
-| [[Objects/Object/prototype Property|prototype Property]]
+| [[Objects/Object/prototype|prototype Property]]
 | Returns a reference to the prototype for a class of objects.
 |}
 
@@ -39,43 +39,43 @@ The following table lists functions of the '''Object Object'''.
 ! Function
 ! Description
 |-
-| [[Objects/Object/Object.create Function|Object.create Function]]
+| [[Objects/Object/Object.create|Object.create Function]]
 | Creates an object that has a specified prototype, and that optionally contains specified properties.
 |-
-| [[Objects/Object/Object.defineProperties Function|Object.defineProperties Function]]
+| [[Objects/Object/Object.defineProperties|Object.defineProperties Function]]
 | Adds one or more properties to an object, and/or modifies attributes of existing properties.
 |-
-| [[Objects/Object/Object.defineProperty Function|Object.defineProperty Function]]
+| [[Objects/Object/Object.defineProperty|Object.defineProperty Function]]
 | Adds a property to an object, or modifies attributes of an existing property.
 |-
-| [[Objects/Object/Object.freeze Function|Object.freeze Function]]
+| [[Objects/Object/Object.freeze|Object.freeze Function]]
 | Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
 |-
-| [[Objects/Object/Object.getOwnPropertyDescriptor Function|Object.getOwnPropertyDescriptor Function]]
+| [[Objects/Object/Object.getOwnPropertyDescriptor|Object.getOwnPropertyDescriptor Function]]
 | Returns the definition of a data property or an accessor property.
 |-
-| [[Objects/Object/Object.getOwnPropertyNames Function|Object.getOwnPropertyNames Function]]
+| [[Objects/Object/Object.getOwnPropertyNames|Object.getOwnPropertyNames Function]]
 | Returns the names of the properties and methods of an object.
 |-
-| [[Objects/Object/Object.getPrototypeOf Function|Object.getPrototypeOf Function]]
+| [[Objects/Object/Object.getPrototypeOf|Object.getPrototypeOf Function]]
 | Returns the prototype of an object.
 |-
-| [[Objects/Object/Object.isExtensible Function|Object.isExtensible Function]]
+| [[Objects/Object/Object.isExtensible|Object.isExtensible Function]]
 | Returns a value that indicates whether new properties can be added to an object.
 |-
-| [[Objects/Object/Object.isFrozen Function|Object.isFrozen Function]]
+| [[Objects/Object/Object.isFrozen|Object.isFrozen Function]]
 | Returns true if existing property attributes and values cannot be modified in an object and new properties cannot be added to the object.
 |-
-| [[Objects/Object/Object.isSealed Function|Object.isSealed Function]]
+| [[Objects/Object/Object.isSealed|Object.isSealed Function]]
 | Returns true if existing property attributes cannot be modified in an object and new properties cannot be added to the object.
 |-
-| [[Objects/Object/Object.keys Function|Object.keys Function]]
+| [[Objects/Object/Object.keys|Object.keys Function]]
 | Returns the names of the enumerable properties and methods of an object.
 |-
-| [[Objects/Object/Object.preventExtensions Function|Object.preventExtensions Function]]
+| [[Objects/Object/Object.preventExtensions|Object.preventExtensions Function]]
 | Prevents the addition of new properties to an object.
 |-
-| [[Objects/Object/Object.seal Function|Object.seal Function]]
+| [[Objects/Object/Object.seal|Object.seal Function]]
 | Prevents the modification of attributes of existing properties, and prevents the addition of new properties.
 |}
 
@@ -87,22 +87,22 @@ The following table lists methods of the '''Object Object'''.
 ! Method
 ! Description
 |-
-| [[Objects/Object/hasOwnProperty Method|hasOwnProperty method]]
+| [[Objects/Object/hasOwnProperty|hasOwnProperty method]]
 | Returns a Boolean value that indicates whether an object has a property with the specified name.
 |-
-| [[Objects/Object/isPrototypeOf Method|isPrototypeOf method]]
+| [[Objects/Object/isPrototypeOf|isPrototypeOf method]]
 | Returns a Boolean value that indicates whether an object exists in another object's prototype hierarchy.
 |-
-| [[Objects/Object/propertyIsEnumerable Method|propertyIsEnumerable method]]
+| [[Objects/Object/propertyIsEnumerable|propertyIsEnumerable method]]
 | Returns a Boolean value that indicates whether a specified property is part of an object and whether it is enumerable.
 |-
-| [[Objects/Object/toLocaleString Method|toLocaleString method]]
+| [[Objects/Object/toLocaleString|toLocaleString method]]
 | Returns an object converted to a string based on the current locale.
 |-
-| [[Objects/Object/toString Method|toString method]]
+| [[Objects/Object/toString|toString method]]
 | Returns a string representation of an object.
 |-
-| [[Objects/Object/valueOf Method|valueOf method]]
+| [[Objects/Object/valueOf|valueOf method]]
 | Returns the primitive value of the specified object.
 |}
 

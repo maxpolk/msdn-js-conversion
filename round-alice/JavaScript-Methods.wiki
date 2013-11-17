@@ -12,11 +12,11 @@ The following table lists JavaScript methods.
 | Places an HTML anchor that has a NAME attribute around text.
 | '''String'''
 |-
-| [[Objects/Function/apply Method|apply method]]
+| [[Objects/Function/apply|apply method]]
 | Applies a method of an object, substituting another object for the current object.
 | '''Function'''
 |-
-| [[Objects/Enumerator/atEnd Method|atEnd method]]
+| [[Objects/Enumerator/atEnd|atEnd method]]
 | Returns a Boolean value indicating if the enumerator is at the end of the collection.
 | '''Enumerator'''
 |-
@@ -24,7 +24,7 @@ The following table lists JavaScript methods.
 | Places HTML &lt;BIG&gt; tags around text.
 | '''String'''
 |-
-| [[Objects/Function/bind Method|bind method]]
+| [[Objects/Function/bind|bind method]]
 | Creates a function that is associated with a specified object, and that can have specific initial parameters.
 | '''Function'''
 |-
@@ -36,43 +36,43 @@ The following table lists JavaScript methods.
 | Places HTML &lt;B&gt; tags around text.
 | '''String'''
 |-
-| [[Objects/Function/call Method|call method]]
+| [[Objects/Function/call|call method]]
 | Calls a method of an object, substituting another object for the current object.
 | '''Function'''
 |-
-| [[Objects/String/charAt Method|charAt method]]
+| [[Objects/String/charAt|charAt method]]
 | Returns the character at the specified index.
 | '''String'''
 |-
-| [[Objects/String/charCodeAt Method|charCodeAt method]]
+| [[Objects/String/charCodeAt|charCodeAt method]]
 | Returns the Unicode encoding of the specified character.
 | '''String'''
 |-
-| [[Objects/Regular Expression/compile Method|compile method]]
+| [[Objects/Regular Expression/compile|compile method]]
 | Compiles a regular expression into an internal format.
 | '''Regular Expression'''
 |-
-| [[Objects/Array/concat Method|concat method (Array)]]
+| [[Objects/Array/concat|concat method (Array)]]
 | Returns a new array consisting of a combination of two arrays.
 | '''Array'''
 |-
-| [[Objects/String/concat Method|concat method (String)]]
+| [[Objects/String/concat|concat method (String)]]
 | Returns a String object containing the concatenation of two supplied strings.
 | '''String'''
 |-
-| [[Objects/VBArray/dimensions Method|dimensions method]]
+| [[Objects/VBArray/dimensions|dimensions method]]
 | Returns the number of dimensions in a VBArray.
 | '''VBArray'''
 |-
-| [[Objects/Array/every Method|every method]]
+| [[Objects/Array/every|every method]]
 | Checks whether a defined callback function returns true for all elements in an array.
 | '''Array'''
 |-
-| [[Objects/Regular Expression/exec Method|exec method]]
+| [[Objects/Regular Expression/exec|exec method]]
 | Executes a search for a match in a specified string.
 | '''Regular Expression'''
 |-
-| [[Objects/Array/filter Method|filter method]]
+| [[Objects/Array/filter|filter method]]
 | Calls a defined callback function on each element of an array, and returns an array of values for which the callback function returns true.
 | '''Array'''
 |-
@@ -88,107 +88,107 @@ The following table lists JavaScript methods.
 | Places HTML &lt;FONT&gt; tags with a SIZE attribute around text.
 | '''String'''
 |-
-| [[Objects/Array/forEach Method|forEach method]]
+| [[Objects/Array/forEach|forEach method]]
 | Calls a defined callback function for each element in an array.
 | '''Array'''
 |-
-| [[Objects/Date/getDate Method|getDate method]]
+| [[Objects/Date/getDate|getDate method]]
 | Returns the day-of-the-month value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/getDay Method|getDay method]]
+| [[Objects/Date/getDay|getDay method]]
 | Returns the day-of-the-week value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/getFullYear Method|getFullYear method]]
+| [[Objects/Date/getFullYear|getFullYear method]]
 | Returns the year value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/getHours Method|getHours method]]
+| [[Objects/Date/getHours|getHours method]]
 | Returns the hours value using local time.
 | '''Date'''
 |-
-| [[Objects/VBArray/getItem Method|getItem method]]
+| [[Objects/VBArray/getItem|getItem method]]
 | Returns the item at the specified location.
 | '''VBArray'''
 |-
-| [[Objects/Date/getMilliseconds Method|getMilliseconds method]]
+| [[Objects/Date/getMilliseconds|getMilliseconds method]]
 | Returns the milliseconds value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/getMinutes Method|getMinutes method]]
+| [[Objects/Date/getMinutes|getMinutes method]]
 | Returns the minutes value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/getMonth Method|getMonth method]]
+| [[Objects/Date/getMonth|getMonth method]]
 | Returns the month value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/getSeconds Method|getSeconds method]]
+| [[Objects/Date/getSeconds|getSeconds method]]
 | Returns seconds value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/getTime Method|getTime method]]
+| [[Objects/Date/getTime|getTime method]]
 | Returns the time value in a Date Object as the number of milliseconds since midnight January 1, 1970.
 | '''Date'''
 |-
-| [[Objects/Date/getTimezoneOffset Method|getTimezoneOffset method]]
+| [[Objects/Date/getTimezoneOffset|getTimezoneOffset method]]
 | Returns the difference in minutes between the time on the host computer and Universal Coordinated Time (UTC).
 | '''Date'''
 |-
-| [[Objects/Date/getUTCDate Method|getUTCDate method]]
+| [[Objects/Date/getUTCDate|getUTCDate method]]
 | Returns the day-of-the-month value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/getUTCDay Method|getUTCDay method]]
+| [[Objects/Date/getUTCDay|getUTCDay method]]
 | Returns the day-of-the-week value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/getUTCFullYear Method|getUTCFullYear method]]
+| [[Objects/Date/getUTCFullYear|getUTCFullYear method]]
 | Returns the year value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/getUTCHours Method|getUTCHours method]]
+| [[Objects/Date/getUTCHours|getUTCHours method]]
 | Returns the hours value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/getUTCMilliseconds Method|getUTCMilliseconds method]]
+| [[Objects/Date/getUTCMilliseconds|getUTCMilliseconds method]]
 | Returns the milliseconds value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/getUTCMinutes Method|getUTCMinutes method]]
+| [[Objects/Date/getUTCMinutes|getUTCMinutes method]]
 | Returns the minutes value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/getUTCMonth Method|getUTCMonth method]]
+| [[Objects/Date/getUTCMonth|getUTCMonth method]]
 | Returns the month value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/getUTCSeconds Method|getUTCSeconds method]]
+| [[Objects/Date/getUTCSeconds|getUTCSeconds method]]
 | Returns the seconds value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/getVarDate Method|getVarDate method]]
+| [[Objects/Date/getVarDate|getVarDate method]]
 | Returns the VT_DATE value in a Date object.
 | '''Date'''
 |-
-| [[Objects/Date/getYear Method|getYear method]]
+| [[Objects/Date/getYear|getYear method]]
 | Returns the year value .
 | '''Date'''
 |-
-| [[Objects/Object/hasOwnProperty Method|hasOwnProperty method]]
+| [[Objects/Object/hasOwnProperty|hasOwnProperty method]]
 | Returns a Boolean value that indicates whether an object has a property with the specified name.
 | Multiple
 |-
-| [[Objects/Array/indexOf Method|indexOf method (Array)]]
+| [[Objects/Array/indexOf|indexOf method (Array)]]
 | Returns the index of the first occurrence of a value in an array.
 | '''Array'''
 |-
-| [[Objects/String/indexOf Method|indexOf method (String)]]
+| [[Objects/String/indexOf|indexOf method (String)]]
 | Returns the character position where the first occurrence of a substring occurs within a String object.
 | '''String'''
 |-
-| [[Objects/Object/isPrototypeOf Method|isPrototypeOf method]]
+| [[Objects/Object/isPrototypeOf|isPrototypeOf method]]
 | Returns a Boolean value that indicates whether an object exists in another object's prototype chain.
 | Multiple
 |-
@@ -196,23 +196,23 @@ The following table lists JavaScript methods.
 | Places HTML &lt;I&gt; tags around text.
 | '''String'''
 |-
-| [[Objects/Enumerator/item Method|item method]]
+| [[Objects/Enumerator/item|item method]]
 | Returns the current item in the collection.
 | '''Enumerator'''
 |-
-| [[Objects/Array/join Method|join method]]
+| [[Objects/Array/join|join method]]
 | Returns a String object consisting of all the elements of an array concatenated together.
 | '''Array'''
 |-
-| [[Objects/Array/lastIndexOf Method|lastIndexOf method (Array)]]
+| [[Objects/Array/lastIndexOf|lastIndexOf method (Array)]]
 | Returns the index of the last occurrence of a specified value in an array.
 | '''Array'''
 |-
-| [[Objects/String/lastIndexOf Method|lastIndexOf method (String)]]
+| [[Objects/String/lastIndexOf|lastIndexOf method (String)]]
 | Returns the last occurrence of a substring within a String object.
 | '''String'''
 |-
-| [[Objects/VBArray/lbound Method|lbound method]]
+| [[Objects/VBArray/lbound|lbound method]]
 | Returns the lowest index value used in the specified dimension of a VBArray.
 | '''VBArray'''
 |-
@@ -220,131 +220,131 @@ The following table lists JavaScript methods.
 | Places an HTML anchor that has an HREF attribute around text.
 | '''String'''
 |-
-| [[Objects/String/localeCompare Method|localeCompare method]]
+| [[Objects/String/localeCompare|localeCompare method]]
 | Returns a value indicating whether two strings are equivalent in the current locale.
 | '''String'''
 |-
-| [[Objects/Array/map Method|map method]]
+| [[Objects/Array/map|map method]]
 | Calls a defined callback function on each element of an array, and returns an array that contains the results.
 | '''Array'''
 |-
-| [[Objects/String/match Method|match method]]
+| [[Objects/String/match|match method]]
 | Returns, as an array, the results of a search on a string using a supplied '''Regular Expression''' object.
 | '''String'''
 |-
-| [[Objects/Enumerator/moveFirst Method|moveFirst method]]
+| [[Objects/Enumerator/moveFirst|moveFirst method]]
 | Resets the current item in the collection to the first item.
 | '''Enumerator'''
 |-
-| [[Objects/Enumerator/moveNext Method|moveNext method]]
+| [[Objects/Enumerator/moveNext|moveNext method]]
 | Moves the current item to the next item in the collection.
 | '''Enumerator'''
 |-
-| [[Objects/Array/pop Method|pop method]]
+| [[Objects/Array/pop|pop method]]
 | Removes the last element from an array and returns it.
 | '''Array'''
 |-
-| [[Objects/Object/propertyIsEnumerable Method|propertyIsEnumerable method]]
+| [[Objects/Object/propertyIsEnumerable|propertyIsEnumerable method]]
 | Returns a Boolean value that indicates whether a specified property is part of an object and whether it is enumerable.
 | Multiple
 |-
-| [[Objects/Array/push Method|push method]]
+| [[Objects/Array/push|push method]]
 | Appends new elements to an array, and returns the new length of the array.
 | '''Array'''
 |-
-| [[Objects/Array/reduce Method|reduce method]]
+| [[Objects/Array/reduce|reduce method]]
 | Accumulates a single result by calling a defined callback function for all elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 | '''Array'''
 |-
-| [[Objects/Array/reduceRight Method|reduceRight method]]
+| [[Objects/Array/reduceRight|reduceRight method]]
 | Accumulates a single result by calling a defined callback function for all elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 | '''Array'''
 |-
-| [[Objects/String/replace Method|replace method]]
+| [[Objects/String/replace|replace method]]
 | Returns a copy of a string with text replaced using a regular expression.
 | '''String'''
 |-
-| [[Objects/Array/reverse Method|reverse method]]
+| [[Objects/Array/reverse|reverse method]]
 | Returns an '''Array''' object with the elements reversed.
 | '''Array'''
 |-
-| [[Objects/String/search Method|search method]]
+| [[Objects/String/search|search method]]
 | Returns the position of the first substring match in a regular expression search.
 | '''String'''
 |-
-| [[Objects/Date/setDate Method|setDate method]]
+| [[Objects/Date/setDate|setDate method]]
 | Sets the numeric day of the month using local time.
 | '''Date'''
 |-
-| [[Objects/Date/setFullYear Method|setFullYear method]]
+| [[Objects/Date/setFullYear|setFullYear method]]
 | Sets the year value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/setHours Method|setHours method]]
+| [[Objects/Date/setHours|setHours method]]
 | Sets the hours value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/setMilliseconds Method|setMilliseconds method]]
+| [[Objects/Date/setMilliseconds|setMilliseconds method]]
 | Sets the milliseconds value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/setMinutes Method|setMinutes method]]
+| [[Objects/Date/setMinutes|setMinutes method]]
 | Sets the minutes value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/setMonth Method|setMonth method]]
+| [[Objects/Date/setMonth|setMonth method]]
 | Sets the month value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/setSeconds Method|setSeconds method]]
+| [[Objects/Date/setSeconds|setSeconds method]]
 | Sets the seconds value using local time.
 | '''Date'''
 |-
-| [[Objects/Date/setTime Method|setTime method]]
+| [[Objects/Date/setTime|setTime method]]
 | Sets the date and time value in the Date object.
 | '''Date'''
 |-
-| [[Objects/Date/setUTCDate Method|setUTCDate method]]
+| [[Objects/Date/setUTCDate|setUTCDate method]]
 | Sets the numeric day of the month using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/setUTCFullYear Method|setUTCFullYear method]]
+| [[Objects/Date/setUTCFullYear|setUTCFullYear method]]
 | Sets the year value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/setUTCHours Method|setUTCHours method]]
+| [[Objects/Date/setUTCHours|setUTCHours method]]
 | Sets the hours value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/setUTCMilliseconds Method|setUTCMilliseconds method]]
+| [[Objects/Date/setUTCMilliseconds|setUTCMilliseconds method]]
 | Sets the milliseconds value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/setUTCMinutes Method|setUTCMinutes method]]
+| [[Objects/Date/setUTCMinutes|setUTCMinutes method]]
 | Sets the minutes value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/setUTCMonth Method|setUTCMonth method]]
+| [[Objects/Date/setUTCMonth|setUTCMonth method]]
 | Sets the month value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/setUTCSeconds Method|setUTCSeconds method]]
+| [[Objects/Date/setUTCSeconds|setUTCSeconds method]]
 | Sets the seconds value using UTC.
 | '''Date'''
 |-
-| [[Objects/Date/setYear Method|setYear method]]
+| [[Objects/Date/setYear|setYear method]]
 | Sets the year value using local time.
 | '''Date'''
 |-
-| [[Objects/Array/shift Method|shift method]]
+| [[Objects/Array/shift|shift method]]
 | Removes the first element from an array and returns it.
 | '''Array'''
 |-
-| [[Objects/Array/slice Method|slice method (Array)]]
+| [[Objects/Array/slice|slice method (Array)]]
 | Returns a section of an array.
 | '''Array'''
 |-
-| [[Objects/String/slice Method|slice method (String)]]
+| [[Objects/String/slice|slice method (String)]]
 | Returns a section of a string.
 | '''String'''
 |-
@@ -352,19 +352,19 @@ The following table lists JavaScript methods.
 | Places HTML &lt;SMALL&gt; tags around text.
 | '''String'''
 |-
-| [[Objects/Array/some Method|some method]]
+| [[Objects/Array/some|some method]]
 | Checks whether a defined callback function returns true for any element of an array.
 | '''Array'''
 |-
-| [[Objects/Array/sort Method|sort method]]
+| [[Objects/Array/sort|sort method]]
 | Returns an '''Array''' object with the elements sorted.
 | '''Array'''
 |-
-| [[Objects/Array/splice Method|splice method]]
+| [[Objects/Array/splice|splice method]]
 | Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 | '''Array'''
 |-
-| [[Objects/String/split Method|split method]]
+| [[Objects/String/split|split method]]
 | Returns the array of strings that results when a string is separated into substrings.
 | '''String'''
 |-
@@ -376,11 +376,11 @@ The following table lists JavaScript methods.
 | Places HTML &lt;SUB&gt; tags around text.
 | '''String'''
 |-
-| [[Objects/String/substr Method|substr method]]
+| [[Objects/String/substr|substr method]]
 | Returns a substring beginning at a specified location and having a specified length.
 | '''String'''
 |-
-| [[Objects/String/substring Method|substring method]]
+| [[Objects/String/substring|substring method]]
 | Returns the substring at a specified location within a String object.
 | '''String'''
 |-
@@ -388,95 +388,95 @@ The following table lists JavaScript methods.
 | Places HTML &lt;SUP&gt; tags around text.
 | '''String'''
 |-
-| [[Objects/Regular Expression/test Method|test method]]
+| [[Objects/Regular Expression/test|test method]]
 | Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
 | '''Regular Expression'''
 |-
-| [[Objects/VBArray/toArray Method|toArray method]]
+| [[Objects/VBArray/toArray|toArray method]]
 | Returns a standard JavaScript array converted from a VBArray.
 | '''VBArray'''
 |-
-| [[Objects/Date/toDateString Method|toDateString method]]
+| [[Objects/Date/toDateString|toDateString method]]
 | Returns a date as a string value.
 | '''Date'''
 |-
-| [[Objects/Number/toExponential Method|toExponential method]]
+| [[Objects/Number/toExponential|toExponential method]]
 | Returns a string containing a number represented in exponential notation.
 | '''Number'''
 |-
-| [[Objects/Number/toFixed Method|toFixed method]]
+| [[Objects/Number/toFixed|toFixed method]]
 | Returns a string representing a number in fixed-point notation.
 | '''Number'''
 |-
-| [[Objects/Date/toGMTString Method|toGMTString method]]
+| [[Objects/Date/toGMTString|toGMTString method]]
 | Returns a date converted to a string using Greenwich Mean Time (GMT).
 | '''Date'''
 |-
-| [[Objects/Date/toISOString Method|toISOString method]]
+| [[Objects/Date/toISOString|toISOString method]]
 | Returns a date as a string value in ISO format.
 | '''Date'''
 |-
-| [[Objects/Date/toJSON Method|toJSON method]]
+| [[Objects/Date/toJSON|toJSON method]]
 | Used to transform data of an object type before the JSON serialization.
 | '''Date'''
 |-
-| [[Objects/Date/toLocaleDateString Method|toLocaleDateString method]]
+| [[Objects/Date/toLocaleDateString|toLocaleDateString method]]
 | Returns a date as a string value appropriate to the host environment's current locale.
 | '''Date'''
 |-
-| [[Objects/String/toLocaleLowerCase Method|toLocaleLowerCase method]]
+| [[Objects/String/toLocaleLowerCase|toLocaleLowerCase method]]
 | Returns a string where all alphabetic characters have been converted to lowercase, taking into account the host environment's current locale.
 | '''String'''
 |-
-| [[Objects/Object/toLocaleString Method|toLocaleString method]]
+| [[Objects/Object/toLocaleString|toLocaleString method]]
 | Returns an object converted to a string using the current locale.
 | Multiple
 |-
-| [[Objects/Date/toLocaleTimeString Method|toLocaleTimeString method]]
+| [[Objects/Date/toLocaleTimeString|toLocaleTimeString method]]
 | Returns a time as a string value appropriate to the host environment's current locale.
 | '''Date'''
 |-
-| [[Objects/String/toLocaleUpperCase Method|toLocaleUpperCase method]]
+| [[Objects/String/toLocaleUpperCase|toLocaleUpperCase method]]
 | Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale.
 | '''String'''
 |-
-| [[Objects/String/toLowerCase Method|toLowerCase method]]
+| [[Objects/String/toLowerCase|toLowerCase method]]
 | Returns a string where all alphabetic characters have been converted to lowercase.
 | '''String'''
 |-
-| [[Objects/Number/toPrecision Method|toPrecision method]]
+| [[Objects/Number/toPrecision|toPrecision method]]
 | Returns a string containing a number represented either in exponential or fixed-point notation with a specified number of digits.
 | '''Number'''
 |-
-| [[Objects/Object/toString Method|toString method]]
+| [[Objects/Object/toString|toString method]]
 | Returns a string representation of an object.
 | Multiple
 |-
-| [[Objects/Date/toTimeString Method|toTimeString method]]
+| [[Objects/Date/toTimeString|toTimeString method]]
 | Returns a time as a string value.
 | '''Date'''
 |-
-| [[Objects/String/toUpperCase Method|toUpperCase method]]
+| [[Objects/String/toUpperCase|toUpperCase method]]
 | Returns a string where all alphabetic characters have been converted to uppercase.
 | '''String'''
 |-
-| [[Objects/Date/toUTCString Method|toUTCString method]]
+| [[Objects/Date/toUTCString|toUTCString method]]
 | Returns a date converted to a string using UTC.
 | '''Date'''
 |-
-| [[Objects/String/trim Method|trim method]]
+| [[Objects/String/trim|trim method]]
 | Returns a string with leading and trailing white space and line terminator characters removed.
 | '''String'''
 |-
-| [[Objects/VBArray/ubound Method|ubound method]]
+| [[Objects/VBArray/ubound|ubound method]]
 | Returns the highest index value used in the specified dimension of the VBArray.
 | '''VBArray'''
 |-
-| [[Objects/Array/unshift Method|unshift method]]
+| [[Objects/Array/unshift|unshift method]]
 | Inserts new elements at the start of an array.
 | '''Array'''
 |-
-| [[Objects/Object/valueOf Method|valueOf method]]
+| [[Objects/Object/valueOf|valueOf method]]
 | Returns the primitive value of the specified object.
 | Multiple
 |}

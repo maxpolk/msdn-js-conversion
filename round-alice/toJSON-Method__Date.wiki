@@ -1,4 +1,4 @@
-Used by the [[Objects/JSON/JSON.stringify Function|JSON.stringify]] method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
+Used by the [[Objects/JSON/JSON.stringify|JSON.stringify]] method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
 
  objectname.'''toJSON()'''
 
