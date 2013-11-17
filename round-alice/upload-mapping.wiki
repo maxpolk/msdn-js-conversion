@@ -1,821 +1,821 @@
 {| class='wikitable'
 ! Filename !! Page name
 |-
-| JavaScript-Reference.html || JavaScript Reference
+| JavaScript-Reference.wiki || JavaScript Reference
 |-
-| JavaScript-Objects.html || Objects
+| JavaScript-Objects.wiki || Objects
 |-
-| ActiveXObject-Object.html || Objects/ActiveXObject
+| ActiveXObject-Object.wiki || Objects/ActiveXObject
 |-
-| Array-Object.html || Objects/Array
+| Array-Object.wiki || Objects/Array
 |-
-| constructor-Property__Array.html || Objects/Array/constructor Property
+| constructor-Property__Array.wiki || Objects/Array/constructor Property
 |-
-| length-Property__Array.html || Objects/Array/length Property
+| length-Property__Array.wiki || Objects/Array/length Property
 |-
-| prototype-Property__Array.html || Objects/Array/prototype Property
+| prototype-Property__Array.wiki || Objects/Array/prototype Property
 |-
-| Array.isArray-Function.html || Objects/Array/Array.isArray Function
+| Array.isArray-Function.wiki || Objects/Array/Array.isArray Function
 |-
-| concat-Method__Array.html || Objects/Array/concat Method
+| concat-Method__Array.wiki || Objects/Array/concat Method
 |-
-| every-Method__Array.html || Objects/Array/every Method
+| every-Method__Array.wiki || Objects/Array/every Method
 |-
-| filter-Method__Array.html || Objects/Array/filter Method
+| filter-Method__Array.wiki || Objects/Array/filter Method
 |-
-| forEach-Method__Array.html || Objects/Array/forEach Method
+| forEach-Method__Array.wiki || Objects/Array/forEach Method
 |-
-| indexOf-Method__Array.html || Objects/Array/indexOf Method
+| indexOf-Method__Array.wiki || Objects/Array/indexOf Method
 |-
-| join-Method__Array.html || Objects/Array/join Method
+| join-Method__Array.wiki || Objects/Array/join Method
 |-
-| lastIndexOf-Method__Array.html || Objects/Array/lastIndexOf Method
+| lastIndexOf-Method__Array.wiki || Objects/Array/lastIndexOf Method
 |-
-| map-Method__Array.html || Objects/Array/map Method
+| map-Method__Array.wiki || Objects/Array/map Method
 |-
-| pop-Method__Array.html || Objects/Array/pop Method
+| pop-Method__Array.wiki || Objects/Array/pop Method
 |-
-| push-Method__Array.html || Objects/Array/push Method
+| push-Method__Array.wiki || Objects/Array/push Method
 |-
-| reduce-Method__Array.html || Objects/Array/reduce Method
+| reduce-Method__Array.wiki || Objects/Array/reduce Method
 |-
-| reduceRight-Method__Array.html || Objects/Array/reduceRight Method
+| reduceRight-Method__Array.wiki || Objects/Array/reduceRight Method
 |-
-| reverse-Method.html || Objects/Array/reverse Method
+| reverse-Method.wiki || Objects/Array/reverse Method
 |-
-| shift-Method__Array.html || Objects/Array/shift Method
+| shift-Method__Array.wiki || Objects/Array/shift Method
 |-
-| slice-Method__Array.html || Objects/Array/slice Method
+| slice-Method__Array.wiki || Objects/Array/slice Method
 |-
-| some-Method__Array.html || Objects/Array/some Method
+| some-Method__Array.wiki || Objects/Array/some Method
 |-
-| sort-Method__Array.html || Objects/Array/sort Method
+| sort-Method__Array.wiki || Objects/Array/sort Method
 |-
-| splice-Method__Array.html || Objects/Array/splice Method
+| splice-Method__Array.wiki || Objects/Array/splice Method
 |-
-| toString-Method__Array.html || Objects/Array/toString Method
+| toString-Method__Array.wiki || Objects/Array/toString Method
 |-
-| unshift-Method__Array.html || Objects/Array/unshift Method
+| unshift-Method__Array.wiki || Objects/Array/unshift Method
 |-
-| valueOf-Method__Array.html || Objects/Array/valueOf Method
+| valueOf-Method__Array.wiki || Objects/Array/valueOf Method
 |-
-| ArrayBuffer-Object.html || Objects/ArrayBuffer
+| ArrayBuffer-Object.wiki || Objects/ArrayBuffer
 |-
-| byteLength-Property__ArrayBuffer.html || Objects/ArrayBuffer/byteLength Property
+| byteLength-Property__ArrayBuffer.wiki || Objects/ArrayBuffer/byteLength Property
 |-
-| arguments-Object.html || Objects/arguments
+| arguments-Object.wiki || Objects/arguments
 |-
-| 0_n-Properties__arguments.html || Objects/arguments/0 n Properties
+| 0_n-Properties__arguments.wiki || Objects/arguments/0 n Properties
 |-
-| callee-Property__arguments.html || Objects/arguments/callee Property
+| callee-Property__arguments.wiki || Objects/arguments/callee Property
 |-
-| length-Property__arguments.html || Objects/arguments/length Property
+| length-Property__arguments.wiki || Objects/arguments/length Property
 |-
-| Boolean-Object.html || Objects/Boolean
+| Boolean-Object.wiki || Objects/Boolean
 |-
-| constructor-Property__Boolean.html || Objects/Boolean/constructor Property
+| constructor-Property__Boolean.wiki || Objects/Boolean/constructor Property
 |-
-| prototype-Property__Boolean.html || Objects/Boolean/prototype Property
+| prototype-Property__Boolean.wiki || Objects/Boolean/prototype Property
 |-
-| toString-Method__Boolean.html || Objects/Boolean/toString Method
+| toString-Method__Boolean.wiki || Objects/Boolean/toString Method
 |-
-| valueOf-Method__Boolean.html || Objects/Boolean/valueOf Method
+| valueOf-Method__Boolean.wiki || Objects/Boolean/valueOf Method
 |-
-| DataView-Object.html || Objects/DataView
+| DataView-Object.wiki || Objects/DataView
 |-
-| buffer-Property__DataView.html || Objects/DataView/buffer Property
+| buffer-Property__DataView.wiki || Objects/DataView/buffer Property
 |-
-| byteLength-Property__DataView.html || Objects/DataView/byteLength Property
+| byteLength-Property__DataView.wiki || Objects/DataView/byteLength Property
 |-
-| byteOffset-Property__DataView.html || Objects/DataView/byteOffset Property
+| byteOffset-Property__DataView.wiki || Objects/DataView/byteOffset Property
 |-
-| getInt8-Method__DataView.html || Objects/DataView/getInt8 Method
+| getInt8-Method__DataView.wiki || Objects/DataView/getInt8 Method
 |-
-| getUint8-Method__DataView.html || Objects/DataView/getUint8 Method
+| getUint8-Method__DataView.wiki || Objects/DataView/getUint8 Method
 |-
-| getInt16-Method__DataView.html || Objects/DataView/getInt16 Method
+| getInt16-Method__DataView.wiki || Objects/DataView/getInt16 Method
 |-
-| getUint16-Method__DataView.html || Objects/DataView/getUint16 Method
+| getUint16-Method__DataView.wiki || Objects/DataView/getUint16 Method
 |-
-| getInt32-Method__DataView.html || Objects/DataView/getInt32 Method
+| getInt32-Method__DataView.wiki || Objects/DataView/getInt32 Method
 |-
-| getUint32-Method__DataView.html || Objects/DataView/getUint32 Method
+| getUint32-Method__DataView.wiki || Objects/DataView/getUint32 Method
 |-
-| getFloat32-Method__DataView.html || Objects/DataView/getFloat32 Method
+| getFloat32-Method__DataView.wiki || Objects/DataView/getFloat32 Method
 |-
-| getFloat64-Method__DataView.html || Objects/DataView/getFloat64 Method
+| getFloat64-Method__DataView.wiki || Objects/DataView/getFloat64 Method
 |-
-| setInt8-Method__DataView.html || Objects/DataView/setInt8 Method
+| setInt8-Method__DataView.wiki || Objects/DataView/setInt8 Method
 |-
-| setUint8-Method__DataView.html || Objects/DataView/setUint8 Method
+| setUint8-Method__DataView.wiki || Objects/DataView/setUint8 Method
 |-
-| setInt16-Method__DataView.html || Objects/DataView/setInt16 Method
+| setInt16-Method__DataView.wiki || Objects/DataView/setInt16 Method
 |-
-| setUint16-Method__DataView.html || Objects/DataView/setUint16 Method
+| setUint16-Method__DataView.wiki || Objects/DataView/setUint16 Method
 |-
-| setInt32-Method__DataView.html || Objects/DataView/setInt32 Method
+| setInt32-Method__DataView.wiki || Objects/DataView/setInt32 Method
 |-
-| setUint32-Method__DataView.html || Objects/DataView/setUint32 Method
+| setUint32-Method__DataView.wiki || Objects/DataView/setUint32 Method
 |-
-| setFloat32-Method__DataView.html || Objects/DataView/setFloat32 Method
+| setFloat32-Method__DataView.wiki || Objects/DataView/setFloat32 Method
 |-
-| setFloat64-Method__DataView.html || Objects/DataView/setFloat64 Method
+| setFloat64-Method__DataView.wiki || Objects/DataView/setFloat64 Method
 |-
-| Date-Object.html || Objects/Date
+| Date-Object.wiki || Objects/Date
 |-
-| constructor-Property__Date.html || Objects/Date/constructor Property
+| constructor-Property__Date.wiki || Objects/Date/constructor Property
 |-
-| prototype-Property__Date.html || Objects/Date/prototype Property
+| prototype-Property__Date.wiki || Objects/Date/prototype Property
 |-
-| Date.now-Function.html || Objects/Date/Date.now Function
+| Date.now-Function.wiki || Objects/Date/Date.now Function
 |-
-| Date.parse-Function.html || Objects/Date/Date.parse Function
+| Date.parse-Function.wiki || Objects/Date/Date.parse Function
 |-
-| Date.UTC-Function.html || Objects/Date/Date.UTC Function
+| Date.UTC-Function.wiki || Objects/Date/Date.UTC Function
 |-
-| getDate-Method__Date.html || Objects/Date/getDate Method
+| getDate-Method__Date.wiki || Objects/Date/getDate Method
 |-
-| getDay-Method__Date.html || Objects/Date/getDay Method
+| getDay-Method__Date.wiki || Objects/Date/getDay Method
 |-
-| getFullYear-Method__Date.html || Objects/Date/getFullYear Method
+| getFullYear-Method__Date.wiki || Objects/Date/getFullYear Method
 |-
-| getHours-Method__Date.html || Objects/Date/getHours Method
+| getHours-Method__Date.wiki || Objects/Date/getHours Method
 |-
-| getMilliseconds-Method__Date.html || Objects/Date/getMilliseconds Method
+| getMilliseconds-Method__Date.wiki || Objects/Date/getMilliseconds Method
 |-
-| getMinutes-Method__Date.html || Objects/Date/getMinutes Method
+| getMinutes-Method__Date.wiki || Objects/Date/getMinutes Method
 |-
-| getMonth-Method__Date.html || Objects/Date/getMonth Method
+| getMonth-Method__Date.wiki || Objects/Date/getMonth Method
 |-
-| getSeconds-Method__Date.html || Objects/Date/getSeconds Method
+| getSeconds-Method__Date.wiki || Objects/Date/getSeconds Method
 |-
-| getTime-Method__Date.html || Objects/Date/getTime Method
+| getTime-Method__Date.wiki || Objects/Date/getTime Method
 |-
-| getTimezoneOffset-Method__Date.html || Objects/Date/getTimezoneOffset Method
+| getTimezoneOffset-Method__Date.wiki || Objects/Date/getTimezoneOffset Method
 |-
-| getUTCDate-Method__Date.html || Objects/Date/getUTCDate Method
+| getUTCDate-Method__Date.wiki || Objects/Date/getUTCDate Method
 |-
-| getUTCDay-Method__Date.html || Objects/Date/getUTCDay Method
+| getUTCDay-Method__Date.wiki || Objects/Date/getUTCDay Method
 |-
-| getUTCFullYear-Method__Date.html || Objects/Date/getUTCFullYear Method
+| getUTCFullYear-Method__Date.wiki || Objects/Date/getUTCFullYear Method
 |-
-| getUTCHours-Method__Date.html || Objects/Date/getUTCHours Method
+| getUTCHours-Method__Date.wiki || Objects/Date/getUTCHours Method
 |-
-| getUTCMilliseconds-Method__Date.html || Objects/Date/getUTCMilliseconds Method
+| getUTCMilliseconds-Method__Date.wiki || Objects/Date/getUTCMilliseconds Method
 |-
-| getUTCMinutes-Method__Date.html || Objects/Date/getUTCMinutes Method
+| getUTCMinutes-Method__Date.wiki || Objects/Date/getUTCMinutes Method
 |-
-| getUTCMonth-Method__Date.html || Objects/Date/getUTCMonth Method
+| getUTCMonth-Method__Date.wiki || Objects/Date/getUTCMonth Method
 |-
-| getUTCSeconds-Method__Date.html || Objects/Date/getUTCSeconds Method
+| getUTCSeconds-Method__Date.wiki || Objects/Date/getUTCSeconds Method
 |-
-| getVarDate-Method__Date.html || Objects/Date/getVarDate Method
+| getVarDate-Method__Date.wiki || Objects/Date/getVarDate Method
 |-
-| getYear-Method__Date.html || Objects/Date/getYear Method
+| getYear-Method__Date.wiki || Objects/Date/getYear Method
 |-
-| setDate-Method__Date.html || Objects/Date/setDate Method
+| setDate-Method__Date.wiki || Objects/Date/setDate Method
 |-
-| setFullYear-Method__Date.html || Objects/Date/setFullYear Method
+| setFullYear-Method__Date.wiki || Objects/Date/setFullYear Method
 |-
-| setHours-Method__Date.html || Objects/Date/setHours Method
+| setHours-Method__Date.wiki || Objects/Date/setHours Method
 |-
-| setMilliseconds-Method__Date.html || Objects/Date/setMilliseconds Method
+| setMilliseconds-Method__Date.wiki || Objects/Date/setMilliseconds Method
 |-
-| setMinutes-Method__Date.html || Objects/Date/setMinutes Method
+| setMinutes-Method__Date.wiki || Objects/Date/setMinutes Method
 |-
-| setMonth-Method__Date.html || Objects/Date/setMonth Method
+| setMonth-Method__Date.wiki || Objects/Date/setMonth Method
 |-
-| setSeconds-Method__Date.html || Objects/Date/setSeconds Method
+| setSeconds-Method__Date.wiki || Objects/Date/setSeconds Method
 |-
-| setTime-Method__Date.html || Objects/Date/setTime Method
+| setTime-Method__Date.wiki || Objects/Date/setTime Method
 |-
-| setUTCDate-Method__Date.html || Objects/Date/setUTCDate Method
+| setUTCDate-Method__Date.wiki || Objects/Date/setUTCDate Method
 |-
-| setUTCFullYear-Method__Date.html || Objects/Date/setUTCFullYear Method
+| setUTCFullYear-Method__Date.wiki || Objects/Date/setUTCFullYear Method
 |-
-| setUTCHours-Method__Date.html || Objects/Date/setUTCHours Method
+| setUTCHours-Method__Date.wiki || Objects/Date/setUTCHours Method
 |-
-| setUTCMilliseconds-Method__Date.html || Objects/Date/setUTCMilliseconds Method
+| setUTCMilliseconds-Method__Date.wiki || Objects/Date/setUTCMilliseconds Method
 |-
-| setUTCMinutes-Method__Date.html || Objects/Date/setUTCMinutes Method
+| setUTCMinutes-Method__Date.wiki || Objects/Date/setUTCMinutes Method
 |-
-| setUTCMonth-Method__Date.html || Objects/Date/setUTCMonth Method
+| setUTCMonth-Method__Date.wiki || Objects/Date/setUTCMonth Method
 |-
-| setUTCSeconds-Method__Date.html || Objects/Date/setUTCSeconds Method
+| setUTCSeconds-Method__Date.wiki || Objects/Date/setUTCSeconds Method
 |-
-| setYear-Method__Date.html || Objects/Date/setYear Method
+| setYear-Method__Date.wiki || Objects/Date/setYear Method
 |-
-| toDateString-Method__Date.html || Objects/Date/toDateString Method
+| toDateString-Method__Date.wiki || Objects/Date/toDateString Method
 |-
-| toGMTString-Method__Date.html || Objects/Date/toGMTString Method
+| toGMTString-Method__Date.wiki || Objects/Date/toGMTString Method
 |-
-| toISOString-Method__Date.html || Objects/Date/toISOString Method
+| toISOString-Method__Date.wiki || Objects/Date/toISOString Method
 |-
-| toJSON-Method__Date.html || Objects/Date/toJSON Method
+| toJSON-Method__Date.wiki || Objects/Date/toJSON Method
 |-
-| toLocaleDateString-Method__Date.html || Objects/Date/toLocaleDateString Method
+| toLocaleDateString-Method__Date.wiki || Objects/Date/toLocaleDateString Method
 |-
-| toLocaleTimeString-Method__Date.html || Objects/Date/toLocaleTimeString Method
+| toLocaleTimeString-Method__Date.wiki || Objects/Date/toLocaleTimeString Method
 |-
-| toTimeString-Method__Date.html || Objects/Date/toTimeString Method
+| toTimeString-Method__Date.wiki || Objects/Date/toTimeString Method
 |-
-| toUTCString-Method__Date.html || Objects/Date/toUTCString Method
+| toUTCString-Method__Date.wiki || Objects/Date/toUTCString Method
 |-
-| toString-Method__Date.html || Objects/Date/toString Method
+| toString-Method__Date.wiki || Objects/Date/toString Method
 |-
-| valueOf-Method__Date.html || Objects/Date/valueOf Method
+| valueOf-Method__Date.wiki || Objects/Date/valueOf Method
 |-
-| Debug-Object.html || Objects/Debug
+| Debug-Object.wiki || Objects/Debug
 |-
-| Debug.debuggerEnabled-Property.html || Objects/Debug/Debug.debuggerEnabled Property
+| Debug.debuggerEnabled-Property.wiki || Objects/Debug/Debug.debuggerEnabled Property
 |-
-| Debug.setNonUserCodeExceptions-Property.html || Objects/Debug/Debug.setNonUserCodeExceptions Property
+| Debug.setNonUserCodeExceptions-Property.wiki || Objects/Debug/Debug.setNonUserCodeExceptions Property
 |-
-| Debug.write-Function.html || Objects/Debug/Debug.write Function
+| Debug.write-Function.wiki || Objects/Debug/Debug.write Function
 |-
-| Debug.writeln-Function.html || Objects/Debug/Debug.writeln Function
+| Debug.writeln-Function.wiki || Objects/Debug/Debug.writeln Function
 |-
-| Enumerator-Object.html || Objects/Enumerator
+| Enumerator-Object.wiki || Objects/Enumerator
 |-
-| atEnd-Method__Enumerator.html || Objects/Enumerator/atEnd Method
+| atEnd-Method__Enumerator.wiki || Objects/Enumerator/atEnd Method
 |-
-| item-Method__Enumerator.html || Objects/Enumerator/item Method
+| item-Method__Enumerator.wiki || Objects/Enumerator/item Method
 |-
-| moveFirst-Method__Enumerator.html || Objects/Enumerator/moveFirst Method
+| moveFirst-Method__Enumerator.wiki || Objects/Enumerator/moveFirst Method
 |-
-| moveNext-Method__Enumerator.html || Objects/Enumerator/moveNext Method
+| moveNext-Method__Enumerator.wiki || Objects/Enumerator/moveNext Method
 |-
-| Error-Object.html || Objects/Error
+| Error-Object.wiki || Objects/Error
 |-
-| constructor-Property__Error.html || Objects/Error/constructor Property
+| constructor-Property__Error.wiki || Objects/Error/constructor Property
 |-
-| prototype-Property__Error.html || Objects/Error/prototype Property
+| prototype-Property__Error.wiki || Objects/Error/prototype Property
 |-
-| description-Property__Error.html || Objects/Error/description Property
+| description-Property__Error.wiki || Objects/Error/description Property
 |-
-| message-Property__Error.html || Objects/Error/message Property
+| message-Property__Error.wiki || Objects/Error/message Property
 |-
-| name-Property__Error.html || Objects/Error/name Property
+| name-Property__Error.wiki || Objects/Error/name Property
 |-
-| number-Property__Error.html || Objects/Error/number Property
+| number-Property__Error.wiki || Objects/Error/number Property
 |-
-| stack-Property__Error.html || Objects/Error/stack Property
+| stack-Property__Error.wiki || Objects/Error/stack Property
 |-
-| stackTraceLimit-Property__Error.html || Objects/Error/stackTraceLimit Property
+| stackTraceLimit-Property__Error.wiki || Objects/Error/stackTraceLimit Property
 |-
-| toString-Method__Error.html || Objects/Error/toString Method
+| toString-Method__Error.wiki || Objects/Error/toString Method
 |-
-| valueOf-Method__Error.html || Objects/Error/valueOf Method
+| valueOf-Method__Error.wiki || Objects/Error/valueOf Method
 |-
-| Float32Array-Object.html || Objects/Float32Array
+| Float32Array-Object.wiki || Objects/Float32Array
 |-
-| BYTES_PER_ELEMENT-Constant__Float32Array.html || Objects/Float32Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Float32Array.wiki || Objects/Float32Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Float32Array.html || Objects/Float32Array/buffer Property
+| buffer-Property__Float32Array.wiki || Objects/Float32Array/buffer Property
 |-
-| byteLength-Property__Float32Array.html || Objects/Float32Array/byteLength Property
+| byteLength-Property__Float32Array.wiki || Objects/Float32Array/byteLength Property
 |-
-| byteOffset-Property__Float32Array.html || Objects/Float32Array/byteOffset Property
+| byteOffset-Property__Float32Array.wiki || Objects/Float32Array/byteOffset Property
 |-
-| length-Property__Float32Array.html || Objects/Float32Array/length Property
+| length-Property__Float32Array.wiki || Objects/Float32Array/length Property
 |-
-| get-Method__Float32Array.html || Objects/Float32Array/get Method
+| get-Method__Float32Array.wiki || Objects/Float32Array/get Method
 |-
-| set-Method__Float32Array.html || Objects/Float32Array/set Method
+| set-Method__Float32Array.wiki || Objects/Float32Array/set Method
 |-
-| subarray-Method__Float32Array.html || Objects/Float32Array/subarray Method
+| subarray-Method__Float32Array.wiki || Objects/Float32Array/subarray Method
 |-
-| Float64Array-Object.html || Objects/Float64Array
+| Float64Array-Object.wiki || Objects/Float64Array
 |-
-| BYTES_PER_ELEMENT-Constant__Float64Array.html || Objects/Float64Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Float64Array.wiki || Objects/Float64Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Float64Array.html || Objects/Float64Array/buffer Property
+| buffer-Property__Float64Array.wiki || Objects/Float64Array/buffer Property
 |-
-| byteLength-Property__Float64Array.html || Objects/Float64Array/byteLength Property
+| byteLength-Property__Float64Array.wiki || Objects/Float64Array/byteLength Property
 |-
-| bufferOffset-Property__Float64Array.html || Objects/Float64Array/bufferOffset Property
+| bufferOffset-Property__Float64Array.wiki || Objects/Float64Array/bufferOffset Property
 |-
-| length-Property__Float64Array.html || Objects/Float64Array/length Property
+| length-Property__Float64Array.wiki || Objects/Float64Array/length Property
 |-
-| get-Method__Float64Array.html || Objects/Float64Array/get Method
+| get-Method__Float64Array.wiki || Objects/Float64Array/get Method
 |-
-| set-Method__Float64Array.html || Objects/Float64Array/set Method
+| set-Method__Float64Array.wiki || Objects/Float64Array/set Method
 |-
-| subarray-Method__Float64Array.html || Objects/Float64Array/subarray Method
+| subarray-Method__Float64Array.wiki || Objects/Float64Array/subarray Method
 |-
-| Function-Object.html || Objects/Function
+| Function-Object.wiki || Objects/Function
 |-
-| arguments-Property__Function.html || Objects/Function/arguments Property
+| arguments-Property__Function.wiki || Objects/Function/arguments Property
 |-
-| caller-Property__Function.html || Objects/Function/caller Property
+| caller-Property__Function.wiki || Objects/Function/caller Property
 |-
-| length-Property__Function.html || Objects/Function/length Property
+| length-Property__Function.wiki || Objects/Function/length Property
 |-
-| apply-Method__Function.html || Objects/Function/apply Method
+| apply-Method__Function.wiki || Objects/Function/apply Method
 |-
-| bind-Method__Function.html || Objects/Function/bind Method
+| bind-Method__Function.wiki || Objects/Function/bind Method
 |-
-| call-Method__Function.html || Objects/Function/call Method
+| call-Method__Function.wiki || Objects/Function/call Method
 |-
-| Global-Object.html || Objects/Global
+| Global-Object.wiki || Objects/Global
 |-
-| Infinity-Constant.html || Objects/Global/Infinity Constant
+| Infinity-Constant.wiki || Objects/Global/Infinity Constant
 |-
-| NaN-Constant.html || Objects/Global/NaN Constant
+| NaN-Constant.wiki || Objects/Global/NaN Constant
 |-
-| null-Constant.html || Objects/Global/null Constant
+| null-Constant.wiki || Objects/Global/null Constant
 |-
-| undefined-Constant.html || Objects/Global/undefined Constant
+| undefined-Constant.wiki || Objects/Global/undefined Constant
 |-
-| decodeURI-Function.html || Objects/Global/decodeURI Function
+| decodeURI-Function.wiki || Objects/Global/decodeURI Function
 |-
-| decodeURIComponent-Function.html || Objects/Global/decodeURIComponent Function
+| decodeURIComponent-Function.wiki || Objects/Global/decodeURIComponent Function
 |-
-| encodeURI-Function.html || Objects/Global/encodeURI Function
+| encodeURI-Function.wiki || Objects/Global/encodeURI Function
 |-
-| encodeURIComponent-Function.html || Objects/Global/encodeURIComponent Function
+| encodeURIComponent-Function.wiki || Objects/Global/encodeURIComponent Function
 |-
-| escape-Function.html || Objects/Global/escape Function
+| escape-Function.wiki || Objects/Global/escape Function
 |-
-| eval-Function.html || Objects/Global/eval Function
+| eval-Function.wiki || Objects/Global/eval Function
 |-
-| GetObject-Function.html || Objects/Global/GetObject Function
+| GetObject-Function.wiki || Objects/Global/GetObject Function
 |-
-| isFinite-Function.html || Objects/Global/isFinite Function
+| isFinite-Function.wiki || Objects/Global/isFinite Function
 |-
-| isNaN-Function.html || Objects/Global/isNaN Function
+| isNaN-Function.wiki || Objects/Global/isNaN Function
 |-
-| parseFloat-Function.html || Objects/Global/parseFloat Function
+| parseFloat-Function.wiki || Objects/Global/parseFloat Function
 |-
-| parseInt-Function.html || Objects/Global/parseInt Function
+| parseInt-Function.wiki || Objects/Global/parseInt Function
 |-
-| ScriptEngine-Function.html || Objects/Global/ScriptEngine Function
+| ScriptEngine-Function.wiki || Objects/Global/ScriptEngine Function
 |-
-| ScriptEngineBuildVersion-Function.html || Objects/Global/ScriptEngineBuildVersion Function
+| ScriptEngineBuildVersion-Function.wiki || Objects/Global/ScriptEngineBuildVersion Function
 |-
-| ScriptEngineMajorVersion-Function.html || Objects/Global/ScriptEngineMajorVersion Function
+| ScriptEngineMajorVersion-Function.wiki || Objects/Global/ScriptEngineMajorVersion Function
 |-
-| ScriptEngineMinorVersion-Function.html || Objects/Global/ScriptEngineMinorVersion Function
+| ScriptEngineMinorVersion-Function.wiki || Objects/Global/ScriptEngineMinorVersion Function
 |-
-| unescape-Function.html || Objects/Global/unescape Function
+| unescape-Function.wiki || Objects/Global/unescape Function
 |-
-| Int8Array-Object.html || Objects/Int8Array
+| Int8Array-Object.wiki || Objects/Int8Array
 |-
-| BYTES_PER_ELEMENT-Constant__Int8Array.html || Objects/Int8Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Int8Array.wiki || Objects/Int8Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Int8Array.html || Objects/Int8Array/buffer Property
+| buffer-Property__Int8Array.wiki || Objects/Int8Array/buffer Property
 |-
-| byteLength-Property__Int8Array.html || Objects/Int8Array/byteLength Property
+| byteLength-Property__Int8Array.wiki || Objects/Int8Array/byteLength Property
 |-
-| byteOffset-Property__Int8Array.html || Objects/Int8Array/byteOffset Property
+| byteOffset-Property__Int8Array.wiki || Objects/Int8Array/byteOffset Property
 |-
-| length-Property__Int8Array.html || Objects/Int8Array/length Property
+| length-Property__Int8Array.wiki || Objects/Int8Array/length Property
 |-
-| get-Method__Int8Array.html || Objects/Int8Array/get Method
+| get-Method__Int8Array.wiki || Objects/Int8Array/get Method
 |-
-| set-Method__Int8Array.html || Objects/Int8Array/set Method
+| set-Method__Int8Array.wiki || Objects/Int8Array/set Method
 |-
-| subarray-Method__Int8Array.html || Objects/Int8Array/subarray Method
+| subarray-Method__Int8Array.wiki || Objects/Int8Array/subarray Method
 |-
-| Int16Array-Object.html || Objects/Int16Array
+| Int16Array-Object.wiki || Objects/Int16Array
 |-
-| BYTES_PER_ELEMENT-Constant__Int16Array.html || Objects/Int16Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Int16Array.wiki || Objects/Int16Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Int16Array.html || Objects/Int16Array/buffer Property
+| buffer-Property__Int16Array.wiki || Objects/Int16Array/buffer Property
 |-
-| byteLength-Property__Int16Array.html || Objects/Int16Array/byteLength Property
+| byteLength-Property__Int16Array.wiki || Objects/Int16Array/byteLength Property
 |-
-| byteOffset-Property__Int16Array.html || Objects/Int16Array/byteOffset Property
+| byteOffset-Property__Int16Array.wiki || Objects/Int16Array/byteOffset Property
 |-
-| length-Property__Int16Array.html || Objects/Int16Array/length Property
+| length-Property__Int16Array.wiki || Objects/Int16Array/length Property
 |-
-| get-Method__Int16Array.html || Objects/Int16Array/get Method
+| get-Method__Int16Array.wiki || Objects/Int16Array/get Method
 |-
-| set-Method__Int16Array.html || Objects/Int16Array/set Method
+| set-Method__Int16Array.wiki || Objects/Int16Array/set Method
 |-
-| subarray-Method__Int16Array.html || Objects/Int16Array/subarray Method
+| subarray-Method__Int16Array.wiki || Objects/Int16Array/subarray Method
 |-
-| Int32Array-Object.html || Objects/Int32Array
+| Int32Array-Object.wiki || Objects/Int32Array
 |-
-| BYTES_PER_ELEMENT-Constant__Int32Array.html || Objects/Int32Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Int32Array.wiki || Objects/Int32Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Int32Array.html || Objects/Int32Array/buffer Property
+| buffer-Property__Int32Array.wiki || Objects/Int32Array/buffer Property
 |-
-| byteLength-Property__Int32Array.html || Objects/Int32Array/byteLength Property
+| byteLength-Property__Int32Array.wiki || Objects/Int32Array/byteLength Property
 |-
-| byteOffset-Property__Int32Array.html || Objects/Int32Array/byteOffset Property
+| byteOffset-Property__Int32Array.wiki || Objects/Int32Array/byteOffset Property
 |-
-| length-Property__Int32Array.html || Objects/Int32Array/length Property
+| length-Property__Int32Array.wiki || Objects/Int32Array/length Property
 |-
-| get-Method__Int32Array.html || Objects/Int32Array/get Method
+| get-Method__Int32Array.wiki || Objects/Int32Array/get Method
 |-
-| set-Method__Int32Array.html || Objects/Int32Array/set Method
+| set-Method__Int32Array.wiki || Objects/Int32Array/set Method
 |-
-| subarray-Method__Int32Array.html || Objects/Int32Array/subarray Method
+| subarray-Method__Int32Array.wiki || Objects/Int32Array/subarray Method
 |-
-| JSON-Object.html || Objects/JSON
+| JSON-Object.wiki || Objects/JSON
 |-
-| JSON.parse-Function.html || Objects/JSON/JSON.parse Function
+| JSON.parse-Function.wiki || Objects/JSON/JSON.parse Function
 |-
-| JSON.stringify-Function.html || Objects/JSON/JSON.stringify Function
+| JSON.stringify-Function.wiki || Objects/JSON/JSON.stringify Function
 |-
-| Math-Object.html || Objects/Math
+| Math-Object.wiki || Objects/Math
 |-
-| Math-Constants.html || Objects/Math/Math Constants
+| Math-Constants.wiki || Objects/Math/Math Constants
 |-
-| Math.abs-Function.html || Objects/Math/Math.abs Function
+| Math.abs-Function.wiki || Objects/Math/Math.abs Function
 |-
-| Math.acos-Function.html || Objects/Math/Math.acos Function
+| Math.acos-Function.wiki || Objects/Math/Math.acos Function
 |-
-| Math.asin-Function.html || Objects/Math/Math.asin Function
+| Math.asin-Function.wiki || Objects/Math/Math.asin Function
 |-
-| Math.atan-Function.html || Objects/Math/Math.atan Function
+| Math.atan-Function.wiki || Objects/Math/Math.atan Function
 |-
-| Math.atan2-Function.html || Objects/Math/Math.atan2 Function
+| Math.atan2-Function.wiki || Objects/Math/Math.atan2 Function
 |-
-| Math.ceil-Function.html || Objects/Math/Math.ceil Function
+| Math.ceil-Function.wiki || Objects/Math/Math.ceil Function
 |-
-| Math.cos-Function.html || Objects/Math/Math.cos Function
+| Math.cos-Function.wiki || Objects/Math/Math.cos Function
 |-
-| Math.exp-Function.html || Objects/Math/Math.exp Function
+| Math.exp-Function.wiki || Objects/Math/Math.exp Function
 |-
-| Math.floor-Function.html || Objects/Math/Math.floor Function
+| Math.floor-Function.wiki || Objects/Math/Math.floor Function
 |-
-| Math.log-Function.html || Objects/Math/Math.log Function
+| Math.log-Function.wiki || Objects/Math/Math.log Function
 |-
-| Math.max-Function.html || Objects/Math/Math.max Function
+| Math.max-Function.wiki || Objects/Math/Math.max Function
 |-
-| Math.min-Function.html || Objects/Math/Math.min Function
+| Math.min-Function.wiki || Objects/Math/Math.min Function
 |-
-| Math.pow-Function.html || Objects/Math/Math.pow Function
+| Math.pow-Function.wiki || Objects/Math/Math.pow Function
 |-
-| Math.random-Function.html || Objects/Math/Math.random Function
+| Math.random-Function.wiki || Objects/Math/Math.random Function
 |-
-| Math.round-Function.html || Objects/Math/Math.round Function
+| Math.round-Function.wiki || Objects/Math/Math.round Function
 |-
-| Math.sin-Function.html || Objects/Math/Math.sin Function
+| Math.sin-Function.wiki || Objects/Math/Math.sin Function
 |-
-| Math.sqrt-Function.html || Objects/Math/Math.sqrt Function
+| Math.sqrt-Function.wiki || Objects/Math/Math.sqrt Function
 |-
-| Math.tan-Function.html || Objects/Math/Math.tan Function
+| Math.tan-Function.wiki || Objects/Math/Math.tan Function
 |-
-| Number-Object.html || Objects/Number
+| Number-Object.wiki || Objects/Number
 |-
-| Number-Constants.html || Objects/Number/Number Constants
+| Number-Constants.wiki || Objects/Number/Number Constants
 |-
-| constructor-Property__Number.html || Objects/Number/constructor Property
+| constructor-Property__Number.wiki || Objects/Number/constructor Property
 |-
-| prototype-Property__Number.html || Objects/Number/prototype Property
+| prototype-Property__Number.wiki || Objects/Number/prototype Property
 |-
-| toExponential-Method__Number.html || Objects/Number/toExponential Method
+| toExponential-Method__Number.wiki || Objects/Number/toExponential Method
 |-
-| toFixed-Method__Number.html || Objects/Number/toFixed Method
+| toFixed-Method__Number.wiki || Objects/Number/toFixed Method
 |-
-| toPrecision-Method__Number.html || Objects/Number/toPrecision Method
+| toPrecision-Method__Number.wiki || Objects/Number/toPrecision Method
 |-
-| toString-Method__Number.html || Objects/Number/toString Method
+| toString-Method__Number.wiki || Objects/Number/toString Method
 |-
-| valueOf-Method__Number.html || Objects/Number/valueOf Method
+| valueOf-Method__Number.wiki || Objects/Number/valueOf Method
 |-
-| Object-Object.html || Objects/Object
+| Object-Object.wiki || Objects/Object
 |-
-| constructor-Property__Object.html || Objects/Object/constructor Property
+| constructor-Property__Object.wiki || Objects/Object/constructor Property
 |-
-| prototype-Property__Object.html || Objects/Object/prototype Property
+| prototype-Property__Object.wiki || Objects/Object/prototype Property
 |-
-| Object.create-Function.html || Objects/Object/Object.create Function
+| Object.create-Function.wiki || Objects/Object/Object.create Function
 |-
-| Object.defineProperties-Function.html || Objects/Object/Object.defineProperties Function
+| Object.defineProperties-Function.wiki || Objects/Object/Object.defineProperties Function
 |-
-| Object.defineProperty-Function.html || Objects/Object/Object.defineProperty Function
+| Object.defineProperty-Function.wiki || Objects/Object/Object.defineProperty Function
 |-
-| Object.freeze-Function.html || Objects/Object/Object.freeze Function
+| Object.freeze-Function.wiki || Objects/Object/Object.freeze Function
 |-
-| Object.getOwnPropertyDescriptor-Function.html || Objects/Object/Object.getOwnPropertyDescriptor Function
+| Object.getOwnPropertyDescriptor-Function.wiki || Objects/Object/Object.getOwnPropertyDescriptor Function
 |-
-| Object.getOwnPropertyNames-Function.html || Objects/Object/Object.getOwnPropertyNames Function
+| Object.getOwnPropertyNames-Function.wiki || Objects/Object/Object.getOwnPropertyNames Function
 |-
-| Object.getPrototypeOf-Function.html || Objects/Object/Object.getPrototypeOf Function
+| Object.getPrototypeOf-Function.wiki || Objects/Object/Object.getPrototypeOf Function
 |-
-| Object.isExtensible-Function.html || Objects/Object/Object.isExtensible Function
+| Object.isExtensible-Function.wiki || Objects/Object/Object.isExtensible Function
 |-
-| Object.isFrozen-Function.html || Objects/Object/Object.isFrozen Function
+| Object.isFrozen-Function.wiki || Objects/Object/Object.isFrozen Function
 |-
-| Object.isSealed-Function.html || Objects/Object/Object.isSealed Function
+| Object.isSealed-Function.wiki || Objects/Object/Object.isSealed Function
 |-
-| Object.keys-Function.html || Objects/Object/Object.keys Function
+| Object.keys-Function.wiki || Objects/Object/Object.keys Function
 |-
-| Object.preventExtensions-Function.html || Objects/Object/Object.preventExtensions Function
+| Object.preventExtensions-Function.wiki || Objects/Object/Object.preventExtensions Function
 |-
-| Object.seal-Function.html || Objects/Object/Object.seal Function
+| Object.seal-Function.wiki || Objects/Object/Object.seal Function
 |-
-| hasOwnProperty-Method__Object.html || Objects/Object/hasOwnProperty Method
+| hasOwnProperty-Method__Object.wiki || Objects/Object/hasOwnProperty Method
 |-
-| isPrototypeOf-Method__Object.html || Objects/Object/isPrototypeOf Method
+| isPrototypeOf-Method__Object.wiki || Objects/Object/isPrototypeOf Method
 |-
-| propertyIsEnumerable-Method__Object.html || Objects/Object/propertyIsEnumerable Method
+| propertyIsEnumerable-Method__Object.wiki || Objects/Object/propertyIsEnumerable Method
 |-
-| toLocaleString-Method__Object.html || Objects/Object/toLocaleString Method
+| toLocaleString-Method__Object.wiki || Objects/Object/toLocaleString Method
 |-
-| toString-Method__Object.html || Objects/Object/toString Method
+| toString-Method__Object.wiki || Objects/Object/toString Method
 |-
-| valueOf-Method__Object.html || Objects/Object/valueOf Method
+| valueOf-Method__Object.wiki || Objects/Object/valueOf Method
 |-
-| RegExp-Object.html || Objects/RegExp
+| RegExp-Object.wiki || Objects/RegExp
 |-
-| 1_9-Properties__RegExp.html || Objects/RegExp/1 9 Properties
+| 1_9-Properties__RegExp.wiki || Objects/RegExp/1 9 Properties
 |-
-| index-Property__RegExp.html || Objects/RegExp/index Property
+| index-Property__RegExp.wiki || Objects/RegExp/index Property
 |-
-| input-Property.html || Objects/RegExp/input Property
+| input-Property.wiki || Objects/RegExp/input Property
 |-
-| lastIndex-Property__RegExp.html || Objects/RegExp/lastIndex Property
+| lastIndex-Property__RegExp.wiki || Objects/RegExp/lastIndex Property
 |-
-| lastMatch-Property.html || Objects/RegExp/lastMatch Property
+| lastMatch-Property.wiki || Objects/RegExp/lastMatch Property
 |-
-| lastParen-Property.html || Objects/RegExp/lastParen Property
+| lastParen-Property.wiki || Objects/RegExp/lastParen Property
 |-
-| leftContext-Property.html || Objects/RegExp/leftContext Property
+| leftContext-Property.wiki || Objects/RegExp/leftContext Property
 |-
-| rightContext-Property.html || Objects/RegExp/rightContext Property
+| rightContext-Property.wiki || Objects/RegExp/rightContext Property
 |-
-| Regular-Expression-Object.html || Objects/Regular Expression
+| Regular-Expression-Object.wiki || Objects/Regular Expression
 |-
-| global-Property__Regular-Expression.html || Objects/Regular Expression/global Property
+| global-Property__Regular-Expression.wiki || Objects/Regular Expression/global Property
 |-
-| ignoreCase-Property__Regular-Expression.html || Objects/Regular Expression/ignoreCase Property
+| ignoreCase-Property__Regular-Expression.wiki || Objects/Regular Expression/ignoreCase Property
 |-
-| multiline-Property__Regular-Expression.html || Objects/Regular Expression/multiline Property
+| multiline-Property__Regular-Expression.wiki || Objects/Regular Expression/multiline Property
 |-
-| source-Property__Regular-Expression.html || Objects/Regular Expression/source Property
+| source-Property__Regular-Expression.wiki || Objects/Regular Expression/source Property
 |-
-| compile-Method__Regular-Expression.html || Objects/Regular Expression/compile Method
+| compile-Method__Regular-Expression.wiki || Objects/Regular Expression/compile Method
 |-
-| exec-Method__Regular-Expression.html || Objects/Regular Expression/exec Method
+| exec-Method__Regular-Expression.wiki || Objects/Regular Expression/exec Method
 |-
-| test-Method__Regular-Expression.html || Objects/Regular Expression/test Method
+| test-Method__Regular-Expression.wiki || Objects/Regular Expression/test Method
 |-
-| String-Object.html || Objects/String
+| String-Object.wiki || Objects/String
 |-
-| constructor-Property__String.html || Objects/String/constructor Property
+| constructor-Property__String.wiki || Objects/String/constructor Property
 |-
-| length-Property__String.html || Objects/String/length Property
+| length-Property__String.wiki || Objects/String/length Property
 |-
-| prototype-Property__String.html || Objects/String/prototype Property
+| prototype-Property__String.wiki || Objects/String/prototype Property
 |-
-| String.fromCharCode-Function.html || Objects/String/String.fromCharCode Function
+| String.fromCharCode-Function.wiki || Objects/String/String.fromCharCode Function
 |-
-| HTML-Tag-Methods.html || Objects/String/HTML Tag Methods
+| HTML-Tag-Methods.wiki || Objects/String/HTML Tag Methods
 |-
-| charAt-Method__String.html || Objects/String/charAt Method
+| charAt-Method__String.wiki || Objects/String/charAt Method
 |-
-| charCodeAt-Method__String.html || Objects/String/charCodeAt Method
+| charCodeAt-Method__String.wiki || Objects/String/charCodeAt Method
 |-
-| concat-Method__String.html || Objects/String/concat Method
+| concat-Method__String.wiki || Objects/String/concat Method
 |-
-| indexOf-Method__String.html || Objects/String/indexOf Method
+| indexOf-Method__String.wiki || Objects/String/indexOf Method
 |-
-| lastIndexOf-Method__String.html || Objects/String/lastIndexOf Method
+| lastIndexOf-Method__String.wiki || Objects/String/lastIndexOf Method
 |-
-| localeCompare-Method__String.html || Objects/String/localeCompare Method
+| localeCompare-Method__String.wiki || Objects/String/localeCompare Method
 |-
-| match-Method__String.html || Objects/String/match Method
+| match-Method__String.wiki || Objects/String/match Method
 |-
-| replace-Method__String.html || Objects/String/replace Method
+| replace-Method__String.wiki || Objects/String/replace Method
 |-
-| search-Method__String.html || Objects/String/search Method
+| search-Method__String.wiki || Objects/String/search Method
 |-
-| slice-Method__String.html || Objects/String/slice Method
+| slice-Method__String.wiki || Objects/String/slice Method
 |-
-| split-Method__String.html || Objects/String/split Method
+| split-Method__String.wiki || Objects/String/split Method
 |-
-| substr-Method__String.html || Objects/String/substr Method
+| substr-Method__String.wiki || Objects/String/substr Method
 |-
-| substring-Method__String.html || Objects/String/substring Method
+| substring-Method__String.wiki || Objects/String/substring Method
 |-
-| toLocaleLowerCase-Method__String.html || Objects/String/toLocaleLowerCase Method
+| toLocaleLowerCase-Method__String.wiki || Objects/String/toLocaleLowerCase Method
 |-
-| toLocaleUpperCase-Method__String.html || Objects/String/toLocaleUpperCase Method
+| toLocaleUpperCase-Method__String.wiki || Objects/String/toLocaleUpperCase Method
 |-
-| toLowerCase-Method.html || Objects/String/toLowerCase Method
+| toLowerCase-Method.wiki || Objects/String/toLowerCase Method
 |-
-| toUpperCase-Method__String.html || Objects/String/toUpperCase Method
+| toUpperCase-Method__String.wiki || Objects/String/toUpperCase Method
 |-
-| trim-Method__String.html || Objects/String/trim Method
+| trim-Method__String.wiki || Objects/String/trim Method
 |-
-| toString-Method__String.html || Objects/String/toString Method
+| toString-Method__String.wiki || Objects/String/toString Method
 |-
-| valueOf-Method__String.html || Objects/String/valueOf Method
+| valueOf-Method__String.wiki || Objects/String/valueOf Method
 |-
-| Uint8Array-Object.html || Objects/Uint8Array
+| Uint8Array-Object.wiki || Objects/Uint8Array
 |-
-| BYTES_PER_ELEMENT-Constant__Uint8Array.html || Objects/Uint8Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Uint8Array.wiki || Objects/Uint8Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Uint8Array.html || Objects/Uint8Array/buffer Property
+| buffer-Property__Uint8Array.wiki || Objects/Uint8Array/buffer Property
 |-
-| byteLength-Property__Uint8Array.html || Objects/Uint8Array/byteLength Property
+| byteLength-Property__Uint8Array.wiki || Objects/Uint8Array/byteLength Property
 |-
-| byteOffset-Property__Uint8Array.html || Objects/Uint8Array/byteOffset Property
+| byteOffset-Property__Uint8Array.wiki || Objects/Uint8Array/byteOffset Property
 |-
-| length-Property__Uint8Array.html || Objects/Uint8Array/length Property
+| length-Property__Uint8Array.wiki || Objects/Uint8Array/length Property
 |-
-| get-Method__Uint8Array.html || Objects/Uint8Array/get Method
+| get-Method__Uint8Array.wiki || Objects/Uint8Array/get Method
 |-
-| set-Method__Uint8Array.html || Objects/Uint8Array/set Method
+| set-Method__Uint8Array.wiki || Objects/Uint8Array/set Method
 |-
-| subarray-Method__Uint8Array.html || Objects/Uint8Array/subarray Method
+| subarray-Method__Uint8Array.wiki || Objects/Uint8Array/subarray Method
 |-
-| Uint16Array-Object.html || Objects/Uint16Array
+| Uint16Array-Object.wiki || Objects/Uint16Array
 |-
-| BYTES_PER_ELEMENT-Constant__Uint16Array.html || Objects/Uint16Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Uint16Array.wiki || Objects/Uint16Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Uint16Array.html || Objects/Uint16Array/buffer Property
+| buffer-Property__Uint16Array.wiki || Objects/Uint16Array/buffer Property
 |-
-| byteLength-Property__Uint16Array.html || Objects/Uint16Array/byteLength Property
+| byteLength-Property__Uint16Array.wiki || Objects/Uint16Array/byteLength Property
 |-
-| byteOffset-Property__Uint16Array.html || Objects/Uint16Array/byteOffset Property
+| byteOffset-Property__Uint16Array.wiki || Objects/Uint16Array/byteOffset Property
 |-
-| length-Property__UInt16Array.html || Objects/Uint16Array/length Property UInt16Array
+| length-Property__UInt16Array.wiki || Objects/Uint16Array/length Property
 |-
-| get-Method__Uint16Array.html || Objects/Uint16Array/get Method
+| get-Method__Uint16Array.wiki || Objects/Uint16Array/get Method
 |-
-| set-Method__Uint16Array.html || Objects/Uint16Array/set Method
+| set-Method__Uint16Array.wiki || Objects/Uint16Array/set Method
 |-
-| subarray-Method__Uint16Array.html || Objects/Uint16Array/subarray Method
+| subarray-Method__Uint16Array.wiki || Objects/Uint16Array/subarray Method
 |-
-| Uint32Array-Object.html || Objects/Uint32Array
+| Uint32Array-Object.wiki || Objects/Uint32Array
 |-
-| BYTES_PER_ELEMENT-Constant__Uint32Array.html || Objects/Uint32Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Uint32Array.wiki || Objects/Uint32Array/BYTES PER ELEMENT Constant
 |-
-| buffer-Property__Uint32Array.html || Objects/Uint32Array/buffer Property
+| buffer-Property__Uint32Array.wiki || Objects/Uint32Array/buffer Property
 |-
-| byteLength-Property__UInt32Array.html || Objects/Uint32Array/byteLength Property UInt32Array
+| byteLength-Property__UInt32Array.wiki || Objects/Uint32Array/byteLength Property
 |-
-| byteOffset-Property__UInt32Array.html || Objects/Uint32Array/byteOffset Property UInt32Array
+| byteOffset-Property__UInt32Array.wiki || Objects/Uint32Array/byteOffset Property
 |-
-| length-Property__Uint32Array.html || Objects/Uint32Array/length Property
+| length-Property__Uint32Array.wiki || Objects/Uint32Array/length Property
 |-
-| get-Method__Uint32Array.html || Objects/Uint32Array/get Method
+| get-Method__Uint32Array.wiki || Objects/Uint32Array/get Method
 |-
-| set-Method__Uint32Array.html || Objects/Uint32Array/set Method
+| set-Method__Uint32Array.wiki || Objects/Uint32Array/set Method
 |-
-| subarray-Method__Uint32Array.html || Objects/Uint32Array/subarray Method
+| subarray-Method__Uint32Array.wiki || Objects/Uint32Array/subarray Method
 |-
-| VBArray-Object.html || Objects/VBArray
+| VBArray-Object.wiki || Objects/VBArray
 |-
-| dimensions-Method__VBArray.html || Objects/VBArray/dimensions Method
+| dimensions-Method__VBArray.wiki || Objects/VBArray/dimensions Method
 |-
-| getItem-Method__VBArray.html || Objects/VBArray/getItem Method
+| getItem-Method__VBArray.wiki || Objects/VBArray/getItem Method
 |-
-| lbound-Method__VBArray.html || Objects/VBArray/lbound Method
+| lbound-Method__VBArray.wiki || Objects/VBArray/lbound Method
 |-
-| toArray-Method__VBArray.html || Objects/VBArray/toArray Method
+| toArray-Method__VBArray.wiki || Objects/VBArray/toArray Method
 |-
-| ubound-Method__VBArray.html || Objects/VBArray/ubound Method
+| ubound-Method__VBArray.wiki || Objects/VBArray/ubound Method
 |-
-| WinRTError-Object.html || Objects/WinRTError
+| WinRTError-Object.wiki || Objects/WinRTError
 |-
-| JavaScript-Constants.html || Constants
+| JavaScript-Constants.wiki || Constants
 |-
-| JavaScript-Properties.html || Properties
+| JavaScript-Properties.wiki || Properties
 |-
-| JavaScript-Functions.html || Functions
+| JavaScript-Functions.wiki || Functions
 |-
-| JavaScript-Methods.html || Methods
+| JavaScript-Methods.wiki || Methods
 |-
-| JavaScript-Operators.html || Operators
+| JavaScript-Operators.wiki || Operators
 |-
-| Addition-Assignment-Operator.html || Operators/Addition Assignment
+| Addition-Assignment-Operator.wiki || Operators/Addition Assignment
 |-
-| Addition-Operator.html || Operators/Addition
+| Addition-Operator.wiki || Operators/Addition
 |-
-| Assignment-Operator.html || Operators/Assignment
+| Assignment-Operator.wiki || Operators/Assignment
 |-
-| Bitwise-AND-Assignment-Operator.html || Operators/Bitwise AND Assignment
+| Bitwise-AND-Assignment-Operator.wiki || Operators/Bitwise AND Assignment
 |-
-| Bitwise-AND-Operator.html || Operators/Bitwise AND
+| Bitwise-AND-Operator.wiki || Operators/Bitwise AND
 |-
-| Bitwise-Left-Shift-Operator.html || Operators/Bitwise Left Shift
+| Bitwise-Left-Shift-Operator.wiki || Operators/Bitwise Left Shift
 |-
-| Bitwise-NOT-Operator.html || Operators/Bitwise NOT
+| Bitwise-NOT-Operator.wiki || Operators/Bitwise NOT
 |-
-| Bitwise-OR-Assignment-Operator.html || Operators/Bitwise OR Assignment
+| Bitwise-OR-Assignment-Operator.wiki || Operators/Bitwise OR Assignment
 |-
-| Bitwise-OR-Operator.html || Operators/Bitwise OR
+| Bitwise-OR-Operator.wiki || Operators/Bitwise OR
 |-
-| Bitwise-Right-Shift-Operator.html || Operators/Bitwise Right Shift
+| Bitwise-Right-Shift-Operator.wiki || Operators/Bitwise Right Shift
 |-
-| Bitwise-XOR-Assignment-Operator.html || Operators/Bitwise XOR Assignment
+| Bitwise-XOR-Assignment-Operator.wiki || Operators/Bitwise XOR Assignment
 |-
-| Bitwise-XOR-Operator.html || Operators/Bitwise XOR
+| Bitwise-XOR-Operator.wiki || Operators/Bitwise XOR
 |-
-| Comma-Operator.html || Operators/Comma
+| Comma-Operator.wiki || Operators/Comma
 |-
-| Comparison-Operators.html || Operators/Comparison
+| Comparison-Operators.wiki || Operators/Comparison
 |-
-| Compound-Assignment-Operators.html || Operators/Compound Assignment
+| Compound-Assignment-Operators.wiki || Operators/Compound Assignment
 |-
-| Conditional__Ternary-Operator.html || Operators/Conditional Ternary
+| Conditional__Ternary-Operator.wiki || Operators/Conditional Ternary
 |-
-| delete-Operator.html || Operators/delete
+| delete-Operator.wiki || Operators/delete
 |-
-| Division-Assignment-Operator.html || Operators/Division Assignment
+| Division-Assignment-Operator.wiki || Operators/Division Assignment
 |-
-| Division-Operator.html || Operators/Division
+| Division-Operator.wiki || Operators/Division
 |-
-| in-Operator.html || Operators/in
+| in-Operator.wiki || Operators/in
 |-
-| Increment-and-Decrement-Operators.html || Operators/Increment and Decrement
+| Increment-and-Decrement-Operators.wiki || Operators/Increment and Decrement
 |-
-| instanceof-Operator.html || Operators/instanceof
+| instanceof-Operator.wiki || Operators/instanceof
 |-
-| Left-Shift-Assignment-Operator.html || Operators/Left Shift Assignment
+| Left-Shift-Assignment-Operator.wiki || Operators/Left Shift Assignment
 |-
-| Logical-AND-Operator.html || Operators/Logical AND
+| Logical-AND-Operator.wiki || Operators/Logical AND
 |-
-| Logical-NOT-Operator.html || Operators/Logical NOT
+| Logical-NOT-Operator.wiki || Operators/Logical NOT
 |-
-| Logical-OR-Operator.html || Operators/Logical OR
+| Logical-OR-Operator.wiki || Operators/Logical OR
 |-
-| Modulus-Assignment-Operator.html || Operators/Modulus Assignment
+| Modulus-Assignment-Operator.wiki || Operators/Modulus Assignment
 |-
-| Modulus-Operator.html || Operators/Modulus
+| Modulus-Operator.wiki || Operators/Modulus
 |-
-| Multiplication-Assignment-Operator.html || Operators/Multiplication Assignment
+| Multiplication-Assignment-Operator.wiki || Operators/Multiplication Assignment
 |-
-| Multiplication-Operator.html || Operators/Multiplication
+| Multiplication-Operator.wiki || Operators/Multiplication
 |-
-| new-Operator.html || Operators/new
+| new-Operator.wiki || Operators/new
 |-
-| Right-Shift-Assignment-Operator.html || Operators/Right Shift Assignment
+| Right-Shift-Assignment-Operator.wiki || Operators/Right Shift Assignment
 |-
-| Subtraction-Assignment-Operator.html || Operators/Subtraction Assignment
+| Subtraction-Assignment-Operator.wiki || Operators/Subtraction Assignment
 |-
-| Subtraction-Operator.html || Operators/Subtraction
+| Subtraction-Operator.wiki || Operators/Subtraction
 |-
-| typeof-Operator.html || Operators/typeof
+| typeof-Operator.wiki || Operators/typeof
 |-
-| Unsigned-Right-Shift-Assignment-Operator.html || Operators/Unsigned Right Shift Assignment
+| Unsigned-Right-Shift-Assignment-Operator.wiki || Operators/Unsigned Right Shift Assignment
 |-
-| Unsigned-Right-Shift-Operator.html || Operators/Unsigned Right Shift
+| Unsigned-Right-Shift-Operator.wiki || Operators/Unsigned Right Shift
 |-
-| void-Operator.html || Operators/void
+| void-Operator.wiki || Operators/void
 |-
-| JavaScript-Statements.html || Statements
+| JavaScript-Statements.wiki || Statements
 |-
-| break-Statement.html || Statements/break
+| break-Statement.wiki || Statements/break
 |-
-| cc_on-Statement.html || Statements/cc on
+| cc_on-Statement.wiki || Statements/cc on
 |-
-| Comment-Statements.html || Statements/Comment
+| Comment-Statements.wiki || Statements/Comment
 |-
-| continue-Statement.html || Statements/continue
+| continue-Statement.wiki || Statements/continue
 |-
-| debugger-Statement.html || Statements/debugger
+| debugger-Statement.wiki || Statements/debugger
 |-
-| do_while-Statement.html || Statements/do while
+| do_while-Statement.wiki || Statements/do while
 |-
-| for-Statement.html || Statements/for
+| for-Statement.wiki || Statements/for
 |-
-| for_in-Statement.html || Statements/for in
+| for_in-Statement.wiki || Statements/for in
 |-
-| function-Statement.html || Statements/function
+| function-Statement.wiki || Statements/function
 |-
-| if-Statement.html || Statements/if
+| if-Statement.wiki || Statements/if
 |-
-| if_else-Statement.html || Statements/if else
+| if_else-Statement.wiki || Statements/if else
 |-
-| Labeled-Statement.html || Statements/Labeled
+| Labeled-Statement.wiki || Statements/Labeled
 |-
-| return-Statement.html || Statements/return
+| return-Statement.wiki || Statements/return
 |-
-| set-Statement.html || Statements/set
+| set-Statement.wiki || Statements/set
 |-
-| switch-Statement.html || Statements/switch
+| switch-Statement.wiki || Statements/switch
 |-
-| this-Statement.html || Statements/this
+| this-Statement.wiki || Statements/this
 |-
-| throw-Statement.html || Statements/throw
+| throw-Statement.wiki || Statements/throw
 |-
-| try_catch_finally-Statement.html || Statements/try catch finally
+| try_catch_finally-Statement.wiki || Statements/try catch finally
 |-
-| var-Statement.html || Statements/var
+| var-Statement.wiki || Statements/var
 |-
-| while-Statement.html || Statements/while
+| while-Statement.wiki || Statements/while
 |-
-| with-Statement.html || Statements/with
+| with-Statement.wiki || Statements/with
 |-
-| JavaScript-Directives.html || Directives
+| JavaScript-Directives.wiki || Directives
 |-
-| use-strict-Directive.html || Directives/use strict
+| use-strict-Directive.wiki || Directives/use strict
 |-
-| JavaScript-Errors.html || Errors
+| JavaScript-Errors.wiki || Errors
 |-
-| JavaScript-Run-time-Errors.html || Errors/Run time
+| JavaScript-Run-time-Errors.wiki || Errors/Run time
 |-
-| JavaScript-Syntax-Errors.html || Errors/Syntax
+| JavaScript-Syntax-Errors.wiki || Errors/Syntax
 |-
-| JavaScript-Reserved-Words.html || Reserved Words
+| JavaScript-Reserved-Words.wiki || Reserved Words
 |-
-| JavaScript-Future-Reserved-Words.html || Future Reserved Words
+| JavaScript-Future-Reserved-Words.wiki || Future Reserved Words
 |}
