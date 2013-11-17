@@ -39,7 +39,7 @@ The following table lists the constants of the '''Uint16Array''' object.
 | [[Objects/Uint16Array/byteOffset Property|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/Uint16Array/length Property UInt16Array|length Property]]
+| [[Objects/Uint16Array/length Property|length Property]]
 | The length of the array.
 |}
 

@@ -33,10 +33,10 @@ The following table lists the constants of the '''Uint32Array''' object.
 | [[Objects/Uint32Array/buffer Property|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this array.
 |-
-| [[Objects/Uint32Array/byteLength Property UInt32Array|byteLength Property]]
+| [[Objects/Uint32Array/byteLength Property|byteLength Property]]
 | Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Objects/Uint32Array/byteOffset Property UInt32Array|byteOffset Property]]
+| [[Objects/Uint32Array/byteOffset Property|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
 | [[Objects/Uint32Array/length Property|length Property]]
