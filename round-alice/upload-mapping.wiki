@@ -15,7 +15,7 @@
 |-
 | prototype-Property__Array.wiki || Objects/Array/prototype
 |-
-| Array.isArray-Function.wiki || Objects/Array/Array.isArray Function
+| Array.isArray-Function.wiki || Objects/Array/Array.isArray
 |-
 | concat-Method__Array.wiki || Objects/Array/concat Method
 |-
@@ -127,11 +127,11 @@
 |-
 | prototype-Property__Date.wiki || Objects/Date/prototype
 |-
-| Date.now-Function.wiki || Objects/Date/Date.now Function
+| Date.now-Function.wiki || Objects/Date/Date.now
 |-
-| Date.parse-Function.wiki || Objects/Date/Date.parse Function
+| Date.parse-Function.wiki || Objects/Date/Date.parse
 |-
-| Date.UTC-Function.wiki || Objects/Date/Date.UTC Function
+| Date.UTC-Function.wiki || Objects/Date/Date.UTC
 |-
 | getDate-Method__Date.wiki || Objects/Date/getDate Method
 |-
@@ -231,9 +231,9 @@
 |-
 | Debug.setNonUserCodeExceptions-Property.wiki || Objects/Debug/Debug.setNonUserCodeExceptions
 |-
-| Debug.write-Function.wiki || Objects/Debug/Debug.write Function
+| Debug.write-Function.wiki || Objects/Debug/Debug.write
 |-
-| Debug.writeln-Function.wiki || Objects/Debug/Debug.writeln Function
+| Debug.writeln-Function.wiki || Objects/Debug/Debug.writeln
 |-
 | Enumerator-Object.wiki || Objects/Enumerator
 |-
@@ -303,7 +303,7 @@
 |-
 | subarray-Method__Float64Array.wiki || Objects/Float64Array/subarray Method
 |-
-| Function-Object.wiki || Objects/Function
+|-Object.wiki || Objects/Function
 |-
 | arguments-Property__Function.wiki || Objects/Function/arguments
 |-
@@ -327,37 +327,37 @@
 |-
 | undefined-Constant.wiki || Objects/Global/undefined Constant
 |-
-| decodeURI-Function.wiki || Objects/Global/decodeURI Function
+| decodeURI-Function.wiki || Objects/Global/decodeURI
 |-
-| decodeURIComponent-Function.wiki || Objects/Global/decodeURIComponent Function
+| decodeURIComponent-Function.wiki || Objects/Global/decodeURIComponent
 |-
-| encodeURI-Function.wiki || Objects/Global/encodeURI Function
+| encodeURI-Function.wiki || Objects/Global/encodeURI
 |-
-| encodeURIComponent-Function.wiki || Objects/Global/encodeURIComponent Function
+| encodeURIComponent-Function.wiki || Objects/Global/encodeURIComponent
 |-
-| escape-Function.wiki || Objects/Global/escape Function
+| escape-Function.wiki || Objects/Global/escape
 |-
-| eval-Function.wiki || Objects/Global/eval Function
+| eval-Function.wiki || Objects/Global/eval
 |-
-| GetObject-Function.wiki || Objects/Global/GetObject Function
+| GetObject-Function.wiki || Objects/Global/GetObject
 |-
-| isFinite-Function.wiki || Objects/Global/isFinite Function
+| isFinite-Function.wiki || Objects/Global/isFinite
 |-
-| isNaN-Function.wiki || Objects/Global/isNaN Function
+| isNaN-Function.wiki || Objects/Global/isNaN
 |-
-| parseFloat-Function.wiki || Objects/Global/parseFloat Function
+| parseFloat-Function.wiki || Objects/Global/parseFloat
 |-
-| parseInt-Function.wiki || Objects/Global/parseInt Function
+| parseInt-Function.wiki || Objects/Global/parseInt
 |-
-| ScriptEngine-Function.wiki || Objects/Global/ScriptEngine Function
+| ScriptEngine-Function.wiki || Objects/Global/ScriptEngine
 |-
-| ScriptEngineBuildVersion-Function.wiki || Objects/Global/ScriptEngineBuildVersion Function
+| ScriptEngineBuildVersion-Function.wiki || Objects/Global/ScriptEngineBuildVersion
 |-
-| ScriptEngineMajorVersion-Function.wiki || Objects/Global/ScriptEngineMajorVersion Function
+| ScriptEngineMajorVersion-Function.wiki || Objects/Global/ScriptEngineMajorVersion
 |-
-| ScriptEngineMinorVersion-Function.wiki || Objects/Global/ScriptEngineMinorVersion Function
+| ScriptEngineMinorVersion-Function.wiki || Objects/Global/ScriptEngineMinorVersion
 |-
-| unescape-Function.wiki || Objects/Global/unescape Function
+| unescape-Function.wiki || Objects/Global/unescape
 |-
 | Int8Array-Object.wiki || Objects/Int8Array
 |-
@@ -415,49 +415,49 @@
 |-
 | JSON-Object.wiki || Objects/JSON
 |-
-| JSON.parse-Function.wiki || Objects/JSON/JSON.parse Function
+| JSON.parse-Function.wiki || Objects/JSON/JSON.parse
 |-
-| JSON.stringify-Function.wiki || Objects/JSON/JSON.stringify Function
+| JSON.stringify-Function.wiki || Objects/JSON/JSON.stringify
 |-
 | Math-Object.wiki || Objects/Math
 |-
 | Math-Constants.wiki || Objects/Math/Math Constants
 |-
-| Math.abs-Function.wiki || Objects/Math/Math.abs Function
+| Math.abs-Function.wiki || Objects/Math/Math.abs
 |-
-| Math.acos-Function.wiki || Objects/Math/Math.acos Function
+| Math.acos-Function.wiki || Objects/Math/Math.acos
 |-
-| Math.asin-Function.wiki || Objects/Math/Math.asin Function
+| Math.asin-Function.wiki || Objects/Math/Math.asin
 |-
-| Math.atan-Function.wiki || Objects/Math/Math.atan Function
+| Math.atan-Function.wiki || Objects/Math/Math.atan
 |-
-| Math.atan2-Function.wiki || Objects/Math/Math.atan2 Function
+| Math.atan2-Function.wiki || Objects/Math/Math.atan2
 |-
-| Math.ceil-Function.wiki || Objects/Math/Math.ceil Function
+| Math.ceil-Function.wiki || Objects/Math/Math.ceil
 |-
-| Math.cos-Function.wiki || Objects/Math/Math.cos Function
+| Math.cos-Function.wiki || Objects/Math/Math.cos
 |-
-| Math.exp-Function.wiki || Objects/Math/Math.exp Function
+| Math.exp-Function.wiki || Objects/Math/Math.exp
 |-
-| Math.floor-Function.wiki || Objects/Math/Math.floor Function
+| Math.floor-Function.wiki || Objects/Math/Math.floor
 |-
-| Math.log-Function.wiki || Objects/Math/Math.log Function
+| Math.log-Function.wiki || Objects/Math/Math.log
 |-
-| Math.max-Function.wiki || Objects/Math/Math.max Function
+| Math.max-Function.wiki || Objects/Math/Math.max
 |-
-| Math.min-Function.wiki || Objects/Math/Math.min Function
+| Math.min-Function.wiki || Objects/Math/Math.min
 |-
-| Math.pow-Function.wiki || Objects/Math/Math.pow Function
+| Math.pow-Function.wiki || Objects/Math/Math.pow
 |-
-| Math.random-Function.wiki || Objects/Math/Math.random Function
+| Math.random-Function.wiki || Objects/Math/Math.random
 |-
-| Math.round-Function.wiki || Objects/Math/Math.round Function
+| Math.round-Function.wiki || Objects/Math/Math.round
 |-
-| Math.sin-Function.wiki || Objects/Math/Math.sin Function
+| Math.sin-Function.wiki || Objects/Math/Math.sin
 |-
-| Math.sqrt-Function.wiki || Objects/Math/Math.sqrt Function
+| Math.sqrt-Function.wiki || Objects/Math/Math.sqrt
 |-
-| Math.tan-Function.wiki || Objects/Math/Math.tan Function
+| Math.tan-Function.wiki || Objects/Math/Math.tan
 |-
 | Number-Object.wiki || Objects/Number
 |-
@@ -483,31 +483,31 @@
 |-
 | prototype-Property__Object.wiki || Objects/Object/prototype
 |-
-| Object.create-Function.wiki || Objects/Object/Object.create Function
+| Object.create-Function.wiki || Objects/Object/Object.create
 |-
-| Object.defineProperties-Function.wiki || Objects/Object/Object.defineProperties Function
+| Object.defineProperties-Function.wiki || Objects/Object/Object.defineProperties
 |-
-| Object.defineProperty-Function.wiki || Objects/Object/Object.defineProperty Function
+| Object.defineProperty-Function.wiki || Objects/Object/Object.defineProperty
 |-
-| Object.freeze-Function.wiki || Objects/Object/Object.freeze Function
+| Object.freeze-Function.wiki || Objects/Object/Object.freeze
 |-
-| Object.getOwnPropertyDescriptor-Function.wiki || Objects/Object/Object.getOwnPropertyDescriptor Function
+| Object.getOwnPropertyDescriptor-Function.wiki || Objects/Object/Object.getOwnPropertyDescriptor
 |-
-| Object.getOwnPropertyNames-Function.wiki || Objects/Object/Object.getOwnPropertyNames Function
+| Object.getOwnPropertyNames-Function.wiki || Objects/Object/Object.getOwnPropertyNames
 |-
-| Object.getPrototypeOf-Function.wiki || Objects/Object/Object.getPrototypeOf Function
+| Object.getPrototypeOf-Function.wiki || Objects/Object/Object.getPrototypeOf
 |-
-| Object.isExtensible-Function.wiki || Objects/Object/Object.isExtensible Function
+| Object.isExtensible-Function.wiki || Objects/Object/Object.isExtensible
 |-
-| Object.isFrozen-Function.wiki || Objects/Object/Object.isFrozen Function
+| Object.isFrozen-Function.wiki || Objects/Object/Object.isFrozen
 |-
-| Object.isSealed-Function.wiki || Objects/Object/Object.isSealed Function
+| Object.isSealed-Function.wiki || Objects/Object/Object.isSealed
 |-
-| Object.keys-Function.wiki || Objects/Object/Object.keys Function
+| Object.keys-Function.wiki || Objects/Object/Object.keys
 |-
-| Object.preventExtensions-Function.wiki || Objects/Object/Object.preventExtensions Function
+| Object.preventExtensions-Function.wiki || Objects/Object/Object.preventExtensions
 |-
-| Object.seal-Function.wiki || Objects/Object/Object.seal Function
+| Object.seal-Function.wiki || Objects/Object/Object.seal
 |-
 | hasOwnProperty-Method__Object.wiki || Objects/Object/hasOwnProperty Method
 |-
@@ -563,7 +563,7 @@
 |-
 | prototype-Property__String.wiki || Objects/String/prototype
 |-
-| String.fromCharCode-Function.wiki || Objects/String/String.fromCharCode Function
+| String.fromCharCode-Function.wiki || Objects/String/String.fromCharCode
 |-
 | HTML-Tag-Methods.wiki || Objects/String/HTML Tag Methods
 |-
