@@ -773,8 +773,6 @@
 |-
 | JavaScript-Directives.wiki || Directives
 |-
-| use-strict-Directive.wiki || Directives/use strict
-|-
 | JavaScript-Errors.wiki || Errors
 |-
 | JavaScript-Run-time-Errors.wiki || Errors/Run time
