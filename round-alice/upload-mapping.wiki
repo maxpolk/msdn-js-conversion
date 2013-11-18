@@ -5,8 +5,6 @@
 |-
 | JavaScript-Objects.wiki || Objects
 |-
-| ActiveXObject-Object.wiki || ActiveXObject
-|-
 | Array-Object.wiki || Array
 |-
 | constructor-Property__Array.wiki || Array/constructor
@@ -169,8 +167,6 @@
 |-
 | getUTCSeconds-Method__Date.wiki || Date/getUTCSeconds
 |-
-| getVarDate-Method__Date.wiki || Date/getVarDate
-|-
 | getYear-Method__Date.wiki || Date/getYear
 |-
 | setDate-Method__Date.wiki || Date/setDate
@@ -234,16 +230,6 @@
 | Debug.write-Function.wiki || Debug/Debug.write
 |-
 | Debug.writeln-Function.wiki || Debug/Debug.writeln
-|-
-| Enumerator-Object.wiki || Enumerator
-|-
-| atEnd-Method__Enumerator.wiki || Enumerator/atEnd
-|-
-| item-Method__Enumerator.wiki || Enumerator/item
-|-
-| moveFirst-Method__Enumerator.wiki || Enumerator/moveFirst
-|-
-| moveNext-Method__Enumerator.wiki || Enumerator/moveNext
 |-
 | Error-Object.wiki || Error
 |-
@@ -661,20 +647,6 @@
 |-
 | subarray-Method__Uint32Array.wiki || Uint32Array/subarray
 |-
-| VBArray-Object.wiki || VBArray
-|-
-| dimensions-Method__VBArray.wiki || VBArray/dimensions
-|-
-| getItem-Method__VBArray.wiki || VBArray/getItem
-|-
-| lbound-Method__VBArray.wiki || VBArray/lbound
-|-
-| toArray-Method__VBArray.wiki || VBArray/toArray
-|-
-| ubound-Method__VBArray.wiki || VBArray/ubound
-|-
-| WinRTError-Object.wiki || WinRTError
-|-
 | JavaScript-Constants.wiki || Constants
 |-
 | JavaScript-Properties.wiki || Properties
@@ -765,8 +737,6 @@
 |-
 | break-Statement.wiki || Statements/break
 |-
-| cc_on-Statement.wiki || Statements/cc on
-|-
 | Comment-Statements.wiki || Statements/Comment
 |-
 | continue-Statement.wiki || Statements/continue
@@ -781,15 +751,11 @@
 |-
 | function-Statement.wiki || Statements/function
 |-
-| if-Statement.wiki || Statements/if
-|-
 | if_else-Statement.wiki || Statements/if else
 |-
 | Labeled-Statement.wiki || Statements/Labeled
 |-
 | return-Statement.wiki || Statements/return
-|-
-| set-Statement.wiki || Statements/set
 |-
 | switch-Statement.wiki || Statements/switch
 |-
