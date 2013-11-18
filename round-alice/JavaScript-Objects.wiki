@@ -1,14 +1,10 @@
-The following table listsJavaScript Objects.
-
+The following table lists JavaScript Objects.
 
 ==Objects==
 {| class='wikitable'
 |-
 ! Description
 ! Language Element
-|-
-| Enables and returns a reference to an Automation object. This object is supported in Internet Explorer only.
-| [[ActiveXObject|ActiveXObject Object]]
 |-
 | Provides support for creation of arrays of any data type.
 | [[Array|Array Object]]
@@ -30,9 +26,6 @@ The following table listsJavaScript Objects.
 |-
 | An intrinsic object that can send output to a script debugger.
 | [[Debug|Debug Object]]
-|-
-| Enables enumeration of items in a collection. This object is supported in Internet Explorer only.
-| [[Enumerator|Enumerator Object]]
 |-
 | An object that contains information about errors that occur while JavaScript code is running.
 | [[Error|Error Object]]
@@ -87,12 +80,6 @@ The following table listsJavaScript Objects.
 |-
 | A typed array of 32-bit unsigned integer values
 | [[Uint32Array|Uint32Array Object]]
-|-
-| Provides access to Visual Basic safe arrays.
-| [[VBArray|VBArray Object]]
-|-
-| An error that originates in Windows Runtime functions and methods.
-| [[WinRTError|WinRTError Object]]
 |}
 
 ==Related Reference==
