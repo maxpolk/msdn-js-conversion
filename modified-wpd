@@ -49,13 +49,26 @@ class WPDConnection:
 
   def __init__(self, name=None):
     self.name = name
-    self.is_logged_in = False
 
     cookie_handler = urllib2.HTTPCookieProcessor()
     redirect_handler = urllib2.HTTPRedirectHandler()
     self.opener = urllib2.build_opener(redirect_handler, cookie_handler)
 
+  def logout(self):
+    '''Logout from wiki, assumption is that this always succeeds.'''
+    params = {
+      'action': 'logout',
+    }
+    params.update(DEFAULT_PARAMS)
+    resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
+
   def login(self):
+    '''
+    Login to wiki.
+
+    The side effect is that a cookie gets set used on subsequent requests to
+    validate logged-in user.
+    '''
     password = DEFAULT_PASSWORD or getpass.getpass()
     params = {
       'action': 'login',
@@ -64,22 +77,41 @@ class WPDConnection:
     }
     params.update(DEFAULT_PARAMS)
 
+    # Issue an initial login request
     resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
-    params['lgtoken'] = resp['login']['token']
-    # Now use the token to do another request.
-    resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
-    success = resp['login']['result'] == 'Success'
-    if success:
-      self.edit_token = resp['login']['lgtoken']
-      self.is_logged_in = True
 
-  def login_required(self):
-    if not self.is_logged_in:
-      raise Exception, 'user %s is not logged in.' %self.name
+    # See if there was an error
+    if ('error' in resp):
+        if ('info' in resp['error']):
+            raise Exception, 'Error logging in:\n{}'.format (resp['error']['info'])
+        else:
+            raise Exception, 'Unknown error logging in:\n{}'.format (resp['error'])
+
+    # See if there was a login response
+    if ('login' in resp):
+        if ('result' in resp['login']):
+            if (resp['login']['result'] == 'NeedToken' and 'token' in resp['login']):
+                # Now use the response token to do another login request
+                params['lgtoken'] = resp['login']['token']
+                resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
+        else:
+            raise Exception, 'Unknown login results:\n{}'.format (resp['login'])
+    else:
+        # Missing login section of response
+        raise Exception, 'Unknown response:\n{}'.format (resp)
+
+    # See if the last response was a success
+    if ('login' in resp and 'result' in resp['login'] and resp['login']['result'] == 'Success' and 'lgtoken' in resp['login']):
+        self.is_logged_in = True
+    else:
+        raise Exception, 'Failed to login:\n{}'.format (resp)
 
   def ls(self, prefix='', offset=0, limit=20):
-    """Lists all pages under the specified prefix. If no prefix is specified,
-    lists all pages"""
+    '''
+    Lists all pages under the specified prefix.
+
+    If no prefix is specified, lists all pages.
+    '''
     if not prefix:
       prefix = ''
 
@@ -91,43 +123,79 @@ class WPDConnection:
     }
     params.update(DEFAULT_PARAMS)
     resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
-    page_json = resp['query']['allpages']
-    page_list = [p['title'] for p in page_json]
-    return page_list
+    if ('query' in resp and 'allpages' in resp['query']):
+      page_json = resp['query']['allpages']
+      page_list = [p['title'] for p in page_json]
+      return page_list
+    else:
+      raise Exception, 'Unknown list response:\n{}'.format (resp)
 
   def get_edit_token(self, page):
+    '''
+    In order to edit a specific page, obtain an edit token.
+
+    Called from edit, so no need to call this manually.
+    '''
     params = {
         'action': 'query',
-        'titles': page,
+        'prop': 'info',
         'intoken': 'edit',
-        'prop': 'info'
+        'titles': page
     }
     params.update(DEFAULT_PARAMS)
+    # print ("GET EDIT TOKEN REQUEST:\n{}".format (params))
     url = API_ROOT + urllib.urlencode(params)
     resp = json.loads(self.opener.open(url).read())
-    pages = resp['query']['pages'];
-    page = pages[pages.keys()[0]]
-    return page['edittoken']
+    # print ("GET EDIT TOKEN RESPONSE:\n{}".format (resp))
 
-  def edit(self, page, content, section=None):
-    """Replaces the content for the particular page or optionally just the
-    section."""
-    self.login_required()
+    # See if there was an error
+    if ('error' in resp):
+        if ('info' in resp['error']):
+            raise Exception, 'Error getting edit token:\n{}'.format (resp['error']['info'])
+        else:
+            raise Exception, 'Unknown error getting edit token:\n{}'.format (resp['error'])
+
+    # Get the revision number 4747
+    if ('query' in resp and 'pages' in resp['query'] and len (resp['query']['pages']) == 1):
+      pages = resp['query']['pages']
+      page = pages[pages.keys()[0]]
+      # Return edit token for that revision number
+      return page['edittoken']
+    else:
+      raise Exception, 'Unknown response getting edit token:\n{}'.format (resp)
+
+  def edit(self, page, content, edit_summary, section=None):
+    '''
+    Replaces the content for the particular page.
+    '''
+    if not self.is_logged_in:
+      raise Exception, 'User %s is not logged in.' %self.name
     edittoken = self.get_edit_token(page)
     params = {
         'action': 'edit',
-        'list': 'allpages',
         'title': page,
-        'summary': 'summary',
+        'summary': edit_summary,
         'text': content,
+        'bot': '1',
+        'watchlist': 'nochange',
         'token': edittoken
     }
     params.update(DEFAULT_PARAMS)
+    # print ("EDIT REQUEST:\n{}".format (params))
     resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
-    if (resp['edit']['result'] != 'Success'):
-      raise Exception ("Upload not successful:\n{:}".format (resp))
-    else:
+    # print ("EDIT RESPONSE:\n{}".format (resp))
+
+    # See if there was an error
+    if ('error' in resp):
+        if ('info' in resp['error']):
+            raise Exception, 'Error editing page:\n{}'.format (resp['error']['info'])
+        else:
+            raise Exception, 'Unknown error editing page:\n{}'.format (resp['error'])
+
+    if ('edit' in resp and 'result' in resp['edit'] and resp['edit']['result'] == 'Success'):
       print "Success"
+    else:
+      raise Exception ("Edit not successful:\n{}".format (resp))
 
 if __name__ == '__main__':
   (options, args) = parser.parse_args()
@@ -144,10 +212,12 @@ if __name__ == '__main__':
     print '\n'.join(conn.ls(prefix))
 
   if command == 'edit':
-    if len(args) != 3:
-      print 'wpd edit <page> <filename>'
+    if len(args) != 4:
+      print 'wpd edit <page> <filename> <editsummary>'
       sys.exit(1)
     page = args[1]
     content = open (args[2], 'r').read ()
+    edit_summary = args[3]
     conn.login()
-    conn.edit(page, content)
+    conn.edit(page, content, edit_summary)
+    conn.logout()
