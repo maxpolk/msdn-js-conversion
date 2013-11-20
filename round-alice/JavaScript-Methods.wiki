@@ -60,10 +60,6 @@ The following table lists JavaScript methods.
 | Returns a String object containing the concatenation of two supplied strings.
 | '''String'''
 |-
-| [[VBArray/dimensions|dimensions method]]
-| Returns the number of dimensions in a VBArray.
-| '''VBArray'''
-|-
 | [[Array/every|every method]]
 | Checks whether a defined callback function returns true for all elements in an array.
 | '''Array'''
@@ -107,10 +103,6 @@ The following table lists JavaScript methods.
 | [[Date/getHours|getHours method]]
 | Returns the hours value using local time.
 | '''Date'''
-|-
-| [[VBArray/getItem|getItem method]]
-| Returns the item at the specified location.
-| '''VBArray'''
 |-
 | [[Date/getMilliseconds|getMilliseconds method]]
 | Returns the milliseconds value using local time.
@@ -211,10 +203,6 @@ The following table lists JavaScript methods.
 | [[String/lastIndexOf|lastIndexOf method (String)]]
 | Returns the last occurrence of a substring within a String object.
 | '''String'''
-|-
-| [[VBArray/lbound|lbound method]]
-| Returns the lowest index value used in the specified dimension of a VBArray.
-| '''VBArray'''
 |-
 | [[String/HTML Tag Methods|link method]]
 | Places an HTML anchor that has an HREF attribute around text.
@@ -392,10 +380,6 @@ The following table lists JavaScript methods.
 | Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
 | '''Regular Expression'''
 |-
-| [[VBArray/toArray|toArray method]]
-| Returns a standard JavaScript array converted from a VBArray.
-| '''VBArray'''
-|-
 | [[Date/toDateString|toDateString method]]
 | Returns a date as a string value.
 | '''Date'''
@@ -467,10 +451,6 @@ The following table lists JavaScript methods.
 | [[String/trim|trim method]]
 | Returns a string with leading and trailing white space and line terminator characters removed.
 | '''String'''
-|-
-| [[VBArray/ubound|ubound method]]
-| Returns the highest index value used in the specified dimension of the VBArray.
-| '''VBArray'''
 |-
 | [[Array/unshift|unshift method]]
 | Inserts new elements at the start of an array.
