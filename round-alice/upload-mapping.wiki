@@ -325,8 +325,6 @@
 |-
 | eval-Function.wiki || Global/eval
 |-
-| GetObject-Function.wiki || Global/GetObject
-|-
 | isFinite-Function.wiki || Global/isFinite
 |-
 | isNaN-Function.wiki || Global/isNaN
@@ -334,14 +332,6 @@
 | parseFloat-Function.wiki || Global/parseFloat
 |-
 | parseInt-Function.wiki || Global/parseInt
-|-
-| ScriptEngine-Function.wiki || Global/ScriptEngine
-|-
-| ScriptEngineBuildVersion-Function.wiki || Global/ScriptEngineBuildVersion
-|-
-| ScriptEngineMajorVersion-Function.wiki || Global/ScriptEngineMajorVersion
-|-
-| ScriptEngineMinorVersion-Function.wiki || Global/ScriptEngineMinorVersion
 |-
 | unescape-Function.wiki || Global/unescape
 |-
