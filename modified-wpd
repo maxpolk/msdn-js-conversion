@@ -15,6 +15,7 @@ import urllib, urllib2
 import json
 import sys
 import getpass
+import re
 
 #
 # Read from env vars wiki username/password and root URL where the api.php lives.
@@ -32,8 +33,18 @@ Commands:
     ls <prefix>
         Lists file beginning with optional prefix
 
-    edit <page> <filename>
-        Replaces the content of the specified page, using the file contents
+    edit <page> <filename> <editsummary>
+        Replaces the content of the specified page, using the file contents,
+        and using the edit summary as the explanation for the edit.
+
+    batchupload <mappingfile> <editsummary>
+        Replaces the content of the specified page, using the file contents,
+        and using the edit summary as the explanation for the edit.
+        The mappingfile must have repeated lines in the format:
+            FILENAME || PAGENAME
+        any line not in this format is ignored.  Leading or trailing BAR
+        characters or spaces are ignored, so this is an acceptable line:
+            | My file name.wiki || The page name
 
 Environment variables:
     WPD_USERNAME - username to login to wiki
@@ -49,6 +60,7 @@ class WPDConnection:
 
   def __init__(self, name=None):
     self.name = name
+    self.edittoken = None
 
     cookie_handler = urllib2.HTTPCookieProcessor()
     redirect_handler = urllib2.HTTPRedirectHandler()
@@ -167,10 +179,12 @@ class WPDConnection:
   def edit(self, page, content, edit_summary, section=None):
     '''
     Replaces the content for the particular page.
+    Returns True if successful otherwise throws exception.
     '''
     if not self.is_logged_in:
       raise Exception, 'User %s is not logged in.' %self.name
-    edittoken = self.get_edit_token(page)
+    if not self.edittoken:
+      self.edittoken = self.get_edit_token(page)
     params = {
         'action': 'edit',
         'title': page,
@@ -178,7 +192,7 @@ class WPDConnection:
         'text': content,
         'bot': '1',
         'watchlist': 'nochange',
-        'token': edittoken
+        'token': self.edittoken
     }
     params.update(DEFAULT_PARAMS)
     # print ("EDIT REQUEST:\n{}".format (params))
@@ -193,14 +207,14 @@ class WPDConnection:
             raise Exception, 'Unknown error editing page:\n{}'.format (resp['error'])
 
     if ('edit' in resp and 'result' in resp['edit'] and resp['edit']['result'] == 'Success'):
-      print "Success"
+      return True
     else:
       raise Exception ("Edit not successful:\n{}".format (resp))
 
 if __name__ == '__main__':
   (options, args) = parser.parse_args()
   if len(args) == 0:
-    print usage
+    print (usage)
     sys.exit(1)
 
   command = args[0]
@@ -209,15 +223,40 @@ if __name__ == '__main__':
 
   if command == 'ls':
     prefix = (len(args) == 2 and args[1])
-    print '\n'.join(conn.ls(prefix))
+    print ('\n'.join (conn.ls (prefix)))
 
   if command == 'edit':
     if len(args) != 4:
-      print 'wpd edit <page> <filename> <editsummary>'
+      print ('wpd edit <page> <filename> <editsummary>')
       sys.exit(1)
     page = args[1]
     content = open (args[2], 'r').read ()
     edit_summary = args[3]
     conn.login()
     conn.edit(page, content, edit_summary)
+    print ("Success")
     conn.logout()
+
+  if command == 'batchupload':
+    if len(args) != 3:
+      print ('wpd batchupload <mappingfile> <editsummary>')
+      sys.exit(1)
+    import time
+    begintime = int (time.time ())
+    mappingfile = args[1]
+    edit_summary = args[2]
+    count = 0
+    conn.login()
+    for line in open (mappingfile, 'r'):
+      pattern = re.compile ("^[| ]*(.*) \|\| (.*?)[| ]*$")
+      match = re.match (pattern, line)
+      if (match and match.lastindex == 2):
+        filename = match.group (1)
+        pagename = match.group (2)
+        print ("Upload {} as {}".format (filename, pagename))
+        content = open (filename, 'r').read ()
+        conn.edit(pagename, content, edit_summary)
+        count += 1
+    conn.logout()
+    duration = int (time.time ()) - begintime
+    print ("SUMMARY: uploaded {} pages in {} seconds".format (count, duration))
