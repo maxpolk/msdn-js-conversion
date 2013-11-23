@@ -255,7 +255,7 @@
 |-
 | Float32Array-Object.wiki || Float32Array
 |-
-| BYTES_PER_ELEMENT-Constant__Float32Array.wiki || Float32Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Float32Array.wiki || Float32Array/BYTES PER ELEMENT
 |-
 | buffer-Property__Float32Array.wiki || Float32Array/buffer
 |-
@@ -273,7 +273,7 @@
 |-
 | Float64Array-Object.wiki || Float64Array
 |-
-| BYTES_PER_ELEMENT-Constant__Float64Array.wiki || Float64Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Float64Array.wiki || Float64Array/BYTES PER ELEMENT
 |-
 | buffer-Property__Float64Array.wiki || Float64Array/buffer
 |-
@@ -305,13 +305,13 @@
 |-
 | Global-Object.wiki || Global
 |-
-| Infinity-Constant.wiki || Global/Infinity Constant
+| Infinity-Constant.wiki || Global/Infinity
 |-
-| NaN-Constant.wiki || Global/NaN Constant
+| NaN-Constant.wiki || Global/NaN
 |-
-| null-Constant.wiki || Global/null Constant
+| null-Constant.wiki || Global/null
 |-
-| undefined-Constant.wiki || Global/undefined Constant
+| undefined-Constant.wiki || Global/undefined
 |-
 | decodeURI-Function.wiki || Global/decodeURI
 |-
@@ -347,7 +347,7 @@
 |-
 | Int8Array-Object.wiki || Int8Array
 |-
-| BYTES_PER_ELEMENT-Constant__Int8Array.wiki || Int8Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Int8Array.wiki || Int8Array/BYTES PER ELEMENT
 |-
 | buffer-Property__Int8Array.wiki || Int8Array/buffer
 |-
@@ -365,7 +365,7 @@
 |-
 | Int16Array-Object.wiki || Int16Array
 |-
-| BYTES_PER_ELEMENT-Constant__Int16Array.wiki || Int16Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Int16Array.wiki || Int16Array/BYTES PER ELEMENT
 |-
 | buffer-Property__Int16Array.wiki || Int16Array/buffer
 |-
@@ -383,7 +383,7 @@
 |-
 | Int32Array-Object.wiki || Int32Array
 |-
-| BYTES_PER_ELEMENT-Constant__Int32Array.wiki || Int32Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Int32Array.wiki || Int32Array/BYTES PER ELEMENT
 |-
 | buffer-Property__Int32Array.wiki || Int32Array/buffer
 |-
@@ -595,7 +595,7 @@
 |-
 | Uint8Array-Object.wiki || Uint8Array
 |-
-| BYTES_PER_ELEMENT-Constant__Uint8Array.wiki || Uint8Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Uint8Array.wiki || Uint8Array/BYTES PER ELEMENT
 |-
 | buffer-Property__Uint8Array.wiki || Uint8Array/buffer
 |-
@@ -613,7 +613,7 @@
 |-
 | Uint16Array-Object.wiki || Uint16Array
 |-
-| BYTES_PER_ELEMENT-Constant__Uint16Array.wiki || Uint16Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Uint16Array.wiki || Uint16Array/BYTES PER ELEMENT
 |-
 | buffer-Property__Uint16Array.wiki || Uint16Array/buffer
 |-
@@ -631,7 +631,7 @@
 |-
 | Uint32Array-Object.wiki || Uint32Array
 |-
-| BYTES_PER_ELEMENT-Constant__Uint32Array.wiki || Uint32Array/BYTES PER ELEMENT Constant
+| BYTES_PER_ELEMENT-Constant__Uint32Array.wiki || Uint32Array/BYTES PER ELEMENT
 |-
 | buffer-Property__Uint32Array.wiki || Uint32Array/buffer
 |-
