@@ -28,7 +28,7 @@ The following example illustrates the use of the '''toLocaleString''' method.
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Array|Array Object]] {{!}} [[Date|Date Object]] {{!}} [[Number|Number Object]] {{!}} [[Object|Object Object]]
+'''Applies To''' : [[javascript/Array|Array Object]] {{!}} [[javascript/Date|Date Object]] {{!}} [[javascript/Number|Number Object]] {{!}} [[javascript/Object|Object Object]]
 
 
 ==See Also==

@@ -22,28 +22,28 @@ The following table lists the constants of the '''Math''' object.
 ! Constant
 ! Description
 |-
-| [[Math/Math Constants|Math.E Constant]]
+| [[javascript/Math/Math Constants|Math.E Constant]]
 | The mathematical constant e. This is Euler's number, the base of natural logarithms.
 |-
-| [[Math/Math Constants|Math.LN2 Constant]]
+| [[javascript/Math/Math Constants|Math.LN2 Constant]]
 | The natural logarithm of 2.
 |-
-| [[Math/Math Constants|Math.LN10 Constant]]
+| [[javascript/Math/Math Constants|Math.LN10 Constant]]
 | The natural logarithm of 10.
 |-
-| [[Math/Math Constants|Math.LOG2E Constant]]
+| [[javascript/Math/Math Constants|Math.LOG2E Constant]]
 | The base-2 logarithm of e.
 |-
-| [[Math/Math Constants|Math.LOG10E Constant]]
+| [[javascript/Math/Math Constants|Math.LOG10E Constant]]
 | The base-10 logarithm of e.
 |-
-| [[Math/Math Constants|Math.PI Constant]]
+| [[javascript/Math/Math Constants|Math.PI Constant]]
 | Pi. This is the ratio of the circumference of a circle to its diameter.
 |-
-| [[Math/Math Constants|Math.SQRT1_2 Constant]]
+| [[javascript/Math/Math Constants|Math.SQRT1_2 Constant]]
 | The square root of 0.5, or, equivalently, one divided by the square root of 2.
 |-
-| [[Math/Math Constants|Math.SQRT2 Constant]]
+| [[javascript/Math/Math Constants|Math.SQRT2 Constant]]
 | The square root of 2.
 |}
 
@@ -55,58 +55,58 @@ The following table lists the functions of the '''Math''' object.
 ! Function
 ! Description
 |-
-| [[Math/Math.abs|Math.abs Function]]
+| [[javascript/Math/Math.abs|Math.abs Function]]
 | Returns the absolute value of a number.
 |-
-| [[Math/Math.acos|Math.acos Function]]
+| [[javascript/Math/Math.acos|Math.acos Function]]
 | Returns the arccosine of a number.
 |-
-| [[Math/Math.asin|Math.asin Function]]
+| [[javascript/Math/Math.asin|Math.asin Function]]
 | Returns the arcsine of a number.
 |-
-| [[Math/Math.atan|Math.atan Function]]
+| [[javascript/Math/Math.atan|Math.atan Function]]
 | Returns the arctangent of a number.
 |-
-| [[Math/Math.atan2|Math.atan2 Function]]
+| [[javascript/Math/Math.atan2|Math.atan2 Function]]
 | Returns the angle (in radians) from the X axis to a point represented by the supplied y and x coordinates.
 |-
-| [[Math/Math.ceil|Math.ceil Function]]
+| [[javascript/Math/Math.ceil|Math.ceil Function]]
 | Returns the smallest integer that is greater than or equal to the supplied numeric expression.
 |-
-| [[Math/Math.cos|Math.cos Function]]
+| [[javascript/Math/Math.cos|Math.cos Function]]
 | Returns the cosine of a number.
 |-
-| [[Math/Math.exp|Math.exp Function]]
+| [[javascript/Math/Math.exp|Math.exp Function]]
 | Returns e (the base of natural logarithms) raised to a power.
 |-
-| [[Math/Math.floor|Math.floor Function]]
+| [[javascript/Math/Math.floor|Math.floor Function]]
 | Returns the greatest integer that is less than or equal to the supplied numeric expression.
 |-
-| [[Math/Math.log|Math.log Function]]
+| [[javascript/Math/Math.log|Math.log Function]]
 | Returns the natural logarithm of a number.
 |-
-| [[Math/Math.max|Math.max Function]]
+| [[javascript/Math/Math.max|Math.max Function]]
 | Returns the greater of two supplied numeric expressions.
 |-
-| [[Math/Math.min|Math.min Function]]
+| [[javascript/Math/Math.min|Math.min Function]]
 | Returns the lesser of two supplied numbers.
 |-
-| [[Math/Math.pow|Math.pow Function]]
+| [[javascript/Math/Math.pow|Math.pow Function]]
 | Returns the value of a base expression raised to a specified power.
 |-
-| [[Math/Math.random|Math.random Function]]
+| [[javascript/Math/Math.random|Math.random Function]]
 | Returns a pseudorandom number between 0 and 1.
 |-
-| [[Math/Math.round|Math.round Function]]
+| [[javascript/Math/Math.round|Math.round Function]]
 | Returns a specified numeric expression rounded to the nearest integer.
 |-
-| [[Math/Math.sin|Math.sin Function]]
+| [[javascript/Math/Math.sin|Math.sin Function]]
 | Returns the sine of a number.
 |-
-| [[Math/Math.sqrt|Math.sqrt Function]]
+| [[javascript/Math/Math.sqrt|Math.sqrt Function]]
 | Returns the square root of a number.
 |-
-| [[Math/Math.tan|Math.tan Function]]
+| [[javascript/Math/Math.tan|Math.tan Function]]
 | Returns the tangent of a number.
 |}
 

@@ -8,8 +8,8 @@ The following table lists the types of JavaScript errors.
 ! See
 |-
 | List of JavaScript run-time errors
-| [[Errors/Run time|Run-time Errors]]
+| [[javascript/Errors/Run time|Run-time Errors]]
 |-
 | List of JavaScript syntax errors
-| [[Errors/Syntax|Syntax Errors]]
+| [[javascript/Errors/Syntax|Syntax Errors]]
 |}

@@ -18,7 +18,7 @@ The following table lists the constants of the '''Uint32Array''' object.
 ! Constant
 ! Description
 |-
-| [[Uint32Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
+| [[javascript/Uint32Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
 | The size in bytes of each element in the array.
 |}
 
@@ -30,16 +30,16 @@ The following table lists the constants of the '''Uint32Array''' object.
 ! Property
 ! Description
 |-
-| [[Uint32Array/buffer|buffer Property]]
+| [[javascript/Uint32Array/buffer|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this array.
 |-
-| [[Uint32Array/byteLength|byteLength Property]]
+| [[javascript/Uint32Array/byteLength|byteLength Property]]
 | Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Uint32Array/byteOffset|byteOffset Property]]
+| [[javascript/Uint32Array/byteOffset|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Uint32Array/length|length Property]]
+| [[javascript/Uint32Array/length|length Property]]
 | The length of the array.
 |}
 
@@ -51,13 +51,13 @@ The following table lists the methods of the '''Uint32Array''' object.
 ! Method
 ! Description
 |-
-| [[Uint32Array/get|get Method]]
+| [[javascript/Uint32Array/get|get Method]]
 | Omittable. Gets the element at the specified index.
 |-
-| [[Uint32Array/set|set Method (Uint32Array)]]
+| [[javascript/Uint32Array/set|set Method (Uint32Array)]]
 | Sets a value or an array of values.
 |-
-| [[Uint32Array/subarray|subarray Method (Uint32Array)]]
+| [[javascript/Uint32Array/subarray|subarray Method (Uint32Array)]]
 | Gets a new Uint32Array view of the ArrayBuffer store for this array.
 |}
 

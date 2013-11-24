@@ -7,7 +7,7 @@ The required number argument is a numeric expression for which the arcsine is ne
 
 The return value is the arcsine of the number argument, in radians.
 
-Applies To : [[Math|Math Object]]
+Applies To : [[javascript/Math|Math Object]]
 
 
 ==Requirements==

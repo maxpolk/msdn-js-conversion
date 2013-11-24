@@ -18,7 +18,7 @@ The following table lists the constants of the '''Float32Array''' object.
 ! Constant
 ! Description
 |-
-| [[Float32Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
+| [[javascript/Float32Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
 | The size in bytes of each element in the array.
 |}
 
@@ -30,16 +30,16 @@ The following table lists the constants of the '''Float32Array''' object.
 ! Property
 ! Description
 |-
-| [[Float32Array/buffer|buffer Property]]
+| [[javascript/Float32Array/buffer|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this array.
 |-
-| [[Float32Array/byteLength|byteLength Property]]
+| [[javascript/Float32Array/byteLength|byteLength Property]]
 | Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Float32Array/byteOffset|byteOffset Property]]
+| [[javascript/Float32Array/byteOffset|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Float32Array/length|length Property]]
+| [[javascript/Float32Array/length|length Property]]
 | The length of the array.
 |}
 
@@ -51,13 +51,13 @@ The following table lists the methods of the '''Float32Array''' object.
 ! Method
 ! Description
 |-
-| [[Float32Array/get|get Method]]
+| [[javascript/Float32Array/get|get Method]]
 | Omittable. Gets the element at the specified index.
 |-
-| [[Float32Array/set|set Method (Float32Array)]]
+| [[javascript/Float32Array/set|set Method (Float32Array)]]
 | Sets a value or an array of values.
 |-
-| [[Float32Array/subarray|subarray Method (Float32Array)]]
+| [[javascript/Float32Array/subarray|subarray Method (Float32Array)]]
 | Gets a new Float32Array view of the ArrayBuffer store for this array.
 |}
 

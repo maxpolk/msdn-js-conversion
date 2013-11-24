@@ -10,7 +10,7 @@ Sets the result of a bitwise AND operation on the value of a variable and the va
 Using this operator is the same as specifying:
 
  result = result &amp; expression
-The [[Operators/Bitwise AND|Bitwise AND Operator (&amp;)]] looks at the binary representation of the values of result and expression and does a bitwise AND operation on them. The output of this operation behaves like this:
+The [[javascript/Operators/Bitwise AND|Bitwise AND Operator (&amp;)]] looks at the binary representation of the values of result and expression and does a bitwise AND operation on them. The output of this operation behaves like this:
 
  // 9 is 00000000000000000000000000001001
  var expr1 = 9;

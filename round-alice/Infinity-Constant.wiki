@@ -9,7 +9,7 @@ The '''Infinity''' constant is a member of the '''Global''' object, and is made 
 ==Requirements==
 The '''Infinity''' property was introduced in Internet Explorer before Internet Explorer 6 and was made read-only in Internet Explorer 9 standards mode.
 
-'''Applies To''' : [[Global|Global Object]]
+'''Applies To''' : [[javascript/Global|Global Object]]
 
 
 ==See Also==

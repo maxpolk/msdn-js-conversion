@@ -1,6 +1,6 @@
 Specifies the function that creates a Boolean.
 
- boolean.constructor([[ value ])
+ boolean.constructor([[javascript/ value ])
 
 ==Parameters==
 ; boolean: The name of the Boolean.

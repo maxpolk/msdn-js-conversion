@@ -7,7 +7,7 @@ The required number argument is a numeric expression.
 
 The return value is an integer value equal to the smallest integer greater than or equal to its numeric argument.
 
-'''Applies To''' : [[Math|Math Object]]
+'''Applies To''' : [[javascript/Math|Math Object]]
 
 
 ==Requirements==

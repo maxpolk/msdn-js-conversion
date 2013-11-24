@@ -34,11 +34,11 @@ In either case, you call the function with a line of code similar to the followi
 
 
 ==Properties==
-[[arguments/0 n Properties|prototype Property]]
+[[javascript/arguments/0 n Properties|prototype Property]]
 
 
 ==Methods==
-[[Function/apply|valueOf Method]]
+[[javascript/Function/apply|valueOf Method]]
 
 
 ==Requirements==

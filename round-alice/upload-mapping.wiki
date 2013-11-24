@@ -1,775 +1,765 @@
 {| class='wikitable'
 ! Filename !! Page name
 |-
-| JavaScript-Reference.wiki || JavaScript Reference
+| JavaScript-Reference.wiki || javascript/JavaScript Reference
 |-
-| JavaScript-Objects.wiki || Objects
+| JavaScript-Objects.wiki || javascript/Objects
 |-
-| Array-Object.wiki || Array
+| Array-Object.wiki || javascript/Array
 |-
-| constructor-Property__Array.wiki || Array/constructor
+| constructor-Property__Array.wiki || javascript/Array/constructor
 |-
-| length-Property__Array.wiki || Array/length
+| length-Property__Array.wiki || javascript/Array/length
 |-
-| prototype-Property__Array.wiki || Array/prototype
+| prototype-Property__Array.wiki || javascript/Array/prototype
 |-
-| Array.isArray-Function.wiki || Array/Array.isArray
+| Array.isArray-Function.wiki || javascript/Array/Array.isArray
 |-
-| concat-Method__Array.wiki || Array/concat
+| concat-Method__Array.wiki || javascript/Array/concat
 |-
-| every-Method__Array.wiki || Array/every
+| every-Method__Array.wiki || javascript/Array/every
 |-
-| filter-Method__Array.wiki || Array/filter
+| filter-Method__Array.wiki || javascript/Array/filter
 |-
-| forEach-Method__Array.wiki || Array/forEach
+| forEach-Method__Array.wiki || javascript/Array/forEach
 |-
-| indexOf-Method__Array.wiki || Array/indexOf
+| indexOf-Method__Array.wiki || javascript/Array/indexOf
 |-
-| join-Method__Array.wiki || Array/join
+| join-Method__Array.wiki || javascript/Array/join
 |-
-| lastIndexOf-Method__Array.wiki || Array/lastIndexOf
+| lastIndexOf-Method__Array.wiki || javascript/Array/lastIndexOf
 |-
-| map-Method__Array.wiki || Array/map
+| map-Method__Array.wiki || javascript/Array/map
 |-
-| pop-Method__Array.wiki || Array/pop
+| pop-Method__Array.wiki || javascript/Array/pop
 |-
-| push-Method__Array.wiki || Array/push
+| push-Method__Array.wiki || javascript/Array/push
 |-
-| reduce-Method__Array.wiki || Array/reduce
+| reduce-Method__Array.wiki || javascript/Array/reduce
 |-
-| reduceRight-Method__Array.wiki || Array/reduceRight
+| reduceRight-Method__Array.wiki || javascript/Array/reduceRight
 |-
-| reverse-Method.wiki || Array/reverse
+| reverse-Method.wiki || javascript/Array/reverse
 |-
-| shift-Method__Array.wiki || Array/shift
+| shift-Method__Array.wiki || javascript/Array/shift
 |-
-| slice-Method__Array.wiki || Array/slice
+| slice-Method__Array.wiki || javascript/Array/slice
 |-
-| some-Method__Array.wiki || Array/some
+| some-Method__Array.wiki || javascript/Array/some
 |-
-| sort-Method__Array.wiki || Array/sort
+| sort-Method__Array.wiki || javascript/Array/sort
 |-
-| splice-Method__Array.wiki || Array/splice
+| splice-Method__Array.wiki || javascript/Array/splice
 |-
-| toString-Method__Array.wiki || Array/toString
+| toString-Method__Array.wiki || javascript/Array/toString
 |-
-| unshift-Method__Array.wiki || Array/unshift
+| unshift-Method__Array.wiki || javascript/Array/unshift
 |-
-| valueOf-Method__Array.wiki || Array/valueOf
+| valueOf-Method__Array.wiki || javascript/Array/valueOf
 |-
-| ArrayBuffer-Object.wiki || ArrayBuffer
+| ArrayBuffer-Object.wiki || javascript/ArrayBuffer
 |-
-| byteLength-Property__ArrayBuffer.wiki || ArrayBuffer/byteLength
+| byteLength-Property__ArrayBuffer.wiki || javascript/ArrayBuffer/byteLength
 |-
-| arguments-Object.wiki || arguments
+| arguments-Object.wiki || javascript/arguments
 |-
-| 0_n-Properties__arguments.wiki || arguments/0 n Properties
+| 0_n-Properties__arguments.wiki || javascript/arguments/0 n Properties
 |-
-| callee-Property__arguments.wiki || arguments/callee
+| callee-Property__arguments.wiki || javascript/arguments/callee
 |-
-| length-Property__arguments.wiki || arguments/length
+| length-Property__arguments.wiki || javascript/arguments/length
 |-
-| Boolean-Object.wiki || Boolean
+| Boolean-Object.wiki || javascript/Boolean
 |-
-| constructor-Property__Boolean.wiki || Boolean/constructor
+| constructor-Property__Boolean.wiki || javascript/Boolean/constructor
 |-
-| prototype-Property__Boolean.wiki || Boolean/prototype
+| prototype-Property__Boolean.wiki || javascript/Boolean/prototype
 |-
-| toString-Method__Boolean.wiki || Boolean/toString
+| toString-Method__Boolean.wiki || javascript/Boolean/toString
 |-
-| valueOf-Method__Boolean.wiki || Boolean/valueOf
+| valueOf-Method__Boolean.wiki || javascript/Boolean/valueOf
 |-
-| DataView-Object.wiki || DataView
+| DataView-Object.wiki || javascript/DataView
 |-
-| buffer-Property__DataView.wiki || DataView/buffer
+| buffer-Property__DataView.wiki || javascript/DataView/buffer
 |-
-| byteLength-Property__DataView.wiki || DataView/byteLength
+| byteLength-Property__DataView.wiki || javascript/DataView/byteLength
 |-
-| byteOffset-Property__DataView.wiki || DataView/byteOffset
+| byteOffset-Property__DataView.wiki || javascript/DataView/byteOffset
 |-
-| getInt8-Method__DataView.wiki || DataView/getInt8
+| getInt8-Method__DataView.wiki || javascript/DataView/getInt8
 |-
-| getUint8-Method__DataView.wiki || DataView/getUint8
+| getUint8-Method__DataView.wiki || javascript/DataView/getUint8
 |-
-| getInt16-Method__DataView.wiki || DataView/getInt16
+| getInt16-Method__DataView.wiki || javascript/DataView/getInt16
 |-
-| getUint16-Method__DataView.wiki || DataView/getUint16
+| getUint16-Method__DataView.wiki || javascript/DataView/getUint16
 |-
-| getInt32-Method__DataView.wiki || DataView/getInt32
+| getInt32-Method__DataView.wiki || javascript/DataView/getInt32
 |-
-| getUint32-Method__DataView.wiki || DataView/getUint32
+| getUint32-Method__DataView.wiki || javascript/DataView/getUint32
 |-
-| getFloat32-Method__DataView.wiki || DataView/getFloat32
+| getFloat32-Method__DataView.wiki || javascript/DataView/getFloat32
 |-
-| getFloat64-Method__DataView.wiki || DataView/getFloat64
+| getFloat64-Method__DataView.wiki || javascript/DataView/getFloat64
 |-
-| setInt8-Method__DataView.wiki || DataView/setInt8
+| setInt8-Method__DataView.wiki || javascript/DataView/setInt8
 |-
-| setUint8-Method__DataView.wiki || DataView/setUint8
+| setUint8-Method__DataView.wiki || javascript/DataView/setUint8
 |-
-| setInt16-Method__DataView.wiki || DataView/setInt16
+| setInt16-Method__DataView.wiki || javascript/DataView/setInt16
 |-
-| setUint16-Method__DataView.wiki || DataView/setUint16
+| setUint16-Method__DataView.wiki || javascript/DataView/setUint16
 |-
-| setInt32-Method__DataView.wiki || DataView/setInt32
+| setInt32-Method__DataView.wiki || javascript/DataView/setInt32
 |-
-| setUint32-Method__DataView.wiki || DataView/setUint32
+| setUint32-Method__DataView.wiki || javascript/DataView/setUint32
 |-
-| setFloat32-Method__DataView.wiki || DataView/setFloat32
+| setFloat32-Method__DataView.wiki || javascript/DataView/setFloat32
 |-
-| setFloat64-Method__DataView.wiki || DataView/setFloat64
+| setFloat64-Method__DataView.wiki || javascript/DataView/setFloat64
 |-
-| Date-Object.wiki || Date
+| Date-Object.wiki || javascript/Date
 |-
-| constructor-Property__Date.wiki || Date/constructor
+| constructor-Property__Date.wiki || javascript/Date/constructor
 |-
-| prototype-Property__Date.wiki || Date/prototype
+| prototype-Property__Date.wiki || javascript/Date/prototype
 |-
-| Date.now-Function.wiki || Date/Date.now
+| Date.now-Function.wiki || javascript/Date/Date.now
 |-
-| Date.parse-Function.wiki || Date/Date.parse
+| Date.parse-Function.wiki || javascript/Date/Date.parse
 |-
-| Date.UTC-Function.wiki || Date/Date.UTC
+| Date.UTC-Function.wiki || javascript/Date/Date.UTC
 |-
-| getDate-Method__Date.wiki || Date/getDate
+| getDate-Method__Date.wiki || javascript/Date/getDate
 |-
-| getDay-Method__Date.wiki || Date/getDay
+| getDay-Method__Date.wiki || javascript/Date/getDay
 |-
-| getFullYear-Method__Date.wiki || Date/getFullYear
+| getFullYear-Method__Date.wiki || javascript/Date/getFullYear
 |-
-| getHours-Method__Date.wiki || Date/getHours
+| getHours-Method__Date.wiki || javascript/Date/getHours
 |-
-| getMilliseconds-Method__Date.wiki || Date/getMilliseconds
+| getMilliseconds-Method__Date.wiki || javascript/Date/getMilliseconds
 |-
-| getMinutes-Method__Date.wiki || Date/getMinutes
+| getMinutes-Method__Date.wiki || javascript/Date/getMinutes
 |-
-| getMonth-Method__Date.wiki || Date/getMonth
+| getMonth-Method__Date.wiki || javascript/Date/getMonth
 |-
-| getSeconds-Method__Date.wiki || Date/getSeconds
+| getSeconds-Method__Date.wiki || javascript/Date/getSeconds
 |-
-| getTime-Method__Date.wiki || Date/getTime
+| getTime-Method__Date.wiki || javascript/Date/getTime
 |-
-| getTimezoneOffset-Method__Date.wiki || Date/getTimezoneOffset
+| getTimezoneOffset-Method__Date.wiki || javascript/Date/getTimezoneOffset
 |-
-| getUTCDate-Method__Date.wiki || Date/getUTCDate
+| getUTCDate-Method__Date.wiki || javascript/Date/getUTCDate
 |-
-| getUTCDay-Method__Date.wiki || Date/getUTCDay
+| getUTCDay-Method__Date.wiki || javascript/Date/getUTCDay
 |-
-| getUTCFullYear-Method__Date.wiki || Date/getUTCFullYear
+| getUTCFullYear-Method__Date.wiki || javascript/Date/getUTCFullYear
 |-
-| getUTCHours-Method__Date.wiki || Date/getUTCHours
+| getUTCHours-Method__Date.wiki || javascript/Date/getUTCHours
 |-
-| getUTCMilliseconds-Method__Date.wiki || Date/getUTCMilliseconds
+| getUTCMilliseconds-Method__Date.wiki || javascript/Date/getUTCMilliseconds
 |-
-| getUTCMinutes-Method__Date.wiki || Date/getUTCMinutes
+| getUTCMinutes-Method__Date.wiki || javascript/Date/getUTCMinutes
 |-
-| getUTCMonth-Method__Date.wiki || Date/getUTCMonth
+| getUTCMonth-Method__Date.wiki || javascript/Date/getUTCMonth
 |-
-| getUTCSeconds-Method__Date.wiki || Date/getUTCSeconds
+| getUTCSeconds-Method__Date.wiki || javascript/Date/getUTCSeconds
 |-
-| getYear-Method__Date.wiki || Date/getYear
+| getYear-Method__Date.wiki || javascript/Date/getYear
 |-
-| setDate-Method__Date.wiki || Date/setDate
+| setDate-Method__Date.wiki || javascript/Date/setDate
 |-
-| setFullYear-Method__Date.wiki || Date/setFullYear
+| setFullYear-Method__Date.wiki || javascript/Date/setFullYear
 |-
-| setHours-Method__Date.wiki || Date/setHours
+| setHours-Method__Date.wiki || javascript/Date/setHours
 |-
-| setMilliseconds-Method__Date.wiki || Date/setMilliseconds
+| setMilliseconds-Method__Date.wiki || javascript/Date/setMilliseconds
 |-
-| setMinutes-Method__Date.wiki || Date/setMinutes
+| setMinutes-Method__Date.wiki || javascript/Date/setMinutes
 |-
-| setMonth-Method__Date.wiki || Date/setMonth
+| setMonth-Method__Date.wiki || javascript/Date/setMonth
 |-
-| setSeconds-Method__Date.wiki || Date/setSeconds
+| setSeconds-Method__Date.wiki || javascript/Date/setSeconds
 |-
-| setTime-Method__Date.wiki || Date/setTime
+| setTime-Method__Date.wiki || javascript/Date/setTime
 |-
-| setUTCDate-Method__Date.wiki || Date/setUTCDate
+| setUTCDate-Method__Date.wiki || javascript/Date/setUTCDate
 |-
-| setUTCFullYear-Method__Date.wiki || Date/setUTCFullYear
+| setUTCFullYear-Method__Date.wiki || javascript/Date/setUTCFullYear
 |-
-| setUTCHours-Method__Date.wiki || Date/setUTCHours
+| setUTCHours-Method__Date.wiki || javascript/Date/setUTCHours
 |-
-| setUTCMilliseconds-Method__Date.wiki || Date/setUTCMilliseconds
+| setUTCMilliseconds-Method__Date.wiki || javascript/Date/setUTCMilliseconds
 |-
-| setUTCMinutes-Method__Date.wiki || Date/setUTCMinutes
+| setUTCMinutes-Method__Date.wiki || javascript/Date/setUTCMinutes
 |-
-| setUTCMonth-Method__Date.wiki || Date/setUTCMonth
+| setUTCMonth-Method__Date.wiki || javascript/Date/setUTCMonth
 |-
-| setUTCSeconds-Method__Date.wiki || Date/setUTCSeconds
+| setUTCSeconds-Method__Date.wiki || javascript/Date/setUTCSeconds
 |-
-| setYear-Method__Date.wiki || Date/setYear
+| setYear-Method__Date.wiki || javascript/Date/setYear
 |-
-| toDateString-Method__Date.wiki || Date/toDateString
+| toDateString-Method__Date.wiki || javascript/Date/toDateString
 |-
-| toGMTString-Method__Date.wiki || Date/toGMTString
+| toGMTString-Method__Date.wiki || javascript/Date/toGMTString
 |-
-| toISOString-Method__Date.wiki || Date/toISOString
+| toISOString-Method__Date.wiki || javascript/Date/toISOString
 |-
-| toJSON-Method__Date.wiki || Date/toJSON
+| toJSON-Method__Date.wiki || javascript/Date/toJSON
 |-
-| toLocaleDateString-Method__Date.wiki || Date/toLocaleDateString
+| toLocaleDateString-Method__Date.wiki || javascript/Date/toLocaleDateString
 |-
-| toLocaleTimeString-Method__Date.wiki || Date/toLocaleTimeString
+| toLocaleTimeString-Method__Date.wiki || javascript/Date/toLocaleTimeString
 |-
-| toTimeString-Method__Date.wiki || Date/toTimeString
+| toTimeString-Method__Date.wiki || javascript/Date/toTimeString
 |-
-| toUTCString-Method__Date.wiki || Date/toUTCString
+| toUTCString-Method__Date.wiki || javascript/Date/toUTCString
 |-
-| toString-Method__Date.wiki || Date/toString
+| toString-Method__Date.wiki || javascript/Date/toString
 |-
-| valueOf-Method__Date.wiki || Date/valueOf
+| valueOf-Method__Date.wiki || javascript/Date/valueOf
 |-
-| Debug-Object.wiki || Debug
+| Error-Object.wiki || javascript/Error
 |-
-| Debug.debuggerEnabled-Property.wiki || Debug/Debug.debuggerEnabled
+| constructor-Property__Error.wiki || javascript/Error/constructor
 |-
-| Debug.setNonUserCodeExceptions-Property.wiki || Debug/Debug.setNonUserCodeExceptions
+| prototype-Property__Error.wiki || javascript/Error/prototype
 |-
-| Debug.write-Function.wiki || Debug/Debug.write
+| description-Property__Error.wiki || javascript/Error/description
 |-
-| Debug.writeln-Function.wiki || Debug/Debug.writeln
+| message-Property__Error.wiki || javascript/Error/message
 |-
-| Error-Object.wiki || Error
+| name-Property__Error.wiki || javascript/Error/name
 |-
-| constructor-Property__Error.wiki || Error/constructor
+| number-Property__Error.wiki || javascript/Error/number
 |-
-| prototype-Property__Error.wiki || Error/prototype
+| stack-Property__Error.wiki || javascript/Error/stack
 |-
-| description-Property__Error.wiki || Error/description
+| stackTraceLimit-Property__Error.wiki || javascript/Error/stackTraceLimit
 |-
-| message-Property__Error.wiki || Error/message
+| toString-Method__Error.wiki || javascript/Error/toString
 |-
-| name-Property__Error.wiki || Error/name
+| valueOf-Method__Error.wiki || javascript/Error/valueOf
 |-
-| number-Property__Error.wiki || Error/number
+| Float32Array-Object.wiki || javascript/Float32Array
 |-
-| stack-Property__Error.wiki || Error/stack
+| BYTES_PER_ELEMENT-Constant__Float32Array.wiki || javascript/Float32Array/BYTES PER ELEMENT
 |-
-| stackTraceLimit-Property__Error.wiki || Error/stackTraceLimit
+| buffer-Property__Float32Array.wiki || javascript/Float32Array/buffer
 |-
-| toString-Method__Error.wiki || Error/toString
+| byteLength-Property__Float32Array.wiki || javascript/Float32Array/byteLength
 |-
-| valueOf-Method__Error.wiki || Error/valueOf
+| byteOffset-Property__Float32Array.wiki || javascript/Float32Array/byteOffset
 |-
-| Float32Array-Object.wiki || Float32Array
+| length-Property__Float32Array.wiki || javascript/Float32Array/length
 |-
-| BYTES_PER_ELEMENT-Constant__Float32Array.wiki || Float32Array/BYTES PER ELEMENT
+| get-Method__Float32Array.wiki || javascript/Float32Array/get
 |-
-| buffer-Property__Float32Array.wiki || Float32Array/buffer
+| set-Method__Float32Array.wiki || javascript/Float32Array/set
 |-
-| byteLength-Property__Float32Array.wiki || Float32Array/byteLength
+| subarray-Method__Float32Array.wiki || javascript/Float32Array/subarray
 |-
-| byteOffset-Property__Float32Array.wiki || Float32Array/byteOffset
+| Float64Array-Object.wiki || javascript/Float64Array
 |-
-| length-Property__Float32Array.wiki || Float32Array/length
+| BYTES_PER_ELEMENT-Constant__Float64Array.wiki || javascript/Float64Array/BYTES PER ELEMENT
 |-
-| get-Method__Float32Array.wiki || Float32Array/get
+| buffer-Property__Float64Array.wiki || javascript/Float64Array/buffer
 |-
-| set-Method__Float32Array.wiki || Float32Array/set
+| byteLength-Property__Float64Array.wiki || javascript/Float64Array/byteLength
 |-
-| subarray-Method__Float32Array.wiki || Float32Array/subarray
+| bufferOffset-Property__Float64Array.wiki || javascript/Float64Array/bufferOffset
 |-
-| Float64Array-Object.wiki || Float64Array
+| length-Property__Float64Array.wiki || javascript/Float64Array/length
 |-
-| BYTES_PER_ELEMENT-Constant__Float64Array.wiki || Float64Array/BYTES PER ELEMENT
+| get-Method__Float64Array.wiki || javascript/Float64Array/get
 |-
-| buffer-Property__Float64Array.wiki || Float64Array/buffer
+| set-Method__Float64Array.wiki || javascript/Float64Array/set
 |-
-| byteLength-Property__Float64Array.wiki || Float64Array/byteLength
+| subarray-Method__Float64Array.wiki || javascript/Float64Array/subarray
 |-
-| bufferOffset-Property__Float64Array.wiki || Float64Array/bufferOffset
+| Function-Object.wiki || javascript/Function
 |-
-| length-Property__Float64Array.wiki || Float64Array/length
+| arguments-Property__Function.wiki || javascript/Function/arguments
 |-
-| get-Method__Float64Array.wiki || Float64Array/get
+| caller-Property__Function.wiki || javascript/Function/caller
 |-
-| set-Method__Float64Array.wiki || Float64Array/set
+| length-Property__Function.wiki || javascript/Function/length
 |-
-| subarray-Method__Float64Array.wiki || Float64Array/subarray
+| apply-Method__Function.wiki || javascript/Function/apply
 |-
-| Function-Object.wiki || Function
+| bind-Method__Function.wiki || javascript/Function/bind
 |-
-| arguments-Property__Function.wiki || Function/arguments
+| call-Method__Function.wiki || javascript/Function/call
 |-
-| caller-Property__Function.wiki || Function/caller
+| Global-Object.wiki || javascript/Global
 |-
-| length-Property__Function.wiki || Function/length
+| Infinity-Constant.wiki || javascript/Global/Infinity
 |-
-| apply-Method__Function.wiki || Function/apply
+| NaN-Constant.wiki || javascript/Global/NaN
 |-
-| bind-Method__Function.wiki || Function/bind
+| null-Constant.wiki || javascript/Global/null
 |-
-| call-Method__Function.wiki || Function/call
+| undefined-Constant.wiki || javascript/Global/undefined
 |-
-| Global-Object.wiki || Global
+| decodeURI-Function.wiki || javascript/Global/decodeURI
 |-
-| Infinity-Constant.wiki || Global/Infinity
+| decodeURIComponent-Function.wiki || javascript/Global/decodeURIComponent
 |-
-| NaN-Constant.wiki || Global/NaN
+| encodeURI-Function.wiki || javascript/Global/encodeURI
 |-
-| null-Constant.wiki || Global/null
+| encodeURIComponent-Function.wiki || javascript/Global/encodeURIComponent
 |-
-| undefined-Constant.wiki || Global/undefined
+| escape-Function.wiki || javascript/Global/escape
 |-
-| decodeURI-Function.wiki || Global/decodeURI
+| eval-Function.wiki || javascript/Global/eval
 |-
-| decodeURIComponent-Function.wiki || Global/decodeURIComponent
+| isFinite-Function.wiki || javascript/Global/isFinite
 |-
-| encodeURI-Function.wiki || Global/encodeURI
+| isNaN-Function.wiki || javascript/Global/isNaN
 |-
-| encodeURIComponent-Function.wiki || Global/encodeURIComponent
+| parseFloat-Function.wiki || javascript/Global/parseFloat
 |-
-| escape-Function.wiki || Global/escape
+| parseInt-Function.wiki || javascript/Global/parseInt
 |-
-| eval-Function.wiki || Global/eval
+| unescape-Function.wiki || javascript/Global/unescape
 |-
-| isFinite-Function.wiki || Global/isFinite
+| Int8Array-Object.wiki || javascript/Int8Array
 |-
-| isNaN-Function.wiki || Global/isNaN
+| BYTES_PER_ELEMENT-Constant__Int8Array.wiki || javascript/Int8Array/BYTES PER ELEMENT
 |-
-| parseFloat-Function.wiki || Global/parseFloat
+| buffer-Property__Int8Array.wiki || javascript/Int8Array/buffer
 |-
-| parseInt-Function.wiki || Global/parseInt
+| byteLength-Property__Int8Array.wiki || javascript/Int8Array/byteLength
 |-
-| unescape-Function.wiki || Global/unescape
+| byteOffset-Property__Int8Array.wiki || javascript/Int8Array/byteOffset
 |-
-| Int8Array-Object.wiki || Int8Array
+| length-Property__Int8Array.wiki || javascript/Int8Array/length
 |-
-| BYTES_PER_ELEMENT-Constant__Int8Array.wiki || Int8Array/BYTES PER ELEMENT
+| get-Method__Int8Array.wiki || javascript/Int8Array/get
 |-
-| buffer-Property__Int8Array.wiki || Int8Array/buffer
+| set-Method__Int8Array.wiki || javascript/Int8Array/set
 |-
-| byteLength-Property__Int8Array.wiki || Int8Array/byteLength
+| subarray-Method__Int8Array.wiki || javascript/Int8Array/subarray
 |-
-| byteOffset-Property__Int8Array.wiki || Int8Array/byteOffset
+| Int16Array-Object.wiki || javascript/Int16Array
 |-
-| length-Property__Int8Array.wiki || Int8Array/length
+| BYTES_PER_ELEMENT-Constant__Int16Array.wiki || javascript/Int16Array/BYTES PER ELEMENT
 |-
-| get-Method__Int8Array.wiki || Int8Array/get
+| buffer-Property__Int16Array.wiki || javascript/Int16Array/buffer
 |-
-| set-Method__Int8Array.wiki || Int8Array/set
+| byteLength-Property__Int16Array.wiki || javascript/Int16Array/byteLength
 |-
-| subarray-Method__Int8Array.wiki || Int8Array/subarray
+| byteOffset-Property__Int16Array.wiki || javascript/Int16Array/byteOffset
 |-
-| Int16Array-Object.wiki || Int16Array
+| length-Property__Int16Array.wiki || javascript/Int16Array/length
 |-
-| BYTES_PER_ELEMENT-Constant__Int16Array.wiki || Int16Array/BYTES PER ELEMENT
+| get-Method__Int16Array.wiki || javascript/Int16Array/get
 |-
-| buffer-Property__Int16Array.wiki || Int16Array/buffer
+| set-Method__Int16Array.wiki || javascript/Int16Array/set
 |-
-| byteLength-Property__Int16Array.wiki || Int16Array/byteLength
+| subarray-Method__Int16Array.wiki || javascript/Int16Array/subarray
 |-
-| byteOffset-Property__Int16Array.wiki || Int16Array/byteOffset
+| Int32Array-Object.wiki || javascript/Int32Array
 |-
-| length-Property__Int16Array.wiki || Int16Array/length
+| BYTES_PER_ELEMENT-Constant__Int32Array.wiki || javascript/Int32Array/BYTES PER ELEMENT
 |-
-| get-Method__Int16Array.wiki || Int16Array/get
+| buffer-Property__Int32Array.wiki || javascript/Int32Array/buffer
 |-
-| set-Method__Int16Array.wiki || Int16Array/set
+| byteLength-Property__Int32Array.wiki || javascript/Int32Array/byteLength
 |-
-| subarray-Method__Int16Array.wiki || Int16Array/subarray
+| byteOffset-Property__Int32Array.wiki || javascript/Int32Array/byteOffset
 |-
-| Int32Array-Object.wiki || Int32Array
+| length-Property__Int32Array.wiki || javascript/Int32Array/length
 |-
-| BYTES_PER_ELEMENT-Constant__Int32Array.wiki || Int32Array/BYTES PER ELEMENT
+| get-Method__Int32Array.wiki || javascript/Int32Array/get
 |-
-| buffer-Property__Int32Array.wiki || Int32Array/buffer
+| set-Method__Int32Array.wiki || javascript/Int32Array/set
 |-
-| byteLength-Property__Int32Array.wiki || Int32Array/byteLength
+| subarray-Method__Int32Array.wiki || javascript/Int32Array/subarray
 |-
-| byteOffset-Property__Int32Array.wiki || Int32Array/byteOffset
+| JSON-Object.wiki || javascript/JSON
 |-
-| length-Property__Int32Array.wiki || Int32Array/length
+| JSON.parse-Function.wiki || javascript/JSON/JSON.parse
 |-
-| get-Method__Int32Array.wiki || Int32Array/get
+| JSON.stringify-Function.wiki || javascript/JSON/JSON.stringify
 |-
-| set-Method__Int32Array.wiki || Int32Array/set
+| Math-Object.wiki || javascript/Math
 |-
-| subarray-Method__Int32Array.wiki || Int32Array/subarray
+| Math-Constants.wiki || javascript/Math/Math Constants
 |-
-| JSON-Object.wiki || JSON
+| Math.abs-Function.wiki || javascript/Math/Math.abs
 |-
-| JSON.parse-Function.wiki || JSON/JSON.parse
+| Math.acos-Function.wiki || javascript/Math/Math.acos
 |-
-| JSON.stringify-Function.wiki || JSON/JSON.stringify
+| Math.asin-Function.wiki || javascript/Math/Math.asin
 |-
-| Math-Object.wiki || Math
+| Math.atan-Function.wiki || javascript/Math/Math.atan
 |-
-| Math-Constants.wiki || Math/Math Constants
+| Math.atan2-Function.wiki || javascript/Math/Math.atan2
 |-
-| Math.abs-Function.wiki || Math/Math.abs
+| Math.ceil-Function.wiki || javascript/Math/Math.ceil
 |-
-| Math.acos-Function.wiki || Math/Math.acos
+| Math.cos-Function.wiki || javascript/Math/Math.cos
 |-
-| Math.asin-Function.wiki || Math/Math.asin
+| Math.exp-Function.wiki || javascript/Math/Math.exp
 |-
-| Math.atan-Function.wiki || Math/Math.atan
+| Math.floor-Function.wiki || javascript/Math/Math.floor
 |-
-| Math.atan2-Function.wiki || Math/Math.atan2
+| Math.log-Function.wiki || javascript/Math/Math.log
 |-
-| Math.ceil-Function.wiki || Math/Math.ceil
+| Math.max-Function.wiki || javascript/Math/Math.max
 |-
-| Math.cos-Function.wiki || Math/Math.cos
+| Math.min-Function.wiki || javascript/Math/Math.min
 |-
-| Math.exp-Function.wiki || Math/Math.exp
+| Math.pow-Function.wiki || javascript/Math/Math.pow
 |-
-| Math.floor-Function.wiki || Math/Math.floor
+| Math.random-Function.wiki || javascript/Math/Math.random
 |-
-| Math.log-Function.wiki || Math/Math.log
+| Math.round-Function.wiki || javascript/Math/Math.round
 |-
-| Math.max-Function.wiki || Math/Math.max
+| Math.sin-Function.wiki || javascript/Math/Math.sin
 |-
-| Math.min-Function.wiki || Math/Math.min
+| Math.sqrt-Function.wiki || javascript/Math/Math.sqrt
 |-
-| Math.pow-Function.wiki || Math/Math.pow
+| Math.tan-Function.wiki || javascript/Math/Math.tan
 |-
-| Math.random-Function.wiki || Math/Math.random
+| Number-Object.wiki || javascript/Number
 |-
-| Math.round-Function.wiki || Math/Math.round
+| Number-Constants.wiki || javascript/Number/Number Constants
 |-
-| Math.sin-Function.wiki || Math/Math.sin
+| constructor-Property__Number.wiki || javascript/Number/constructor
 |-
-| Math.sqrt-Function.wiki || Math/Math.sqrt
+| prototype-Property__Number.wiki || javascript/Number/prototype
 |-
-| Math.tan-Function.wiki || Math/Math.tan
+| toExponential-Method__Number.wiki || javascript/Number/toExponential
 |-
-| Number-Object.wiki || Number
+| toFixed-Method__Number.wiki || javascript/Number/toFixed
 |-
-| Number-Constants.wiki || Number/Number Constants
+| toPrecision-Method__Number.wiki || javascript/Number/toPrecision
 |-
-| constructor-Property__Number.wiki || Number/constructor
+| toString-Method__Number.wiki || javascript/Number/toString
 |-
-| prototype-Property__Number.wiki || Number/prototype
+| valueOf-Method__Number.wiki || javascript/Number/valueOf
 |-
-| toExponential-Method__Number.wiki || Number/toExponential
+| Object-Object.wiki || javascript/Object
 |-
-| toFixed-Method__Number.wiki || Number/toFixed
+| constructor-Property__Object.wiki || javascript/Object/constructor
 |-
-| toPrecision-Method__Number.wiki || Number/toPrecision
+| prototype-Property__Object.wiki || javascript/Object/prototype
 |-
-| toString-Method__Number.wiki || Number/toString
+| Object.create-Function.wiki || javascript/Object/Object.create
 |-
-| valueOf-Method__Number.wiki || Number/valueOf
+| Object.defineProperties-Function.wiki || javascript/Object/Object.defineProperties
 |-
-| Object-Object.wiki || Object
+| Object.defineProperty-Function.wiki || javascript/Object/Object.defineProperty
 |-
-| constructor-Property__Object.wiki || Object/constructor
+| Object.freeze-Function.wiki || javascript/Object/Object.freeze
 |-
-| prototype-Property__Object.wiki || Object/prototype
+| Object.getOwnPropertyDescriptor-Function.wiki || javascript/Object/Object.getOwnPropertyDescriptor
 |-
-| Object.create-Function.wiki || Object/Object.create
+| Object.getOwnPropertyNames-Function.wiki || javascript/Object/Object.getOwnPropertyNames
 |-
-| Object.defineProperties-Function.wiki || Object/Object.defineProperties
+| Object.getPrototypeOf-Function.wiki || javascript/Object/Object.getPrototypeOf
 |-
-| Object.defineProperty-Function.wiki || Object/Object.defineProperty
+| Object.isExtensible-Function.wiki || javascript/Object/Object.isExtensible
 |-
-| Object.freeze-Function.wiki || Object/Object.freeze
+| Object.isFrozen-Function.wiki || javascript/Object/Object.isFrozen
 |-
-| Object.getOwnPropertyDescriptor-Function.wiki || Object/Object.getOwnPropertyDescriptor
+| Object.isSealed-Function.wiki || javascript/Object/Object.isSealed
 |-
-| Object.getOwnPropertyNames-Function.wiki || Object/Object.getOwnPropertyNames
+| Object.keys-Function.wiki || javascript/Object/Object.keys
 |-
-| Object.getPrototypeOf-Function.wiki || Object/Object.getPrototypeOf
+| Object.preventExtensions-Function.wiki || javascript/Object/Object.preventExtensions
 |-
-| Object.isExtensible-Function.wiki || Object/Object.isExtensible
+| Object.seal-Function.wiki || javascript/Object/Object.seal
 |-
-| Object.isFrozen-Function.wiki || Object/Object.isFrozen
+| hasOwnProperty-Method__Object.wiki || javascript/Object/hasOwnProperty
 |-
-| Object.isSealed-Function.wiki || Object/Object.isSealed
+| isPrototypeOf-Method__Object.wiki || javascript/Object/isPrototypeOf
 |-
-| Object.keys-Function.wiki || Object/Object.keys
+| propertyIsEnumerable-Method__Object.wiki || javascript/Object/propertyIsEnumerable
 |-
-| Object.preventExtensions-Function.wiki || Object/Object.preventExtensions
+| toLocaleString-Method__Object.wiki || javascript/Object/toLocaleString
 |-
-| Object.seal-Function.wiki || Object/Object.seal
+| toString-Method__Object.wiki || javascript/Object/toString
 |-
-| hasOwnProperty-Method__Object.wiki || Object/hasOwnProperty
+| valueOf-Method__Object.wiki || javascript/Object/valueOf
 |-
-| isPrototypeOf-Method__Object.wiki || Object/isPrototypeOf
+| RegExp-Object.wiki || javascript/RegExp
 |-
-| propertyIsEnumerable-Method__Object.wiki || Object/propertyIsEnumerable
+| 1_9-Properties__RegExp.wiki || javascript/RegExp/1 9 Properties
 |-
-| toLocaleString-Method__Object.wiki || Object/toLocaleString
+| index-Property__RegExp.wiki || javascript/RegExp/index
 |-
-| toString-Method__Object.wiki || Object/toString
+| input-Property.wiki || javascript/RegExp/input
 |-
-| valueOf-Method__Object.wiki || Object/valueOf
+| lastIndex-Property__RegExp.wiki || javascript/RegExp/lastIndex
 |-
-| RegExp-Object.wiki || RegExp
+| lastMatch-Property.wiki || javascript/RegExp/lastMatch
 |-
-| 1_9-Properties__RegExp.wiki || RegExp/1 9 Properties
+| lastParen-Property.wiki || javascript/RegExp/lastParen
 |-
-| index-Property__RegExp.wiki || RegExp/index
+| leftContext-Property.wiki || javascript/RegExp/leftContext
 |-
-| input-Property.wiki || RegExp/input
+| rightContext-Property.wiki || javascript/RegExp/rightContext
 |-
-| lastIndex-Property__RegExp.wiki || RegExp/lastIndex
+| Regular-Expression-Object.wiki || javascript/Regular Expression
 |-
-| lastMatch-Property.wiki || RegExp/lastMatch
+| global-Property__Regular-Expression.wiki || javascript/Regular Expression/global
 |-
-| lastParen-Property.wiki || RegExp/lastParen
+| ignoreCase-Property__Regular-Expression.wiki || javascript/Regular Expression/ignoreCase
 |-
-| leftContext-Property.wiki || RegExp/leftContext
+| multiline-Property__Regular-Expression.wiki || javascript/Regular Expression/multiline
 |-
-| rightContext-Property.wiki || RegExp/rightContext
+| source-Property__Regular-Expression.wiki || javascript/Regular Expression/source
 |-
-| Regular-Expression-Object.wiki || Regular Expression
+| compile-Method__Regular-Expression.wiki || javascript/Regular Expression/compile
 |-
-| global-Property__Regular-Expression.wiki || Regular Expression/global
+| exec-Method__Regular-Expression.wiki || javascript/Regular Expression/exec
 |-
-| ignoreCase-Property__Regular-Expression.wiki || Regular Expression/ignoreCase
+| test-Method__Regular-Expression.wiki || javascript/Regular Expression/test
 |-
-| multiline-Property__Regular-Expression.wiki || Regular Expression/multiline
+| String-Object.wiki || javascript/String
 |-
-| source-Property__Regular-Expression.wiki || Regular Expression/source
+| constructor-Property__String.wiki || javascript/String/constructor
 |-
-| compile-Method__Regular-Expression.wiki || Regular Expression/compile
+| length-Property__String.wiki || javascript/String/length
 |-
-| exec-Method__Regular-Expression.wiki || Regular Expression/exec
+| prototype-Property__String.wiki || javascript/String/prototype
 |-
-| test-Method__Regular-Expression.wiki || Regular Expression/test
+| String.fromCharCode-Function.wiki || javascript/String/String.fromCharCode
 |-
-| String-Object.wiki || String
+| HTML-Tag-Methods.wiki || javascript/String/HTML Tag Methods
 |-
-| constructor-Property__String.wiki || String/constructor
+| charAt-Method__String.wiki || javascript/String/charAt
 |-
-| length-Property__String.wiki || String/length
+| charCodeAt-Method__String.wiki || javascript/String/charCodeAt
 |-
-| prototype-Property__String.wiki || String/prototype
+| concat-Method__String.wiki || javascript/String/concat
 |-
-| String.fromCharCode-Function.wiki || String/String.fromCharCode
+| indexOf-Method__String.wiki || javascript/String/indexOf
 |-
-| HTML-Tag-Methods.wiki || String/HTML Tag Methods
+| lastIndexOf-Method__String.wiki || javascript/String/lastIndexOf
 |-
-| charAt-Method__String.wiki || String/charAt
+| localeCompare-Method__String.wiki || javascript/String/localeCompare
 |-
-| charCodeAt-Method__String.wiki || String/charCodeAt
+| match-Method__String.wiki || javascript/String/match
 |-
-| concat-Method__String.wiki || String/concat
+| replace-Method__String.wiki || javascript/String/replace
 |-
-| indexOf-Method__String.wiki || String/indexOf
+| search-Method__String.wiki || javascript/String/search
 |-
-| lastIndexOf-Method__String.wiki || String/lastIndexOf
+| slice-Method__String.wiki || javascript/String/slice
 |-
-| localeCompare-Method__String.wiki || String/localeCompare
+| split-Method__String.wiki || javascript/String/split
 |-
-| match-Method__String.wiki || String/match
+| substr-Method__String.wiki || javascript/String/substr
 |-
-| replace-Method__String.wiki || String/replace
+| substring-Method__String.wiki || javascript/String/substring
 |-
-| search-Method__String.wiki || String/search
+| toLocaleLowerCase-Method__String.wiki || javascript/String/toLocaleLowerCase
 |-
-| slice-Method__String.wiki || String/slice
+| toLocaleUpperCase-Method__String.wiki || javascript/String/toLocaleUpperCase
 |-
-| split-Method__String.wiki || String/split
+| toLowerCase-Method.wiki || javascript/String/toLowerCase
 |-
-| substr-Method__String.wiki || String/substr
+| toUpperCase-Method__String.wiki || javascript/String/toUpperCase
 |-
-| substring-Method__String.wiki || String/substring
+| trim-Method__String.wiki || javascript/String/trim
 |-
-| toLocaleLowerCase-Method__String.wiki || String/toLocaleLowerCase
+| toString-Method__String.wiki || javascript/String/toString
 |-
-| toLocaleUpperCase-Method__String.wiki || String/toLocaleUpperCase
+| valueOf-Method__String.wiki || javascript/String/valueOf
 |-
-| toLowerCase-Method.wiki || String/toLowerCase
+| Uint8Array-Object.wiki || javascript/Uint8Array
 |-
-| toUpperCase-Method__String.wiki || String/toUpperCase
+| BYTES_PER_ELEMENT-Constant__Uint8Array.wiki || javascript/Uint8Array/BYTES PER ELEMENT
 |-
-| trim-Method__String.wiki || String/trim
+| buffer-Property__Uint8Array.wiki || javascript/Uint8Array/buffer
 |-
-| toString-Method__String.wiki || String/toString
+| byteLength-Property__Uint8Array.wiki || javascript/Uint8Array/byteLength
 |-
-| valueOf-Method__String.wiki || String/valueOf
+| byteOffset-Property__Uint8Array.wiki || javascript/Uint8Array/byteOffset
 |-
-| Uint8Array-Object.wiki || Uint8Array
+| length-Property__Uint8Array.wiki || javascript/Uint8Array/length
 |-
-| BYTES_PER_ELEMENT-Constant__Uint8Array.wiki || Uint8Array/BYTES PER ELEMENT
+| get-Method__Uint8Array.wiki || javascript/Uint8Array/get
 |-
-| buffer-Property__Uint8Array.wiki || Uint8Array/buffer
+| set-Method__Uint8Array.wiki || javascript/Uint8Array/set
 |-
-| byteLength-Property__Uint8Array.wiki || Uint8Array/byteLength
+| subarray-Method__Uint8Array.wiki || javascript/Uint8Array/subarray
 |-
-| byteOffset-Property__Uint8Array.wiki || Uint8Array/byteOffset
+| Uint16Array-Object.wiki || javascript/Uint16Array
 |-
-| length-Property__Uint8Array.wiki || Uint8Array/length
+| BYTES_PER_ELEMENT-Constant__Uint16Array.wiki || javascript/Uint16Array/BYTES PER ELEMENT
 |-
-| get-Method__Uint8Array.wiki || Uint8Array/get
+| buffer-Property__Uint16Array.wiki || javascript/Uint16Array/buffer
 |-
-| set-Method__Uint8Array.wiki || Uint8Array/set
+| byteLength-Property__Uint16Array.wiki || javascript/Uint16Array/byteLength
 |-
-| subarray-Method__Uint8Array.wiki || Uint8Array/subarray
+| byteOffset-Property__Uint16Array.wiki || javascript/Uint16Array/byteOffset
 |-
-| Uint16Array-Object.wiki || Uint16Array
+| length-Property__UInt16Array.wiki || javascript/Uint16Array/length
 |-
-| BYTES_PER_ELEMENT-Constant__Uint16Array.wiki || Uint16Array/BYTES PER ELEMENT
+| get-Method__Uint16Array.wiki || javascript/Uint16Array/get
 |-
-| buffer-Property__Uint16Array.wiki || Uint16Array/buffer
+| set-Method__Uint16Array.wiki || javascript/Uint16Array/set
 |-
-| byteLength-Property__Uint16Array.wiki || Uint16Array/byteLength
+| subarray-Method__Uint16Array.wiki || javascript/Uint16Array/subarray
 |-
-| byteOffset-Property__Uint16Array.wiki || Uint16Array/byteOffset
+| Uint32Array-Object.wiki || javascript/Uint32Array
 |-
-| length-Property__UInt16Array.wiki || Uint16Array/length
+| BYTES_PER_ELEMENT-Constant__Uint32Array.wiki || javascript/Uint32Array/BYTES PER ELEMENT
 |-
-| get-Method__Uint16Array.wiki || Uint16Array/get
+| buffer-Property__Uint32Array.wiki || javascript/Uint32Array/buffer
 |-
-| set-Method__Uint16Array.wiki || Uint16Array/set
+| byteLength-Property__UInt32Array.wiki || javascript/Uint32Array/byteLength
 |-
-| subarray-Method__Uint16Array.wiki || Uint16Array/subarray
+| byteOffset-Property__UInt32Array.wiki || javascript/Uint32Array/byteOffset
 |-
-| Uint32Array-Object.wiki || Uint32Array
+| length-Property__Uint32Array.wiki || javascript/Uint32Array/length
 |-
-| BYTES_PER_ELEMENT-Constant__Uint32Array.wiki || Uint32Array/BYTES PER ELEMENT
+| get-Method__Uint32Array.wiki || javascript/Uint32Array/get
 |-
-| buffer-Property__Uint32Array.wiki || Uint32Array/buffer
+| set-Method__Uint32Array.wiki || javascript/Uint32Array/set
 |-
-| byteLength-Property__UInt32Array.wiki || Uint32Array/byteLength
+| subarray-Method__Uint32Array.wiki || javascript/Uint32Array/subarray
 |-
-| byteOffset-Property__UInt32Array.wiki || Uint32Array/byteOffset
+| JavaScript-Constants.wiki || javascript/Constants
 |-
-| length-Property__Uint32Array.wiki || Uint32Array/length
+| JavaScript-Properties.wiki || javascript/Properties
 |-
-| get-Method__Uint32Array.wiki || Uint32Array/get
+| JavaScript-Functions.wiki || javascript/Functions
 |-
-| set-Method__Uint32Array.wiki || Uint32Array/set
+| JavaScript-Methods.wiki || javascript/Methods
 |-
-| subarray-Method__Uint32Array.wiki || Uint32Array/subarray
+| JavaScript-Operators.wiki || javascript/Operators
 |-
-| JavaScript-Constants.wiki || Constants
+| Addition-Assignment-Operator.wiki || javascript/Operators/Addition Assignment
 |-
-| JavaScript-Properties.wiki || Properties
+| Addition-Operator.wiki || javascript/Operators/Addition
 |-
-| JavaScript-Functions.wiki || Functions
+| Assignment-Operator.wiki || javascript/Operators/Assignment
 |-
-| JavaScript-Methods.wiki || Methods
+| Bitwise-AND-Assignment-Operator.wiki || javascript/Operators/Bitwise AND Assignment
 |-
-| JavaScript-Operators.wiki || Operators
+| Bitwise-AND-Operator.wiki || javascript/Operators/Bitwise AND
 |-
-| Addition-Assignment-Operator.wiki || Operators/Addition Assignment
+| Bitwise-Left-Shift-Operator.wiki || javascript/Operators/Bitwise Left Shift
 |-
-| Addition-Operator.wiki || Operators/Addition
+| Bitwise-NOT-Operator.wiki || javascript/Operators/Bitwise NOT
 |-
-| Assignment-Operator.wiki || Operators/Assignment
+| Bitwise-OR-Assignment-Operator.wiki || javascript/Operators/Bitwise OR Assignment
 |-
-| Bitwise-AND-Assignment-Operator.wiki || Operators/Bitwise AND Assignment
+| Bitwise-OR-Operator.wiki || javascript/Operators/Bitwise OR
 |-
-| Bitwise-AND-Operator.wiki || Operators/Bitwise AND
+| Bitwise-Right-Shift-Operator.wiki || javascript/Operators/Bitwise Right Shift
 |-
-| Bitwise-Left-Shift-Operator.wiki || Operators/Bitwise Left Shift
+| Bitwise-XOR-Assignment-Operator.wiki || javascript/Operators/Bitwise XOR Assignment
 |-
-| Bitwise-NOT-Operator.wiki || Operators/Bitwise NOT
+| Bitwise-XOR-Operator.wiki || javascript/Operators/Bitwise XOR
 |-
-| Bitwise-OR-Assignment-Operator.wiki || Operators/Bitwise OR Assignment
+| Comma-Operator.wiki || javascript/Operators/Comma
 |-
-| Bitwise-OR-Operator.wiki || Operators/Bitwise OR
+| Comparison-Operators.wiki || javascript/Operators/Comparison
 |-
-| Bitwise-Right-Shift-Operator.wiki || Operators/Bitwise Right Shift
+| Compound-Assignment-Operators.wiki || javascript/Operators/Compound Assignment
 |-
-| Bitwise-XOR-Assignment-Operator.wiki || Operators/Bitwise XOR Assignment
+| Conditional__Ternary-Operator.wiki || javascript/Operators/Conditional Ternary
 |-
-| Bitwise-XOR-Operator.wiki || Operators/Bitwise XOR
+| delete-Operator.wiki || javascript/Operators/delete
 |-
-| Comma-Operator.wiki || Operators/Comma
+| Division-Assignment-Operator.wiki || javascript/Operators/Division Assignment
 |-
-| Comparison-Operators.wiki || Operators/Comparison
+| Division-Operator.wiki || javascript/Operators/Division
 |-
-| Compound-Assignment-Operators.wiki || Operators/Compound Assignment
+| in-Operator.wiki || javascript/Operators/in
 |-
-| Conditional__Ternary-Operator.wiki || Operators/Conditional Ternary
+| Increment-and-Decrement-Operators.wiki || javascript/Operators/Increment and Decrement
 |-
-| delete-Operator.wiki || Operators/delete
+| instanceof-Operator.wiki || javascript/Operators/instanceof
 |-
-| Division-Assignment-Operator.wiki || Operators/Division Assignment
+| Left-Shift-Assignment-Operator.wiki || javascript/Operators/Left Shift Assignment
 |-
-| Division-Operator.wiki || Operators/Division
+| Logical-AND-Operator.wiki || javascript/Operators/Logical AND
 |-
-| in-Operator.wiki || Operators/in
+| Logical-NOT-Operator.wiki || javascript/Operators/Logical NOT
 |-
-| Increment-and-Decrement-Operators.wiki || Operators/Increment and Decrement
+| Logical-OR-Operator.wiki || javascript/Operators/Logical OR
 |-
-| instanceof-Operator.wiki || Operators/instanceof
+| Modulus-Assignment-Operator.wiki || javascript/Operators/Modulus Assignment
 |-
-| Left-Shift-Assignment-Operator.wiki || Operators/Left Shift Assignment
+| Modulus-Operator.wiki || javascript/Operators/Modulus
 |-
-| Logical-AND-Operator.wiki || Operators/Logical AND
+| Multiplication-Assignment-Operator.wiki || javascript/Operators/Multiplication Assignment
 |-
-| Logical-NOT-Operator.wiki || Operators/Logical NOT
+| Multiplication-Operator.wiki || javascript/Operators/Multiplication
 |-
-| Logical-OR-Operator.wiki || Operators/Logical OR
+| new-Operator.wiki || javascript/Operators/new
 |-
-| Modulus-Assignment-Operator.wiki || Operators/Modulus Assignment
+| Right-Shift-Assignment-Operator.wiki || javascript/Operators/Right Shift Assignment
 |-
-| Modulus-Operator.wiki || Operators/Modulus
+| Subtraction-Assignment-Operator.wiki || javascript/Operators/Subtraction Assignment
 |-
-| Multiplication-Assignment-Operator.wiki || Operators/Multiplication Assignment
+| Subtraction-Operator.wiki || javascript/Operators/Subtraction
 |-
-| Multiplication-Operator.wiki || Operators/Multiplication
+| typeof-Operator.wiki || javascript/Operators/typeof
 |-
-| new-Operator.wiki || Operators/new
+| Unsigned-Right-Shift-Assignment-Operator.wiki || javascript/Operators/Unsigned Right Shift Assignment
 |-
-| Right-Shift-Assignment-Operator.wiki || Operators/Right Shift Assignment
+| Unsigned-Right-Shift-Operator.wiki || javascript/Operators/Unsigned Right Shift
 |-
-| Subtraction-Assignment-Operator.wiki || Operators/Subtraction Assignment
+| void-Operator.wiki || javascript/Operators/void
 |-
-| Subtraction-Operator.wiki || Operators/Subtraction
+| JavaScript-Statements.wiki || javascript/Statements
 |-
-| typeof-Operator.wiki || Operators/typeof
+| break-Statement.wiki || javascript/Statements/break
 |-
-| Unsigned-Right-Shift-Assignment-Operator.wiki || Operators/Unsigned Right Shift Assignment
+| Comment-Statements.wiki || javascript/Statements/Comment
 |-
-| Unsigned-Right-Shift-Operator.wiki || Operators/Unsigned Right Shift
+| continue-Statement.wiki || javascript/Statements/continue
 |-
-| void-Operator.wiki || Operators/void
+| debugger-Statement.wiki || javascript/Statements/debugger
 |-
-| JavaScript-Statements.wiki || Statements
+| do_while-Statement.wiki || javascript/Statements/do while
 |-
-| break-Statement.wiki || Statements/break
+| for-Statement.wiki || javascript/Statements/for
 |-
-| Comment-Statements.wiki || Statements/Comment
+| for_in-Statement.wiki || javascript/Statements/for in
 |-
-| continue-Statement.wiki || Statements/continue
+| function-Statement.wiki || javascript/Statements/function
 |-
-| debugger-Statement.wiki || Statements/debugger
+| if_else-Statement.wiki || javascript/Statements/if else
 |-
-| do_while-Statement.wiki || Statements/do while
+| Labeled-Statement.wiki || javascript/Statements/Labeled
 |-
-| for-Statement.wiki || Statements/for
+| return-Statement.wiki || javascript/Statements/return
 |-
-| for_in-Statement.wiki || Statements/for in
+| switch-Statement.wiki || javascript/Statements/switch
 |-
-| function-Statement.wiki || Statements/function
+| this-Statement.wiki || javascript/Statements/this
 |-
-| if_else-Statement.wiki || Statements/if else
+| throw-Statement.wiki || javascript/Statements/throw
 |-
-| Labeled-Statement.wiki || Statements/Labeled
+| try_catch_finally-Statement.wiki || javascript/Statements/try catch finally
 |-
-| return-Statement.wiki || Statements/return
+| var-Statement.wiki || javascript/Statements/var
 |-
-| switch-Statement.wiki || Statements/switch
+| while-Statement.wiki || javascript/Statements/while
 |-
-| this-Statement.wiki || Statements/this
+| with-Statement.wiki || javascript/Statements/with
 |-
-| throw-Statement.wiki || Statements/throw
+| JavaScript-Directives.wiki || javascript/Directives
 |-
-| try_catch_finally-Statement.wiki || Statements/try catch finally
+| use-strict-Directive.wiki || javascript/Directives/use strict
 |-
-| var-Statement.wiki || Statements/var
+| JavaScript-Errors.wiki || javascript/Errors
 |-
-| while-Statement.wiki || Statements/while
+| JavaScript-Syntax-Errors.wiki || javascript/Errors/Syntax
 |-
-| with-Statement.wiki || Statements/with
+| JavaScript-Reserved-Words.wiki || javascript/Reserved Words
 |-
-| JavaScript-Directives.wiki || Directives
-|-
-| use-strict-Directive.wiki || Directives/use strict
-|-
-| JavaScript-Errors.wiki || Errors
-|-
-| JavaScript-Syntax-Errors.wiki || Errors/Syntax
-|-
-| JavaScript-Reserved-Words.wiki || Reserved Words
-|-
-| JavaScript-Future-Reserved-Words.wiki || Future Reserved Words
+| JavaScript-Future-Reserved-Words.wiki || javascript/Future Reserved Words
 |}

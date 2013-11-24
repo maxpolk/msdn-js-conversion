@@ -8,71 +8,71 @@ The following table lists predefined JavaScript constants that you can use in ex
 ! Description
 ! JavaScript object
 |-
-| [[Math/Math Constants|E]]
+| [[javascript/Math/Math Constants|E]]
 | The mathematical constant e. This is Euler's number, the base of natural logarithms.
 | '''Math'''
 |-
-| [[Global/Infinity Constant|Infinity]]
+| [[javascript/Global/Infinity Constant|Infinity]]
 | A value that is larger than the largest floating point number. Negative Infinity (-Infinity) is smaller than the smallest floating point number.
 | '''Global'''
 |-
-| [[Math/Math Constants|LN2]]
+| [[javascript/Math/Math Constants|LN2]]
 | The natural logarithm of 2.
 | '''Math'''
 |-
-| [[Math/Math Constants|LN10]]
+| [[javascript/Math/Math Constants|LN10]]
 | The natural logarithm of 10.
 | '''Math'''
 |-
-| [[Math/Math Constants|LOG2E]]
+| [[javascript/Math/Math Constants|LOG2E]]
 | The base-2 logarithm of e.
 | '''Math'''
 |-
-| [[Math/Math Constants|LOG10E]]
+| [[javascript/Math/Math Constants|LOG10E]]
 | The base-10 logarithm of e.
 | '''Math'''
 |-
-| [[Number/Number Constants|MAX_VALUE]]
+| [[javascript/Number/Number Constants|MAX_VALUE]]
 | The largest number that can be represented in JavaScript.
 | '''Number'''
 |-
-| [[Number/Number Constants|MIN_VALUE]]
+| [[javascript/Number/Number Constants|MIN_VALUE]]
 | The closest number to zero that can be represented in JavaScript.
 | '''Number'''
 |-
-| [[Number/Number Constants|NaN]]
+| [[javascript/Number/Number Constants|NaN]]
 | Indicates that an arithmetic expression returned a value that is not a number.
 | '''Number'''
 |-
-| [[Global/NaN Constant|NaN (Global)]]
+| [[javascript/Global/NaN Constant|NaN (Global)]]
 | A value that indicates that an expression is not a number.
 | '''Global'''
 |-
-| [[Number/Number Constants|NEGATIVE_INFINITY]]
+| [[javascript/Number/Number Constants|NEGATIVE_INFINITY]]
 | A value that is smaller than the smallest floating point number.
 | '''Number'''
 |-
-| [[Global/null Constant|null Constant]]
+| [[javascript/Global/null Constant|null Constant]]
 | The value of a variable that does not point to valid data.
 | '''Global'''
 |-
-| [[Math/Math Constants|PI]]
+| [[javascript/Math/Math Constants|PI]]
 | Pi. This is the ratio of the circumference of a circle to its diameter.
 | '''Math'''
 |-
-| [[Number/Number Constants|POSITIVE_INFINITY]]
+| [[javascript/Number/Number Constants|POSITIVE_INFINITY]]
 | A value that is larger than the largest floating point number.
 | '''Number'''
 |-
-| [[Math/Math Constants|SQRT1_2]]
+| [[javascript/Math/Math Constants|SQRT1_2]]
 | The square root of 0.5, or, equivalently, one divided by the square root of 2.
 | '''Math'''
 |-
-| [[Math/Math Constants|SQRT2]]
+| [[javascript/Math/Math Constants|SQRT2]]
 | The square root of 2.
 | '''Math'''
 |-
-| [[Global/undefined Constant|undefined]]
+| [[javascript/Global/undefined Constant|undefined]]
 | The value of a variable that has been declared but not initialized.
 | '''Global'''
 |}

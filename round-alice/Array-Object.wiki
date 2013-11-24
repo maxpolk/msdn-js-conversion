@@ -56,13 +56,13 @@ The following table lists the properties of the '''Array''' object.
 ! Property
 ! Description
 |-
-| [[Array/constructor|constructor Property]]
+| [[javascript/Array/constructor|constructor Property]]
 | Specifies the function that creates an array.
 |-
-| [[Array/length|length Property (Array)]]
+| [[javascript/Array/length|length Property (Array)]]
 | Returns an integer value that is one higher than the highest element defined in an array.
 |-
-| [[Array/prototype|prototype Property]]
+| [[javascript/Array/prototype|prototype Property]]
 | Returns a reference to the prototype for an array.
 |}
 
@@ -74,7 +74,7 @@ The following table describes the functions of the '''Array''' object.
 ! Function
 ! Description
 |-
-| [[Array/Array.isArray|Array.isArray Function]]
+| [[javascript/Array/Array.isArray|Array.isArray Function]]
 | Returns a Boolean value that indicates whether an object is an array.
 |}
 
@@ -86,78 +86,78 @@ The following table lists the methods of the '''Array''' object.
 ! Method
 ! Description
 |-
-| [[Array/concat|concat Method (Array)]]
+| [[javascript/Array/concat|concat Method (Array)]]
 | Returns a new array consisting of a combination of two arrays.
 |-
-| [[Array/every|every Method]]
+| [[javascript/Array/every|every Method]]
 | Checks whether a defined callback function returns true for all elements in an array.
 |-
-| [[Array/filter|filter Method]]
+| [[javascript/Array/filter|filter Method]]
 | Calls a defined callback function on each element of an array, and returns an array of values for which the callback function returns true.
 |-
-| [[Array/forEach|forEach Method]]
+| [[javascript/Array/forEach|forEach Method]]
 | Calls a defined callback function for each element in an array.
 |-
-| [[Object/hasOwnProperty|hasOwnProperty Method]]
+| [[javascript/Object/hasOwnProperty|hasOwnProperty Method]]
 | Returns a Boolean value that indicates whether an object has a property with the specified name.
 |-
-| [[Array/indexOf|indexOf Method (Array)]]
+| [[javascript/Array/indexOf|indexOf Method (Array)]]
 | Returns the index of the first occurrence of a value in an array.
 |-
-| [[Object/isPrototypeOf|isPrototypeOf Method]]
+| [[javascript/Object/isPrototypeOf|isPrototypeOf Method]]
 | Returns a Boolean value that indicates whether an object exists in another object's prototype chain.
 |-
-| [[Array/join|join Method]]
+| [[javascript/Array/join|join Method]]
 | Returns a String object consisting of all the elements of an array concatenated together.
 |-
-| [[Array/lastIndexOf|lastIndexOf Method (Array)]]
+| [[javascript/Array/lastIndexOf|lastIndexOf Method (Array)]]
 | Returns the index of the last occurrence of a specified value in an array.
 |-
-| [[Array/map|map Method]]
+| [[javascript/Array/map|map Method]]
 | Calls a defined callback function on each element of an array, and returns an array that contains the results.
 |-
-| [[Array/pop|pop Method]]
+| [[javascript/Array/pop|pop Method]]
 | Removes the last element from an array and returns it.
 |-
-| [[Object/propertyIsEnumerable|propertyIsEnumerable Method]]
+| [[javascript/Object/propertyIsEnumerable|propertyIsEnumerable Method]]
 | Returns a Boolean value that indicates whether a specified property is part of an object and whether it is enumerable.
 |-
-| [[Array/push|push Method]]
+| [[javascript/Array/push|push Method]]
 | Appends new elements to an array, and returns the new length of the array.
 |-
-| [[Array/reduce|reduce Method]]
+| [[javascript/Array/reduce|reduce Method]]
 | Accumulates a single result by calling a defined callback function for all elements in an array. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 |-
-| [[Array/reduceRight|reduceRight Method]]
+| [[javascript/Array/reduceRight|reduceRight Method]]
 | Accumulates a single result by calling a defined callback function for all elements in an array, in descending order. The return value of the callback function is the accumulated result, and is provided as an argument in the next call to the callback function.
 |-
-| [[Array/reverse|reverse Method]]
+| [[javascript/Array/reverse|reverse Method]]
 | Returns an '''Array''' object with the elements reversed.
 |-
-| [[Array/shift|shift Method]]
+| [[javascript/Array/shift|shift Method]]
 | Removes the first element from an array and returns it.
 |-
-| [[Array/slice|slice Method (Array)]]
+| [[javascript/Array/slice|slice Method (Array)]]
 | Returns a section of an array.
 |-
-| [[Array/some|some Method]]
+| [[javascript/Array/some|some Method]]
 | Checks whether a defined callback function returns true for any element of an array.
 |-
-| [[Array/sort|sort Method]]
+| [[javascript/Array/sort|sort Method]]
 | Returns an '''Array''' object with the elements sorted.
 |-
-| [[Array/splice|splice Method]]
+| [[javascript/Array/splice|splice Method]]
 | Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 |-
-| [[Object/toLocaleString|toLocaleString Method]]
+| [[javascript/Object/toLocaleString|toLocaleString Method]]
 | Returns a string using the current locale.
 |-
-| [[Array/toString|toString Method]]
+| [[javascript/Array/toString|toString Method]]
 | Returns a string representation of an array.
 |-
-| [[Array/unshift|unshift Method]]
+| [[javascript/Array/unshift|unshift Method]]
 | Inserts new elements at the start of an array.
 |-
-| [[Array/valueOf|valueOf Method]]
+| [[javascript/Array/valueOf|valueOf Method]]
 | Gets a reference to the array.
 |}

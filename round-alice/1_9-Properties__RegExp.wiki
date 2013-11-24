@@ -69,7 +69,7 @@ The following example performs a regular expression search. It displays matches 
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[RegExp|RegExp Object]]
+'''Applies To''' : [[javascript/RegExp|RegExp Object]]
 
 
 ==See Also==

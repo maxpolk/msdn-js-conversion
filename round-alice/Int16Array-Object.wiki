@@ -18,7 +18,7 @@ The following table lists the constants of the '''Int16Array''' object.
 ! Constant
 ! Description
 |-
-| [[Int16Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
+| [[javascript/Int16Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
 | The size in bytes of each element in the array.
 |}
 
@@ -30,16 +30,16 @@ The following table lists the constants of the '''Int16Array''' object.
 ! Property
 ! Description
 |-
-| [[Int16Array/buffer|buffer Property]]
+| [[javascript/Int16Array/buffer|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this array.
 |-
-| [[Int16Array/byteOffset|byteLength Property]]
+| [[javascript/Int16Array/byteOffset|byteLength Property]]
 | Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Int8Array/byteOffset|byteOffset Property]]
+| [[javascript/Int8Array/byteOffset|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Float32Array/length|length Property]]
+| [[javascript/Float32Array/length|length Property]]
 | The length of the array.
 |}
 
@@ -51,13 +51,13 @@ The following table lists the methods of the '''Int16Array''' object.
 ! Method
 ! Description
 |-
-| [[Int16Array/get|get Method]]
+| [[javascript/Int16Array/get|get Method]]
 | Omittable. Gets the element at the specified index.
 |-
-| [[Int16Array/set|set Method (Int16Array)]]
+| [[javascript/Int16Array/set|set Method (Int16Array)]]
 | Sets a value or an array of values.
 |-
-| [[Int16Array/subarray|subarray Method (Int16Array)]]
+| [[javascript/Int16Array/subarray|subarray Method (Int16Array)]]
 | Gets a new Int16Array view of the ArrayBuffer store for this array.
 |}
 

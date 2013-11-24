@@ -9,7 +9,7 @@ Returns the angle (in radians) from the X axis to a point ( y , x ).
 ==Remarks==
 The return value is between -pi and pi. It represents the angle of the supplied ( y , x ) point, in radians.
 
-'''Applies To''' : [[Math|Math Object]]
+'''Applies To''' : [[javascript/Math|Math Object]]
 
 
 ==Requirements==

@@ -18,7 +18,7 @@ The following table lists the constants of the '''Float64Array''' object.
 ! Constant
 ! Description
 |-
-| [[Float64Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
+| [[javascript/Float64Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
 | The size in bytes of each element in the array.
 |}
 
@@ -30,16 +30,16 @@ The following table lists the constants of the '''Float64Array''' object.
 ! Property
 ! Description
 |-
-| [[Float64Array/byteLength|buffer Property]]
+| [[javascript/Float64Array/byteLength|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this array.
 |-
-| [[Float64Array/byteLength|byteLength Property]]
+| [[javascript/Float64Array/byteLength|byteLength Property]]
 | Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Float64Array/length|byteOffset Property]]
+| [[javascript/Float64Array/length|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Float64Array/length|length Property]]
+| [[javascript/Float64Array/length|length Property]]
 | The length of the array.
 |}
 
@@ -51,13 +51,13 @@ The following table lists the methods of the '''Float64Array''' object.
 ! Method
 ! Description
 |-
-| [[Float64Array/get|get Method]]
+| [[javascript/Float64Array/get|get Method]]
 | Omittable. Gets the element at the specified index.
 |-
-| [[Float64Array/set|set Method (Float64Array)]]
+| [[javascript/Float64Array/set|set Method (Float64Array)]]
 | Sets a value or an array of values.
 |-
-| [[Float64Array/subarray|subarray Method (Float64Array)]]
+| [[javascript/Float64Array/subarray|subarray Method (Float64Array)]]
 | Gets a new Float64Array view of the ArrayBuffer store for this array.
 |}
 

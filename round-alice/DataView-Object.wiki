@@ -20,13 +20,13 @@ The following table lists the properties of the '''DataView''' object.
 ! Property
 ! Description
 |-
-| [[DataView/buffer|buffer Property]]
+| [[javascript/DataView/buffer|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this view.
 |-
-| [[DataView/byteLength|byteLength Property]]
+| [[javascript/DataView/byteLength|byteLength Property]]
 | Read-only. The length of this view from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[DataView/byteOffset|byteOffset Property]]
+| [[javascript/DataView/byteOffset|byteOffset Property]]
 | Read-only. The offset of this view from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |}
 
@@ -38,52 +38,52 @@ The following table lists the methods of the '''DataView''' object.
 ! Method
 ! Description
 |-
-| [[DataView/getInt8|getInt8 Method]]
+| [[javascript/DataView/getInt8|getInt8 Method]]
 | Gets the Int8 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/getUint8|getUint8 Method (DataView)]]
+| [[javascript/DataView/getUint8|getUint8 Method (DataView)]]
 | Gets the Uint8 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/getInt16|getInt16 Method (DataView)]]
+| [[javascript/DataView/getInt16|getInt16 Method (DataView)]]
 | Gets the Int16 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/getUint16|getUint16 Method (DataView)]]
+| [[javascript/DataView/getUint16|getUint16 Method (DataView)]]
 | Gets the Uint16 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/getInt32|getInt32 Method (DataView)]]
+| [[javascript/DataView/getInt32|getInt32 Method (DataView)]]
 | Gets the Int32 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/getUint32|getUint32 Method (DataView)]]
+| [[javascript/DataView/getUint32|getUint32 Method (DataView)]]
 | Gets the Uint32 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/getFloat32|getFloat32 Method (DataView)]]
+| [[javascript/DataView/getFloat32|getFloat32 Method (DataView)]]
 | Gets the Float32 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/getFloat64|getFloat64 Method (DataView)]]
+| [[javascript/DataView/getFloat64|getFloat64 Method (DataView)]]
 | Gets the Float64 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/setInt8|setInt8 Method (DataView)]]
+| [[javascript/DataView/setInt8|setInt8 Method (DataView)]]
 | Stores a Int8 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/setUint8|setUint8 Method (DataView)]]
+| [[javascript/DataView/setUint8|setUint8 Method (DataView)]]
 | Stores a Uint8 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/setInt16|setInt16 Method (DataView)]]
+| [[javascript/DataView/setInt16|setInt16 Method (DataView)]]
 | Stores a Int16 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/setUint16|setUint16 Method (DataView)]]
+| [[javascript/DataView/setUint16|setUint16 Method (DataView)]]
 | Stores a Uint16 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/setInt32|setInt32 Method (DataView)]]
+| [[javascript/DataView/setInt32|setInt32 Method (DataView)]]
 | Stores a Int32 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/setUint32|setUint32 Method (DataView)]]
+| [[javascript/DataView/setUint32|setUint32 Method (DataView)]]
 | Stores a Uint32 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/setFloat32|setFloat32 Method (DataView)]]
+| [[javascript/DataView/setFloat32|setFloat32 Method (DataView)]]
 | Stores a Float32 value at the specified byte offset from the start of the view.
 |-
-| [[DataView/setFloat64|setFloat64 Method (DataView)]]
+| [[javascript/DataView/setFloat64|setFloat64 Method (DataView)]]
 | Stores a Float64 value at the specified byte offset from the start of the view.
 |}
 

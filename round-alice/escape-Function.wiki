@@ -11,7 +11,7 @@ Characters with a value greater than 255 are stored using the '''%u''' xxxx form
 
 '''Note''' -- The '''escape''' function should not be used to encode Uniform Resource Identifiers (URI). Use '''encodeURI''' and '''encodeURIComponent''' functions instead.
 
-'''Applies To''' : [[Global|Global Object]]
+'''Applies To''' : [[javascript/Global|Global Object]]
 
 
 ==Requirements==

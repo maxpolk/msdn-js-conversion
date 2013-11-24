@@ -9,9 +9,9 @@ An object that represents a number of any kind. All JavaScript numbers are 64-bi
 ==Remarks==
 JavaScript creates '''Number''' objects when a variable is set to a number value, for example <code>var num = 255.336;</code>. It is seldom necessary to create '''Number''' objects explicitly.
 
-The '''Number''' object has its own properties and methods, in addition to the properties and methods inherited from '''Object'''. Numbers are converted into strings under certain circumstances, for example when a number is added or concatenated with a string, as well as by means of the '''toString''' method. For more information, see [[Operators/Addition|Addition Operator (+)]].
+The '''Number''' object has its own properties and methods, in addition to the properties and methods inherited from '''Object'''. Numbers are converted into strings under certain circumstances, for example when a number is added or concatenated with a string, as well as by means of the '''toString''' method. For more information, see [[javascript/Operators/Addition|Addition Operator (+)]].
 
-JavaScript has several number constants. For a complete list, see [[Number/Number Constants|Number Constants]].
+JavaScript has several number constants. For a complete list, see [[javascript/Number/Number Constants|Number Constants]].
 
 
 ==Requirements==
@@ -26,10 +26,10 @@ The following table lists the properties of the '''Number''' object.
 ! Property
 ! Description
 |-
-| [[Object/constructor|constructor Property]]
+| [[javascript/Object/constructor|constructor Property]]
 | Specifies the function that creates an object.
 |-
-| [[Object/prototype|prototype Property]]
+| [[javascript/Object/prototype|prototype Property]]
 | Returns a reference to the prototype for a class of objects.
 |}
 
@@ -41,31 +41,31 @@ The following table lists the methods of the '''Number''' object.
 ! Method
 ! Description
 |-
-| [[Object/hasOwnProperty|hasOwnProperty Method]]
+| [[javascript/Object/hasOwnProperty|hasOwnProperty Method]]
 | Returns a Boolean value that indicates whether an object has a property with the specified name.
 |-
-| [[Object/isPrototypeOf|isPrototypeOf Method]]
+| [[javascript/Object/isPrototypeOf|isPrototypeOf Method]]
 | Returns a Boolean value that indicates whether an object exists in another object's prototype hierarchy.
 |-
-| [[Object/propertyIsEnumerable|propertyIsEnumerable Method]]
+| [[javascript/Object/propertyIsEnumerable|propertyIsEnumerable Method]]
 | Returns a Boolean value that indicates whether a specified property is part of an object and whether it is enumerable.
 |-
-| [[Number/toExponential|toExponential method]]
+| [[javascript/Number/toExponential|toExponential method]]
 | Returns a string that contains a number represented in exponential notation.
 |-
-| [[Number/toFixed|toFixed method]]
+| [[javascript/Number/toFixed|toFixed method]]
 | Returns a string that represents a number in fixed-point notation.
 |-
-| [[Object/toLocaleString|toLocaleString Method]]
+| [[javascript/Object/toLocaleString|toLocaleString Method]]
 | Returns an object converted to a string based on the current locale.
 |-
-| [[Number/toPrecision|toPrecision method]]
+| [[javascript/Number/toPrecision|toPrecision method]]
 | Returns a string that contains a number that is represented in either exponential or fixed-point notation and that has a specified number of digits.
 |-
-| [[Object/toString|toString Method]]
+| [[javascript/Object/toString|toString Method]]
 | Returns a string representation of an object.
 |-
-| [[Object/valueOf|valueOf Method]]
+| [[javascript/Object/valueOf|valueOf Method]]
 | Returns the primitive value of the specified object.
 |}
 

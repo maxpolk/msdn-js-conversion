@@ -25,7 +25,7 @@ The following code shows how to use the '''acos''' function.
  // 0.5403023058681398
 
 ==Remarks==
-'''Applies To''' : [[Math|Math Object]]
+'''Applies To''' : [[javascript/Math|Math Object]]
 
 
 ==Requirements==

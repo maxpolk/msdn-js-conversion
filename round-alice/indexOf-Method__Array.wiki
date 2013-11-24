@@ -27,7 +27,7 @@ The '''indexOf''' method searches an array for a specified value. The method ret
 
 The search occurs in ascending index order.
 
-The array elements are compared to the searchElement value by strict equality, similar to the === operator. For more information, see [[Operators/Comparison|Comparison Operators]].
+The array elements are compared to the searchElement value by strict equality, similar to the === operator. For more information, see [[javascript/Operators/Comparison|Comparison Operators]].
 
 The optional fromIndex argument specifies the array index at which to begin the search. If fromIndex is greater than or equal to the array length, -1 is returned. If fromIndex is negative, the search starts at the array length plus fromIndex.
 

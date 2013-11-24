@@ -11,7 +11,7 @@ To set the day-of-the-month value using Universal Coordinated Time (UTC), use th
 
 If the value of numDate is greater than the number of days in the month, the date rolls over to a later month and/or year. For example, if the stored date is January 5, 1996 and '''setDate(32)''' is called, the date changes to February 1, 1996. If numDate is a negative number, the date rolls back to an earlier month and/or year. For example, if the stored date is January 5, 1996 and '''setDate(-32)''' is called, the date changes to November 29, 1995.
 
-The [[Date/setFullYear|setFullYear Method (Date)]] can be used to set the year, month, and day of the month.
+The [[javascript/Date/setFullYear|setFullYear Method (Date)]] can be used to set the year, month, and day of the month.
 
 
 ==Example==
@@ -26,7 +26,7 @@ The following example shows how to use the '''setDate''' method.
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Date|Date Object]]
+'''Applies To''' : [[javascript/Date|Date Object]]
 
 
 ==See Also==

@@ -24,10 +24,10 @@ The following table lists properties of the '''Object Object'''.
 ! Property
 ! Description
 |-
-| [[Object/constructor|constructor Property]]
+| [[javascript/Object/constructor|constructor Property]]
 | Specifies the function that creates an object.
 |-
-| [[Object/prototype|prototype Property]]
+| [[javascript/Object/prototype|prototype Property]]
 | Returns a reference to the prototype for a class of objects.
 |}
 
@@ -39,43 +39,43 @@ The following table lists functions of the '''Object Object'''.
 ! Function
 ! Description
 |-
-| [[Object/Object.create|Object.create Function]]
+| [[javascript/Object/Object.create|Object.create Function]]
 | Creates an object that has a specified prototype, and that optionally contains specified properties.
 |-
-| [[Object/Object.defineProperties|Object.defineProperties Function]]
+| [[javascript/Object/Object.defineProperties|Object.defineProperties Function]]
 | Adds one or more properties to an object, and/or modifies attributes of existing properties.
 |-
-| [[Object/Object.defineProperty|Object.defineProperty Function]]
+| [[javascript/Object/Object.defineProperty|Object.defineProperty Function]]
 | Adds a property to an object, or modifies attributes of an existing property.
 |-
-| [[Object/Object.freeze|Object.freeze Function]]
+| [[javascript/Object/Object.freeze|Object.freeze Function]]
 | Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
 |-
-| [[Object/Object.getOwnPropertyDescriptor|Object.getOwnPropertyDescriptor Function]]
+| [[javascript/Object/Object.getOwnPropertyDescriptor|Object.getOwnPropertyDescriptor Function]]
 | Returns the definition of a data property or an accessor property.
 |-
-| [[Object/Object.getOwnPropertyNames|Object.getOwnPropertyNames Function]]
+| [[javascript/Object/Object.getOwnPropertyNames|Object.getOwnPropertyNames Function]]
 | Returns the names of the properties and methods of an object.
 |-
-| [[Object/Object.getPrototypeOf|Object.getPrototypeOf Function]]
+| [[javascript/Object/Object.getPrototypeOf|Object.getPrototypeOf Function]]
 | Returns the prototype of an object.
 |-
-| [[Object/Object.isExtensible|Object.isExtensible Function]]
+| [[javascript/Object/Object.isExtensible|Object.isExtensible Function]]
 | Returns a value that indicates whether new properties can be added to an object.
 |-
-| [[Object/Object.isFrozen|Object.isFrozen Function]]
+| [[javascript/Object/Object.isFrozen|Object.isFrozen Function]]
 | Returns true if existing property attributes and values cannot be modified in an object and new properties cannot be added to the object.
 |-
-| [[Object/Object.isSealed|Object.isSealed Function]]
+| [[javascript/Object/Object.isSealed|Object.isSealed Function]]
 | Returns true if existing property attributes cannot be modified in an object and new properties cannot be added to the object.
 |-
-| [[Object/Object.keys|Object.keys Function]]
+| [[javascript/Object/Object.keys|Object.keys Function]]
 | Returns the names of the enumerable properties and methods of an object.
 |-
-| [[Object/Object.preventExtensions|Object.preventExtensions Function]]
+| [[javascript/Object/Object.preventExtensions|Object.preventExtensions Function]]
 | Prevents the addition of new properties to an object.
 |-
-| [[Object/Object.seal|Object.seal Function]]
+| [[javascript/Object/Object.seal|Object.seal Function]]
 | Prevents the modification of attributes of existing properties, and prevents the addition of new properties.
 |}
 
@@ -87,22 +87,22 @@ The following table lists methods of the '''Object Object'''.
 ! Method
 ! Description
 |-
-| [[Object/hasOwnProperty|hasOwnProperty method]]
+| [[javascript/Object/hasOwnProperty|hasOwnProperty method]]
 | Returns a Boolean value that indicates whether an object has a property with the specified name.
 |-
-| [[Object/isPrototypeOf|isPrototypeOf method]]
+| [[javascript/Object/isPrototypeOf|isPrototypeOf method]]
 | Returns a Boolean value that indicates whether an object exists in another object's prototype hierarchy.
 |-
-| [[Object/propertyIsEnumerable|propertyIsEnumerable method]]
+| [[javascript/Object/propertyIsEnumerable|propertyIsEnumerable method]]
 | Returns a Boolean value that indicates whether a specified property is part of an object and whether it is enumerable.
 |-
-| [[Object/toLocaleString|toLocaleString method]]
+| [[javascript/Object/toLocaleString|toLocaleString method]]
 | Returns an object converted to a string based on the current locale.
 |-
-| [[Object/toString|toString method]]
+| [[javascript/Object/toString|toString method]]
 | Returns a string representation of an object.
 |-
-| [[Object/valueOf|valueOf method]]
+| [[javascript/Object/valueOf|valueOf method]]
 | Returns the primitive value of the specified object.
 |}
 

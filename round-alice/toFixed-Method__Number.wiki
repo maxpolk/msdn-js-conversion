@@ -31,7 +31,7 @@ The following code shows how to use '''toFixed'''.
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Number|Number Object]]
+'''Applies To''' : [[javascript/Number|Number Object]]
 
 
 ==See Also==

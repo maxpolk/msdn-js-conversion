@@ -18,7 +18,7 @@ The following table lists the constants of the '''Uint8Array''' object.
 ! Constant
 ! Description
 |-
-| [[Uint8Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
+| [[javascript/Uint8Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
 | The size in bytes of each element in the array.
 |}
 
@@ -30,16 +30,16 @@ The following table lists the constants of the '''Uint8Array''' object.
 ! Property
 ! Description
 |-
-| [[Uint8Array/buffer|buffer Property]]
+| [[javascript/Uint8Array/buffer|buffer Property]]
 | Read-only. Gets the ArrayBuffer that is referenced by this array.
 |-
-| [[Uint8Array/byteLength|byteLength Property]]
+| [[javascript/Uint8Array/byteLength|byteLength Property]]
 | Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Uint8Array/byteOffset|byteOffset Property]]
+| [[javascript/Uint8Array/byteOffset|byteOffset Property]]
 | Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 |-
-| [[Uint8Array/length|length Property]]
+| [[javascript/Uint8Array/length|length Property]]
 | The length of the array.
 |}
 
@@ -51,13 +51,13 @@ The following table lists the methods of the '''Uint8Array''' object.
 ! Method
 ! Description
 |-
-| [[Uint8Array/get|get Method]]
+| [[javascript/Uint8Array/get|get Method]]
 | Omittable. Gets the element at the specified index.
 |-
-| [[Uint8Array/set|set Method (Uint8Array)]]
+| [[javascript/Uint8Array/set|set Method (Uint8Array)]]
 | Sets a value or an array of values.
 |-
-| [[Uint8Array/subarray|subarray Method (Uint8Array)]]
+| [[javascript/Uint8Array/subarray|subarray Method (Uint8Array)]]
 | Gets a new Uint8Array view of the ArrayBuffer store for this array.
 |}
 

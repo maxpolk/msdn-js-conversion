@@ -11,7 +11,7 @@ The '''decodeURI''' function returns a string value.
 
 If the URIString is not valid, a URIError occurs.
 
-'''Applies To''' : [[Global|Global Object]]
+'''Applies To''' : [[javascript/Global|Global Object]]
 
 
 ==Example==

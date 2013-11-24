@@ -15,7 +15,7 @@ Characters encoded in '''%u''' xxxx format (Unicode characters) are replaced wit
 ==Requirements==
 Supported in the following document modes: Quirks, Internet Explorer 6 standards, Internet Explorer 7 standards, Internet Explorer 8 standards, Internet Explorer 9 standards, Internet Explorer 10 standards. Also supported in Windows Store apps. See Version Information.
 
-'''Applies To''' : [[Global|Global Object]]
+'''Applies To''' : [[javascript/Global|Global Object]]
 
 
 ==See Also==

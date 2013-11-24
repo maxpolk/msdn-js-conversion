@@ -10,11 +10,11 @@ Supported in the following document modes: Quirks, Internet Explorer 6 standards
 
 
 ==Constants==
-[[Global/Infinity Constant|undefined Constant]]
+[[javascript/Global/Infinity Constant|undefined Constant]]
 
 
 ==Functions==
-[[Global/decodeURI|decodeURI Function]] {{!}} [[Global/decodeURIComponent Function|unescape Function]]
+[[javascript/Global/decodeURI|decodeURI Function]] {{!}} [[javascript/Global/decodeURIComponent Function|unescape Function]]
 
 
 ==See Also==

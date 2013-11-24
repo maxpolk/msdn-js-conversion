@@ -8,5 +8,5 @@ The following table lists JavaScript directives.
 ! Language Element
 |-
 | Adds certain syntactic and semantic restrictions. Supported in Internet Explorer 10 and Windows Store apps.
-| [[Directives/use strict|use strict]]
+| [[javascript/Directives/use strict|use strict]]
 |}

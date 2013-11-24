@@ -1,2 +1,2 @@
-'''null''' is used to indicate that a variable does not refer to valid data. This is not the same thing as [[Global/undefined Constant|undefined Constant]].
+'''null''' is used to indicate that a variable does not refer to valid data. This is not the same thing as [[javascript/Global/undefined Constant|undefined Constant]].
 
