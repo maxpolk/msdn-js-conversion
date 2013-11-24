@@ -15,15 +15,15 @@ The JavaScript editor in Visual Studio 2012 provides IntelliSense support. For m
 
 ==In This Section==
 ; Version Information: Provides a list of JavaScript language features and the Internet Explorer versions in which they were introduced.
-; [[javascript/Objects]]: Provides a list of objects with links to information about each object.
-; [[javascript/Constants]]: Provides a list of constants and links to information about each constant.
-; [[javascript/Properties]]: Provides a list of properties with links to information about each property.
-; [[javascript/Functions]]: Provides a list of functions with links to information about each function.
-; [[javascript/Methods]]: Provides a list of methods with links to information about each method.
-; [[javascript/Operators]]: Provides a list of operators with links to information about each operator.
-; [[javascript/Statements]]: Provides a list of statements with links to information about each statement.
-; [[javascript/JavaScript Directives]]: Includes links to directives.
-; [[javascript/Errors]]: Includes links to run-time and syntax errors.
+; [[javascript/Objects|Objects]]: Provides a list of objects with links to information about each object.
+; [[javascript/Constants|Constants]]: Provides a list of constants and links to information about each constant.
+; [[javascript/Properties|Properties]]: Provides a list of properties with links to information about each property.
+; [[javascript/Functions|Functions]]: Provides a list of functions with links to information about each function.
+; [[javascript/Methods|Methods]]: Provides a list of methods with links to information about each method.
+; [[javascript/Operators|Operators]]: Provides a list of operators with links to information about each operator.
+; [[javascript/Statements|Statements]]: Provides a list of statements with links to information about each statement.
+; [[javascript/JavaScript Directives|JavaScript Directives]]: Includes links to directives.
+; [[javascript/Errors|Errors]]: Includes links to run-time and syntax errors.
 ; [[javascript/Reserved Words|JavaScript Reserved Words]]: Provides a list of reserved words. These words may not be used as identifiers.
 ; [[javascript/Future Reserved Words|JavaScript Future Reserved Words]]: Provides a list of future reserved words. These words may not be used as identifiers.
 
