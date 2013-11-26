@@ -16,6 +16,7 @@ import json
 import sys
 import getpass
 import re
+import time
 
 #
 # Read from env vars wiki username/password and root URL where the api.php lives.
@@ -60,7 +61,7 @@ class WPDConnection:
 
   def __init__(self, name=None):
     self.name = name
-    self.edittoken = None
+    self.changetoken = None
 
     cookie_handler = urllib2.HTTPCookieProcessor()
     redirect_handler = urllib2.HTTPRedirectHandler()
@@ -93,16 +94,16 @@ class WPDConnection:
     resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
 
     # See if there was an error
-    if ('error' in resp):
-        if ('info' in resp['error']):
+    if 'error' in resp:
+        if 'info' in resp['error']:
             raise Exception, 'Error logging in:\n{}'.format (resp['error']['info'])
         else:
             raise Exception, 'Unknown error logging in:\n{}'.format (resp['error'])
 
     # See if there was a login response
-    if ('login' in resp):
-        if ('result' in resp['login']):
-            if (resp['login']['result'] == 'NeedToken' and 'token' in resp['login']):
+    if 'login' in resp:
+        if 'result' in resp['login']:
+            if resp['login']['result'] == 'NeedToken' and 'token' in resp['login']:
                 # Now use the response token to do another login request
                 params['lgtoken'] = resp['login']['token']
                 resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
@@ -113,78 +114,74 @@ class WPDConnection:
         raise Exception, 'Unknown response:\n{}'.format (resp)
 
     # See if the last response was a success
-    if ('login' in resp and 'result' in resp['login'] and resp['login']['result'] == 'Success' and 'lgtoken' in resp['login']):
+    if 'login' in resp and 'result' in resp['login'] and resp['login']['result'] == 'Success' and 'lgtoken' in resp['login']:
         self.is_logged_in = True
     else:
         raise Exception, 'Failed to login:\n{}'.format (resp)
 
-  def ls(self, prefix='', offset=0, limit=20):
+  def ls(self, prefix='', limit=20, pagefrom=''):
     '''
     Lists all pages under the specified prefix.
-
-    If no prefix is specified, lists all pages.
     '''
-    if not prefix:
-      prefix = ''
+    if limit > 500:
+      limit = 500  # sanity check
 
     params = {
         'action': 'query',
         'list': 'allpages',
         'apprefix': prefix,
-        'aplimit': limit + 1
+        'aplimit': limit
     }
+    if pagefrom != '':
+      params.update ({'apfrom': pagefrom})
     params.update(DEFAULT_PARAMS)
     resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
-    if ('query' in resp and 'allpages' in resp['query']):
+    if 'query' in resp and 'allpages' in resp['query']:
       page_json = resp['query']['allpages']
       page_list = [p['title'] for p in page_json]
       return page_list
     else:
       raise Exception, 'Unknown list response:\n{}'.format (resp)
 
-  def get_edit_token(self, page):
+  def get_change_token (self, type='edit'):
     '''
-    In order to edit a specific page, obtain an edit token.
+    In order to edit or delete pages, obtain a token specified by type.
 
-    Called from edit, so no need to call this manually.
+    Called from edit and delete, so no need to call this manually.  The
+    token can be used multiple times for different changes.
     '''
     params = {
-        'action': 'query',
-        'prop': 'info',
-        'intoken': 'edit',
-        'titles': page
+        'action': 'tokens',
+        'type': type
     }
     params.update(DEFAULT_PARAMS)
-    # print ("GET EDIT TOKEN REQUEST:\n{}".format (params))
+    #print ("GET {} TOKEN REQUEST:\n{}".format (type, params))
     url = API_ROOT + urllib.urlencode(params)
     resp = json.loads(self.opener.open(url).read())
-    # print ("GET EDIT TOKEN RESPONSE:\n{}".format (resp))
+    #print ("GET {} TOKEN RESPONSE:\n{}".format (type, resp))
 
     # See if there was an error
-    if ('error' in resp):
-        if ('info' in resp['error']):
-            raise Exception, 'Error getting edit token:\n{}'.format (resp['error']['info'])
+    if 'error' in resp:
+        if 'info' in resp['error']:
+            raise Exception, 'Error getting {} token:\n{}'.format (type, resp['error']['info'])
         else:
-            raise Exception, 'Unknown error getting edit token:\n{}'.format (resp['error'])
+            raise Exception, 'Unknown error getting {} token:\n{}'.format (type, resp['error'])
 
-    # Get the revision number 4747
-    if ('query' in resp and 'pages' in resp['query'] and len (resp['query']['pages']) == 1):
-      pages = resp['query']['pages']
-      page = pages[pages.keys()[0]]
-      # Return edit token for that revision number
-      return page['edittoken']
+    # Get the token and return it
+    if 'tokens' in resp and (type + 'token') in resp['tokens']:
+      return resp['tokens'][type + 'token']
     else:
-      raise Exception, 'Unknown response getting edit token:\n{}'.format (resp)
+      raise Exception, 'Unknown response getting {} token:\n{}'.format (type, resp)
 
-  def edit(self, page, content, edit_summary, section=None):
+  def edit(self, page, content, edit_summary):
     '''
     Replaces the content for the particular page.
     Returns True if successful otherwise throws exception.
     '''
     if not self.is_logged_in:
       raise Exception, 'User %s is not logged in.' %self.name
-    if not self.edittoken:
-      self.edittoken = self.get_edit_token(page)
+    if not self.changetoken:
+      self.changetoken = self.get_change_token ('edit')
     params = {
         'action': 'edit',
         'title': page,
@@ -192,7 +189,7 @@ class WPDConnection:
         'text': content,
         'bot': '1',
         'watchlist': 'nochange',
-        'token': self.edittoken
+        'token': self.changetoken
     }
     params.update(DEFAULT_PARAMS)
     # print ("EDIT REQUEST:\n{}".format (params))
@@ -200,16 +197,48 @@ class WPDConnection:
     # print ("EDIT RESPONSE:\n{}".format (resp))
 
     # See if there was an error
-    if ('error' in resp):
-        if ('info' in resp['error']):
+    if 'error' in resp:
+        if 'info' in resp['error']:
             raise Exception, 'Error editing page:\n{}'.format (resp['error']['info'])
         else:
             raise Exception, 'Unknown error editing page:\n{}'.format (resp['error'])
 
-    if ('edit' in resp and 'result' in resp['edit'] and resp['edit']['result'] == 'Success'):
+    if 'edit' in resp and 'result' in resp['edit'] and resp['edit']['result'] == 'Success':
       return True
     else:
       raise Exception ("Edit not successful:\n{}".format (resp))
+
+  def delete (self, page, delete_reason):
+    '''
+    Deletes a page.
+    Returns True if successful otherwise throws exception.
+    '''
+    if not self.is_logged_in:
+      raise Exception, 'User %s is not logged in.' %self.name
+    if not self.changetoken:
+      self.changetoken = self.get_change_token('delete')
+    params = {
+        'action': 'delete',
+        'title': page,
+        'reason': delete_reason,
+        'token': self.changetoken
+    }
+    params.update(DEFAULT_PARAMS)
+    #print ("DELETE REQUEST:\n{}".format (params))
+    resp = json.loads(self.opener.open(API_ROOT, urllib.urlencode(params)).read())
+    #print ("DELETE RESPONSE:\n{}".format (resp))
+
+    # See if there was an error
+    if 'error' in resp:
+        if 'info' in resp['error']:
+            raise Exception, 'Error deleting page:\n{}'.format (resp['error']['info'])
+        else:
+            raise Exception, 'Unknown error deleting page:\n{}'.format (resp['error'])
+    # See if there is a success
+    if 'delete' in resp and 'logid' in resp['delete']:
+      return True
+    else:
+      raise Exception ("Delete not successful:\n{}".format (resp))
 
 if __name__ == '__main__':
   (options, args) = parser.parse_args()
@@ -222,10 +251,21 @@ if __name__ == '__main__':
   conn = WPDConnection(username)
 
   if command == 'ls':
-    prefix = (len(args) == 2 and args[1])
-    print ('\n'.join (conn.ls (prefix)))
-
-  if command == 'edit':
+    prefix=''
+    pagefrom=''
+    limit=20
+    if len(args) > 1:
+      prefix = args[1]
+    if len(args) > 2:
+      limit = int(args[2])
+    if len(args) > 3:
+      pagefrom = args[3]
+    if len(args) > 4:
+      print ('wpd ls <prefix> (<limit>) (<pagefrom>)')
+      print ('   Note: to continue listing, repeat but make pagefrom the last page')
+      sys.exit(1)
+    print ('\n'.join (conn.ls (prefix=prefix, limit=limit, pagefrom=pagefrom)))
+  elif command == 'edit':
     if len(args) != 4:
       print ('wpd edit <page> <filename> <editsummary>')
       sys.exit(1)
@@ -236,12 +276,10 @@ if __name__ == '__main__':
     conn.edit(page, content, edit_summary)
     print ("Success")
     conn.logout()
-
-  if command == 'batchupload':
+  elif command == 'batchupload':
     if len(args) != 3 and len(args) != 4:
       print ('wpd batchupload <mappingfile> <editsummary>')
       sys.exit(1)
-    import time
     begintime = int (time.time ())
     mappingfile = args[1]
     edit_summary = args[2]
@@ -250,7 +288,7 @@ if __name__ == '__main__':
     for line in open (mappingfile, 'r'):
       pattern = re.compile ("^[| ]*(.*) \|\| (.*?)[| ]*$")
       match = re.match (pattern, line)
-      if (match and match.lastindex == 2):
+      if match and match.lastindex == 2:
         filename = match.group (1)
         pagename = match.group (2)
         print ("Upload {} as {}".format (filename, pagename))
@@ -260,3 +298,31 @@ if __name__ == '__main__':
     conn.logout()
     duration = int (time.time ()) - begintime
     print ("SUMMARY: uploaded {} pages in {} seconds".format (count, duration))
+  elif command == 'delete':
+    if len(args) != 3:
+      print ('wpd delete <page> <deletereason>')
+      sys.exit(1)
+    page = args[1]
+    delete_reason = args[2]
+    conn.login()
+    conn.delete(page, delete_reason)
+    print ("Success")
+    conn.logout()
+  elif command == 'batchdelete':
+    if len(args) != 3:
+      print ('wpd batchdelete <pagenamesfile> <deletereason>')
+      print ('    The file contains a list of page names to delete, one per line')
+      sys.exit(1)
+    begintime = int (time.time ())
+    pagenamesfile = args[1]
+    delete_reason = args[2]
+    count = 0
+    conn.login()
+    for page in open (pagenamesfile, 'r'):
+      pagename = page.strip ()
+      print ("Delete {}".format (pagename))
+      conn.delete (pagename, delete_reason)
+      count += 1
+    conn.logout()
+    duration = int (time.time ()) - begintime
+    print ("SUMMARY: deleted {} pages in {} seconds".format (count, duration))
