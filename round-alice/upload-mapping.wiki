@@ -13,7 +13,7 @@
 |-
 | prototype-Property__Array.wiki || javascript/Array/prototype
 |-
-| Array.isArray-Function.wiki || javascript/Array/Array.isArray
+| Array.isArray-Function.wiki || javascript/Array/isArray
 |-
 | concat-Method__Array.wiki || javascript/Array/concat
 |-
@@ -125,11 +125,11 @@
 |-
 | prototype-Property__Date.wiki || javascript/Date/prototype
 |-
-| Date.now-Function.wiki || javascript/Date/Date.now
+| Date.now-Function.wiki || javascript/Date/now
 |-
-| Date.parse-Function.wiki || javascript/Date/Date.parse
+| Date.parse-Function.wiki || javascript/Date/parse
 |-
-| Date.UTC-Function.wiki || javascript/Date/Date.UTC
+| Date.UTC-Function.wiki || javascript/Date/UTC
 |-
 | getDate-Method__Date.wiki || javascript/Date/getDate
 |-
@@ -295,35 +295,35 @@
 |-
 | Global-Object.wiki || javascript/Global
 |-
-| Infinity-Constant.wiki || javascript/Global/Infinity
+| Infinity-Constant.wiki || javascript/Infinity
 |-
-| NaN-Constant.wiki || javascript/Global/NaN
+| NaN-Constant.wiki || javascript/NaN
 |-
-| null-Constant.wiki || javascript/Global/null
+| null-Constant.wiki || javascript/null
 |-
-| undefined-Constant.wiki || javascript/Global/undefined
+| undefined-Constant.wiki || javascript/undefined
 |-
-| decodeURI-Function.wiki || javascript/Global/decodeURI
+| decodeURI-Function.wiki || javascript/decodeURI
 |-
-| decodeURIComponent-Function.wiki || javascript/Global/decodeURIComponent
+| decodeURIComponent-Function.wiki || javascript/decodeURIComponent
 |-
-| encodeURI-Function.wiki || javascript/Global/encodeURI
+| encodeURI-Function.wiki || javascript/encodeURI
 |-
-| encodeURIComponent-Function.wiki || javascript/Global/encodeURIComponent
+| encodeURIComponent-Function.wiki || javascript/encodeURIComponent
 |-
-| escape-Function.wiki || javascript/Global/escape
+| escape-Function.wiki || javascript/escape
 |-
-| eval-Function.wiki || javascript/Global/eval
+| eval-Function.wiki || javascript/eval
 |-
-| isFinite-Function.wiki || javascript/Global/isFinite
+| isFinite-Function.wiki || javascript/isFinite
 |-
-| isNaN-Function.wiki || javascript/Global/isNaN
+| isNaN-Function.wiki || javascript/isNaN
 |-
-| parseFloat-Function.wiki || javascript/Global/parseFloat
+| parseFloat-Function.wiki || javascript/parseFloat
 |-
-| parseInt-Function.wiki || javascript/Global/parseInt
+| parseInt-Function.wiki || javascript/parseInt
 |-
-| unescape-Function.wiki || javascript/Global/unescape
+| unescape-Function.wiki || javascript/unescape
 |-
 | Int8Array-Object.wiki || javascript/Int8Array
 |-
@@ -381,49 +381,49 @@
 |-
 | JSON-Object.wiki || javascript/JSON
 |-
-| JSON.parse-Function.wiki || javascript/JSON/JSON.parse
+| JSON.parse-Function.wiki || javascript/JSON/parse
 |-
-| JSON.stringify-Function.wiki || javascript/JSON/JSON.stringify
+| JSON.stringify-Function.wiki || javascript/JSON/stringify
 |-
 | Math-Object.wiki || javascript/Math
 |-
 | Math-Constants.wiki || javascript/Math/constants
 |-
-| Math.abs-Function.wiki || javascript/Math/Math.abs
+| Math.abs-Function.wiki || javascript/Math/abs
 |-
-| Math.acos-Function.wiki || javascript/Math/Math.acos
+| Math.acos-Function.wiki || javascript/Math/acos
 |-
-| Math.asin-Function.wiki || javascript/Math/Math.asin
+| Math.asin-Function.wiki || javascript/Math/asin
 |-
-| Math.atan-Function.wiki || javascript/Math/Math.atan
+| Math.atan-Function.wiki || javascript/Math/atan
 |-
-| Math.atan2-Function.wiki || javascript/Math/Math.atan2
+| Math.atan2-Function.wiki || javascript/Math/atan2
 |-
-| Math.ceil-Function.wiki || javascript/Math/Math.ceil
+| Math.ceil-Function.wiki || javascript/Math/ceil
 |-
-| Math.cos-Function.wiki || javascript/Math/Math.cos
+| Math.cos-Function.wiki || javascript/Math/cos
 |-
-| Math.exp-Function.wiki || javascript/Math/Math.exp
+| Math.exp-Function.wiki || javascript/Math/exp
 |-
-| Math.floor-Function.wiki || javascript/Math/Math.floor
+| Math.floor-Function.wiki || javascript/Math/floor
 |-
-| Math.log-Function.wiki || javascript/Math/Math.log
+| Math.log-Function.wiki || javascript/Math/log
 |-
-| Math.max-Function.wiki || javascript/Math/Math.max
+| Math.max-Function.wiki || javascript/Math/max
 |-
-| Math.min-Function.wiki || javascript/Math/Math.min
+| Math.min-Function.wiki || javascript/Math/min
 |-
-| Math.pow-Function.wiki || javascript/Math/Math.pow
+| Math.pow-Function.wiki || javascript/Math/pow
 |-
-| Math.random-Function.wiki || javascript/Math/Math.random
+| Math.random-Function.wiki || javascript/Math/random
 |-
-| Math.round-Function.wiki || javascript/Math/Math.round
+| Math.round-Function.wiki || javascript/Math/round
 |-
-| Math.sin-Function.wiki || javascript/Math/Math.sin
+| Math.sin-Function.wiki || javascript/Math/sin
 |-
-| Math.sqrt-Function.wiki || javascript/Math/Math.sqrt
+| Math.sqrt-Function.wiki || javascript/Math/sqrt
 |-
-| Math.tan-Function.wiki || javascript/Math/Math.tan
+| Math.tan-Function.wiki || javascript/Math/tan
 |-
 | Number-Object.wiki || javascript/Number
 |-
@@ -449,31 +449,31 @@
 |-
 | prototype-Property__Object.wiki || javascript/Object/prototype
 |-
-| Object.create-Function.wiki || javascript/Object/Object.create
+| Object.create-Function.wiki || javascript/Object/create
 |-
-| Object.defineProperties-Function.wiki || javascript/Object/Object.defineProperties
+| Object.defineProperties-Function.wiki || javascript/Object/defineProperties
 |-
-| Object.defineProperty-Function.wiki || javascript/Object/Object.defineProperty
+| Object.defineProperty-Function.wiki || javascript/Object/defineProperty
 |-
-| Object.freeze-Function.wiki || javascript/Object/Object.freeze
+| Object.freeze-Function.wiki || javascript/Object/freeze
 |-
-| Object.getOwnPropertyDescriptor-Function.wiki || javascript/Object/Object.getOwnPropertyDescriptor
+| Object.getOwnPropertyDescriptor-Function.wiki || javascript/Object/getOwnPropertyDescriptor
 |-
-| Object.getOwnPropertyNames-Function.wiki || javascript/Object/Object.getOwnPropertyNames
+| Object.getOwnPropertyNames-Function.wiki || javascript/Object/getOwnPropertyNames
 |-
-| Object.getPrototypeOf-Function.wiki || javascript/Object/Object.getPrototypeOf
+| Object.getPrototypeOf-Function.wiki || javascript/Object/getPrototypeOf
 |-
-| Object.isExtensible-Function.wiki || javascript/Object/Object.isExtensible
+| Object.isExtensible-Function.wiki || javascript/Object/isExtensible
 |-
-| Object.isFrozen-Function.wiki || javascript/Object/Object.isFrozen
+| Object.isFrozen-Function.wiki || javascript/Object/isFrozen
 |-
-| Object.isSealed-Function.wiki || javascript/Object/Object.isSealed
+| Object.isSealed-Function.wiki || javascript/Object/isSealed
 |-
-| Object.keys-Function.wiki || javascript/Object/Object.keys
+| Object.keys-Function.wiki || javascript/Object/keys
 |-
-| Object.preventExtensions-Function.wiki || javascript/Object/Object.preventExtensions
+| Object.preventExtensions-Function.wiki || javascript/Object/preventExtensions
 |-
-| Object.seal-Function.wiki || javascript/Object/Object.seal
+| Object.seal-Function.wiki || javascript/Object/seal
 |-
 | hasOwnProperty-Method__Object.wiki || javascript/Object/hasOwnProperty
 |-
@@ -529,7 +529,7 @@
 |-
 | prototype-Property__String.wiki || javascript/String/prototype
 |-
-| String.fromCharCode-Function.wiki || javascript/String/String.fromCharCode
+| String.fromCharCode-Function.wiki || javascript/String/fromCharCode
 |-
 | HTML-Tag-Methods.wiki || javascript/String/HTML Tag Methods
 |-
