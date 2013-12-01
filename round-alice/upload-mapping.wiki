@@ -1,7 +1,7 @@
 {| class='wikitable'
 ! Filename !! Page name
 |-
-| JavaScript-Reference.wiki || javascript/JavaScript Reference
+| JavaScript-Reference.wiki || javascript/javascript reference
 |-
 | JavaScript-Objects.wiki || javascript/objects
 |-
@@ -387,7 +387,7 @@
 |-
 | Math-Object.wiki || javascript/Math
 |-
-| Math-Constants.wiki || javascript/Math/Math Constants
+| Math-Constants.wiki || javascript/Math/constants
 |-
 | Math.abs-Function.wiki || javascript/Math/Math.abs
 |-
@@ -427,7 +427,7 @@
 |-
 | Number-Object.wiki || javascript/Number
 |-
-| Number-Constants.wiki || javascript/Number/Number Constants
+| Number-Constants.wiki || javascript/Number/constants
 |-
 | constructor-Property__Number.wiki || javascript/Number/constructor
 |-
@@ -505,21 +505,21 @@
 |-
 | rightContext-Property.wiki || javascript/RegExp/rightContext
 |-
-| Regular-Expression-Object.wiki || javascript/Regular Expression
+| Regular-Expression-Object.wiki || javascript/regular expression
 |-
-| global-Property__Regular-Expression.wiki || javascript/Regular Expression/global
+| global-Property__Regular-Expression.wiki || javascript/regular expression/global
 |-
-| ignoreCase-Property__Regular-Expression.wiki || javascript/Regular Expression/ignoreCase
+| ignoreCase-Property__Regular-Expression.wiki || javascript/regular expression/ignoreCase
 |-
-| multiline-Property__Regular-Expression.wiki || javascript/Regular Expression/multiline
+| multiline-Property__Regular-Expression.wiki || javascript/regular expression/multiline
 |-
-| source-Property__Regular-Expression.wiki || javascript/Regular Expression/source
+| source-Property__Regular-Expression.wiki || javascript/regular expression/source
 |-
-| compile-Method__Regular-Expression.wiki || javascript/Regular Expression/compile
+| compile-Method__Regular-Expression.wiki || javascript/regular expression/compile
 |-
-| exec-Method__Regular-Expression.wiki || javascript/Regular Expression/exec
+| exec-Method__Regular-Expression.wiki || javascript/regular expression/exec
 |-
-| test-Method__Regular-Expression.wiki || javascript/Regular Expression/test
+| test-Method__Regular-Expression.wiki || javascript/regular expression/test
 |-
 | String-Object.wiki || javascript/String
 |-
@@ -637,79 +637,79 @@
 |-
 | JavaScript-Operators.wiki || javascript/operators
 |-
-| Addition-Assignment-Operator.wiki || javascript/operators/Addition Assignment
+| Addition-Assignment-Operator.wiki || javascript/operators/addition assignment
 |-
-| Addition-Operator.wiki || javascript/operators/Addition
+| Addition-Operator.wiki || javascript/operators/addition
 |-
-| Assignment-Operator.wiki || javascript/operators/Assignment
+| Assignment-Operator.wiki || javascript/operators/assignment
 |-
-| Bitwise-AND-Assignment-Operator.wiki || javascript/operators/Bitwise AND Assignment
+| Bitwise-AND-Assignment-Operator.wiki || javascript/operators/bitwise and assignment
 |-
-| Bitwise-AND-Operator.wiki || javascript/operators/Bitwise AND
+| Bitwise-AND-Operator.wiki || javascript/operators/bitwise and
 |-
-| Bitwise-Left-Shift-Operator.wiki || javascript/operators/Bitwise Left Shift
+| Bitwise-Left-Shift-Operator.wiki || javascript/operators/bitwise left shift
 |-
-| Bitwise-NOT-Operator.wiki || javascript/operators/Bitwise NOT
+| Bitwise-NOT-Operator.wiki || javascript/operators/bitwise not
 |-
-| Bitwise-OR-Assignment-Operator.wiki || javascript/operators/Bitwise OR Assignment
+| Bitwise-OR-Assignment-Operator.wiki || javascript/operators/bitwise or assignment
 |-
-| Bitwise-OR-Operator.wiki || javascript/operators/Bitwise OR
+| Bitwise-OR-Operator.wiki || javascript/operators/bitwise or
 |-
-| Bitwise-Right-Shift-Operator.wiki || javascript/operators/Bitwise Right Shift
+| Bitwise-Right-Shift-Operator.wiki || javascript/operators/bitwise right shift
 |-
-| Bitwise-XOR-Assignment-Operator.wiki || javascript/operators/Bitwise XOR Assignment
+| Bitwise-XOR-Assignment-Operator.wiki || javascript/operators/bitwise xor assignment
 |-
-| Bitwise-XOR-Operator.wiki || javascript/operators/Bitwise XOR
+| Bitwise-XOR-Operator.wiki || javascript/operators/bitwise xor
 |-
-| Comma-Operator.wiki || javascript/operators/Comma
+| Comma-Operator.wiki || javascript/operators/comma
 |-
-| Comparison-Operators.wiki || javascript/operators/Comparison
+| Comparison-Operators.wiki || javascript/operators/comparison
 |-
-| Compound-Assignment-Operators.wiki || javascript/operators/Compound Assignment
+| Compound-Assignment-Operators.wiki || javascript/operators/compound assignment
 |-
-| Conditional__Ternary-Operator.wiki || javascript/operators/Conditional Ternary
+| Conditional__Ternary-Operator.wiki || javascript/operators/conditional ternary
 |-
 | delete-Operator.wiki || javascript/operators/delete
 |-
-| Division-Assignment-Operator.wiki || javascript/operators/Division Assignment
+| Division-Assignment-Operator.wiki || javascript/operators/division assignment
 |-
-| Division-Operator.wiki || javascript/operators/Division
+| Division-Operator.wiki || javascript/operators/division
 |-
 | in-Operator.wiki || javascript/operators/in
 |-
-| Increment-and-Decrement-Operators.wiki || javascript/operators/Increment and Decrement
+| Increment-and-Decrement-Operators.wiki || javascript/operators/increment and decrement
 |-
 | instanceof-Operator.wiki || javascript/operators/instanceof
 |-
-| Left-Shift-Assignment-Operator.wiki || javascript/operators/Left Shift Assignment
+| Left-Shift-Assignment-Operator.wiki || javascript/operators/left shift assignment
 |-
-| Logical-AND-Operator.wiki || javascript/operators/Logical AND
+| Logical-AND-Operator.wiki || javascript/operators/logical and
 |-
-| Logical-NOT-Operator.wiki || javascript/operators/Logical NOT
+| Logical-NOT-Operator.wiki || javascript/operators/logical not
 |-
-| Logical-OR-Operator.wiki || javascript/operators/Logical OR
+| Logical-OR-Operator.wiki || javascript/operators/logical or
 |-
-| Modulus-Assignment-Operator.wiki || javascript/operators/Modulus Assignment
+| Modulus-Assignment-Operator.wiki || javascript/operators/modulus assignment
 |-
-| Modulus-Operator.wiki || javascript/operators/Modulus
+| Modulus-Operator.wiki || javascript/operators/modulus
 |-
-| Multiplication-Assignment-Operator.wiki || javascript/operators/Multiplication Assignment
+| Multiplication-Assignment-Operator.wiki || javascript/operators/multiplication assignment
 |-
-| Multiplication-Operator.wiki || javascript/operators/Multiplication
+| Multiplication-Operator.wiki || javascript/operators/multiplication
 |-
 | new-Operator.wiki || javascript/operators/new
 |-
-| Right-Shift-Assignment-Operator.wiki || javascript/operators/Right Shift Assignment
+| Right-Shift-Assignment-Operator.wiki || javascript/operators/right shift assignment
 |-
-| Subtraction-Assignment-Operator.wiki || javascript/operators/Subtraction Assignment
+| Subtraction-Assignment-Operator.wiki || javascript/operators/subtraction assignment
 |-
-| Subtraction-Operator.wiki || javascript/operators/Subtraction
+| Subtraction-Operator.wiki || javascript/operators/subtraction
 |-
 | typeof-Operator.wiki || javascript/operators/typeof
 |-
-| Unsigned-Right-Shift-Assignment-Operator.wiki || javascript/operators/Unsigned Right Shift Assignment
+| Unsigned-Right-Shift-Assignment-Operator.wiki || javascript/operators/unsigned right shift assignment
 |-
-| Unsigned-Right-Shift-Operator.wiki || javascript/operators/Unsigned Right Shift
+| Unsigned-Right-Shift-Operator.wiki || javascript/operators/unsigned right shift
 |-
 | void-Operator.wiki || javascript/operators/void
 |-
