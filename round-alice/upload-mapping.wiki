@@ -3,7 +3,7 @@
 |-
 | JavaScript-Reference.wiki || javascript/JavaScript Reference
 |-
-| JavaScript-Objects.wiki || javascript/Objects
+| JavaScript-Objects.wiki || javascript/objects
 |-
 | Array-Object.wiki || javascript/Array
 |-
@@ -627,91 +627,91 @@
 |-
 | subarray-Method__Uint32Array.wiki || javascript/Uint32Array/subarray
 |-
-| JavaScript-Constants.wiki || javascript/Constants
+| JavaScript-Constants.wiki || javascript/constants
 |-
-| JavaScript-Properties.wiki || javascript/Properties
+| JavaScript-Properties.wiki || javascript/properties
 |-
-| JavaScript-Functions.wiki || javascript/Functions
+| JavaScript-Functions.wiki || javascript/functions
 |-
-| JavaScript-Methods.wiki || javascript/Methods
+| JavaScript-Methods.wiki || javascript/methods
 |-
-| JavaScript-Operators.wiki || javascript/Operators
+| JavaScript-Operators.wiki || javascript/operators
 |-
-| Addition-Assignment-Operator.wiki || javascript/Operators/Addition Assignment
+| Addition-Assignment-Operator.wiki || javascript/operators/Addition Assignment
 |-
-| Addition-Operator.wiki || javascript/Operators/Addition
+| Addition-Operator.wiki || javascript/operators/Addition
 |-
-| Assignment-Operator.wiki || javascript/Operators/Assignment
+| Assignment-Operator.wiki || javascript/operators/Assignment
 |-
-| Bitwise-AND-Assignment-Operator.wiki || javascript/Operators/Bitwise AND Assignment
+| Bitwise-AND-Assignment-Operator.wiki || javascript/operators/Bitwise AND Assignment
 |-
-| Bitwise-AND-Operator.wiki || javascript/Operators/Bitwise AND
+| Bitwise-AND-Operator.wiki || javascript/operators/Bitwise AND
 |-
-| Bitwise-Left-Shift-Operator.wiki || javascript/Operators/Bitwise Left Shift
+| Bitwise-Left-Shift-Operator.wiki || javascript/operators/Bitwise Left Shift
 |-
-| Bitwise-NOT-Operator.wiki || javascript/Operators/Bitwise NOT
+| Bitwise-NOT-Operator.wiki || javascript/operators/Bitwise NOT
 |-
-| Bitwise-OR-Assignment-Operator.wiki || javascript/Operators/Bitwise OR Assignment
+| Bitwise-OR-Assignment-Operator.wiki || javascript/operators/Bitwise OR Assignment
 |-
-| Bitwise-OR-Operator.wiki || javascript/Operators/Bitwise OR
+| Bitwise-OR-Operator.wiki || javascript/operators/Bitwise OR
 |-
-| Bitwise-Right-Shift-Operator.wiki || javascript/Operators/Bitwise Right Shift
+| Bitwise-Right-Shift-Operator.wiki || javascript/operators/Bitwise Right Shift
 |-
-| Bitwise-XOR-Assignment-Operator.wiki || javascript/Operators/Bitwise XOR Assignment
+| Bitwise-XOR-Assignment-Operator.wiki || javascript/operators/Bitwise XOR Assignment
 |-
-| Bitwise-XOR-Operator.wiki || javascript/Operators/Bitwise XOR
+| Bitwise-XOR-Operator.wiki || javascript/operators/Bitwise XOR
 |-
-| Comma-Operator.wiki || javascript/Operators/Comma
+| Comma-Operator.wiki || javascript/operators/Comma
 |-
-| Comparison-Operators.wiki || javascript/Operators/Comparison
+| Comparison-Operators.wiki || javascript/operators/Comparison
 |-
-| Compound-Assignment-Operators.wiki || javascript/Operators/Compound Assignment
+| Compound-Assignment-Operators.wiki || javascript/operators/Compound Assignment
 |-
-| Conditional__Ternary-Operator.wiki || javascript/Operators/Conditional Ternary
+| Conditional__Ternary-Operator.wiki || javascript/operators/Conditional Ternary
 |-
-| delete-Operator.wiki || javascript/Operators/delete
+| delete-Operator.wiki || javascript/operators/delete
 |-
-| Division-Assignment-Operator.wiki || javascript/Operators/Division Assignment
+| Division-Assignment-Operator.wiki || javascript/operators/Division Assignment
 |-
-| Division-Operator.wiki || javascript/Operators/Division
+| Division-Operator.wiki || javascript/operators/Division
 |-
-| in-Operator.wiki || javascript/Operators/in
+| in-Operator.wiki || javascript/operators/in
 |-
-| Increment-and-Decrement-Operators.wiki || javascript/Operators/Increment and Decrement
+| Increment-and-Decrement-Operators.wiki || javascript/operators/Increment and Decrement
 |-
-| instanceof-Operator.wiki || javascript/Operators/instanceof
+| instanceof-Operator.wiki || javascript/operators/instanceof
 |-
-| Left-Shift-Assignment-Operator.wiki || javascript/Operators/Left Shift Assignment
+| Left-Shift-Assignment-Operator.wiki || javascript/operators/Left Shift Assignment
 |-
-| Logical-AND-Operator.wiki || javascript/Operators/Logical AND
+| Logical-AND-Operator.wiki || javascript/operators/Logical AND
 |-
-| Logical-NOT-Operator.wiki || javascript/Operators/Logical NOT
+| Logical-NOT-Operator.wiki || javascript/operators/Logical NOT
 |-
-| Logical-OR-Operator.wiki || javascript/Operators/Logical OR
+| Logical-OR-Operator.wiki || javascript/operators/Logical OR
 |-
-| Modulus-Assignment-Operator.wiki || javascript/Operators/Modulus Assignment
+| Modulus-Assignment-Operator.wiki || javascript/operators/Modulus Assignment
 |-
-| Modulus-Operator.wiki || javascript/Operators/Modulus
+| Modulus-Operator.wiki || javascript/operators/Modulus
 |-
-| Multiplication-Assignment-Operator.wiki || javascript/Operators/Multiplication Assignment
+| Multiplication-Assignment-Operator.wiki || javascript/operators/Multiplication Assignment
 |-
-| Multiplication-Operator.wiki || javascript/Operators/Multiplication
+| Multiplication-Operator.wiki || javascript/operators/Multiplication
 |-
-| new-Operator.wiki || javascript/Operators/new
+| new-Operator.wiki || javascript/operators/new
 |-
-| Right-Shift-Assignment-Operator.wiki || javascript/Operators/Right Shift Assignment
+| Right-Shift-Assignment-Operator.wiki || javascript/operators/Right Shift Assignment
 |-
-| Subtraction-Assignment-Operator.wiki || javascript/Operators/Subtraction Assignment
+| Subtraction-Assignment-Operator.wiki || javascript/operators/Subtraction Assignment
 |-
-| Subtraction-Operator.wiki || javascript/Operators/Subtraction
+| Subtraction-Operator.wiki || javascript/operators/Subtraction
 |-
-| typeof-Operator.wiki || javascript/Operators/typeof
+| typeof-Operator.wiki || javascript/operators/typeof
 |-
-| Unsigned-Right-Shift-Assignment-Operator.wiki || javascript/Operators/Unsigned Right Shift Assignment
+| Unsigned-Right-Shift-Assignment-Operator.wiki || javascript/operators/Unsigned Right Shift Assignment
 |-
-| Unsigned-Right-Shift-Operator.wiki || javascript/Operators/Unsigned Right Shift
+| Unsigned-Right-Shift-Operator.wiki || javascript/operators/Unsigned Right Shift
 |-
-| void-Operator.wiki || javascript/Operators/void
+| void-Operator.wiki || javascript/operators/void
 |-
 | JavaScript-Statements.wiki || javascript/Statements
 |-
