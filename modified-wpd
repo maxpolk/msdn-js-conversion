@@ -11,6 +11,7 @@ import json
 import sys
 import re
 import time
+import logging
 
 # We require json format
 DEFAULT_PARAMS = {'format': 'json'}
@@ -78,9 +79,9 @@ class WPDConnection:
       'action': 'logout',
     }
     params.update(DEFAULT_PARAMS)
-    #print ("LOGOUT REQUEST:\n{}".format (params))
+    logging.debug ("LOGOUT REQUEST:\n{}".format (params))
     resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
-    #print ("LOGOUT RESPONSE:\n{}".format (resp))
+    logging.debug ("LOGOUT RESPONSE:\n{}".format (resp))
 
   def login(self):
     '''
@@ -97,9 +98,9 @@ class WPDConnection:
     params.update(DEFAULT_PARAMS)
 
     # Issue an initial login request
-    #print ("LOGIN REQUEST:\n{}".format (params))
+    logging.debug ("LOGIN REQUEST:\n{}".format (params))
     resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
-    #print ("LOGIN RESPONSE:\n{}".format (resp))
+    logging.debug ("LOGIN RESPONSE:\n{}".format (resp))
 
     # See if there was an error
     if 'error' in resp:
@@ -114,9 +115,9 @@ class WPDConnection:
             if resp['login']['result'] == 'NeedToken' and 'token' in resp['login']:
                 # Now use the response token to do another login request
                 params['lgtoken'] = resp['login']['token']
-                #print ("SECOND LOGIN REQUEST:\n{}".format (params))
+                logging.debug ("SECOND LOGIN REQUEST:\n{}".format (params))
                 resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
-                #print ("SECOND LOGIN RESPONSE:\n{}".format (resp))
+                logging.debug ("SECOND LOGIN RESPONSE:\n{}".format (resp))
         else:
             raise Exception, 'Unknown login results:\n{}'.format (resp['login'])
     else:
@@ -145,9 +146,9 @@ class WPDConnection:
     if pagefrom != '':
       params.update ({'apfrom': pagefrom})
     params.update(DEFAULT_PARAMS)
-    #print ("LS REQUEST:\n{}".format (params))
+    logging.debug ("LS REQUEST:\n{}".format (params))
     resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
-    #print ("LS RESPONSE:\n{}".format (resp))
+    logging.debug ("LS RESPONSE:\n{}".format (resp))
     if 'query' in resp and 'allpages' in resp['query']:
       page_json = resp['query']['allpages']
       page_list = [p['title'] for p in page_json]
@@ -168,9 +169,9 @@ class WPDConnection:
     }
     params.update(DEFAULT_PARAMS)
     url = self.apiroot + urllib.urlencode(params)
-    #print ("GET {} TOKEN REQUEST:\n{}".format (type, params))
+    logging.debug ("GET {} TOKEN REQUEST:\n{}".format (type, params))
     resp = json.loads(self.opener.open(url).read())
-    #print ("GET {} TOKEN RESPONSE:\n{}".format (type, resp))
+    logging.debug ("GET {} TOKEN RESPONSE:\n{}".format (type, resp))
 
     # See if there was an error
     if 'error' in resp:
@@ -204,9 +205,9 @@ class WPDConnection:
         'token': self.changetoken
     }
     params.update(DEFAULT_PARAMS)
-    #print ("EDIT REQUEST:\n{}".format (params))
+    logging.debug ("EDIT REQUEST:\n{}".format (params))
     resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
-    #print ("EDIT RESPONSE:\n{}".format (resp))
+    logging.debug ("EDIT RESPONSE:\n{}".format (resp))
 
     # See if there was an error
     if 'error' in resp:
@@ -236,9 +237,9 @@ class WPDConnection:
         'token': self.changetoken
     }
     params.update(DEFAULT_PARAMS)
-    #print ("DELETE REQUEST:\n{}".format (params))
+    logging.debug ("DELETE REQUEST:\n{}".format (params))
     resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
-    #print ("DELETE RESPONSE:\n{}".format (resp))
+    logging.debug ("DELETE RESPONSE:\n{}".format (resp))
 
     # See if there was an error
     if 'error' in resp:
@@ -263,9 +264,9 @@ class WPDConnection:
         'titles': page
     }
     params.update(DEFAULT_PARAMS)
-    #print ("CAT REQUEST:\n{}".format (params))
+    logging.debug ("CAT REQUEST:\n{}".format (params))
     resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
-    #print ("CAT RESPONSE:\n{}".format (resp))
+    logging.debug ("CAT RESPONSE:\n{}".format (resp))
     if ('query' in resp and
         'pages' in resp['query'] and
         len (resp['query']['pages']) == 1):
@@ -287,6 +288,10 @@ if __name__ == '__main__':
   parser.add_option (
     '-a', '--apiroot',
     help='API root, if missing use WPD_API_ROOT env var')
+  parser.add_option (
+    '-d', '--debug',
+    action="store_true", default=False,
+    help='Print debugging information including all requests and responses')
 
   # Extract options and separate them from arguments
   (options, args) = parser.parse_args ()
@@ -303,6 +308,14 @@ if __name__ == '__main__':
   apiroot = options.apiroot or os.getenv ("WPD_API_ROOT")
   if apiroot is not None:
     apiroot += "/api.php?"
+
+  # Set debug level
+  if options.debug:
+    logging.basicConfig (stream=sys.stderr, level=logging.DEBUG)
+    logging.debug ('Logging level set to logging.DEBUG')
+  else:
+    logging.basicConfig (stream=sys.stderr, level=logging.ERROR)
+    logging.debug ('Logging level set to logging.ERROR')
 
   # Ensure either env var set or option set
   if apiroot is None:
