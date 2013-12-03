@@ -78,7 +78,9 @@ class WPDConnection:
       'action': 'logout',
     }
     params.update(DEFAULT_PARAMS)
+    #print ("LOGOUT REQUEST:\n{}".format (params))
     resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
+    #print ("LOGOUT RESPONSE:\n{}".format (resp))
 
   def login(self):
     '''
@@ -95,7 +97,9 @@ class WPDConnection:
     params.update(DEFAULT_PARAMS)
 
     # Issue an initial login request
+    #print ("LOGIN REQUEST:\n{}".format (params))
     resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
+    #print ("LOGIN RESPONSE:\n{}".format (resp))
 
     # See if there was an error
     if 'error' in resp:
@@ -110,7 +114,9 @@ class WPDConnection:
             if resp['login']['result'] == 'NeedToken' and 'token' in resp['login']:
                 # Now use the response token to do another login request
                 params['lgtoken'] = resp['login']['token']
+                #print ("SECOND LOGIN REQUEST:\n{}".format (params))
                 resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
+                #print ("SECOND LOGIN RESPONSE:\n{}".format (resp))
         else:
             raise Exception, 'Unknown login results:\n{}'.format (resp['login'])
     else:
@@ -139,7 +145,9 @@ class WPDConnection:
     if pagefrom != '':
       params.update ({'apfrom': pagefrom})
     params.update(DEFAULT_PARAMS)
+    #print ("LS REQUEST:\n{}".format (params))
     resp = json.loads(self.opener.open(self.apiroot, urllib.urlencode(params)).read())
+    #print ("LS RESPONSE:\n{}".format (resp))
     if 'query' in resp and 'allpages' in resp['query']:
       page_json = resp['query']['allpages']
       page_list = [p['title'] for p in page_json]
@@ -159,8 +167,8 @@ class WPDConnection:
         'type': type
     }
     params.update(DEFAULT_PARAMS)
-    #print ("GET {} TOKEN REQUEST:\n{}".format (type, params))
     url = self.apiroot + urllib.urlencode(params)
+    #print ("GET {} TOKEN REQUEST:\n{}".format (type, params))
     resp = json.loads(self.opener.open(url).read())
     #print ("GET {} TOKEN RESPONSE:\n{}".format (type, resp))
 
