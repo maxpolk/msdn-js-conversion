@@ -1,0 +1,43 @@
+Removed methods:
+    Date getVarDate method ("Returns the VT_DATE value in a Date object")
+
+Removed links to non-existent pages:
+    JavaScript-Functions.wiki:
+        javascript/Debug/write
+        javascript/Debug/writeln
+    JavaScript-Objects.wiki:
+        javascript/Debug
+    javascript/ScriptEngine
+        "Returns a string representing the scripting language in use."
+    javascript/ScriptEngineBuildVersion
+        "Returns the build version number of the scripting engine in use."
+    javascript/ScriptEngineMajorVersion
+        "Returns the major version number of the scripting engine in use."
+    javascript/ScriptEngineMinorVersion
+        "Returns the minor version number of the scripting engine in use."
+    javascript/Enumerator/atEnd
+        "Returns a Boolean value indicating if the enumerator is at the end of the collection."
+    javascript/Enumerator/item
+        "Returns the current item in the collection."
+    javascript/Enumerator/moveFirst
+        "Resets the current item in the collection to the first item."
+    javascript/Enumerator/moveNext
+        "Moves the current item to the next item in the collection."
+    javascript/Errors/Run time
+        "List of JavaScript run-time errors"
+    javascript/statements/cc on
+        "Activates conditional compilation support."
+    javascript/statements/if
+        "Conditionally executes a group of statements, depending on the value of an expression."
+    javascript/statements/set
+        "Creates variables used with conditional compilation statements."
+    javascript/GetObject
+        "Returns a reference to an Automation object from a file."
+
+Needs to be examined:
+    javascript/errors/syntax
+        What is this page is about?
+    javascript/errors
+        Used to be run-time errors and syntax errors, now reduced
+        to just syntax errors, but if syntax errors is not needed
+        then this page isn't needed either.
