@@ -1,0 +1,23 @@
+Returns the tangent of a number.
+
+ '''Math.tan(''' radians ''')'''
+
+==Remarks==
+The required radians argument is a numeric expression that contains an angle measured in radians.
+
+The return value is the tangent of the numeric argument of radians.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              

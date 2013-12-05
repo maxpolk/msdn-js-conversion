@@ -1,0 +1,13 @@
+Determines whether a supplied number is finite.
+
+ isFinite( number )
+
+==Remarks==
+The required number argument is any numeric value.
+
+The '''isFinite''' function returns true if number is any value other than '''NaN''' , negative infinity, or positive infinity. In those three cases, it returns '''false'''.
+
+
+==See Also==
+
+              

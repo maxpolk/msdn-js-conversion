@@ -1,0 +1,25 @@
+Returns the arcsine of a number.
+
+ '''Math'''.'''asin(''' number ''')'''
+
+==Remarks==
+The required number argument is a numeric expression for which the arcsine is needed.
+
+The return value is the arcsine of the number argument, in radians.
+
+Applies To : [[javascript/Math|Math Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              

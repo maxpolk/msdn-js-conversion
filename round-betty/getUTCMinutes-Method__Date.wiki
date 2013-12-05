@@ -1,0 +1,37 @@
+Gets the minutes of a Date object using Universal Coordinated Time (UTC).
+
+ dateObj.getUTCMinutes()
+
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+Returns an integer between 0 and 59. Zero is returned the time is less than one minute after the hour. If a '''Date''' object was created without specifying the time, by default the UTC minute value is 0. However, in other time zones it may be different.
+
+
+==Remarks==
+To get the number of minutes stored using local time, use the '''getMinutes''' method.
+
+
+==Example==
+The following example illustrates the use of the '''getUTCMinutes''' method.
+
+ var date = new Date("1/1/2001");
+ document.write(date.getUTCMinutes());
+ document.write("&lt;br/&gt;");
+ 
+ date.setMinutes(5);
+ document.write(date.getUTCMinutes());
+ 
+ // Output: 
+ // 0
+ // 5
+
+==See Also==
+
+              
+
+              
+
+              

@@ -1,0 +1,13 @@
+A special constant that specifies thatNot an expression is not a number.
+
+ NaN
+
+==Remarks==
+The '''NaN''' constant (not a number) is a member of the '''Global''' object, and is made available when the scripting engine is initialized.
+
+
+==See Also==
+
+              
+
+              

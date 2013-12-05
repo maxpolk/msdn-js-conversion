@@ -1,0 +1,36 @@
+Provides an identifier for a statement.
+
+ label ''':''' statements
+
+==Parameters==
+; label: Required. A unique identifier used when referring to the labeled statement.
+; statements: Optional. One or more statements associated with label.
+
+==Remarks==
+Labels are used by the '''break''' and '''continue''' statements to specify the statement to which the '''break''' and '''continue''' apply.
+
+
+==Example==
+In the following code, the '''continue''' statement refers to the '''for''' loop that is preceded by the <code>Inner:</code> statement. When <code>j</code> is 24, the '''continue''' statement causes that '''for''' loop to go to the next iteration. The numbers 21 through 23 and 25 through 30 print on each line.
+
+ Outer:
+ for (i = 1; i &lt;= 10; i++) {
+    document.write ("&lt;br /&gt;");
+    document.write ("i: " + i);
+    document.write (" j: ");
+    
+ Inner:
+    for (j = 21; j &lt;= 30; j++) {
+       if (j == 24)
+           {
+           continue Inner;
+       }
+       document.write (j + " ");
+   }
+ }
+
+==See Also==
+
+              
+
+              

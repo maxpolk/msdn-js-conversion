@@ -1,0 +1,30 @@
+Returns the actual number of arguments passed to a function by the caller.
+
+ [ function.] '''arguments'''.'''length'''
+
+==Remarks==
+The optional function argument is the name of the currently executing Function object.
+
+The '''length''' property of the '''arguments''' object is initialized by the scripting engine to the actual number of arguments passed to a Function object when execution begins in that function.
+
+
+==Example==
+The following example illustrates the use of the '''length''' property of the '''arguments''' object. To fully understand the example, pass more arguments to the function than the 2 arguments expected:
+
+ function ArgTest(a, b){
+    var s = "";
+ 
+    s += "Expected Arguments: " + ArgTest.length;
+    s += "&lt;br /&gt;";
+    s += "Passed Arguments: " + arguments.length;
+ 
+    document.write (s);
+ }
+
+==See Also==
+
+              
+
+              
+
+              

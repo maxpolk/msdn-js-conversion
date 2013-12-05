@@ -1,0 +1,20 @@
+Divides the value of a variable by the value of an expression, and assigns the remainder to the variable.
+
+ result %= expression
+
+==Arguments==
+; result: Any variable.
+; expression: Any numeric expression.
+
+==Remarks==
+Using the '''%=''' operator is exactly the same as specifying:
+
+ result = result % expression
+
+==See Also==
+
+              
+
+              
+
+              

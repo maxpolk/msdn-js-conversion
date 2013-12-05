@@ -1,0 +1,23 @@
+Determines whether an object exists in another object's prototype chain.
+
+ object1. isPrototypeOf( object2 )
+
+==Parameters==
+; object1: Required. Instance of an object.
+; object2: Required. Another object whose prototype chain is to be checked.
+
+==Remarks==
+The '''isPrototypeOf''' method returns true if object2 has object1 in its prototype chain. The prototype chain is used to share functionality between instances of the same object type. The '''isPrototypeOf''' method returns false when object2 is not an object or when object1 does not appear in the prototype chain of the object2.
+
+
+==Example==
+The following example illustrates the use of the '''isPrototypeOf''' method.
+
+ var re = new RegExp();
+ document.write(RegExp.prototype.isPrototypeOf(re));
+ 
+ // Output: true
+
+==See Also==
+
+              

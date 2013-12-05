@@ -1,0 +1,94 @@
+Returns a value that indicates whether new properties can be added to an object.
+
+ Object.isExtensible( object )
+
+==Parameters==
+; object: Required. The object to test.
+
+==Return Value==
+true if the object is extensible, which indicates that new properties can be added to the object; otherwise, false.
+
+
+==Exceptions==
+If the object argument is not an object, a TypeError exception is thrown.
+
+
+==Remarks==
+For information about how to set property attributes, see [[javascript/Object/Object.defineProperty|Object.defineProperty Function]]. To obtain the attributes of a property, you can use the [[javascript/Object/Object.getOwnPropertyDescriptor Function|Object.getOwnPropertyDescriptor Function]].
+
+The following related functions prevent the modification of object attributes.
+
+{| class='wikitable'
+|-
+! Function
+! Object is made non-extensible
+! configurable is set to false for each property
+! writable is set to false for each property
+|-
+| [[javascript/Object/Object.preventExtensions|Object.preventExtensions]]
+| Yes
+| No
+| No
+|-
+| [[javascript/Object/Object.seal|Object.seal]]
+| Yes
+| Yes
+| No
+|-
+| [[javascript/Object/Object.freeze|Object.freeze]]
+| Yes
+| Yes
+| Yes
+|}
+The following functions return true if all of the conditions marked in the following table are true.
+
+{| class='wikitable'
+|-
+! Function
+! Object is extensible?
+! configurable is false for all properties?
+! writable is false for all data properties?
+|-
+| '''Object.isExtensible'''
+| Yes
+| No
+| No
+|-
+| [[javascript/Object/Object.isSealed|Object.isSealed]]
+| No
+| Yes
+| No
+|-
+| [[javascript/Object/Object.isFrozen|Object.isFrozen]]
+| No
+| Yes
+| Yes
+|}
+
+==Example==
+The following example illustrates the use of the '''Object.isExtensible''' function.
+
+ // Create an object that has two properties.
+ var obj = { pasta: "spaghetti", length: 10 };
+ 
+ // Make the object non-extensible.
+ Object.preventExtensions(obj);
+ 
+ // Try to add a new property, and then verify that it is not added.
+ obj.newProp = 50;
+ document.write(obj.newProp);
+ 
+ // Output:
+ undefined
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              

@@ -1,0 +1,22 @@
+Returns the smaller of a set of numeric expressions.
+
+ Math.min([ number1 [, number2 [... [, numberN ]]]])
+
+==Remarks==
+The optional number1, number2, ..., numberN arguments are numeric expressions to be evaluated.
+
+If no arguments are provided, the return value is equal to [[javascript/Number/Number Constants|Number.POSITIVE_INFINITY]]. If any argument is '''NaN''' , the return value is also '''NaN'''.
+
+
+==Example==
+The following code shows how to get the smaller of two expressions.
+
+ var x = Math.min(107 - 3, 48 * 90);
+ document.write(x);
+ 
+ // Output:
+ // 104
+
+==See Also==
+
+              

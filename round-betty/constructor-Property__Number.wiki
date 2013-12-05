@@ -1,0 +1,23 @@
+Specifies the function that creates a Number.
+
+ number.constructor
+
+==Remarks==
+The required number is the name of a string.
+
+The '''constructor''' property is a member of the prototype of every object that has a prototype. This includes all intrinsic JavaScript objects except the '''Global''' and '''Math''' objects. The '''constructor''' property contains a reference to the function that constructs instances of that particular object.
+
+
+==Example==
+The following example illustrates the use of the constructor property.
+
+ var num = new Number();
+ 
+ if (num.constructor == Number)
+     document.write("Object is a Number.");
+ else
+     document.write("Object is not a Number.");
+ 
+ // Output:
+ // Object is a Number.
+

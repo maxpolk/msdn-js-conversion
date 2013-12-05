@@ -1,0 +1,35 @@
+Gets the day-of-the-month, using local time.
+
+ dateObj.getDate()
+
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+An integer between 1 and 31 that represents the day-of-the-month.
+
+
+==Remarks==
+To get the day-of-the-month using Universal Coordinated Time (UTC), use the '''getUTCDate''' method.
+
+
+==Example==
+The following example illustrates the use of the '''getDate''' method.
+
+ var date = new Date("Jan 01, 2001");
+ var str = "Today's date is: ";
+    str += (date.getMonth() + 1) + "/";
+    str += date.getDate() + "/";
+    str += date.getFullYear();
+ document.write(str);
+ 
+ // Output: Today's date is: 1/1/2001
+
+==See Also==
+
+              
+
+              
+
+              

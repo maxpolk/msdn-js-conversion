@@ -1,0 +1,15 @@
+Prevents an expression from returning a value.
+
+ void expression
+
+==Remarks==
+The expression argument is any valid JavaScript expression.
+
+The void operator evaluates its expression and returns undefined. It is useful in situations where an expression should be evaluated but you do not want the results visible to the rest of the script.
+
+
+==See Also==
+
+              
+
+              

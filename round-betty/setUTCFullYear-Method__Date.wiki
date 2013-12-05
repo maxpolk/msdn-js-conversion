@@ -1,0 +1,41 @@
+Sets the year value in the Date object using Universal Coordinated Time (UTC).
+
+ dateObj.'''setUTCFullYear(''' numYear [ ''',''' numMonth [ ''',''' numDate ]] ''')'''
+
+==Parameters==
+; dateObj: Required. Any Date object.
+; numYear: Required. A numeric value equal to the year.
+; numMonth: Optional. A numeric value equal to the month. The value for January is 0, and other month values follow consecutively. Must be supplied if numDate is supplied.
+; numDate: Optional. A numeric value equal to the day of the month.
+
+==Remarks==
+All '''set''' methods taking optional arguments use the value returned from corresponding '''get''' methods, if you do not specify an optional argument. For example, if the numMonth argument is not specified, JavaScript uses the value returned from the '''getUTCMonth''' method.
+
+In addition, if the value of an argument is greater that its range or is a negative number, other stored values are modified accordingly.
+
+To set the year using local time, use the '''setFullYear''' method.
+
+The range of years supported in the Date object is approximately 285,616 years from either side of 1970.
+
+
+==Example==
+The following example illustrates the use of the '''setUTCFullYear''' method.
+
+ var dtFirst = new Date();
+ dtFirst.setUTCFullYear(2007);
+ 
+ var dtSecond = new Date();
+ // 10 is the value for November. 
+ dtSecond.setUTCFullYear(2008, 10, 3); 
+ 
+ document.write (dtFirst.toUTCString());
+ document.write ("&lt;br /&gt;");
+ document.write (dtSecond.toUTCString());
+
+==See Also==
+
+              
+
+              
+
+              

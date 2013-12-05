@@ -1,0 +1,23 @@
+Decodes '''String''' objects encoded with the '''escape''' function. Deprecated.
+
+ unescape( charString )
+
+==Remarks==
+The required charString argument is a '''String''' object or literal to be decoded.
+
+The '''unescape''' function returns a string value that contains the contents of charstring. All characters encoded with the % xx hexadecimal form are replaced by their ASCII character set equivalents.
+
+Characters encoded in '''%u''' xxxx format (Unicode characters) are replaced with the Unicode character with hexadecimal encoding xxxx.
+
+'''Note''' -- The '''unescape''' function should not be used to decode Uniform Resource Identifiers (URI). Use '''decodeURI''' and '''decodeURIComponent''' functions instead.
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              

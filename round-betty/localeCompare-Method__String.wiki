@@ -1,0 +1,37 @@
+Determines whether two strings are equivalent in the current locale.
+
+ stringVar.localeCompare( stringExp )
+
+==Parameters==
+; stringVar: Required. A String object or string literal.
+; stringExp: Required. String to compare to stringVar.
+
+==Remarks==
+The '''localeCompare''' performs a locale-sensitive string comparison of the stringVar and the stringExp and returns -1, 0, or +1, depending on the sort order of the system default locale.
+
+If stringVar sorts before stringExp , '''localeCompare''' returns -1; if stringVar sorts after stringExp , +1 is returned. A return value of zero means that the two strings are equivalent.
+
+
+==Example==
+The following code shows how to use '''localeCompare'''.
+
+ var str1 = "def";
+ var str2 = "abc"
+ 
+ document.write(str1.localeCompare(str2) + "&lt;br/&gt;");
+ 
+ // Output: 1
+ var str3 = "ghi";
+ 
+ document.write(str1.localeCompare(str3)+ "&lt;br/&gt;");
+ 
+ // Output: -1
+ var str4 = "def";
+ 
+ document.write(str1.localeCompare(str4));
+ 
+ // Output: 0
+
+==See Also==
+
+              

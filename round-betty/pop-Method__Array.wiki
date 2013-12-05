@@ -1,0 +1,33 @@
+Removes the last element from an array and returns it.
+
+ arrayObj.pop( )
+
+==Remarks==
+The [[javascript/Array/push|push]] and '''pop''' methods enable you to simulate a stack, which uses the principle of last in, first out (LIFO) to store data.
+
+The required arrayObj reference is an '''Array''' object.
+
+If the array is empty, undefined is returned.
+
+
+==Example==
+The following example illustrates the use of the pop method.
+
+ var number;
+ var my_array = new Array();
+ 
+ my_array.push (5, 6, 7);
+ my_array.push (8, 9);
+ 
+ number = my_array.pop();
+ while (number != undefined)
+    {
+    document.write (number + " ");
+    number = my_array.pop();
+    }
+ 
+ // Output: 9 8 7 6 5
+
+==See Also==
+
+              

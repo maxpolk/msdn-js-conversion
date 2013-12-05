@@ -1,0 +1,30 @@
+Returns one of two expressions depending on a condition.
+
+ test ? expression1 : expression2
+
+==Parameters==
+; test: Any Boolean expression.
+; expression1: An expression returned if test is true. May be a comma expression.
+; expression2: An expression returned if test is false. More than one expression may be a linked by a comma expression.
+
+==Remarks==
+The ?: operator can be used as a shortcut for an if...else statement. It is typically used as part of a larger expression where an if...else statement would be awkward. For example:
+
+ var now = new Date();
+ var greeting = "Good" + ((now.getHours() &gt; 17) ? " evening." : " day.");
+The example creates a string containing "Good evening." if it is after 6pm. The equivalent code using an if...else statement would look as follows:
+
+ var now = new Date();
+ var greeting = "Good";
+ if (now.getHours() &gt; 17)
+    greeting += " evening.";
+ else
+    greeting += " day.";
+
+==See Also==
+
+              
+
+              
+
+              

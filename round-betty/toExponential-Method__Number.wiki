@@ -1,0 +1,34 @@
+Represents a number in exponential notation.
+
+ numObj. toExponential([ fractionDigits ])
+
+==Parameters==
+; numObj: Required. A '''Number''' object.
+; fractionDigits: Optional. The number of digits after the decimal point. Must be in the range 0 - 20, inclusive.
+
+==Return Value==
+Returns a string representation of a number in exponential notation. The string contains one digit before the decimal point, and may contain fractionDigits digits after it.
+
+If fractionDigits is not supplied, the '''toExponential''' method returns as many digits necessary to uniquely specify the number.
+
+
+==Example==
+ var num = new Number(123);
+ var exp = num.toExponential();
+ document.write(exp);
+ document.write("&lt;br/&gt;");
+ 
+ num = new Number(123.456);
+ exp = num.toExponential(5);
+ document.write(exp);
+ 
+ 
+ // Output: 
+ // 1.23e+2
+ // 1.23456e+2
+
+==See Also==
+
+              
+
+              

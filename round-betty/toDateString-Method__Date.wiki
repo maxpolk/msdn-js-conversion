@@ -1,0 +1,15 @@
+Returns a date as a string value.
+
+ objDate.'''toDateString( )'''
+
+==Remarks==
+The required objDate reference is a Date object.
+
+The '''toDateString''' method returns a string value containing the date, in the current time zone, in a convenient, easily read format.
+
+
+==See Also==
+
+              
+
+              

@@ -1,0 +1,26 @@
+Gets the day of the week, using local time.
+
+ dateObj. getDay()
+
+==Parameters==
+The required dateObj reference is a '''Date''' object.
+
+
+==Return Value==
+An integer between 0 and 6 representing the day of the week (Sunday is 0, Saturday is 6).
+
+
+==Remarks==
+To get the day using Universal Coordinated Time (UTC), use the '''getUTCDay''' method.
+
+The following example shows how to use the '''getDay''' method.
+
+ var date = new Date("Saturday, February 9, 2008");
+ day = date.getDay();
+ document.write(day);
+ 
+ // Output: 6
+
+==See Also==
+
+              

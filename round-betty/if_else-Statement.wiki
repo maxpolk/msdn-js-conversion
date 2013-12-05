@@ -1,0 +1,33 @@
+Conditionally executes a group of statements, depending on the value of an expression.
+
+ if ( condition1 ) { statement1 }
+ [else if ( condition2 ) { statement2 }]
+ [else { statement3 ] 
+ }]
+
+==Parameters==
+; condition1: Required. A Boolean expression. If condition1 is null or undefined , condition1 is treated as false.
+; statement1: Optional. The statement to be executed if condition1 is '''true'''. Can be a compound statement.
+; condition2: The condition to be evaluated.
+; statement2: Optional. The statement to be executed if condition2 is true. Can be a compound statement.
+; statement3: If both condition1 and condition2 are false , this statement is executed.
+
+==Example==
+The following code shows how to use if , if else , and else.
+
+It is good practice to enclose statement1 and statement2 in braces ({}) for clarity and to avoid inadvertent errors.
+
+ var z = 3;
+ if (x == 5) {
+     z = 10;
+ }
+ else if (x == 10) {
+     z = 15;
+ }
+ else {
+     z = 20;
+ }
+
+==See Also==
+
+              

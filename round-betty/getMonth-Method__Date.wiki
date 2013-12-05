@@ -1,0 +1,31 @@
+Gets the month, using local time.
+
+ dateObj.getMonth()
+
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+The '''getMonth''' method returns an integer between 0 (January) and 11 (December). For a '''Date''' constructed with "Jan 5, 1996", '''getMonth''' returns 0.
+
+
+==Remarks==
+To get the month value using Universal Coordinated Time (UTC), use the '''getUTCMonth''' method.
+
+
+==Example==
+The following example shows how to use the '''getMonth''' method.
+
+ var date = new Date("1/1/2001");
+ document.write(date.getMonth());
+ 
+ // Output: 0
+
+==See Also==
+
+              
+
+              
+
+              

@@ -1,0 +1,23 @@
+Specifies the function that creates a string.
+
+ string.constructor
+
+==Remarks==
+The required string is the name of a string.
+
+The '''constructor''' property is a member of the prototype of every object that has a prototype. This includes all intrinsic JavaScript objects except the '''Global''' and '''Math''' objects. The '''constructor''' property contains a reference to the function that constructs instances of that particular object.
+
+
+==Example==
+The following example illustrates the use of the constructor property.
+
+ var x = new String();
+ 
+ if (x.constructor == String)
+     document.write("Object is a String.");
+ else
+     document.write("Object is not a String.");
+ 
+ // Output:
+ // Object is a String.
+

@@ -1,0 +1,20 @@
+Read-only. Gets the ArrayBuffer that is referenced by this view.
+
+ var arrayBuffer = dataView.buffer;
+
+==Example==
+The following example shows how to get the length of the ArrayBuffer underlying the DataView.
+
+ var req = new XMLHttpRequest();
+     req.open('GET', "http://www.example.com");
+     req.responseType = "arraybuffer";
+     req.send();
+ 
+     req.onreadystatechange = function () {
+         if (req.readyState === 4) {
+             var buffer = req.response;
+             var dataView = new DataView(buffer);
+             alert(dataView.buffer.byteLength)
+         }
+     }
+

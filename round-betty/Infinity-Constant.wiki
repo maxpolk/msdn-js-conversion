@@ -1,0 +1,11 @@
+A number that is larger than the largest floating point number. Returns an initial value of '''Number.POSITIVE_INFINITY'''. Negative Infinity (-Infinity) is smaller than the smallest floating point number.
+
+ Infinity
+
+==Remarks==
+The '''Infinity''' constant is a member of the '''Global''' object, and is made available when the scripting engine is initialized.
+
+
+==See Also==
+
+              

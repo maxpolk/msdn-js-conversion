@@ -1,0 +1,37 @@
+Gets the hours in a date, using local time.
+
+ dateObj.getHours()
+
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+An integer between 0 and 23, indicating the number of hours since midnight. Zero is returned if the time is before 1:00:00 am. If a '''Date''' object was created without specifying the time, by default the hour is 0.
+
+
+==Remarks==
+To get the hours value using Universal Coordinated Time (UTC), use the '''getUTCHours''' method.
+
+
+==Example==
+The following example shows how to use the '''getHours''' method.
+
+ var date = new Date("1/1/2001");
+ document.write(date.getHours());
+ document.write("&lt;br/&gt;");
+ 
+ date.setTime(50000000);
+ document.write(date.getHours());
+ 
+ // Output:
+ // 0 
+ // 5
+
+==See Also==
+
+              
+
+              
+
+              

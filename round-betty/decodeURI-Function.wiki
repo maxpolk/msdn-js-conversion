@@ -1,0 +1,37 @@
+Gets the unencoded version of an encoded Uniform Resource Identifier (URI).
+
+ decodeURI( URIstring )
+
+==Remarks==
+The required URIstring argument is a value representing an encoded URI.
+
+Use the '''decodeURI''' function instead of the deprecated '''unescape''' function.
+
+The '''decodeURI''' function returns a string value.
+
+If the URIString is not valid, a URIError occurs.
+
+'''Applies To''' : [[javascript/Global|Global Object]]
+
+
+==Example==
+The following code first encodes a URI component and then decodes it.
+
+ var uriEncode = encodeURIComponent ("www.Not a URL.com");
+ var uriDecode = decodeURIComponent(uriEncode);
+ 
+ document.write (uriEncode);
+ document.write ("&lt;br/&gt;");
+ document.write (uriDecode);
+ 
+ // Output:
+ // www.Not%20a%20URL.com
+ // www.Not a URL.com
+
+==See Also==
+
+              
+
+              
+
+              

@@ -1,0 +1,19 @@
+Returns the Unicode value of the character at the specified location.
+
+ strObj. charCodeAt( index )
+
+==Parameters==
+; strObj: Required. Any String object or string literal.
+; index: Required. The zero-based index of the desired character. If there is no character at the specified index, NaN is returned.
+
+==Example==
+The following example illustrates the use of the '''charCodeAt''' method.
+
+ var str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; 
+ document.write(str.charCodeAt(str.length - 1));
+ 
+ // Output: 90
+
+==See Also==
+
+              

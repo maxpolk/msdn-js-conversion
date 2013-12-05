@@ -1,0 +1,34 @@
+Gets a substring beginning at the specified location and having the specified length.
+
+ stringvar.substr( start [, length ])
+
+==Parameters==
+; stringvar: Required. A string literal or String object from which the substring is extracted.
+; start: Required. The starting position of the desired substring. The index of the first character in the string is zero.
+; length: Optional. The number of characters to include in the returned substring.
+
+==Remarks==
+If length is zero or negative, an empty string is returned. If not specified, the substring continues to the end of stringvar.
+
+
+==Example==
+The following example illustrates the use of the '''substr''' method.
+
+ var s = "The quick brown fox jumps over the lazy dog.";
+ var ss = s.substr(10, 5);  
+ document.write("[" + ss + "] &lt;br&gt;");
+ 
+ ss = s.substr(10);
+ document.write("[" + ss + "] &lt;br&gt;");
+ 
+ ss = s.substr(10, -5);
+ document.write("[" + ss + "] &lt;br&gt;");
+ 
+ // Output:
+ // [brown] 
+ // [brown fox jumps over the lazy dog.] 
+ // []
+
+==See Also==
+
+              

@@ -1,0 +1,21 @@
+Returns the angle (in radians) from the X axis to a point ( y , x ).
+
+ '''Math'''.'''atan2(''' y , x ''')'''
+
+==Parameters==
+; x: Required. A numeric expression representing the cartesian x-coordinate.
+; y: Required. A numeric expression representing the cartesian y-coordinate.
+
+==Remarks==
+The return value is between -pi and pi. It represents the angle of the supplied ( y , x ) point, in radians.
+
+'''Applies To''' : [[javascript/Math|Math Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              

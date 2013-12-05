@@ -1,0 +1,26 @@
+Adds all the elements of an array separated by the specified separator string.
+
+ arrayObj.join([ separator ])
+
+==Parameters==
+; arrayObj: Required. An '''Array''' object.
+; separator: Optional. A string used to separate one element of an array from the next in the resulting String. If omitted, the array elements are separated with a comma.
+
+==Remarks==
+If any element of the array is '''undefined''' or null , it is treated as an empty string.
+
+
+==Example==
+The following example illustrates the use of the '''join''' method.
+
+ var a, b;
+ a = new Array(0,1,2,3,4);
+ b = a.join( "-" ) ;
+ document.write(b);
+ 
+ // Output:
+ // 0-1-2-3-4
+
+==See Also==
+
+              

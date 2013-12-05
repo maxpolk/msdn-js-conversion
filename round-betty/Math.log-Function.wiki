@@ -1,0 +1,30 @@
+Returns the natural logarithm (base e ) of a number.
+
+ Math.log( number ''')'''
+
+==Parameters==
+; number: A number.
+
+==Return Value==
+If number is positive, this function returns the natural logarithm of the number. If number is negative, this function returns NaN. If number is 0, this function returns -Infinity.
+
+
+==Example==
+The following code shows how to use this function.
+
+ var numArr = [ 45.3, 69.0, 557.04, 0.222 ];
+ 
+ for (i in numArr) {
+     document.write(Math.log(numArr[i]));
+     document.write("&lt;br/&gt;");
+ }
+ 
+ // Output: 
+ // 3.8133070324889884
+ // 4.23410650459726
+ // 6.322637050634291
+ // -1.5050778971098575
+
+==See Also==
+
+              
