@@ -21,7 +21,7 @@ processlink ()
     #     | JavaScript-Future-Reserved-Words.wiki || javascript/future reserved words
     #
     if ! grep -q "|| ${LINK}\$" upload-mapping.wiki; then
-        echo "Bad link: $LINK"
+        echo "$LINK"
     fi
 }
 
