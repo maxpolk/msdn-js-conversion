@@ -11,7 +11,7 @@ If the '''match''' method does not find a match, it returns null. If it finds a 
 
 The array returned by the '''match''' method has three properties, '''input''' , '''index''' and '''lastIndex'''. The input property contains the entire searched string. The index property contains the position of the matched substring within the complete searched string. The '''lastIndex''' property contains the position following the last character in the last match.
 
-If the global flag ( '''g''' ) is not set, Element zero of the array contains the entire match, while elements 1 through n contain any submatches. This behavior is the same as the behavior of the [[javascript/Regular Expression/exec|exec Method (Regular Expression)]] when the global flag is not set. If the global flag is set, elements 0 through n contain all matches that occurred.
+If the global flag ( '''g''' ) is not set, Element zero of the array contains the entire match, while elements 1 through n contain any submatches. This behavior is the same as the behavior of the [[javascript/regular expression/exec|exec Method (Regular Expression)]] when the global flag is not set. If the global flag is set, elements 0 through n contain all matches that occurred.
 
 If the flag '''i''' is set, the search is not case-sensitive.
 

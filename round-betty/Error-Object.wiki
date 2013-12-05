@@ -63,11 +63,11 @@ The following example illustrates the use of the implicitly created Error object
  // Description: 'y' is undefined
 
 ==Methods==
-[[javascript/Error/toString|toString Method (Error)]] {{!}} [[javascript/Date/valueOf Method|valueOf Method (Date)]]
+[[javascript/Error/toString|toString Method (Error)]] {{!}} [[javascript/Date/valueOf|valueOf Method (Date)]]
 
 
 ==Properties==
-[[javascript/Error/constructor|constructor Property (Error)]] {{!}} [[javascript/Error/description Property|number Property]] {{!}} [[javascript/Error/prototype Property|prototype Property (Error)]] {{!}} [[javascript/Error/stack Property|stack Property (Error)]] {{!}} [[javascript/Error/stackTraceLimit Property|stackTraceLimit Property (Error)]]
+[[javascript/Error/constructor|constructor Property (Error)]] {{!}} [[javascript/Error/description|number Property]] {{!}} [[javascript/Error/prototype|prototype Property (Error)]] {{!}} [[javascript/Error/stack|stack Property (Error)]] {{!}} [[javascript/Error/stackTraceLimit|stackTraceLimit Property (Error)]]
 
 
 ==See Also==

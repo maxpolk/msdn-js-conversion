@@ -9,9 +9,9 @@ An object that represents a number of any kind. All JavaScript numbers are 64-bi
 ==Remarks==
 JavaScript creates '''Number''' objects when a variable is set to a number value, for example <code>var num = 255.336;</code>. It is seldom necessary to create '''Number''' objects explicitly.
 
-The '''Number''' object has its own properties and methods, in addition to the properties and methods inherited from '''Object'''. Numbers are converted into strings under certain circumstances, for example when a number is added or concatenated with a string, as well as by means of the '''toString''' method. For more information, see [[javascript/Operators/Addition|Addition Operator (+)]].
+The '''Number''' object has its own properties and methods, in addition to the properties and methods inherited from '''Object'''. Numbers are converted into strings under certain circumstances, for example when a number is added or concatenated with a string, as well as by means of the '''toString''' method. For more information, see [[javascript/operators/addition|Addition Operator (+)]].
 
-JavaScript has several number constants. For a complete list, see [[javascript/Number/Number Constants|Number Constants]].
+JavaScript has several number constants. For a complete list, see [[javascript/Number/constants|Number Constants]].
 
 
 ==Properties==

@@ -7,37 +7,37 @@ The following table lists JavaScript assignment operators.
 ! Operator
 ! Symbol
 |-
-| [[javascript/Operators/Addition Assignment|Addition]]
+| [[javascript/operators/addition assignment|Addition]]
 | +=
 |-
-| [[javascript/Operators/Bitwise AND Assignment|Bitwise AND]]
+| [[javascript/operators/bitwise and assignment|Bitwise AND]]
 | &amp;=
 |-
-| [[javascript/Operators/Bitwise OR Assignment|Bitwise Or]]
+| [[javascript/operators/bitwise or assignment|Bitwise Or]]
 | {{!}}=
 |-
-| [[javascript/Operators/Bitwise XOR Assignment|Bitwise XOR]]
+| [[javascript/operators/bitwise xor assignment|Bitwise XOR]]
 | ^=
 |-
-| [[javascript/Operators/Division Assignment|Division]]
+| [[javascript/operators/division assignment|Division]]
 | /=
 |-
-| [[javascript/Operators/Left Shift Assignment|Left Shift]]
+| [[javascript/operators/left shift assignment|Left Shift]]
 | &lt;&lt;=
 |-
-| [[javascript/Operators/Modulus Assignment|Modulus]]
+| [[javascript/operators/modulus assignment|Modulus]]
 | %=
 |-
-| [[javascript/Operators/Multiplication Assignment|Multiplication]]
+| [[javascript/operators/multiplication assignment|Multiplication]]
 | *=
 |-
-| [[javascript/Operators/Right Shift Assignment|Right Shift]]
+| [[javascript/operators/right shift assignment|Right Shift]]
 | &gt;&gt;=
 |-
-| [[javascript/Operators/Subtraction Assignment|Subtraction]]
+| [[javascript/operators/subtraction assignment|Subtraction]]
 | -=
 |-
-| [[javascript/Operators/Unsigned Right Shift Assignment|Unsigned Right Shift]]
+| [[javascript/operators/unsigned right shift assignment|Unsigned Right Shift]]
 | &gt;&gt;&gt;=
 |}
 

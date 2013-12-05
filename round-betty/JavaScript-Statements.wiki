@@ -13,9 +13,6 @@ The following table lists JavaScript statements.
 | Contains statements to execute when an error occurs in code within the '''try''' block.
 | [[javascript/statements/try catch finally|catch Statement]]
 |-
-| Activates conditional compilation support.
-| [[javascript/statements/cc on|@cc_on Statement]]
-|-
 | Causes comments to be ignored by the JavaScript parser.
 | [[javascript/statements/Comment|Comment Statements]]
 |-
@@ -38,9 +35,6 @@ The following table lists JavaScript statements.
 | [[javascript/statements/function|function Statement]]
 |-
 | Conditionally executes a group of statements, depending on the value of an expression.
-| [[javascript/statements/if|@if Statement]]
-|-
-| Conditionally executes a group of statements, depending on the value of an expression.
 | [[javascript/statements/if else|if...else Statement]]
 |-
 | Provides an identifier for a statement.
@@ -48,9 +42,6 @@ The following table lists JavaScript statements.
 |-
 | Exits from the current function and returns a value from that function.
 | [[javascript/statements/return|return Statement]]
-|-
-| Creates variables used with conditional compilation statements.
-| [[javascript/statements/set|@set Statement]]
 |-
 | Enables the execution of one or more statements when a specified expression's value matches a label.
 | [[javascript/statements/switch|switch Statement]]

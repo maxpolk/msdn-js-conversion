@@ -1,6 +1,6 @@
 In JavaScript, future reserved keywords must not be used as identifiers, even though they have no special meaning in the current version.
 
-For a list of reserved words in JavaScript, see [[javascript/Reserved Words|JavaScript Reserved Words]].
+For a list of reserved words in JavaScript, see [[javascript/reserved words|JavaScript Reserved Words]].
 
 
 ==Future reserved words==

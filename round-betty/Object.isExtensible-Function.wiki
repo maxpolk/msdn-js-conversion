@@ -14,7 +14,7 @@ If the object argument is not an object, a TypeError exception is thrown.
 
 
 ==Remarks==
-For information about how to set property attributes, see [[javascript/Object/Object.defineProperty|Object.defineProperty Function]]. To obtain the attributes of a property, you can use the [[javascript/Object/Object.getOwnPropertyDescriptor Function|Object.getOwnPropertyDescriptor Function]].
+For information about how to set property attributes, see [[javascript/Object/defineProperty|Object.defineProperty Function]]. To obtain the attributes of a property, you can use the [[javascript/Object/getOwnPropertyDescriptor|Object.getOwnPropertyDescriptor Function]].
 
 The following related functions prevent the modification of object attributes.
 
@@ -25,17 +25,17 @@ The following related functions prevent the modification of object attributes.
 ! configurable is set to false for each property
 ! writable is set to false for each property
 |-
-| [[javascript/Object/Object.preventExtensions|Object.preventExtensions]]
+| [[javascript/Object/preventExtensions|Object.preventExtensions]]
 | Yes
 | No
 | No
 |-
-| [[javascript/Object/Object.seal|Object.seal]]
+| [[javascript/Object/seal|Object.seal]]
 | Yes
 | Yes
 | No
 |-
-| [[javascript/Object/Object.freeze|Object.freeze]]
+| [[javascript/Object/freeze|Object.freeze]]
 | Yes
 | Yes
 | Yes
@@ -54,12 +54,12 @@ The following functions return true if all of the conditions marked in the follo
 | No
 | No
 |-
-| [[javascript/Object/Object.isSealed|Object.isSealed]]
+| [[javascript/Object/isSealed|Object.isSealed]]
 | No
 | Yes
 | No
 |-
-| [[javascript/Object/Object.isFrozen|Object.isFrozen]]
+| [[javascript/Object/isFrozen|Object.isFrozen]]
 | No
 | Yes
 | Yes

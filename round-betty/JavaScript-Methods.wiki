@@ -16,10 +16,6 @@ The following table lists JavaScript methods.
 | Applies a method of an object, substituting another object for the current object.
 | '''Function'''
 |-
-| [[javascript/Enumerator/atEnd|atEnd method]]
-| Returns a Boolean value indicating if the enumerator is at the end of the collection.
-| '''Enumerator'''
-|-
 | [[javascript/String/HTML Tag Methods|big method]]
 | Places HTML &lt;BIG&gt; tags around text.
 | '''String'''
@@ -48,7 +44,7 @@ The following table lists JavaScript methods.
 | Returns the Unicode encoding of the specified character.
 | '''String'''
 |-
-| [[javascript/Regular Expression/compile|compile method]]
+| [[javascript/regular expression/compile|compile method]]
 | Compiles a regular expression into an internal format.
 | '''Regular Expression'''
 |-
@@ -64,7 +60,7 @@ The following table lists JavaScript methods.
 | Checks whether a defined callback function returns true for all elements in an array.
 | '''Array'''
 |-
-| [[javascript/Regular Expression/exec|exec method]]
+| [[javascript/regular expression/exec|exec method]]
 | Executes a search for a match in a specified string.
 | '''Regular Expression'''
 |-
@@ -160,10 +156,6 @@ The following table lists JavaScript methods.
 | Returns the seconds value using UTC.
 | '''Date'''
 |-
-| [[javascript/Date/getVarDate|getVarDate method]]
-| Returns the VT_DATE value in a Date object.
-| '''Date'''
-|-
 | [[javascript/Date/getYear|getYear method]]
 | Returns the year value .
 | '''Date'''
@@ -187,10 +179,6 @@ The following table lists JavaScript methods.
 | [[javascript/String/HTML Tag Methods|italics method]]
 | Places HTML &lt;I&gt; tags around text.
 | '''String'''
-|-
-| [[javascript/Enumerator/item|item method]]
-| Returns the current item in the collection.
-| '''Enumerator'''
 |-
 | [[javascript/Array/join|join method]]
 | Returns a String object consisting of all the elements of an array concatenated together.
@@ -219,14 +207,6 @@ The following table lists JavaScript methods.
 | [[javascript/String/match|match method]]
 | Returns, as an array, the results of a search on a string using a supplied '''Regular Expression''' object.
 | '''String'''
-|-
-| [[javascript/Enumerator/moveFirst|moveFirst method]]
-| Resets the current item in the collection to the first item.
-| '''Enumerator'''
-|-
-| [[javascript/Enumerator/moveNext|moveNext method]]
-| Moves the current item to the next item in the collection.
-| '''Enumerator'''
 |-
 | [[javascript/Array/pop|pop method]]
 | Removes the last element from an array and returns it.
@@ -376,7 +356,7 @@ The following table lists JavaScript methods.
 | Places HTML &lt;SUP&gt; tags around text.
 | '''String'''
 |-
-| [[javascript/Regular Expression/test|test method]]
+| [[javascript/regular expression/test|test method]]
 | Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
 | '''Regular Expression'''
 |-

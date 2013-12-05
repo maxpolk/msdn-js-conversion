@@ -18,7 +18,7 @@ The following table lists the constants of the '''Uint16Array''' object.
 ! Constant
 ! Description
 |-
-| [[javascript/Uint16Array/BYTES PER ELEMENT Constant|BYTES_PER_ELEMENT Constant]]
+| [[javascript/Uint16Array/BYTES PER ELEMENT|BYTES_PER_ELEMENT Constant]]
 | The size in bytes of each element in the array.
 |}
 

@@ -67,7 +67,7 @@ The following table describes the functions of the '''Array''' object.
 ! Function
 ! Description
 |-
-| [[javascript/Array/Array.isArray|Array.isArray Function]]
+| [[javascript/Array/isArray|Array.isArray Function]]
 | Returns a Boolean value that indicates whether an object is an array.
 |}
 

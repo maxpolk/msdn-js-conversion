@@ -6,11 +6,11 @@ The '''Global''' object is never used directly, and cannot be created using the 
 
 
 ==Constants==
-[[javascript/Global/Infinity Constant|undefined Constant]]
+[[javascript/Infinity|undefined Constant]]
 
 
 ==Functions==
-[[javascript/Global/decodeURI|decodeURI Function]] {{!}} [[javascript/Global/decodeURIComponent Function|unescape Function]]
+[[javascript/decodeURI|decodeURI Function]] {{!}} [[javascript/decodeURIComponent|unescape Function]]
 
 
 ==See Also==

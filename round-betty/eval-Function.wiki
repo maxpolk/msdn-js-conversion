@@ -12,7 +12,7 @@ The codeString string is parsed by the JavaScript parser and executed.
 
 The code passed to the '''eval''' function is executed in the same context as the call to the '''eval''' function.
 
-Whenever possible, use the [[javascript/JSON/JSON.parse|JSON.parse function]] to de-serialize JavaScript Object Notation (JSON) text. The '''JSON.parse''' function is more secure and executes faster than the '''eval''' function.
+Whenever possible, use the [[javascript/JSON/parse|JSON.parse function]] to de-serialize JavaScript Object Notation (JSON) text. The '''JSON.parse''' function is more secure and executes faster than the '''eval''' function.
 
 
 ==Example==

@@ -17,9 +17,9 @@ A data property is a property that can store and retrieve a value. A data proper
 
 An accessor property calls a user-provided function every time the property value is set or retrieved. An accessor property descriptor contains a set attribute, a get attribute, or both.
 
-If the object already has a property that has the specified name, the property attributes are modified. For more information, see [[javascript/Object/Object.defineProperty|Object.defineProperty Function]].
+If the object already has a property that has the specified name, the property attributes are modified. For more information, see [[javascript/Object/defineProperty|Object.defineProperty Function]].
 
-To create an object and add properties to the new object, you can use the [[javascript/Object/Object.create|Object.create Function]].
+To create an object and add properties to the new object, you can use the [[javascript/Object/create|Object.create Function]].
 
 
 ==Adding Properties==

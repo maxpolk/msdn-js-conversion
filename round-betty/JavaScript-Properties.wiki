@@ -36,11 +36,11 @@ The following table lists JavaScript properties.
 | Returns or sets the descriptive string associated with a specific error.
 | '''Error'''
 |-
-| [[javascript/Regular Expression/global|global Property]]
+| [[javascript/regular expression/global|global Property]]
 | Returns a Boolean value indicating the state of the global flag ( '''g''' ) used with a regular expression.
 | '''Regular Expression'''
 |-
-| [[javascript/Regular Expression/ignoreCase|ignoreCase Property]]
+| [[javascript/regular expression/ignoreCase|ignoreCase Property]]
 | Returns a Boolean value indicating the state of the ignoreCase flag ( '''i''' ) used with a regular expression.
 | '''Regular Expression'''
 |-
@@ -88,7 +88,7 @@ The following table lists JavaScript properties.
 | Returns an error message string.
 | '''Error'''
 |-
-| [[javascript/Regular Expression/multiline|multiline Property]]
+| [[javascript/regular expression/multiline|multiline Property]]
 | Returns a Boolean value indicating the state of the multiline flag ( '''m''' ) used with a regular expression.
 | '''Regular Expression'''
 |-
@@ -108,7 +108,7 @@ The following table lists JavaScript properties.
 | Returns the characters from the position following the last match to the end of the searched string.
 | '''RegExp'''
 |-
-| [[javascript/Regular Expression/source|source Property]]
+| [[javascript/regular expression/source|source Property]]
 | Returns a copy of the text of the regular expression pattern.
 | '''Regular Expression'''
 |}

@@ -5,7 +5,7 @@ Returns the larger of a set of supplied numeric expressions.
 ==Remarks==
 The optional number1, number2, ..., numberN arguments are numeric expressions to be evaluated.
 
-If no arguments are provided, the return value is equal to [[javascript/Number/Number Constants|Number.NEGATIVE_INFINITY]]. If any argument is '''NaN''' , the return value is also '''NaN'''.
+If no arguments are provided, the return value is equal to [[javascript/Number/constants|Number.NEGATIVE_INFINITY]]. If any argument is '''NaN''' , the return value is also '''NaN'''.
 
 
 ==Example==

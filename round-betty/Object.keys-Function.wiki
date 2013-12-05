@@ -21,9 +21,9 @@ If the value supplied for the object argument is not the name of an object, a Ty
 
 
 ==Remarks==
-The '''keys''' method returns only the names of enumerable properties and methods. To return the names of both enumerable and non-enumerable properties and methods, you can use [[javascript/Object/Object.getOwnPropertyNames|Object.getOwnPropertyNames Function]].
+The '''keys''' method returns only the names of enumerable properties and methods. To return the names of both enumerable and non-enumerable properties and methods, you can use [[javascript/Object/getOwnPropertyNames|Object.getOwnPropertyNames Function]].
 
-For information about the enumerable attribute of a property, see [[javascript/Object/Object.defineProperty|Object.defineProperty Function]] and [[javascript/Object/Object.getOwnPropertyDescriptor Function|Object.getOwnPropertyDescriptor Function]].
+For information about the enumerable attribute of a property, see [[javascript/Object/defineProperty|Object.defineProperty Function]] and [[javascript/Object/getOwnPropertyDescriptor|Object.getOwnPropertyDescriptor Function]].
 
 
 ==Example==

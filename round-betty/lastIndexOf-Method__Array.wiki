@@ -27,7 +27,7 @@ The '''lastIndexOf''' method searches an array for a specified value. The method
 
 The search occurs in descending index order (last member first). To search in ascending order, use the [[javascript/Array/indexOf|indexOf Method (Array)]].
 
-The array elements are compared to the searchElement value by strict equality, similar to the comparison made by the === operator. For more information, see [[javascript/Operators/Comparison|Comparison Operators]].
+The array elements are compared to the searchElement value by strict equality, similar to the comparison made by the === operator. For more information, see [[javascript/operators/comparison|Comparison Operators]].
 
 The optional fromIndex argument specifies the array index at which to begin the search. If fromIndex is greater than or equal to the array length, the whole array is searched. If fromIndex is negative, the search starts at the array length plus fromIndex. If the computed index is less than 0, -1 is returned.
 

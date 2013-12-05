@@ -24,9 +24,6 @@ The following table lists JavaScript Objects.
 | Enables basic storage and retrieval of dates and times.
 | [[javascript/Date|Date Object]]
 |-
-| An intrinsic object that can send output to a script debugger.
-| [[javascript/Debug|Debug Object]]
-|-
 | An object that contains information about errors that occur while JavaScript code is running.
 | [[javascript/Error|Error Object]]
 |-
@@ -67,7 +64,7 @@ The following table lists JavaScript Objects.
 | [[javascript/RegExp|RegExp Object]]
 |-
 | Contains a regular expression pattern.
-| [[javascript/Regular Expression|Regular Expression Object]]
+| [[javascript/regular expression|Regular Expression Object]]
 |-
 | Allows manipulation and formatting of text strings and determination and location of substrings within strings.
 | [[javascript/String|String Object]]

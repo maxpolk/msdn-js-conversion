@@ -35,11 +35,11 @@ The following example illustrates the use of the '''Regular Expression''' object
  }
 
 ==Properties==
-[[javascript/Regular Expression/global|source Property]]
+[[javascript/regular expression/global|source Property]]
 
 
 ==Methods==
-[[javascript/Regular Expression/compile|test Method]]
+[[javascript/regular expression/compile|test Method]]
 
 
 ==See Also==

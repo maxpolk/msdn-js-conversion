@@ -9,7 +9,7 @@ Allows manipulation and formatting of text strings and determination and locatio
 ==Remarks==
 JavaScript provides escape sequences that you can include in strings to create characters that you cannot type directly. For example, <code>\t</code> specifies a tab character. For more information, see Special Characters (JScript).
 
-A string literal is zero or more characters enclosed in single or double quotation marks. A string literal has a primary (primitive) data type of string. A String object is created by using the [[javascript/Operators/new|new Operator]] , and has a data type of '''Object'''.
+A string literal is zero or more characters enclosed in single or double quotation marks. A string literal has a primary (primitive) data type of string. A String object is created by using the [[javascript/operators/new|new Operator]] , and has a data type of '''Object'''.
 
 The following example shows that the data type of a string literal is not the same as that of a '''String''' object.
 
@@ -75,7 +75,7 @@ The following table lists the functions of the '''String''' object.
 ! Function
 ! Description
 |-
-| [[javascript/String/String.fromCharCode|String.fromCharCode Function]]
+| [[javascript/String/fromCharCode|String.fromCharCode Function]]
 | Returns a string from a number of Unicode character values.
 |}
 

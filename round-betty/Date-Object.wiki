@@ -62,13 +62,13 @@ The following table lists functions of the '''Date Object'''.
 ! Functions
 ! Description
 |-
-| [[javascript/Date/Date.now|Date.now Function]]
+| [[javascript/Date/now|Date.now Function]]
 | Returns the number of milliseconds between January 1, 1970, and the current date and time.
 |-
-| [[javascript/Date/Date.parse|Date.parse Function]]
+| [[javascript/Date/parse|Date.parse Function]]
 | Parses a string containing a date, and returns the number of milliseconds between that date and midnight, January 1, 1970.
 |-
-| [[javascript/Date/Date.UTC|Date.UTC Function]]
+| [[javascript/Date/UTC|Date.UTC Function]]
 | Returns the number of milliseconds between midnight, January 1, 1970 Universal Coordinated Time (UTC) (or GMT) and the supplied date.
 |}
 
@@ -133,9 +133,6 @@ The following table lists methods of the '''Date Object'''.
 |-
 | [[javascript/Date/getUTCSeconds|getUTCSeconds Method]]
 | Returns the seconds value using UTC.
-|-
-| [[javascript/Date/getVarDate|getVarDate Method]]
-| Returns the VT_DATE value in a Date object.
 |-
 | [[javascript/Date/getYear|getYear Method]]
 | Returns the year value .

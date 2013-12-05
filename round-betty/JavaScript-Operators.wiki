@@ -8,148 +8,148 @@ The following table lists JavaScript operators.
 ! Language Element
 |-
 | Adds the value of an expression to the value of a variable and assigns the result to the variable.
-| [[javascript/Operators/Addition Assignment|Addition Assignment Operator (+=)]]
+| [[javascript/operators/addition assignment|Addition Assignment Operator (+=)]]
 |-
 | Sums two numbers or concatenates two strings.
-| [[javascript/Operators/Addition|Addition Operator (+)]]
+| [[javascript/operators/addition|Addition Operator (+)]]
 |-
 | Assigns a value to a variable.
-| [[javascript/Operators/Assignment|Assignment Operator (=)]]
+| [[javascript/operators/assignment|Assignment Operator (=)]]
 |-
 | Performs a bitwise AND on the value of a variable and the value of an expression and assigns the result to the variable.
-| [[javascript/Operators/Bitwise AND Assignment|Bitwise AND Assignment Operator (&amp;=)]]
+| [[javascript/operators/bitwise and assignment|Bitwise AND Assignment Operator (&amp;=)]]
 |-
 | Performs a bitwise AND on two expressions.
-| [[javascript/Operators/Bitwise AND|Bitwise AND Operator (&amp;)]]
+| [[javascript/operators/bitwise and|Bitwise AND Operator (&amp;)]]
 |-
 | Shifts the bits of an expression to the left.
-| [[javascript/Operators/Bitwise Left Shift|Bitwise Left Shift Operator (&lt;&lt;)]]
+| [[javascript/operators/bitwise left shift|Bitwise Left Shift Operator (&lt;&lt;)]]
 |-
 | Performs a bitwise NOT (negation) on an expression.
-| [[javascript/Operators/Bitwise NOT|Bitwise NOT Operator (~)]]
+| [[javascript/operators/bitwise not|Bitwise NOT Operator (~)]]
 |-
 | Performs a bitwise OR on the value of a variable and the value of an expression and assigns the result to the variable.
-| [[javascript/Operators/Bitwise OR Assignment|Bitwise OR Assignment Operator ({{!}}=)]]
+| [[javascript/operators/bitwise or assignment|Bitwise OR Assignment Operator ({{!}}=)]]
 |-
 | Performs a bitwise OR on two expressions.
-| [[javascript/Operators/Bitwise OR|Bitwise OR Operator ({{!}})]]
+| [[javascript/operators/bitwise or|Bitwise OR Operator ({{!}})]]
 |-
 | Shifts the bits of an expression to the right, maintaining sign.
-| [[javascript/Operators/Bitwise Right Shift|Bitwise Right Shift Operator (&gt;&gt;)]]
+| [[javascript/operators/bitwise right shift|Bitwise Right Shift Operator (&gt;&gt;)]]
 |-
 | Performs a bitwise exclusive OR on a variable and an expression and assigns the result to the variable.
-| [[javascript/Operators/Bitwise XOR Assignment|Bitwise XOR Assignment Operator (^=)]]
+| [[javascript/operators/bitwise xor assignment|Bitwise XOR Assignment Operator (^=)]]
 |-
 | Performs a bitwise exclusive OR on two expressions.
-| [[javascript/Operators/Bitwise XOR|Bitwise XOR Operator (^)]]
+| [[javascript/operators/bitwise xor|Bitwise XOR Operator (^)]]
 |-
 | Causes two expressions to be executed sequentially.
-| [[javascript/Operators/Comma|Comma Operator (,)]]
+| [[javascript/operators/comma|Comma Operator (,)]]
 |-
 | Returns a Boolean value indicating the result of the comparison.
-| [[javascript/Operators/Comparison|Comparison Operators]]
+| [[javascript/operators/comparison|Comparison Operators]]
 |-
 | List of compound assignment operators.
-| [[javascript/Operators/Compound Assignment|Compound Assignment Operators]]
+| [[javascript/operators/compound assignment|Compound Assignment Operators]]
 |-
 | Executes one of two expressions depending on a condition.
-| [[javascript/Operators/Conditional Ternary|Conditional (ternary) Operator (?:)]]
+| [[javascript/operators/conditional ternary|Conditional (ternary) Operator (?:)]]
 |-
 | Decrements a variable by one.
-| [[javascript/Operators/Increment and Decrement|Decrement Operator (--)]]
+| [[javascript/operators/increment and decrement|Decrement Operator (--)]]
 |-
 | Deletes a property from an object, or removes an element from an array.
-| [[javascript/Operators/delete|delete Operator]]
+| [[javascript/operators/delete|delete Operator]]
 |-
 | Divides the value of a variable by the value of an expression and assigns the result to the variable.
-| [[javascript/Operators/Division Assignment|Division Assignment Operator (/=)]]
+| [[javascript/operators/division assignment|Division Assignment Operator (/=)]]
 |-
 | Divides two numbers and returns a numeric result.
-| [[javascript/Operators/Division|Division Operator (/)]]
+| [[javascript/operators/division|Division Operator (/)]]
 |-
 | Tests for the existence of a property in an object.
-| [[javascript/Operators/in|in Operator]]
+| [[javascript/operators/in|in Operator]]
 |-
 | Compares two expressions to determine if they are equal.
-| [[javascript/Operators/Comparison|Equality Operator (==)]]
+| [[javascript/operators/comparison|Equality Operator (==)]]
 |-
 | Compares two expressions to determine if one is greater than the other.
-| [[javascript/Operators/Comparison|Greater than Operator (&gt;)]]
+| [[javascript/operators/comparison|Greater than Operator (&gt;)]]
 |-
 | Compares two expressions to determine if one is greater than or equal to the other.
-| [[javascript/Operators/Comparison|Greater than or equal to Operator (&gt;=)]]
+| [[javascript/operators/comparison|Greater than or equal to Operator (&gt;=)]]
 |-
 | Compares two expressions to determine if they are equal in value and of the same data type.
-| [[javascript/Operators/Comparison|Identity Operator (===)]]
+| [[javascript/operators/comparison|Identity Operator (===)]]
 |-
 | Increments a variable by one.
-| [[javascript/Operators/Increment and Decrement|Increment Operator (++)]]
+| [[javascript/operators/increment and decrement|Increment Operator (++)]]
 |-
 | Compares two expressions to determine if they are unequal.
-| [[javascript/Operators/Comparison|Inequality Operator (!=)]]
+| [[javascript/operators/comparison|Inequality Operator (!=)]]
 |-
 | Returns a Boolean value that indicates whether or not an object is an instance of a particular class.
-| [[javascript/Operators/instanceof|instanceof Operator]]
+| [[javascript/operators/instanceof|instanceof Operator]]
 |-
 | Left shifts the value of a variable by the number of bits specified in the value of an expression and assigns the result to the variable.
-| [[javascript/Operators/Left Shift Assignment|Left Shift Assignment Operator (&lt;&lt;=)]]
+| [[javascript/operators/left shift assignment|Left Shift Assignment Operator (&lt;&lt;=)]]
 |-
 | Compares two expressions to determine if one is less than the other.
-| [[javascript/Operators/Comparison|Less than Operator (&lt;)]]
+| [[javascript/operators/comparison|Less than Operator (&lt;)]]
 |-
 | Compares two expressions to determine if one is less than or equal to the other.
-| [[javascript/Operators/Comparison|Less than or equal to Operator (&lt;=)]]
+| [[javascript/operators/comparison|Less than or equal to Operator (&lt;=)]]
 |-
 | Performs a logical conjunction on two expressions.
-| [[javascript/Operators/Logical AND|Logical AND Operator (&amp;&amp;)]]
+| [[javascript/operators/logical and|Logical AND Operator (&amp;&amp;)]]
 |-
 | Performs logical negation on an expression.
-| [[javascript/Operators/Logical NOT|Logical NOT Operator (!)]]
+| [[javascript/operators/logical not|Logical NOT Operator (!)]]
 |-
 | Performs a logical disjunction on two expressions.
-| [[javascript/Operators/Logical OR|Logical OR Operator ({{!}}{{!}})]]
+| [[javascript/operators/logical or|Logical OR Operator ({{!}}{{!}})]]
 |-
 | Divides the value of a variable by the value of an expression, and assigns the remainder to the variable.
-| [[javascript/Operators/Modulus Assignment|Modulus Assignment Operator (%=)]]
+| [[javascript/operators/modulus assignment|Modulus Assignment Operator (%=)]]
 |-
 | Divides two numbers and returns the remainder.
-| [[javascript/Operators/Modulus|Modulus Operator (%)]]
+| [[javascript/operators/modulus|Modulus Operator (%)]]
 |-
 | Multiplies the value of a variable by the value of an expression and assigns the result to the variable.
-| [[javascript/Operators/Multiplication Assignment|Multiplication Assignment Operator (*=)]]
+| [[javascript/operators/multiplication assignment|Multiplication Assignment Operator (*=)]]
 |-
 | Multiplies two numbers.
-| [[javascript/Operators/Multiplication|Multiplication Operator (*)]]
+| [[javascript/operators/multiplication|Multiplication Operator (*)]]
 |-
 | Creates a new object.
-| [[javascript/Operators/new|new Operator]]
+| [[javascript/operators/new|new Operator]]
 |-
 | Compares two expressions to determine that they are not equal in value or of the same data type.
-| [[javascript/Operators/Comparison|Nonidentity Operator (!==)]]
+| [[javascript/operators/comparison|Nonidentity Operator (!==)]]
 |-
 | Right shifts the value of a variable by the number of bits specified in the value of an expression, maintaining the sign, and assigns the result to the variable.
-| [[javascript/Operators/Right Shift Assignment|Right Shift Assignment Operator (&gt;&gt;=)]]
+| [[javascript/operators/right shift assignment|Right Shift Assignment Operator (&gt;&gt;=)]]
 |-
 | Subtracts the value of an expression from the value of a variable and assigns the result to the variable.
-| [[javascript/Operators/Subtraction Assignment|Subtraction Assignment Operator (-=)]]
+| [[javascript/operators/subtraction assignment|Subtraction Assignment Operator (-=)]]
 |-
 | Performs subtraction of two expressions.
-| [[javascript/Operators/Subtraction|Subtraction Operator (-)]]
+| [[javascript/operators/subtraction|Subtraction Operator (-)]]
 |-
 | Returns a string that identifies the data type of an expression.
-| [[javascript/Operators/typeof|typeof Operator]]
+| [[javascript/operators/typeof|typeof Operator]]
 |-
 | Indicates the negative value of a numeric expression.
-| [[javascript/Operators/Subtraction|Unary Negation Operator (-)]]
+| [[javascript/operators/subtraction|Unary Negation Operator (-)]]
 |-
 | Right shifts the value of a variable by the number of bits specified in the value of an expression, without maintaining sign, and assigns the result to the variable.
-| [[javascript/Operators/Unsigned Right Shift Assignment|Unsigned Right Shift Assignment Operator (&gt;&gt;&gt;=)]]
+| [[javascript/operators/unsigned right shift assignment|Unsigned Right Shift Assignment Operator (&gt;&gt;&gt;=)]]
 |-
 | Performs an unsigned right shift of the bits in an expression.
-| [[javascript/Operators/Unsigned Right Shift|Unsigned Right Shift Operator (&gt;&gt;&gt;)]]
+| [[javascript/operators/unsigned right shift|Unsigned Right Shift Operator (&gt;&gt;&gt;)]]
 |-
 | Prevents an expression from returning a value.
-| [[javascript/Operators/void|void Operator]]
+| [[javascript/operators/void|void Operator]]
 |}
 
 ==See Also==
