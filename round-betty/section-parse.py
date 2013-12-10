@@ -20,7 +20,10 @@ def processSection (rewrite, section_name, section):
             count += 1
 
 def processFile (filename):
-    '''Read through a file, separating into mediawiki markup sections.'''
+    '''
+    Read through a file, separating into mediawiki markup sections.
+    Rewrite each section into a new file named with suffix ".rewrite".
+    '''
     print ("===== {} =====".format (filename))
     rewrite = open (filename + ".rewrite", 'w')
     section_name = ""
