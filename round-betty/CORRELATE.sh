@@ -18,7 +18,7 @@ ProcessFile ()
     FILE="$2"
 
     echo "===== $FILE"
-    python special-extract-py "$ORIGINAL" syntaxSection
+    python special-extract.py "$ORIGINAL" syntaxSection
     # # echo "$FILE"
     # # Look for this:
     # # <div id="syntaxCodeBlocks" class="code">

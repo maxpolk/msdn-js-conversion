@@ -1,12 +1,12 @@
 #! /usr/bin/env python
 '''
-Extract content from an html file.
+Extract top example code from an html file.
 '''
 
 import sys
 from xml.etree import ElementTree
 
-usage = "Usage: extract-html INPUTFILE ELEMENTID"
+usage = "Usage: special-extract.py INPUTFILE ELEMENTID"
 
 # Parse args
 if len (sys.argv) != 3:
@@ -22,7 +22,7 @@ def surroundWithSpace (frags, text, tail):
     Rule: if tail doesn't begin with space, add trailing space.
     '''
     if (len (frags) > 0 and frags[-1] is not None):
-        if (frags[-1][-1] != " " and frags[-1][-1] != "."):
+        if (frags[-1][-1] != " " and frags[-1][-1] != "." and frags[-1][-1] != "\n"):
             text = " " + text
     if (tail is not None and tail != "" and tail[0] != " " and tail[0] != "."):
         text = text + " "
@@ -114,6 +114,10 @@ def convertText (element):
             frags.append (surroundWithSpace (frags, convertSpanText (item), tail))
             if (tail is not None):
                 frags.append (tail)
+        elif (item.tag == 'table'):
+            # Add separater after a table
+            if (len (frags) > 0 and frags[-1] is not None):
+                frags.append ('\n\n')
         else:
             if (text is not None):
                 frags.append (surroundWithSpace (frags, text, tail))
@@ -128,12 +132,5 @@ def convertText (element):
 # Parse XML file and find element having given id
 tree = ElementTree.parse (inputfile)
 root = tree.getroot ()
-# for element in root.findall (".[@id='{:}']".format (elementid)):
-#     print ("Found element")
 for element in root.findall (".//*[@id='{:}']".format (elementid, elementid)):
-    print convertText (element)
-
-#    for part in element.itertext ():
-#        less = part.strip ()
-#        if (less != ""):
-#            print ("TEXT: {}".format (less))
+    print (convertText (element))
