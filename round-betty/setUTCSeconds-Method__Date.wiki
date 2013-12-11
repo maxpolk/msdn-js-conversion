@@ -1,7 +1,6 @@
 Sets the seconds value in the Date object using Universal Coordinated Time (UTC).
 
- dateObj.'''setUTCSeconds(''' numSeconds [ ''',''' numMilli ] ''')'''
-
+ dateObj.'''setUTCSeconds(''' numSeconds [ ''',''' numMilli ] ''')''' 
 ==Parameters==
 ; dateObj: Required. Any Date object.
 ; numSeconds: Required. A numeric value equal to the seconds value.

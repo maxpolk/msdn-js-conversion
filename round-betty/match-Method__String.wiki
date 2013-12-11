@@ -1,7 +1,6 @@
 Matches a string with a regular expression, and returns an array containing the results of that search.
 
- stringObj.match( rgExp )
-
+ stringObj.match( rgExp ) 
 ==Parameters==
 ; stringObj: Required. The String object or string literal on which to perform the search.
 ; rgExp: Required. A regular expression object that contains the regular expression pattern and applicable flags. This can also be a variable name or string literal containing the regular expression pattern and flags.

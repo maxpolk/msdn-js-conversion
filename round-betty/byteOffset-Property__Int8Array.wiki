@@ -1,7 +1,6 @@
 Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 
  var arrayOffset = int8Array.byteOffset;
-
 ==Example==
 The following example shows how to get the offset of the array.
 

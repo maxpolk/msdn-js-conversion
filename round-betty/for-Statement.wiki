@@ -1,7 +1,7 @@
 Executes a block of statements for as long as a specified condition is true.
 
- for ([ initialization ]; [ test ]; [ increment ]) statement
-
+ for ([ initialization ]; [ test ]; [ increment ])
+     statement 
 ==Parameters==
 ; initialization: Optional. An expression. This expression is executed only once, before the loop is executed.
 ; test: Optional. A Boolean expression. If test is true , statement is executed. If test if false , the loop is terminated.

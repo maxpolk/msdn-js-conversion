@@ -1,7 +1,8 @@
 Provides support for creation of arrays of any data type.
 
- arrayObj = new Array() arrayObj = new Array([ size ]) arrayObj = new Array([ element0 [, element1 [, ...[, elementN ]]]])
-
+ arrayObj = new Array()
+ arrayObj = new Array([ size ])
+ arrayObj = new Array([ element0 [, element1 [, ...[, elementN ]]]])
 ==Parameters==
 ; arrayObj: Required. The variable name to which the '''Array''' object is assigned.
 ; size: Optional. The size of the array. As arrays are zero-based, created elements will have indexes from zero to size -1.

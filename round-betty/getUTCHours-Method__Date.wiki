@@ -1,7 +1,6 @@
 Gets the hours value in a '''Date''' object using Universal Coordinated Time (UTC).
 
- dateObj.getUTCHours()
-
+ dateObj.getUTCHours() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

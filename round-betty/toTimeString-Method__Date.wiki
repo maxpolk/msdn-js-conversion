@@ -1,7 +1,6 @@
 Returns a time as a string value.
 
  objDate. toTimeString( )
-
 ==Remarks==
 The required objDate reference is a Date object.
 

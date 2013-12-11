@@ -1,7 +1,6 @@
 Specifies the function that creates an Error.
 
  error.constructor
-
 ==Remarks==
 The required error is the name of an error object.
 

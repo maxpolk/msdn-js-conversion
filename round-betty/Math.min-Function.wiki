@@ -1,7 +1,6 @@
 Returns the smaller of a set of numeric expressions.
 
  Math.min([ number1 [, number2 [... [, numberN ]]]])
-
 ==Remarks==
 The optional number1, number2, ..., numberN arguments are numeric expressions to be evaluated.
 

@@ -1,7 +1,6 @@
 Gets a new Int16Array view of the [[javascript/ArrayBuffer|ArrayBuffer Object]] store for this array, specifying the first and last members of the subarray.
 
  var newInt16Array = int16Array.subarray(begin, end);
-
 ==Parameters==
 ; newInt16Array: The subarray returned by this method.
 ; begin: The index of the beginning of the array.

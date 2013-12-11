@@ -1,7 +1,6 @@
 Returns the actual number of arguments passed to a function by the caller.
 
  [ function.] '''arguments'''.'''length'''
-
 ==Remarks==
 The optional function argument is the name of the currently executing Function object.
 

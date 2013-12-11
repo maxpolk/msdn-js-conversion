@@ -1,9 +1,12 @@
 Enables the execution of one or more statements when a specified expression's value matches a label.
 
  switch ( expression ) {
-     case label : statementlist case label :
-     default : statementlist }
-
+     case label :
+         statementlist 
+     case label :
+     default :
+         statementlist 
+ } 
 ==Parameters==
 ; expression: The expression to be evaluated.
 ; label: An identifier to be matched against expression. If label is an expression , execution starts with the statementlist immediately after the colon, and continues until it encounters either a break statement, which is optional, or the end of the switch statement.

@@ -1,7 +1,6 @@
 Returns a string representation of an object.
 
  objectname.toString([ radix ])
-
 ==Parameters==
 ; objectname: Required. An object for which a string representation is sought.
 ; radix: Optional. Specifies a radix for converting numeric values to strings. This value is only used for numbers.

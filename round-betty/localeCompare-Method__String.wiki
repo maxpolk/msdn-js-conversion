@@ -1,7 +1,6 @@
 Determines whether two strings are equivalent in the current locale.
 
  stringVar.localeCompare( stringExp )
-
 ==Parameters==
 ; stringVar: Required. A String object or string literal.
 ; stringExp: Required. String to compare to stringVar.

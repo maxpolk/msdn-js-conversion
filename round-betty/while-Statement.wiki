@@ -1,7 +1,8 @@
 Executes a statement or series of statements until a specified condition is false.
 
- while ( expression ) { statements }
-
+ while ( expression ) {
+     statements 
+ } 
 ==Parameters==
 ; expression: Required. A Boolean expression that is checked before each iteration of the loop. If expression is true , the loop is executed. If expression is false , the loop is terminated.
 ; statements: Optional. One or more statements to be executed if expression is true.

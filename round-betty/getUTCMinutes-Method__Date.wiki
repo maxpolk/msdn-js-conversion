@@ -1,7 +1,6 @@
 Gets the minutes of a Date object using Universal Coordinated Time (UTC).
 
- dateObj.getUTCMinutes()
-
+ dateObj.getUTCMinutes() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

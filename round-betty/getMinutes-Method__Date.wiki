@@ -1,7 +1,6 @@
 Gets the minutes of a Date object, using local time.
 
- dateObj.getMinutes()
-
+ dateObj.getMinutes() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

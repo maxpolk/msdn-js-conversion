@@ -1,7 +1,6 @@
 Specifies the function that creates a Boolean.
 
- boolean.constructor(value)
-
+ boolean.constructor([[ value ])
 ==Parameters==
 ; boolean: The name of the Boolean.
 ; value: Optional. Specifies the value of the Boolean. This can be the numbers 1 or 0, or the strings "true" or "false".

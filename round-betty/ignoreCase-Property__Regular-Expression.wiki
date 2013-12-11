@@ -1,7 +1,6 @@
 Returns a Boolean value indicating the state of the ignoreCase flag ( '''i''' ) used with a regular expression. Default is '''false'''. Read-only.
 
  rgExp.'''ignoreCase'''
-
 ==Remarks==
 The required rgExp reference is an instance of the '''RegExp''' object.
 

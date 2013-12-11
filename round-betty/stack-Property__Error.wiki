@@ -1,7 +1,6 @@
 Gets or sets the error stack as a string that contains the stack trace frames.
 
- object '''.stack'''
-
+ object '''.stack''' 
 ==Remarks==
 The '''stack''' property is set to undefined when the error is constructed, and gets the trace information when the error is raised. If an error is raised multiple times, the '''stack''' property is updated each time the error is raised.
 

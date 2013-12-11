@@ -1,7 +1,6 @@
 Gets the day-of-the-month, using Universal Coordinated Time (UTC).
 
- dateObj.getUTCDate()
-
+ dateObj.getUTCDate() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

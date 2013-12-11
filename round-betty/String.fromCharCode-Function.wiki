@@ -1,7 +1,6 @@
 Returns a string from a number of Unicode character values.
 
- String.fromCharCode([ code1 [, code2 [, ...[, codeN ]]]])
-
+ String.fromCharCode([ code1 [, code2 [, ...[, codeN ]]]]) 
 ==Parameters==
 ; String: Required. The String object.
 ; code1 , . . . , codeN: Optional. A series of Unicode character values to convert to a string. If no arguments are supplied, the result is the empty string.

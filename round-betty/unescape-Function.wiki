@@ -1,7 +1,6 @@
 Decodes '''String''' objects encoded with the '''escape''' function. Deprecated.
 
- unescape( charString )
-
+ unescape( charString ) 
 ==Remarks==
 The required charString argument is a '''String''' object or literal to be decoded.
 

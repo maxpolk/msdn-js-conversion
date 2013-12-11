@@ -1,7 +1,6 @@
 Returns a string representation of an object.
 
  boolean.toString()
-
 ==Parameters==
 ; boolean: Required. An object for which to get a string representation.
 

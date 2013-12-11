@@ -1,7 +1,6 @@
 Sets the minutes value in the '''Date''' object using local time.
 
- dateObj.'''setMinutes(''' numMinutes [ ''',''' numSeconds [ ''',''' numMilli ]] ''')'''
-
+ dateObj.'''setMinutes(''' numMinutes [ ''', ''' numSeconds [ ''', ''' numMilli ]] ''')''' 
 ==Parameters==
 ; dateObj: Required. Any Date object.
 ; numMinutes: Required. A numeric value equal to the minutes value. Must be supplied if either of the following arguments is used.

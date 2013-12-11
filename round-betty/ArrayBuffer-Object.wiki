@@ -3,7 +3,6 @@ Represents a raw buffer of binary data, which is used to store data for the diff
 For more information about typed arrays, see Typed Arrays.
 
  arrayBuffer = new ArrayBuffer(length);
-
 ==Parameters==
 ; arrayBuffer: Required. The variable name to which the '''ArrayBuffer''' object is assigned.
 ; length: The length of the buffer. The contents of the ArrayBuffer are initialized to 0. If the requested number of bytes could not be allocated an exception is raised.

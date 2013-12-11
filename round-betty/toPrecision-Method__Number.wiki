@@ -1,7 +1,6 @@
 Represents a number either in exponential or fixed-point notation with a specified number of digits.
 
  numObj.toPrecision([ precision ])
-
 ==Parameters==
 ; numObj: Required. A '''Number''' object.
 ; precision: Optional. The number of significant digits. Must be in the range 1 - 21, inclusive.

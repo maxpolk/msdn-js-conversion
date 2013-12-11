@@ -1,7 +1,6 @@
 Parses a string containing a date, and returns the number of milliseconds between that date and midnight, January 1, 1970.
 
- Date.parse( dateVal )
-
+ Date.parse( dateVal ) 
 ==Remarks==
 The required dateVal argument is either a string containing a date or a VT_DATE value retrieved from an ActiveX object or other object. For information about date strings that the '''Date.parse''' function can parse. see Formatting Date and Time Strings (Windows Scripting - JScript).
 

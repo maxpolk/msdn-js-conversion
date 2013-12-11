@@ -3,8 +3,7 @@ Executes a statement block once, and then repeats execution of the loop until a 
  do {
      statement
  }
- while (expression) ;
-
+ while (expression) ; 
 ==Parameters==
 ; statement: Required. The statement to be executed if expression is true. Can be a compound statement.
 ; expression: Required. An expression that can be coerced to Boolean true or false. If expression is true , the loop is executed again. If expression is false , the loop is terminated.

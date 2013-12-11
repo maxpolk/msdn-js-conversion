@@ -1,7 +1,6 @@
 Returns a string that identifies the data type of an expression.
 
  '''typeof''' [ '''(''' ] expression [ ''')''' ] ;
-
 ==Remarks==
 The expression argument is any expression for which type information is sought.
 

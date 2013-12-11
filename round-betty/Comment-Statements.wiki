@@ -1,8 +1,19 @@
 Causes comments to be ignored by the JavaScript parser.
 
  Single-line Comment:
- // comment
-
+ // comment 
+ 
+ Multiline Comment:
+ /*
+ comment 
+ */
+ 
+ Comments with conditional compilation:
+ //@CondStatement 
+ 
+ /*@
+ condStatement
+ @*/
 ==Remarks==
 The comment argument is the text of any comment you want to include in your script. The condStatement argument is to be used if conditional compilation is activated. If single-line comments are used, there can be no space between the "//" and "@" characters.
 

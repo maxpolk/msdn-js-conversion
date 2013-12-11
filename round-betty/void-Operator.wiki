@@ -1,7 +1,6 @@
 Prevents an expression from returning a value.
 
- void expression
-
+ void expression 
 ==Remarks==
 The expression argument is any valid JavaScript expression.
 

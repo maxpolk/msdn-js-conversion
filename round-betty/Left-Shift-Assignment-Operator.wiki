@@ -1,7 +1,6 @@
 Moves the specified number of bits to the left and assigns the result to result. The bits vacated by the operation are filled with 0.
 
  result &lt;&lt;= expression
-
 ==Parameters==
 ; result: Any variable.
 ; expression: The number of bits to move.

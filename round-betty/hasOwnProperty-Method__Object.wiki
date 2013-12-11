@@ -1,7 +1,6 @@
 Determines whether an object has a property with the specified name.
 
  object. hasOwnProperty( proName )
-
 ==Parameters==
 ; object: Required. Instance of an object.
 ; proName: Required. String value of a property name.

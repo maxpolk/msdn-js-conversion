@@ -1,7 +1,6 @@
 Read-only. The length of this view from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 
  var byteLength = dataView.byteLength;
-
 ==Example==
 The following example shows how get the length of a DataView from an XMLHttpRequest.
 

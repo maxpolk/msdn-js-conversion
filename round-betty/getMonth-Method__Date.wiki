@@ -1,7 +1,6 @@
 Gets the month, using local time.
 
- dateObj.getMonth()
-
+ dateObj.getMonth() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

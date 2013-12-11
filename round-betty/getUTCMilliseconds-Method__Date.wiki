@@ -1,7 +1,6 @@
 Gets the milliseconds of a Date object using Universal Coordinated Time (UTC).
 
- dateObj.getUTCMilliseconds()
-
+ dateObj.getUTCMilliseconds() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

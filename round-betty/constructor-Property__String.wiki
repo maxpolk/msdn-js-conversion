@@ -1,7 +1,6 @@
 Specifies the function that creates a string.
 
  string.constructor
-
 ==Remarks==
 The required string is the name of a string.
 

@@ -1,9 +1,10 @@
 Creates a new function.
 
- function functionName '''([''' argname1 [, ...[, argnameN ]]])
- { body }
- functionName = new Function( [ argname1 ,  [...argnameN ,]] body );
-
+ function functionName '''([''' argname1  [, ...[, argnameN ]]])
+ {
+     body 
+ }
+ functionName = new Function( [ argname1 ,  [... argnameN ,]] body );
 ==Parameters==
 ; functionName: Required. The name of the newly created function
 ; argname1...argnameN: Optional. A list of arguments the function accepts.

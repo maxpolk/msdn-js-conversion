@@ -1,7 +1,6 @@
 Omittable. Gets the element at the specified index.
 
  var value = int32Array.get(index);
-
 ==Parameters==
 ; value: The value returned by this method.
 ; index: The index at which to get the element of the array.

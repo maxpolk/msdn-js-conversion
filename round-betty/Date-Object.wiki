@@ -1,7 +1,8 @@
 Enables basic storage and retrieval of dates and times.
 
- dateObj = new Date() dateObj = new Date( dateVal ) dateObj = new Date( year , month , date [, hours [, minutes [, seconds [, ms ]]]])
-
+ dateObj = new Date()
+ dateObj = new Date( dateVal )
+ dateObj = new Date( year , month , date [, hours [, minutes [, seconds [, ms ]]]]) 
 ==Parameters==
 ; dateObj: Required. The variable name to which the Date object is assigned.
 ; dateVal: Required. If a numeric value, dateVal represents the number of milliseconds in Universal Coordinated Time between the specified date and midnight January 1, 1970. If a string, dateVal is parsed according to the rules in Formatting Date and Time Strings (Windows Scripting - JScript). The dateVal argument can also be a VT_DATE value as returned from some ActiveX objects.

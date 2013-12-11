@@ -1,7 +1,6 @@
 Finds the first substring match in a regular expression search.
 
- stringObj.search( rgExp )
-
+ stringObj.search( rgExp ) 
 ==Parameters==
 ; stringObj: Required. The String object or string literal on which to perform the search.
 ; rgExp: Required. An instance of a '''Regular Expression''' object containing the regular expression pattern and applicable flags.

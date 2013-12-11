@@ -1,7 +1,6 @@
 Removes the leading and trailing white space and line terminator characters from a string.
 
  stringObj.trim()
-
 ==Parameters==
 ; stringObj: Required. A String object or string literal. This string is not modified by the '''trim''' method.
 

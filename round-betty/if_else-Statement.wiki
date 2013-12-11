@@ -1,10 +1,14 @@
 Conditionally executes a group of statements, depending on the value of an expression.
 
- if ( condition1 ) { statement1 }
- [else if ( condition2 ) { statement2 }]
- [else { statement3 ] 
+ if ( condition1 ) {
+     statement1 
+ }
+ [else if ( condition2 ) {
+     statement2 
  }]
-
+ [else {
+     statement3 ] 
+ }]
 ==Parameters==
 ; condition1: Required. A Boolean expression. If condition1 is null or undefined , condition1 is treated as false.
 ; statement1: Optional. The statement to be executed if condition1 is '''true'''. Can be a compound statement.

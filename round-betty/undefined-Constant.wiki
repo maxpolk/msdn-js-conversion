@@ -1,7 +1,6 @@
 A value that has never been defined, such as a variable that has not been initialized.
 
  undefined
-
 ==Remarks==
 The '''undefined''' constant is a member of the '''Global''' object, and becomes available when the scripting engine is initialized. When a variable has been declared but not initialized, its value is '''undefined'''.
 

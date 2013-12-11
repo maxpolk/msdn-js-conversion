@@ -1,7 +1,6 @@
 Split a string into substrings using the specified separator and return them as an array.
 
  stringObj.split([separator[, limit ]])
-
 ==Parameters==
 ; stringObj: Required. The String object or string literal to be split. This object is not modified by the '''split''' method.
 ; separator: Optional. A string or a '''Regular Expression''' object that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.

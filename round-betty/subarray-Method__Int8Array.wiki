@@ -1,7 +1,6 @@
 Gets a new Int8Array view of the ArrayBuffer store for this array, referencing the elements at begin, inclusive, up to end, exclusive.
 
  var newInt8Array = int8Array.subset(begin, end);
-
 ==Parameters==
 ; newInt8Array: The subarray returned by this method.
 ; begin: The index of the beginning of the array.

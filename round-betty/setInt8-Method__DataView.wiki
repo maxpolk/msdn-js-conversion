@@ -1,7 +1,6 @@
 Stores an Int8 value at the specified byte offset from the start of the view.
 
- dataView.setInt8(byteOffset, value);
-
+ dataView.setInt8(byteOffset, value); 
 ==Parameters==
 ; byteOffset: The place in the buffer at which the value should be set.
 ; value: The value to set.

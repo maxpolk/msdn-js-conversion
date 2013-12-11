@@ -1,7 +1,6 @@
 Gets the unencoded version of an encoded Uniform Resource Identifier (URI).
 
  decodeURI( URIstring )
-
 ==Remarks==
 The required URIstring argument is a value representing an encoded URI.
 

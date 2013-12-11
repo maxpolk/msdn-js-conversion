@@ -1,7 +1,6 @@
 Sets the year value in the Date object using Universal Coordinated Time (UTC).
 
- dateObj.'''setUTCFullYear(''' numYear [ ''',''' numMonth [ ''',''' numDate ]] ''')'''
-
+ dateObj.'''setUTCFullYear(''' numYear [ ''', ''' numMonth [ ''',''' numDate ]] ''')''' 
 ==Parameters==
 ; dateObj: Required. Any Date object.
 ; numYear: Required. A numeric value equal to the year.

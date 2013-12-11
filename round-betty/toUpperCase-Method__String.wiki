@@ -1,8 +1,7 @@
 Converts all the alphabetic characters in a string to uppercase.
 
  strVariable.toUpperCase()
- "String Literal".toUpperCase()
-
+ "String Literal".toUpperCase() 
 ==Remarks==
 The '''toUpperCase''' method has no effect on non-alphabetic characters.
 

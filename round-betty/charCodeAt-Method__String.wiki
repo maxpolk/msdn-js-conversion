@@ -1,7 +1,6 @@
 Returns the Unicode value of the character at the specified location.
 
  strObj. charCodeAt( index )
-
 ==Parameters==
 ; strObj: Required. Any String object or string literal.
 ; index: Required. The zero-based index of the desired character. If there is no character at the specified index, NaN is returned.

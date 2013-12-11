@@ -1,7 +1,6 @@
 Creates a new Boolean value.
 
  boolObj = new Boolean([ boolValue ])
-
 ==Parameters==
 ; boolObj: Required. The variable name to which the '''Boolean''' object is assigned.
 ; boolValue: Optional. The initial Boolean value for the new object. If boolvalue is omitted, or is false , 0, null , NaN , or an empty string, the initial value of the Boolean object is false. Otherwise, the initial value is true.

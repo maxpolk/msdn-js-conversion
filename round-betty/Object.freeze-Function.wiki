@@ -1,7 +1,6 @@
 Prevents the modification of existing property attributes and values, and prevents the addition of new properties.
 
  Object.freeze( object )
-
 ==Parameters==
 ; object: Required. The object on which to lock the attributes.
 

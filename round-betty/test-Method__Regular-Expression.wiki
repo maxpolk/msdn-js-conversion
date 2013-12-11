@@ -1,7 +1,6 @@
 Returns a Boolean value that indicates whether or not a pattern exists in a searched string.
 
- rgExp.'''test(''' str ''')'''
-
+ rgExp.'''test(''' str ''')''' 
 ==Parameters==
 ; rgExp: Required. An instance of a '''Regular Expression''' object containing the regular expression pattern and applicable flags.
 ; str: Required. The string on which to perform the search.

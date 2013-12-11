@@ -1,7 +1,6 @@
 Performs the specified action for each element in an array.
 
  array1.forEach( callbackfn [, thisArg ])
-
 ==Parameters==
 {| class='wikitable'
 |-

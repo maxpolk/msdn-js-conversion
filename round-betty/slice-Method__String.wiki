@@ -1,7 +1,6 @@
 Returns a section of a string.
 
- stringObj.slice( start , [ end ])
-
+ stringObj.slice( start , [ end ]) 
 ==Parameters==
 ; stringObj: Required. A String object or string literal.
 ; start: Required. The index to the beginning of the specified portion of stringObj.

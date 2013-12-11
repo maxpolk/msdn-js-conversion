@@ -1,7 +1,6 @@
 Returns the last matched characters from any regular expression search. Read-only.
 
  '''RegExp'''.'''lastMatch'''
-
 ==Remarks==
 The object associated with this property is always the global '''RegExp''' object.
 

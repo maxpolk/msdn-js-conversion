@@ -1,7 +1,6 @@
 Gets the unencoded version of an encoded component of a Uniform Resource Identifier (URI).
 
  decodeURIComponent( encodedURIString ''')'''
-
 ==Remarks==
 The required encodedURIString argument is a value representing an encoded URI component.
 

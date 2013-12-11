@@ -1,7 +1,6 @@
 Determines whether an object is an array.
 
  Array.isArray( object )
-
 ==Parameters==
 ; object: Required. The object to test.
 

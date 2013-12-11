@@ -1,7 +1,6 @@
 Returns the number of milliseconds between midnight, January 1, 1970 Universal Coordinated Time (UTC) (or GMT) and the specified date.
 
- Date.UTC( year , month , day [ ''',''' hours [, minutes [, seconds [, ms ]]]])
-
+ Date.UTC( year , month , day [ ''',''' hours [, minutes [, seconds [, ms ]]]]) 
 ==Parameters==
 ; year: Required. The full year designation is required for cross-century date accuracy. If year is between 0 and 99 is used, then year is assumed to be 1900 + year.
 ; month: Required. The month as an integer between 0 and 11 (January to December).

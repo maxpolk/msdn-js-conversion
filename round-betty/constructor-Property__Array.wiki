@@ -1,7 +1,6 @@
 Specifies the function that creates an array.
 
  array.constructor
-
 ==Remarks==
 The required array is the name of an array.
 

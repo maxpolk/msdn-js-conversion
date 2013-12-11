@@ -1,7 +1,6 @@
 Returns a Boolean value that indicates whether a value is the reserved value '''NaN''' (not a number).
 
- isNaN( numValue )
-
+ isNaN( numValue ) 
 ==Return Value==
 true if the value converted to the Number type is the NaN , otherwise false.
 

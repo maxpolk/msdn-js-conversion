@@ -1,7 +1,6 @@
 Sorts an '''Array'''.
 
- arrayobj.sort( sortFunction )
-
+ arrayobj.sort( sortFunction ) 
 ==Parameters==
 ; arrayObj: Required. Any '''Array''' object.
 ; sortFunction: Optional. The name of the function used to determine the order of the elements. If omitted, the elements are sorted in ascending, ASCII character order.

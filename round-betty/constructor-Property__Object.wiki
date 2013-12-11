@@ -1,7 +1,6 @@
 Specifies the function that creates an object.
 
  object.constructor
-
 ==Remarks==
 The required object is the name of an object or function.
 

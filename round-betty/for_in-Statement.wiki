@@ -1,7 +1,8 @@
 Executes one or more statements for each property of an object, or each element of an array.
 
- for ( variable in [ object {{!}} array ]) { statements }
-
+ for ( variable in [ object {{!}} array ]) {
+     statements 
+ }
 ==Parameters==
 ; variable: Required. A variable that can be any property name of object or any element index of an array.
 ; object , array: Optional. An object or array over which to iterate.

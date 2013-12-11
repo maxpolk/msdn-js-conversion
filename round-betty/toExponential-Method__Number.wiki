@@ -1,7 +1,6 @@
 Represents a number in exponential notation.
 
  numObj. toExponential([ fractionDigits ])
-
 ==Parameters==
 ; numObj: Required. A '''Number''' object.
 ; fractionDigits: Optional. The number of digits after the decimal point. Must be in the range 0 - 20, inclusive.

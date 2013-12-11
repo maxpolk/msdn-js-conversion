@@ -1,7 +1,6 @@
 Read-only. The length of the ArrayBuffer (in bytes).
 
  var arrayLength = arrayBuffer.byteLength;
-
 ==Example==
 The following example shows how to get the byte length of the ArrayBuffer.
 

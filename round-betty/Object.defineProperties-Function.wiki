@@ -1,7 +1,6 @@
 Adds one or more properties to an object, and/or modifies attributes of existing properties.
 
  object.defineProperties( object , descriptors )
-
 ==Parameters==
 ; object: Required. The object on which to add or modify the properties. This can be a native JavaScript object or a DOM object.
 ; descriptors: Required. A JavaScript object that contains one or more descriptor objects. Each descriptor object describes a data property or an accessor property.

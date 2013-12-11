@@ -1,7 +1,6 @@
 Read-only. The length of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
 
  var arrayByteLength = float32Array.byteLength;
-
 ==Example==
 The following example shows how to get the length of the array.
 

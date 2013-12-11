@@ -1,7 +1,6 @@
 Returns the larger of a set of supplied numeric expressions.
 
- Math.max([ number1 [, number2 [... [, numberN ]]]])
-
+ Math.max([ number1 [, number2 [... [, numberN ]]]]) 
 ==Remarks==
 The optional number1, number2, ..., numberN arguments are numeric expressions to be evaluated.
 

@@ -1,7 +1,6 @@
 Returns the prototype of an object.
 
  Object.getPrototypeOf( object )
-
 ==Parameters==
 ; object: Required. The object that references the prototype.
 

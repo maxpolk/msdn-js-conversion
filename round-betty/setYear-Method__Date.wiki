@@ -1,7 +1,6 @@
 Sets the year value in the Date object.
 
- dateObj.'''setYear(''' numYear ''')'''
-
+ dateObj.'''setYear(''' numYear ''')''' 
 ==Parameters==
 ; dateObj: Required. Any Date object.
 ; numYear: Required. For the years 1900 through 1999, this is a numeric value equal to the year minus 1900. For dates outside that range, this is a 4-digit numeric value.

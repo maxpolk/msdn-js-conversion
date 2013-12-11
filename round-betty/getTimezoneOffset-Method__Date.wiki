@@ -1,7 +1,6 @@
 Gets the difference in minutes between the time on the local computer and Universal Coordinated Time (UTC).
 
- dateObj.getTimezoneOffset()
-
+ dateObj.getTimezoneOffset() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

@@ -1,7 +1,6 @@
 Gets the current date and time.
 
  Date.now()
-
 ==Return Value==
 The number of milliseconds between midnight, January 1, 1970, and the current date and time.
 

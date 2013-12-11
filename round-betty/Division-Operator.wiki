@@ -1,7 +1,6 @@
 Divides the value of two expressions.
 
- result = number1 / number2
-
+ result = number1 / number2 
 ==Parameters==
 ; result: Any numeric variable.
 ; number1: Any numeric expression.

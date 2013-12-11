@@ -1,7 +1,6 @@
 Removes elements from an array and, if necessary, inserts new elements in their place, returning the deleted elements.
 
  arrayObj.splice( start, deleteCount,  [ item1 [, item2 [, . . . [, itemN ]]]])
-
 ==Parameters==
 ; arrayObj: Required. An '''Array''' object.
 ; start: Required. The zero-based location in the array from which to start removing elements.

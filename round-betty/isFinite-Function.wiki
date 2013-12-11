@@ -1,7 +1,6 @@
 Determines whether a supplied number is finite.
 
- isFinite( number )
-
+ isFinite( number ) 
 ==Remarks==
 The required number argument is any numeric value.
 

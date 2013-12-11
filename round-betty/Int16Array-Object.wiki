@@ -1,7 +1,8 @@
 A typed array of 16-bit integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised.
 
- int16Array = new Int16Array( length ); int16Array = new Int16Array( array ); int16Array = new Int16Array( buffer , byteOffset , length );
-
+ int16Array = new Int16Array( length );
+ int16Array = new Int16Array( array );
+ int16Array = new Int16Array( buffer , byteOffset , length );
 ==Parameters==
 ; int16Array: Required. The variable name to which the '''Int16Array''' object is assigned.
 ; length: Specifies the length (in bytes) of the array.

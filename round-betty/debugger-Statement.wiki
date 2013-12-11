@@ -1,7 +1,6 @@
 Suspends execution.
 
  debugger
-
 ==Remarks==
 You can place debugger statements anywhere in procedures to suspend execution. Using the debugger statement is similar to setting a breakpoint in the code.
 

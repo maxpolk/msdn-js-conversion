@@ -1,7 +1,8 @@
 A typed array of 8-bit unsigned integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised.
 
- uint8Array = new Uint8Array( length ); uintArray = new Uint8Array( array ); uintArray = new Uint8Array( buffer , byteOffset , length );
-
+ uint8Array = new Uint8Array( length );
+ uintArray = new Uint8Array( array );
+ uintArray = new Uint8Array( buffer , byteOffset , length );
 ==Parameters==
 ; uint8Array: Required. The variable name to which the '''Uint8Array''' object is assigned.
 ; length: Specifies the length (in bytes) of the array.

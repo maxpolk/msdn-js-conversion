@@ -1,8 +1,7 @@
 Converts all the alphabetic characters in a string to lowercase.
 
  strVariable.toLowerCase()
- "String Literal".toLowerCase()
-
+ "String Literal".toLowerCase() 
 ==Remarks==
 The '''toLowerCase''' method has no effect on non-alphabetic characters.
 

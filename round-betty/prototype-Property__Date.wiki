@@ -1,7 +1,6 @@
 Returns a reference to the prototype for a date.
 
  date.prototype
-
 ==Remarks==
 The date argument is the name of an object.
 

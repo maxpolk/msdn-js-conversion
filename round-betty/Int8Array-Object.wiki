@@ -1,7 +1,8 @@
 A typed array of 8-bit integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised.
 
- int8Array = new Int8Array( length ); intArray = new IntArray( array ); intArray = new IntArray( buffer , byteOffset , length );
-
+ int8Array = new Int8Array( length );
+ intArray = new IntArray( array );
+ intArray = new IntArray( buffer , byteOffset , length );
 ==Parameters==
 ; int8Array: Required. The variable name to which the '''Int8Array''' object is assigned.
 ; length: Specifies the length (in bytes) of the array.

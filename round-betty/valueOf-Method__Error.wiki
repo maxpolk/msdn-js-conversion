@@ -1,7 +1,6 @@
 Returns the string value of an error.
 
  error.valueOf()
-
 ==Parameters==
 The error object is any instance of an Error.
 

@@ -1,7 +1,6 @@
 Returns the character position where the first successful match begins in a searched string. Read-only.
 
- '''RegExp'''.'''index'''
-
+ '''RegExp'''.'''index''' 
 ==Remarks==
 The object associated with this property is always the global '''RegExp''' object.
 

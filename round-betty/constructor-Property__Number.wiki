@@ -1,7 +1,6 @@
 Specifies the function that creates a Number.
 
  number.constructor
-
 ==Remarks==
 The required number is the name of a string.
 

@@ -1,7 +1,6 @@
 Performs a logical disjunction on two expressions.
 
  result '''=''' expression1 '''{{!}}{{!}}''' expression2
-
 ==Parameters==
 ; result: Any variable.
 ; expression1: Any expression.

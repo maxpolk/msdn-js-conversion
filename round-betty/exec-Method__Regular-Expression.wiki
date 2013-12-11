@@ -1,7 +1,6 @@
 Executes a search on a string using a regular expression pattern, and returns an array containing the results of that search.
 
- rgExp.'''exec(''' str ''')'''
-
+ rgExp.'''exec(''' str ''')''' 
 ==Parameters==
 ; rgExp: Required. An instance of a '''Regular Expression''' object containing the regular expression pattern and applicable flags.
 ; str: Required. The String object or string literal on which to perform the search.

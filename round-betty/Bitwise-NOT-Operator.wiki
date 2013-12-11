@@ -1,7 +1,6 @@
 Performs a bitwise NOT (negation) on an expression.
 
  result '''=''' '''~''' expression
-
 ==Parameters==
 ; result: Any variable.
 ; expression: Any expression.

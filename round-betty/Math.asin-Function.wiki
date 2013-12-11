@@ -1,7 +1,6 @@
 Returns the arcsine of a number.
 
- '''Math'''.'''asin(''' number ''')'''
-
+ '''Math'''.'''asin(''' number ''')''' 
 ==Remarks==
 The required number argument is a numeric expression for which the arcsine is needed.
 

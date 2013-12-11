@@ -1,7 +1,6 @@
 Creates an object that has the specified prototype, and that optionally contains specified properties.
 
  Object.create( prototype , descriptors )
-
 ==Parameters==
 ; prototype: Required. The object to use as a prototype. May be null.
 ; descriptors: Optional. A JavaScript object that contains one or more property descriptors.A data property is a property that can get and set a value. A data property descriptor contains a value attribute, plus writable , enumerable , and configurable attributes. If the last three attributes are not specified, they default to false. An accessor property calls a user-provided function every time the value is retrieved or set. An accessor property descriptor contains a set attribute, a get attribute, or both. For more information, see [[javascript/Object/defineProperty|Object.defineProperty Function]].

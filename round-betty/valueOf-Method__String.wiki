@@ -1,7 +1,6 @@
 Returns the string.
 
  string.valueOf()
-
 ==Parameters==
 This method has no parameters.
 

@@ -1,7 +1,6 @@
 Gets the seconds of a '''Date''' object using Universal Coordinated Time (UTC).
 
- dateObj.getUTCSeconds()
-
+ dateObj.getUTCSeconds() 
 ==Parameters==
 The required dateObj reference is a '''Date''' object.
 

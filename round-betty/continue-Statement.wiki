@@ -1,7 +1,6 @@
 Stops the current iteration of a loop, and starts a new iteration.
 
  continue [ label ];
-
 ==Remarks==
 The optional label argument specifies the statement to which continue applies.
 

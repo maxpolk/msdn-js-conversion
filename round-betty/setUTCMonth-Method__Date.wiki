@@ -1,7 +1,6 @@
 Sets the month value in the Date object using Universal Coordinated Time (UTC).
 
- dateObj.'''setUTCMonth(''' numMonth [ ''',''' dateVal ] ''')'''
-
+ dateObj.'''setUTCMonth(''' numMonth [ ''',''' dateVal ] ''')''' 
 ==Parameters==
 ; dateObj: Required. Any Date object.
 ; numMonth: Required. A numeric value equal to the month. The value for January is 0, and other month values follow consecutively.

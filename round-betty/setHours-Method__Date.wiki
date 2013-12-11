@@ -1,7 +1,6 @@
 Sets the hour value in the Date object using local time.
 
- dateObj.'''setHours(''' numHours [ ''',''' numMin [ ''',''' numSec [ ''',''' numMilli ]]] ''')'''
-
+ dateObj.'''setHours(''' numHours [ ''',''' numMin [ ''',''' numSec [ ''',''' numMilli ]]] ''')''' 
 ==Parameters==
 ; dateObj: Required. Any Date object.
 ; numHours: Required. A numeric value equal to the hours value.

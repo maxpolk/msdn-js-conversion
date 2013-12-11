@@ -1,7 +1,6 @@
 Returns the value of a base expression taken to a specified power.
 
- '''Math.pow(''' base , exponent ''')'''
-
+ '''Math.pow(''' base , exponent ''')''' 
 ==Parameters==
 ; base: Required. The base value of the expression.
 ; exponent: Required. The exponent value of the expression.

@@ -1,7 +1,8 @@
 A typed array of 32-bit unsigned integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised.
 
- uint32Array = new Uint32Array( length ); uint32Array = new Uint32Array( array ); uint32Array = new Uint32Array( buffer , byteOffset , length );
-
+ uint32Array = new Uint32Array( length );
+ uint32Array = new Uint32Array( array );
+ uint32Array = new Uint32Array( buffer , byteOffset , length );
 ==Parameters==
 ; uint32Array: Required. The variable name to which the '''Uint32Array''' object is assigned.
 ; length: Specifies the length (in bytes) of the array.

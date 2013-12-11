@@ -1,7 +1,6 @@
 Returns a date converted to a string using the current locale.
 
- dateObj.'''toLocaleString()'''
-
+ dateObj.'''toLocaleString()''' 
 ==Remarks==
 The required dateObj is any Date object.
 

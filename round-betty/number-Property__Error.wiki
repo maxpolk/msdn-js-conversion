@@ -1,7 +1,6 @@
 Returns or sets the numeric value associated with a specific error. The Error object's default property is '''number'''.
 
- object '''.number''' [ '''=''' errorNumber ]
-
+ object '''.number''' [ '''= ''' errorNumber ]
 ==Parameters==
 ; Object: Any instance of the Error object.
 ; errorNumber: An integer representing an error.

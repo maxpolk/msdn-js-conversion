@@ -1,7 +1,6 @@
 Creates a new object.
 
- new constructor ([ arguments ])
-
+ new constructor ([ arguments ]) 
 ==Parameters==
 ; constructor: Required. The constructor of the object. The parentheses can be omitted if the constructor takes no arguments.
 ; arguments: Optional. Any arguments to be passed to the new object's constructor.

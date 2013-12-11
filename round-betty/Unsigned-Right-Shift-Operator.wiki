@@ -1,7 +1,6 @@
 Right shifts the bits of an expression, without maintaining sign.
 
  result '''=''' expression1 '''&gt;&gt;&gt;''' expression2
-
 ==Parameters==
 ; result: Any variable.
 ; expression1: Any expression.

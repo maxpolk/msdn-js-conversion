@@ -1,7 +1,6 @@
 Read-only. Gets the ArrayBuffer that is referenced by this array.
 
  var arrayBuffer = float64Array.buffer;
-
 ==Example==
 The following example shows how to get the ArrayBuffer of the array.
 

@@ -1,7 +1,6 @@
 Encodes a text string as a valid component of a Uniform Resource Identifier (URI).
 
  encodeURIComponent( encodedURIString ''')'''
-
 ==Remarks==
 The required encodedURIString argument is a value representing an encoded URI component.
 

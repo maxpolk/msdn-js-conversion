@@ -1,7 +1,6 @@
 Returns one of two expressions depending on a condition.
 
  test ? expression1 : expression2
-
 ==Parameters==
 ; test: Any Boolean expression.
 ; expression1: An expression returned if test is true. May be a comma expression.

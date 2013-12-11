@@ -1,7 +1,6 @@
 You can use a DataView object to read and write the different kinds of binary data to any location in the ArrayBuffer.
 
  dataView = '''new DataView(''' DataView( buffer , byteOffset , byteLength ));
-
 ==Parameters==
 ; dataView: Required. The variable name to which the '''DataView''' object is assigned.
 ; buffer: The ArrayBuffer that the DataView represents.

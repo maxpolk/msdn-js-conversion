@@ -1,7 +1,6 @@
 Deletes a property from an object, or removes an element from an array.
 
  delete expression
-
 ==Remarks==
 The expression argument is a valid JavaScript expression that usually results in a property name or array element.
 

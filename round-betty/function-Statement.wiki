@@ -1,7 +1,8 @@
 Declares a new function.
 
- function functionname ([ arg1 [, arg2 [,...[, argN ]]]] ''')''' { statements }
-
+ function functionname ([ arg1 [, arg2 [,...[, argN ]]]] ''')''' {
+     statements 
+ } 
 ==Parameters==
 ; functionname: Required. The name of the function.
 ; arg1...argN: Optional. An optional, comma-separated list of arguments the function understands.

@@ -1,7 +1,6 @@
 Returns the Function object being executed, that is, the body text of the specified Function object.
 
  [ function '''.''' ] '''arguments.callee'''
-
 ==Remarks==
 The optional function argument is the name of the currently executing Function object.
 

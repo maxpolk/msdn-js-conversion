@@ -1,7 +1,6 @@
 Returns a reference to the prototype for an error.
 
  error.prototype
-
 ==Remarks==
 The error argument is the name of an error.
 

@@ -1,7 +1,6 @@
 Refers to the current object.
 
  this.property
-
 ==Remarks==
 The required property argument is one of the current object's properties
 

@@ -1,7 +1,6 @@
 Converts a string to an integer.
 
- parseInt( numString , [ radix ])
-
+ parseInt( numString , [ radix ]) 
 ==Parameters==
 ; numString: Required. A string to convert into a number.
 ; radix: Optional. A value between 2 and 36 that specifies the base of the number in numString. If this argument is not supplied, strings with a prefix of '0x' are considered hexadecimal. All other strings are considered decimal.

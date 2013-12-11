@@ -3,7 +3,6 @@ Returns a string representation of a date. The format of the string depends on t
 day of the week month day hour : minute : second time zone year
 
  date.toString()
-
 ==Parameters==
 ; date: Required. The date to represent as a string.
 

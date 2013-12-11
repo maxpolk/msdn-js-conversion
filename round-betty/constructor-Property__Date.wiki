@@ -1,7 +1,6 @@
 Specifies the function that creates a date.
 
  date.constructor
-
 ==Remarks==
 The required date is the name of a date object.
 

@@ -1,7 +1,6 @@
 Gets the number of arguments defined for a function.
 
  functionName.length
-
 ==Remarks==
 The required functionName is the name of the function.
 

@@ -1,7 +1,6 @@
 Returns or sets the descriptive string associated with a specific error.
 
- object '''.description''' [ '''=''' stringExpression ]
-
+ object '''.description ''' [ '''= ''' stringExpression ]
 ==Parameters==
 ; object: Required. Any instance of an Error object.
 ; stringExpression: Optional. A string expression containing a description of the error.

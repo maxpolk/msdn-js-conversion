@@ -1,7 +1,6 @@
 Inserts new elements at the start of an array.
 
  arrayObj.unshift([ item1 [, item2 [, . . . [, itemN]]]])
-
 ==Parameters==
 ; arrayObj: Required. An '''Array''' object.
 ; item1, item2,. . ., itemN: Optional. Elements to insert at the start of the '''Array'''.

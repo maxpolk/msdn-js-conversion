@@ -1,7 +1,6 @@
 Gets the milliseconds of a Date, using local time.
 
- dateObj.getMilliseconds()
-
+ dateObj.getMilliseconds() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

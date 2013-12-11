@@ -1,7 +1,6 @@
 Returns the characters from the beginning of a searched string up to the position before the beginning of the last match. Read-only.
 
  '''RegExp'''.'''leftContext'''
-
 ==Remarks==
 The object associated with this property is always the global '''RegExp''' object.
 

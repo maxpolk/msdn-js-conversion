@@ -1,7 +1,6 @@
 Gets the year of a '''Date''' object.
 
- dateObj.getYear()
-
+ dateObj.getYear() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

@@ -1,7 +1,6 @@
 Returns a string representation of an error.
 
  error.toString()
-
 ==Parameters==
 ; date: Required. The error to represent as a string.
 

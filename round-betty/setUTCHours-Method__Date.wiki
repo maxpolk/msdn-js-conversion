@@ -1,7 +1,6 @@
 Sets the hours value in the Date object using Universal Coordinated Time (UTC).
 
- dateObj.'''setUTCHours(''' numHours [ ''',''' numMin [ ''',''' numSec [ ''',''' numMilli ]]] ''')'''
-
+ dateObj.'''setUTCHours(''' numHours [ ''',''' numMin [ ''',''' numSec [ ''',''' numMilli ]]] ''')''' 
 ==Parameters==
 ; dateObj: Required. Any Date object.
 ; numHours: Required. A numeric value equal to the hours value.

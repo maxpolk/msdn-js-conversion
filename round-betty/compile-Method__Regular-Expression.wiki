@@ -1,7 +1,6 @@
 Compiles a regular expression into an internal format for faster execution.
 
- rgExp.'''compile(''' pattern , [ flags ] ''')'''
-
+ rgExp.'''compile(''' pattern , [ flags ] ''')''' 
 ==Parameters==
 ; rgExp: Required. An instance of a '''Regular Expression''' object. Can be a variable name or a literal.
 ; pattern: Required. A string expression containing a regular expression pattern to be compiled

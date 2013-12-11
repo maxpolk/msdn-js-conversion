@@ -1,7 +1,6 @@
 Return the nine most-recently memorized portions found during pattern matching. Read-only.
 
- '''RegExp'''.'''$''' n
-
+ '''RegExp'''.'''$''' n 
 ==Parameters==
 ; '''RegExp''': Always the global '''RegExp''' object.
 ; n: Any integer from 1 through 9.

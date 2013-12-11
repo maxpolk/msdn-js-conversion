@@ -1,7 +1,6 @@
 Returns a date as a string value appropriate to the host environment's current locale.
 
  objDate.'''toLocaleDateString( )'''
-
 ==Remarks==
 The required objDate reference is a Date object.
 

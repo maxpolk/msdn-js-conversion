@@ -1,7 +1,6 @@
 Combines two or more arrays.
 
- array1.concat([ item1 [, item2 [, . . . [, itemN ]]]])
-
+ array1.concat([ item1 [, item2 [, . . . [, itemN ]]]]) 
 ==Parameters==
 ; array1: Required. The '''Array''' object to which the other arrays are concatenated.
 ; item1,. . ., itemN: Optional. Additional items to add to the end of array1.

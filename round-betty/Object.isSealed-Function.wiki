@@ -1,7 +1,6 @@
 Returns true if existing property attributes cannot be modified in an object and new properties cannot be added to the object.
 
  Object.isSealed( object )
-
 ==Parameters==
 ; object: Required. The object to test.
 

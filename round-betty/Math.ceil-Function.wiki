@@ -1,7 +1,6 @@
 Returns the smallest integer greater than or equal to its numeric argument.
 
- '''Math'''.'''ceil(''' number ''')'''
-
+ '''Math'''.'''ceil(''' number ''')''' 
 ==Remarks==
 The required number argument is a numeric expression.
 

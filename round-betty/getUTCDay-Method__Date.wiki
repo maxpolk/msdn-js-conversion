@@ -1,7 +1,6 @@
 Gets the day of the week using Universal Coordinated Time (UTC).
 
- dateObj.getUTCDay()
-
+ dateObj.getUTCDay() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

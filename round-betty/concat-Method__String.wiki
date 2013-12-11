@@ -1,7 +1,6 @@
 Returns a string that contains the concatenation of two or more strings.
 
  string1. concat([ string2 [, string3 [, . . . [, stringN ]]]])
-
 ==Parameters==
 ; string1: Required. The String object or string literal to which all other specified strings are concatenated.
 ; string2,. . ., stringN: Optional. The strings to append to the end of string1.

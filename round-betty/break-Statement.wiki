@@ -1,7 +1,6 @@
 Terminates the current loop, or if in conjunction with a label , terminates the associated statement.
 
  break [ label ];
-
 ==Remarks==
 The optional label argument specifies the label of the statement you are breaking from.
 

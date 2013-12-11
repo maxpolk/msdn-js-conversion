@@ -1,7 +1,6 @@
 Left shifts the bits of an expression.
 
  result '''=''' expression1 '''&lt;&lt;''' expression2
-
 ==Parameters==
 ; result: Any variable.
 ; expression1: Any expression.

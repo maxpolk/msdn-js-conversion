@@ -1,7 +1,6 @@
 Generates an error condition that can be handled by a try...catch...finally statement.
 
- throw exception
-
+ throw exception 
 ==Remarks==
 The required exception argument can be any expression.
 

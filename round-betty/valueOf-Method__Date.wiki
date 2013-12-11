@@ -1,7 +1,6 @@
 Returns the stored time value in milliseconds since midnight, January 1, 1970 UTC.
 
  date.valueOf()
-
 ==Parameters==
 The date object is any instance of a Date.
 

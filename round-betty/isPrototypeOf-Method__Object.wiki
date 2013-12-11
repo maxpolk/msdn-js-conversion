@@ -1,7 +1,6 @@
 Determines whether an object exists in another object's prototype chain.
 
  object1. isPrototypeOf( object2 )
-
 ==Parameters==
 ; object1: Required. Instance of an object.
 ; object2: Required. Another object whose prototype chain is to be checked.

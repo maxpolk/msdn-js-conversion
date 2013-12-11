@@ -1,7 +1,6 @@
 Gets the function that invoked the current function.
 
  functionName.caller
-
 ==Remarks==
 The functionName object is the name of any executing function.
 

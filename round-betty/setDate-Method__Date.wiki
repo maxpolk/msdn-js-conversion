@@ -1,7 +1,6 @@
 Sets the numeric day-of-the-month value of the '''Date''' object using local time.
 
- dateObj.setDate( numDate ''')'''
-
+ dateObj.setDate( numDate ''')''' 
 ==Parameters==
 ; dateObj: Required. Any '''Date''' object.
 ; numDate: Required. A numeric value equal to the day of the month.

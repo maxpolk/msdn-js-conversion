@@ -1,7 +1,6 @@
 Sets the date and time value in the Date object.
 
- dateObj.'''setTime(''' milliseconds ''')'''
-
+ dateObj.'''setTime(''' milliseconds ''')''' 
 ==Parameters==
 ; dateObj: Required. Any Date object.
 ; milliseconds: Required. A numeric value representing the number of elapsed milliseconds since midnight, January 1, 1970 GMT.

@@ -1,7 +1,6 @@
 Determines whether a specified property is enumerable.
 
  object. propertyIsEnumerable( proName )
-
 ==Parameters==
 ; object: Required. Instance of an object.
 ; proName: Required. String value of a property name.

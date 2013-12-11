@@ -1,7 +1,6 @@
 Returns the primitive value of the specified object.
 
  object.valueOf( )
-
 ==Remarks==
 The required object reference is any intrinsic JavaScript object.
 

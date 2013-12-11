@@ -1,7 +1,6 @@
 Removes the first element from an array and returns it.
 
  arrayObj.shift( )
-
 ==Parameters==
 The required arrayObj reference is an '''Array''' object.
 

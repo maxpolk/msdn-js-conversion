@@ -1,7 +1,6 @@
 Provides functionality common to all JavaScript objects.
 
- obj '''= new Object(''' [ value ] ''')'''
-
+ obj ''' = new Object(''' [ value ] ''')''' 
 ==Parameters==
 ; obj: Required. The variable name to which the Object object is assigned.
 ; value: Optional. Any one of the JavaScript primitive data types (Number, Boolean, or String). If value is an object, the object is returned unmodified. If value is null , '''undefined''' , or not supplied, an object with no content is created.

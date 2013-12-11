@@ -1,7 +1,6 @@
 Converts a JavaScript Object Notation (JSON) string into an object.
 
  JSON.parse( text [ , reviver] )
-
 ==Parameters==
 ; text: Required. A valid JSON string.
 ; reviver: Optional. A function that transforms the results. This function is called for each member of the object. If a member contains nested objects, the nested objects are transformed before the parent object is. For each member, the following occurs: If reviver returns a valid value, the member value is replaced with the transformed value.If reviver returns the same value it received, the member value is not modified.If reviver returns null or undefined , the member is deleted.

@@ -1,7 +1,6 @@
 Prevents the addition of new properties to an object.
 
  Object.preventExtensions( object )
-
 ==Parameters==
 ; object: Required. The object to make non-extensible.
 

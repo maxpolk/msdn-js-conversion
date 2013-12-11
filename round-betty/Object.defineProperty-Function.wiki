@@ -1,7 +1,6 @@
 Adds a property to an object, or modifies attributes of an existing property.
 
  Object.defineProperty( object , propertyname , descriptor )
-
 ==Parameters==
 ; object: Required. The object on which to add or modify the property. This can be a native JavaScript object (that is, a user-defined object or a built in object) or a DOM object.
 ; propertyname: Required. A string that contains the property name.

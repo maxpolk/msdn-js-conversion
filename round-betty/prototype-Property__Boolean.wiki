@@ -1,7 +1,6 @@
 Returns a reference to the prototype for a Boolean.
 
  boolean.prototype
-
 ==Remarks==
 The boolean argument is the name of an object.
 

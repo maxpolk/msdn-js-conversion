@@ -1,7 +1,6 @@
 Returns the index of the first occurrence of a value in an array.
 
  array1.indexOf( searchElement [, fromIndex ])
-
 ==Parameters==
 {| class='wikitable'
 |-

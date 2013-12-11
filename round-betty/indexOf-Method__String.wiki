@@ -1,7 +1,6 @@
 Returns the position of the first occurrence of a substring.
 
  strObj. indexOf( subString [, startIndex ])
-
 ==Parameters==
 ; strObj: Required. A String object or string  literal.
 ; subString: Required. The substring to search for in the string

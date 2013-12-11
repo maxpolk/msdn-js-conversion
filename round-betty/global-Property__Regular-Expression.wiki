@@ -1,7 +1,6 @@
 Returns a Boolean value indicating the state of the global flag ( '''g''' ) used with a regular expression. Default is '''false'''. Read-only.
 
  rgExp.'''global'''
-
 ==Remarks==
 The required rgExp reference is an instance of a '''Regular Expression''' object.
 

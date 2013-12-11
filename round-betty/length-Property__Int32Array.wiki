@@ -1,7 +1,6 @@
 The length of the array.
 
  var arrayLength = int32Array.length;
-
 ==Example==
 The following example shows how to get the length of the array.
 

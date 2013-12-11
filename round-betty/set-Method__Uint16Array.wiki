@@ -2,7 +2,7 @@ Sets a value or an array of values.
 
  int8Array.set(index, value);
  int8Array.set(array, offset);
-
+ 
 ==Parameters==
 ; index: The index of the location to set.
 ; value: The value to set.

@@ -1,8 +1,7 @@
 An object that contains a regular expression pattern along with flags that identify how to apply the pattern.
 
  re = '''/''' pattern '''/''' [ flags ]
- re = '''new RegExp("''' pattern '''"''' [ ''',"''' flags '''"''' ] ''')'''
-
+ re = '''new RegExp("''' pattern '''"''' [ ''',"''' flags '''"''' ] ''')''' 
 ==Parameters==
 ; re: Required. The variable name to which the regular expression pattern is assigned.
 ; pattern: Required. The regular expression pattern to use. If you use Syntax 1, delimit the pattern by "/" characters. If you use Syntax 2, enclose the pattern in quotation marks.

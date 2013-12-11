@@ -1,7 +1,8 @@
 A typed array of 64-bit float values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised.
 
- float64Array = new Float64Array( length ); float64Array = new Float64Array( array ); float64Array = new Float64Array( buffer , byteOffset , length );
-
+ float64Array = new Float64Array( length );
+ float64Array = new Float64Array( array );
+ float64Array = new Float64Array( buffer , byteOffset , length );
 ==Parameters==
 ; float64Array: Required. The variable name to which the '''Float64Array''' object is assigned.
 ; length: Specifies the length (in bytes) of the array.

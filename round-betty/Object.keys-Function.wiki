@@ -1,7 +1,6 @@
 Returns the names of the enumerable properties and methods of an object.
 
  Object.keys( object )
-
 ==Parameters==
 {| class='wikitable'
 |-

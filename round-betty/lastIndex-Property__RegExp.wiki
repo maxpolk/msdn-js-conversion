@@ -1,7 +1,6 @@
 Returns the character position where the next match begins in a searched string.
 
  '''RegExp'''.'''lastIndex'''
-
 ==Remarks==
 The object associated with this property is always the global '''RegExp''' object.
 

@@ -1,7 +1,8 @@
 Contains information about errors.
 
- errorObj = new Error() errorObj = new Error([ number ]) errorObj = new Error([ number [, description ]])
-
+ errorObj = new Error()
+ errorObj = new Error([ number ])
+ errorObj = new Error([ number [, description ]])
 ==Parameters==
 ; errorObj: Required. The variable name to which the Error object is assigned.
 ; number: Optional. Numeric value assigned to an error. Zero if omitted.

@@ -1,7 +1,6 @@
 Returns the last occurrence of a substring in the string.
 
  strObj.'''lastIndexOf(''' substring [, startindex ] ''')'''
-
 ==Parameters==
 ; strObj: Required. A String object or string literal.
 ; substring: Required. The substring to search for.

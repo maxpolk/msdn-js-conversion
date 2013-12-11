@@ -1,7 +1,6 @@
 Gets the seconds of a '''Date''' object, using local time.
 
- dateObj.getSeconds()
-
+ dateObj.getSeconds() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

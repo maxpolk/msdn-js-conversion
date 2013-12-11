@@ -1,7 +1,6 @@
 Returns the character at the specified index.
 
  strObj. charAt( index )
-
 ==Parameters==
 ; strObj: Required. Any String object or string literal.
 ; index: Required. The zero-based index of the desired character.

@@ -1,7 +1,6 @@
 Evaluates JavaScript code and executes it.
 
- eval( codeString )
-
+ eval( codeString ) 
 ==Parameters==
 ; codeString: Required. A '''String''' value that contains valid JavaScript code.
 

@@ -1,7 +1,6 @@
 Calls a method of an object, substituting another object for the current object.
 
  call([ thisObj [, arg1 [ , arg2 [ ,   [ , argN ]]]]])
-
 ==Parameters==
 ; thisObj: Optional. The object to be used as the current object.
 ; arg1, arg2, , argN: Optional. A list of arguments to be passed to the method.

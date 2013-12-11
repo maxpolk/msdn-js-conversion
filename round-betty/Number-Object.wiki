@@ -1,7 +1,6 @@
 An object that represents a number of any kind. All JavaScript numbers are 64-bit floating-point numbers.
 
  numObj = new Number( value )
-
 ==Parameters==
 ; numObj: Required. The variable name to which the '''Number''' object is assigned.
 ; value: Required. The numeric value.

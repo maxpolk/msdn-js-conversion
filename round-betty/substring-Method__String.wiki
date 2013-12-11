@@ -1,8 +1,7 @@
 Returns the substring at the specified location within a String object.
 
  strVariable. substring( start [, end ])
- "String Literal".substring( start [, end ] ''')'''
-
+ "String Literal".substring( start [, end ] ''')''' 
 ==Parameters==
 ; start: Required. The zero-based index integer indicating the beginning of the substring.
 ; end: Optional. The zero-based index integer indicating the end of the substring. The substring includes the characters up to, but not including, the character indicated by end.If end is omitted, the characters from start through the end of the original string are returned.

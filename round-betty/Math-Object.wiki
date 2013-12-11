@@ -1,7 +1,6 @@
 An intrinsic object that provides basic mathematics functionality and constants.
 
  '''Math.''' [{ property {{!}} method }]
-
 ==Parameters==
 ; property: Required. Name of one of the properties of the '''Math'''. object.
 ; method: Required. Name of one of the methods of the '''Math'''. object.

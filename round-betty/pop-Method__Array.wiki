@@ -1,7 +1,6 @@
 Removes the last element from an array and returns it.
 
  arrayObj.pop( )
-
 ==Remarks==
 The [[javascript/Array/push|push]] and '''pop''' methods enable you to simulate a stack, which uses the principle of last in, first out (LIFO) to store data.
 

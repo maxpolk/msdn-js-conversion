@@ -1,7 +1,6 @@
 Returns a section of an array.
 
- arrayObj.slice( start , [ end ])
-
+ arrayObj.slice( start , [ end ]) 
 ==Parameters==
 ; arrayObj: Required. An '''Array''' object.
 ; start: Required. The beginning of the specified portion of arrayObj.

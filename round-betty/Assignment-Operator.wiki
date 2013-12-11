@@ -1,7 +1,6 @@
 Assigns a value to a variable.
 
  result = expression
-
 ==Parameters==
 ; result: Any variable.
 ; expression: Any numeric expression.

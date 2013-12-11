@@ -1,7 +1,6 @@
 Replaces text in a string, using a regular expression or search string.
 
  stringObj. replace( rgExp , replaceText )
-
 ==Parameters==
 ; stringObj: Required. The String object or string literal on which to perform the replacement. This string is not modified by the '''replace''' method. Rather, the return value of this method is the string produced by the replacement.
 ; rgExp: Required. An instance of a '''Regular Expression''' object containing the regular expression pattern and applicable flags. Can also be a String object or string literal that represents the regular expression. If rgExp is not an instance of a '''Regular Expression''' object, it is converted to a string, and an exact search is made for the results; no attempt is made to convert the string into a regular expression.

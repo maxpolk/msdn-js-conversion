@@ -1,7 +1,6 @@
 Sets the milliseconds value in the Date object using Universal Coordinated Time (UTC).
 
- dateObj.'''setUTCMilliseconds(''' numMilli ''')'''
-
+ dateObj.'''setUTCMilliseconds(''' numMilli ''')''' 
 ==Parameters==
 ; dateObj: Required. Any Date object.
 ; numMilli: Required. A numeric value equal to the millisecond value.

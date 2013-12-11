@@ -1,7 +1,6 @@
 Converts a string to a floating-point number.
 
- parseFloat( numString )
-
+ parseFloat( numString ) 
 ==Remarks==
 The required numString argument is a string that contains a floating-point number.
 

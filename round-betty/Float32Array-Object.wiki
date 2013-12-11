@@ -1,7 +1,8 @@
 A typed array of 32-bit float values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised.
 
- float32Array = new Float32Array( length ); float32Array = new Float32Array( array ); float32Array = new Float32Array( buffer , byteOffset , length );
-
+ float32Array = new Float32Array( length );
+ float32Array = new Float32Array( array );
+ float32Array = new Float32Array( buffer , byteOffset , length );
 ==Parameters==
 ; float32Array: Required. The variable name to which the '''Float32Array''' object is assigned.
 ; length: Specifies the length (in bytes) of the array.

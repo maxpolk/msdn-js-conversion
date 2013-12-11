@@ -1,7 +1,6 @@
 Prevents the modification of attributes of existing properties, and prevents the addition of new properties.
 
  Object.seal( object )
-
 ==Parameters==
 ; object: Required. The object on which to lock the attributes.
 

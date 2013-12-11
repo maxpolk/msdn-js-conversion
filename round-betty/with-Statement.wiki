@@ -1,7 +1,8 @@
 Establishes the default object for a statement.
 
- with ( object ) { statements }
-
+ with ( object ) {
+     statements 
+ } 
 ==Parameters==
 ; object: The new default object.
 ; statements: One or more statements for which object is the default object.

@@ -1,7 +1,6 @@
 Returns a string representation of a string.
 
  string.toString()
-
 ==Parameters==
 ; string: Required. The array to represent as a string.
 

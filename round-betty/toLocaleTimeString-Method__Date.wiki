@@ -1,7 +1,6 @@
 Returns a time as a string value appropriate to the host environment's current locale.
 
  objDate.'''toLocaleTimeString( )'''
-
 ==Remarks==
 The required objDate reference is a Date object.
 

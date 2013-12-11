@@ -1,7 +1,6 @@
 Returns an error message string.
 
  errorObj.'''message'''
-
 ==Parameters==
 ; errorObj: Required. Instance of Error object.
 

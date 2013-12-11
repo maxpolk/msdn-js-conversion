@@ -1,7 +1,6 @@
 An intrinsic global object that stores information about the results of regular expression pattern matches.
 
- '''RegExp'''.property
-
+ '''RegExp'''.property 
 ==Remarks==
 The required property argument can be any one of the '''RegExp''' object properties.
 

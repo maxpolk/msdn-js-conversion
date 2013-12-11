@@ -1,7 +1,6 @@
 Converts a JavaScript value to a JavaScript Object Notation (JSON) string.
 
  '''JSON.stringify(''' value [ , replacer] [ , space] ''')'''
-
 ==Parameters==
 ; value: Required. A JavaScript value, usually an object or array, to be converted.
 ; replacer: Optional. A function or array that transforms the results.If replacer is a function, JSON.stringify calls the function, passing in the key and value of each member. The return value is used instead of the original value. If the function returns undefined , the member is excluded. The key for the root object is an empty string: "".If replacer is an array, only members with key values in the array will be converted. The order in which the members are converted is the same as the order of the keys in the array. The replacer array is ignored when the value argument is also an array.

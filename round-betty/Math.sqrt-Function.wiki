@@ -1,7 +1,6 @@
 Returns the square root of a number.
 
- '''Math.sqrt(''' number ''')'''
-
+ '''Math.sqrt(''' number ''')''' 
 ==Remarks==
 The required number argument is a numeric expression.
 

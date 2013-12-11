@@ -1,7 +1,6 @@
 Returns the sine of a number.
 
- '''Math'''.'''sin(''' radians ''')'''
-
+ '''Math'''.'''sin(''' radians ''')''' 
 ==Remarks==
 The radians argument is a numeric expression that contains an angle measured in radians.
 

@@ -1,7 +1,6 @@
 An object representing the arguments to the currently executing function, and the functions that called it.
 
  [ function '''.''' ] '''arguments[''' n ''']'''
-
 ==Parameters==
 ; function: Optional. The name of the currently executing Function object.
 ; n: Required. The zero-based index to argument values passed to the Function object.

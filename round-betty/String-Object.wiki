@@ -1,7 +1,6 @@
 Allows manipulation and formatting of text strings and determination and location of substrings within strings.
 
  newString = new String([" stringLiteral "])
-
 ==Parameters==
 ; newString: Required. The variable name to which the String object is assigned.
 ; stringLiteral: Optional. Any group of Unicode characters.

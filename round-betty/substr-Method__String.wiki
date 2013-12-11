@@ -1,7 +1,6 @@
 Gets a substring beginning at the specified location and having the specified length.
 
- stringvar.substr( start [, length ])
-
+ stringvar.substr( start [, length ]) 
 ==Parameters==
 ; stringvar: Required. A string literal or String object from which the substring is extracted.
 ; start: Required. The starting position of the desired substring. The index of the first character in the string is zero.

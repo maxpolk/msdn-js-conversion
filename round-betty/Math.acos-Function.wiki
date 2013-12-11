@@ -1,7 +1,6 @@
 Returns the arc cosine (or inverse cosine) of a number.
 
  Math.acos( number )
-
 ==Parameters==
 The required number argument is a numeric expression.
 

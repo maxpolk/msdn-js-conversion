@@ -1,7 +1,6 @@
 Gets the hours in a date, using local time.
 
- dateObj.getHours()
-
+ dateObj.getHours() 
 ==Parameters==
 The required dateObj reference is a Date object.
 

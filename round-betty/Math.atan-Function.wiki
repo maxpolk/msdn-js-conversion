@@ -1,7 +1,6 @@
 Returns the arctangent of a number.
 
- '''Math'''.'''atan(''' number ''')'''
-
+ '''Math'''.'''atan(''' number ''')''' 
 ==Remarks==
 The required number argument is a numeric expression for which the arctangent is needed.
 

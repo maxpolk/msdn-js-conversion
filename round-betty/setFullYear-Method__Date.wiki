@@ -1,7 +1,6 @@
 Sets the year of the '''Date''' object using local time.
 
- dateObj.setFullYear( numYear [, numMonth [, numDate ]])
-
+ dateObj.setFullYear( numYear [, numMonth [, numDate ]]) 
 ==Parameters==
 ; dateObj: Required. Any '''Date''' object.
 ; numYear: Required. A numeric value for the year.

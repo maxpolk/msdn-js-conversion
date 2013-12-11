@@ -1,7 +1,6 @@
 Encodes strings so they can be read on all computers. Deprecated.
 
- escape( charString ''')'''
-
+ escape( charString ''')''' 
 ==Remarks==
 The required charString argument is any '''String''' object or literal to be encoded.
 

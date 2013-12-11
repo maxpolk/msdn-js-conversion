@@ -1,7 +1,6 @@
 Sets the Uint16 value at the specified byte offset from the start of the view. There is no alignment constraint; multi-byte values may be set at any offset.
 
- dataView.setUint16(byteOffset, value, littleEndian);
-
+ dataView.setUint16(byteOffset, value, littleEndian); 
 ==Parameters==
 ; testInt: Required. The Uint16 value that is returned from the method.
 ; value: The value to set.

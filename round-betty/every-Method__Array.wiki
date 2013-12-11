@@ -1,7 +1,6 @@
 Determines whether all the members of an array satisfy the specified test.
 
  array1.every( callbackfn [, thisArg ])
-
 ==Parameters==
 {| class='wikitable'
 |-

@@ -1,7 +1,6 @@
 Returns the index of the last occurrence of a specified value in an array.
 
  array1.lastIndexOf( searchElement [, fromIndex ])
-
 ==Parameters==
 {| class='wikitable'
 |-

@@ -1,7 +1,6 @@
 Returns a date converted to a string using Universal Coordinated Time (UTC).
 
- dateObj.'''toUTCString()'''
-
+ dateObj.'''toUTCString()''' 
 ==Remarks==
 The required dateObj reference is any Date object.
 

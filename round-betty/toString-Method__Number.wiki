@@ -1,7 +1,6 @@
 Returns a string representation of a number.
 
  number.toString()
-
 ==Parameters==
 ; number: Required. The number to represent as a string.
 

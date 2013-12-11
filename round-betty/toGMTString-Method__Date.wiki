@@ -1,7 +1,6 @@
 Returns a date converted to a string using Greenwich Mean Time(GMT).
 
- dateObj.'''toGMTString()'''
-
+ dateObj.'''toGMTString()''' 
 ==Remarks==
 The required dateObj reference is any Date object.
 

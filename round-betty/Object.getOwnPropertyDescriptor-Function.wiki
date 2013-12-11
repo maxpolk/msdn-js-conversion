@@ -1,7 +1,6 @@
 Gets the own property descriptor of the specified object. An own property descriptor is one that is defined directly on the object and is not inherited from the object's prototype.
 
  Object.getOwnPropertyDescriptor( object , propertyname )
-
 ==Parameters==
 ; object: Required. The object that contains the property.
 ; propertyname: Required. The name of the property.

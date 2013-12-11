@@ -1,7 +1,6 @@
 Tests for the existence of a property in an object.
 
  result = property in object
-
 ==Parameters==
 ; result: Required. Any variable.
 ; property: Required. An expression that evaluates to a string expression.

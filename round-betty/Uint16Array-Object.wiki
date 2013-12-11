@@ -1,7 +1,8 @@
 A typed array of 16-bit unsigned integer values. The contents are initialized to 0. If the requested number of bytes could not be allocated an exception is raised.
 
- uint16Array = new Uint16Array( length ); uint16Array = new Uint16Array( array ); uint16Array = new Uint16Array( buffer , byteOffset , length );
-
+ uint16Array = new Uint16Array( length );
+ uint16Array = new Uint16Array( array );
+ uint16Array = new Uint16Array( buffer , byteOffset , length );
 ==Parameters==
 ; uint16Array: Required. The variable name to which the '''Uint16Array''' object is assigned.
 ; length: Specifies the length (in bytes) of the array.

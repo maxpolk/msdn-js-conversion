@@ -1,7 +1,6 @@
 Used by the [[javascript/JSON/stringify|JSON.stringify]] method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
 
  objectname.'''toJSON()'''
-
 ==Parameters==
 ; objectname: Required. An object for which JSON serialization is wanted.
 

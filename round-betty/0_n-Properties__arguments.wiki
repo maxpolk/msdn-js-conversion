@@ -1,7 +1,6 @@
 Returns the actual value of individual arguments from an '''arguments''' object returned by the '''arguments''' property of an executing function.
 
  [ function '''.''' ] '''arguments[''' [0{{!}}1{{!}}2{{!}}...{{!}} n ] ''']'''
-
 ==Parameters==
 ; function: Optional. The name of the currently executing Function object.
 ; 0, 1, 2, , n: Required. Non-negative integer in the range of 0 to n where 0 represents the first argument and n represents the final argument. The value of the final argument n is '''arguments.length-1'''.

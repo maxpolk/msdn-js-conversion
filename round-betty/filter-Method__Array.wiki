@@ -1,7 +1,6 @@
 Returns the elements of an array that meet the condition specified in a callback function.
 
  array1.filter( callbackfn [, thisArg ])
-
 ==Parameters==
 {| class='wikitable'
 |-

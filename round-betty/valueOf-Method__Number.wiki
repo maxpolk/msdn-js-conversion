@@ -1,7 +1,6 @@
 Returns the primitive value of the specified number.
 
  number.valueOf()
-
 ==Parameters==
 This method has no parameters.
 

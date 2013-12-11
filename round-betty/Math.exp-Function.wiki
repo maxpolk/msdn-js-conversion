@@ -1,7 +1,6 @@
 Returns e (the base of natural logarithms) raised to a power.
 
- '''Math'''.'''exp(''' number ''')'''
-
+ '''Math'''.'''exp(''' number ''')''' 
 ==Remarks==
 The required number argument is a numeric expression representing the power of e.
 

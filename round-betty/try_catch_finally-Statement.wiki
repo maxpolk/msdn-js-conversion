@@ -1,9 +1,14 @@
 Sets up blocks of code in which errors that are thrown in one block are handled in another. Errors that are thrown inside the try block are caught in the catch block. JavaScript.
 
- try { tryStatements }
- catch( exception '''){''' catchStatements }
- finally { finallyStatements }
-
+ try {
+     tryStatements 
+ }
+ catch( exception '''){''' 
+     catchStatements 
+ }
+ finally {
+     finallyStatements 
+ }
 ==Parameters==
 ; tryStatements: Required. Statements where an error can occur.
 ; exception: Required. Any variable name. The initial value of exception is the value of the thrown error.

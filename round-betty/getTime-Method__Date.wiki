@@ -1,7 +1,6 @@
 Gets the time value in milliseconds.
 
- dateObj.getTime()
-
+ dateObj.getTime() 
 ==Parameters==
 The required dateObj reference is a '''Date''' object.
 

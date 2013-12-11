@@ -1,7 +1,6 @@
 Declares a variable.
 
  var variable1 = value1
-
 ==Parameters==
 ; variable1: The name of the variable being declared.
 ; value1: The initial value assigned to the variable.

@@ -1,7 +1,6 @@
 Returns the last parenthesized submatch from any regular expression search, if any. Read-only.
 
  '''RegExp'''.'''lastParen'''
-
 ==Remarks==
 The object associated with this property is always the global '''RegExp''' object.
 
