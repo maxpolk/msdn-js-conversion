@@ -1,0 +1,19 @@
+The increment operator increments, and the decrement operator decrements the value of a variable by one.
+
+ result '''=''' ++ variable 
+ result = -- variable 
+ result = variable ++
+ result = variable --
+==Parameters==
+; result: Any variable.
+; variable: Any variable.
+
+==Remarks==
+If the operator appears before the variable, the value is modified before the expression is evaluated. If the operator appears after the variable, the value is modified after the expression is evaluated.  In other words, given <code>j = ++k;</code> , the value of <code>j</code> is the original value of <code>k</code> plus one; given <code>j = k++;</code> , the value of <code>j</code> is the original value of <code>k</code> , which is incremented after its value is assigned to <code>j</code>.
+
+
+==See Also==
+
+              
+
+              

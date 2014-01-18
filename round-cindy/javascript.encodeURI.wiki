@@ -1,0 +1,28 @@
+Encodes a text string as a valid Uniform Resource Identifier (URI)
+
+ '''encodeURI(''' URIString ''')'''
+==Remarks==
+The required URIString argument is a value representing an encoded URI.
+
+The '''encodeURI''' function returns an encoded URI. If you pass the result to '''decodeURI''' , the original string is returned. The '''encodeURI''' function does not encode the following characters: ":", "/", ";", and "?". Use '''encodeURIComponent''' to encode these characters.
+
+
+==Example==
+The following code first encodes and then decodes a URI.
+
+ var uriEncode = encodeURI ("http://www.Not a URL.com");
+ var uriDecode = decodeURIComponent(uriEncode);
+ 
+ document.write(uriEncode);
+ document.write("&lt;br/&gt;");
+ document.write(uriDecode);
+ 
+ // Output:
+ // http://www.Not%20a%20URL.com
+ // http://www.Not a URL.com
+
+==See Also==
+
+              
+
+              

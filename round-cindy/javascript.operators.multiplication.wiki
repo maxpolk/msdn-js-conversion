@@ -1,0 +1,15 @@
+Multiplies the value of two expressions.
+
+ result '''=''' number1 '''*''' number2
+==Parameters==
+; result: Any variable.
+; number1: Any expression.
+; number2: Any expression.
+
+==See Also==
+
+              
+
+              
+
+              

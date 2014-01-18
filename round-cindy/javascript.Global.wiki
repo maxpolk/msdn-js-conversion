@@ -1,0 +1,18 @@
+An intrinsic object whose purpose is to collect global functions and constants into one object.
+
+
+==Remarks==
+The '''Global''' object is never used directly, and cannot be created using the new operator. It is created when the scripting engine is initialized, thus making its functions and constants available immediately.
+
+
+==Constants==
+[[javascript/Infinity|undefined Constant]]
+
+
+==Functions==
+[[javascript/decodeURI|decodeURI Function]] {{!}} [[javascript/decodeURIComponent|unescape Function]]
+
+
+==See Also==
+
+              

@@ -1,0 +1,20 @@
+Read-only. Gets the ArrayBuffer that is referenced by this array.
+
+ var arrayBuffer = float64Array.buffer;
+==Example==
+The following example shows how to get the ArrayBuffer of the array.
+
+ var req = new XMLHttpRequest();
+     req.open('GET', "http://www.example.com");
+     req.responseType = "arraybuffer";
+     req.send();
+ 
+     req.onreadystatechange = function () {
+         if (req.readyState === 4) {
+             var buffer = req.response;
+             var dataView = new DataView(buffer);
+             var floatArr = new Float64Array(buffer.byteLength / 8);
+             alert(floatArr.buffer.byteLength);
+         }
+     }
+

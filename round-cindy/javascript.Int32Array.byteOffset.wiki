@@ -1,0 +1,20 @@
+Read-only. The offset of this array from the start of its ArrayBuffer, in bytes, as fixed at construction time.
+
+ var arrayOffset = int32Array.byteOffset;
+==Example==
+The following example shows how to get the offset of the array.
+
+ var req = new XMLHttpRequest();
+     req.open('GET', "http://www.example.com");
+     req.responseType = "arraybuffer";
+     req.send();
+ 
+     req.onreadystatechange = function () {
+         if (req.readyState === 4) {
+             var buffer = req.response;
+             var dataView = new DataView(buffer);
+             var intArr = new Int32Array(buffer.byteLength / 4);
+             alert(intArr.byteOffset);
+         }
+     }
+

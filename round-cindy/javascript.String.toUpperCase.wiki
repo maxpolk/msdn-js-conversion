@@ -1,0 +1,22 @@
+Converts all the alphabetic characters in a string to uppercase.
+
+ strVariable.toUpperCase()
+ "String Literal".toUpperCase() 
+==Remarks==
+The '''toUpperCase''' method has no effect on non-alphabetic characters.
+
+
+==Example==
+The following example demonstrates the effects of the '''toUpperCase''' method:
+
+ var str1 = "This is a STRING.";
+ var str2 = str1.toUpperCase();
+ document.write(str2);
+ 
+ // Output: THIS IS A STRING.
+
+==See Also==
+
+              
+
+              

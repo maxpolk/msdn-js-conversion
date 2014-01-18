@@ -1,0 +1,30 @@
+Gets the year, using local time.
+
+ dateObj.getFullYear() 
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+The year as a four-digit number. For example, the year 1976 is returned as 1976. Years specified as two digits in the '''Date''' constructor or in '''setFullYear''' are assumed to be in the twentieth century, so given "5/14/12", '''getFullYear''' returns "1912".
+
+
+==Remarks==
+To get the year using Universal Coordinated Time (UTC), use the '''getUTCFullYear''' method.
+
+
+==Example==
+The following example illustrates the use of the '''getFullYear''' method.
+
+ var date = new Date("1/1/01");
+ document.write(date.getFullYear());
+ 
+ // Output: 1901
+
+==See Also==
+
+              
+
+              
+
+              

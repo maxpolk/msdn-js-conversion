@@ -1,0 +1,35 @@
+Gets the milliseconds of a Date, using local time.
+
+ dateObj.getMilliseconds() 
+==Parameters==
+The required dateObj reference is a Date object.
+
+
+==Return Value==
+Returns the milliseconds of a date. The value can range from 0-999. If a date has been constructed without specifying the milliseconds, the value returned is 0.
+
+
+==Remarks==
+To get the number of milliseconds in Universal Coordinated Time (UTC), use the '''getUTCMilliseconds''' method.
+
+
+==Example==
+The following example shows how to use the '''getMilliseconds''' method.
+
+ var date = new Date("1/1/2001");
+ document.write(date.getMilliseconds());
+ document.write("&lt;br/&gt;");
+ 
+ date.setMilliseconds(5);
+ document.write(date.getMilliseconds());
+ // Output: 
+ // 0
+ // 5
+
+==See Also==
+
+              
+
+              
+
+              

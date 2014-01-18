@@ -1,0 +1,30 @@
+Evaluates JavaScript code and executes it.
+
+ eval( codeString ) 
+==Parameters==
+; codeString: Required. A '''String''' value that contains valid JavaScript code.
+
+==Remarks==
+The '''eval''' function enables dynamic execution of JavaScript source code.
+
+The codeString string is parsed by the JavaScript parser and executed.
+
+The code passed to the '''eval''' function is executed in the same context as the call to the '''eval''' function.
+
+Whenever possible, use the [[javascript/JSON/parse|JSON.parse function]] to de-serialize JavaScript Object Notation (JSON) text. The '''JSON.parse''' function is more secure and executes faster than the '''eval''' function.
+
+
+==Example==
+The following code initializes the variable <code>myDate</code> to a test date.
+
+ var dateFn = "Date(1971,3,8)";
+ var myDate;
+ eval("myDate = new " + dateFn + ";");
+ 
+ document.write(myDate);
+ 
+ // Output: Thu Apr 8 00:00:00 PDT 1971
+
+==See Also==
+
+              

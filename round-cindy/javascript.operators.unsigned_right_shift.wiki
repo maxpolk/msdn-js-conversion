@@ -1,0 +1,27 @@
+Right shifts the bits of an expression, without maintaining sign.
+
+ result '''=''' expression1 '''&gt;&gt;&gt;''' expression2
+==Parameters==
+; result: Any variable.
+; expression1: Any expression.
+; expression2: Any expression.
+
+==Remarks==
+The '''&gt;&gt;&gt;''' operator shifts the bits of expression1 right by the number of bits specified in expression2. Zeroes are filled in from the left. Digits shifted off the right are discarded. For example:
+
+ var temp
+ temp = -14 &gt;&gt;&gt; 2
+The variable temp has an initial value -14 (11111111 11111111 11111111 11110010 in two's complement binary). When it is shifted right two bits, the value equals 1073741820 (00111111 11111111 11111111 11111100 in binary).
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              

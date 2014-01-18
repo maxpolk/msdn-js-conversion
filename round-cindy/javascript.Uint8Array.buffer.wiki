@@ -1,0 +1,20 @@
+Read-only. Gets the ArrayBuffer that is referenced by this array.
+
+ var arrayBuffer = uint8Array.buffer;
+==Example==
+The following example shows how to get the ArrayBuffer of the array.
+
+ var req = new XMLHttpRequest();
+     req.open('GET', "http://www.example.com");
+     req.responseType = "arraybuffer";
+     req.send();
+ 
+     req.onreadystatechange = function () {
+         if (req.readyState === 4) {
+             var buffer = req.response;
+             var dataView = new DataView(buffer);
+             var intArr = new Uint8Array(buffer.byteLength);
+             alert(intArr.buffer.byteLength);
+         }
+     }
+

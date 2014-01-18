@@ -1,0 +1,2 @@
+'''null''' is used to indicate that a variable does not refer to valid data. This is not the same thing as [[javascript/undefined|undefined Constant]].
+

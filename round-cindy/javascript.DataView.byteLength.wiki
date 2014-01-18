@@ -1,0 +1,19 @@
+Read-only. The length of this view from the start of its ArrayBuffer, in bytes, as fixed at construction time.
+
+ var byteLength = dataView.byteLength;
+==Example==
+The following example shows how get the length of a DataView from an XMLHttpRequest.
+
+ var req = new XMLHttpRequest();
+     req.open('GET', "http://www.example.com");
+     req.responseType = "arraybuffer";
+     req.send();
+ 
+     req.onreadystatechange = function () {
+         if (req.readyState === 4) {
+             var buffer = req.response;
+             var dataView = dataView.buffer;
+             alert(dataView.byteLength);
+         }
+     }
+

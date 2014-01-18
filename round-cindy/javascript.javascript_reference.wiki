@@ -1,0 +1,32 @@
+These sections explain the elements that make up the JavaScript language.
+
+JavaScript code in Internet Explorer can interact with HTML, CSS and the Document Object Model (DOM), which represents HTML and browser objects.
+
+* For information about HTML, see [http://go.microsoft.com/fwlink/p/?LinkId=251007 HTML/XHTML Reference].
+* For information about CSS, see [http://go.microsoft.com/fwlink/p/?LinkId=251008 Cascading Style Sheets].
+* For information about the DOM, see [http://go.microsoft.com/fwlink/p/?LinkId=251009 Document Object Model (DOM)].
+JavaScript code can be used in browser applications as well as Windows Store apps. Windows Store apps are supported in Windows 8 and Visual Studio 2012.
+
+* For information about JavaScript in Windows Store apps, see [http://go.microsoft.com/fwlink/p/?LinkId=250937 JavaScript roadmap].
+* For information about HTML and CSS in Windows Store apps, see [http://go.microsoft.com/fwlink/p/?LinkId=250939 HTML/CSS for Windows Store apps].
+* For information about Windows Store APIs, see [http://go.microsoft.com/fwlink/p/?LinkID=250938 API reference for Windows Runtime and Windows Library for JavaScript].
+The JavaScript editor in Visual Studio 2012 provides IntelliSense support. For more information, see JavaScript IntelliSense.
+
+
+==In This Section==
+; Version Information: Provides a list of JavaScript language features and the Internet Explorer versions in which they were introduced.
+; [[javascript/objects|Objects]]: Provides a list of objects with links to information about each object.
+; [[javascript/constants|Constants]]: Provides a list of constants and links to information about each constant.
+; [[javascript/properties|Properties]]: Provides a list of properties with links to information about each property.
+; [[javascript/functions|Functions]]: Provides a list of functions with links to information about each function.
+; [[javascript/methods|Methods]]: Provides a list of methods with links to information about each method.
+; [[javascript/operators|Operators]]: Provides a list of operators with links to information about each operator.
+; [[javascript/statements|Statements]]: Provides a list of statements with links to information about each statement.
+; [[javascript/directives|JavaScript Directives]]: Includes links to directives.
+; [[javascript/errors|Errors]]: Includes links to run-time and syntax errors.
+; [[javascript/reserved words|JavaScript Reserved Words]]: Provides a list of reserved words. These words may not be used as identifiers.
+; [[javascript/future reserved words|JavaScript Future Reserved Words]]: Provides a list of future reserved words. These words may not be used as identifiers.
+
+==Related Sections==
+; JavaScript Fundamentals: Provides information about how to use JavaScript.
+; [http://go.microsoft.com/fwlink/?LinkId=148095 HTML and DHTML Reference]: Provides reference information about Dynamic HTML (DHTML) API.

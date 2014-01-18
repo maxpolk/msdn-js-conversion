@@ -1,0 +1,42 @@
+Returns the arc cosine (or inverse cosine) of a number.
+
+ Math.acos( number )
+==Parameters==
+The required number argument is a numeric expression.
+
+
+==Return Value==
+The arc cosine of the number argument, in radians.
+
+
+==Example==
+The following code shows how to use the '''acos''' function.
+
+ var v1 = Math.acos(-1.0);
+ var v2 = Math.cos(-1.0);
+ 
+ document.write(v1);
+ document.write("&lt;br/&gt;");
+ document.write(v2);
+ 
+ // Output:
+ // 3.141592653589793
+ // 0.5403023058681398
+
+==Remarks==
+'''Applies To''' : [[javascript/Math|Math Object]]
+
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              
+
+              

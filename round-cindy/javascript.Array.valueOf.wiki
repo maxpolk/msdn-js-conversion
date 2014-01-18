@@ -1,0 +1,25 @@
+Returns the primitive value of the specified object.
+
+ array.valueOf()
+==Parameters==
+This method has no parameters.
+
+
+==Return Value==
+Returns the array instance.
+
+
+==Remarks==
+In the following example, the instantiated array object is the same as the return value of this method.
+
+ var arr = [1, 2, 3, 4];
+ var s = arr.valueOf();
+ 
+ if (arr === s)
+ document.write("same");
+ else
+ document.write("different");
+ 
+ // Output:
+ // same
+

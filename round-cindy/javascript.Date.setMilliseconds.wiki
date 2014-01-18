@@ -1,0 +1,33 @@
+Sets the milliseconds value in the Date object using local time.
+
+ dateObj.'''setMilliseconds(''' numMilli ''')''' 
+==Parameters==
+; dateObj: Required. Any Date object.
+; numMilli: Required. A numeric value equal to the millisecond value.
+
+==Remarks==
+To set the milliseconds value using Universal Coordinated Time (UTC), use the '''setUTCMilliseconds''' method.
+
+If the value of numMilli is greater than 999 or is a negative number, the stored number of seconds (and minutes, hours, and so forth if necessary) is incremented an appropriate amount.
+
+
+==Example==
+The following example illustrates the use of the '''setMilliseconds''' method.
+
+ function SetMSecDemo(nmsec){
+    var d, s;                    // Declare variables.
+    d = new Date();              // Create Date object.d.setMilliseconds( nmsec ) ;    // Set milliseconds.
+    s = "Current setting is ";
+    s += d.toLocaleString();
+    s += " and " + d.getMilliseconds();
+    s += " milliseconds";
+    return(s);                   // Return new date setting.
+ }
+
+==See Also==
+
+              
+
+              
+
+              

@@ -1,0 +1,24 @@
+Establishes the default object for a statement.
+
+ with ( object ) {
+     statements 
+ } 
+==Parameters==
+; object: The new default object.
+; statements: One or more statements for which object is the default object.
+
+==Remarks==
+The with statement is commonly used to shorten the amount of code that you have to write in certain situations. In the example that follows, notice the repeated use of Math.
+
+ x = Math.cos(3 * Math.PI) + Math.sin(Math.LN10) 
+ y = Math.tan(14 * Math.E)
+When you use the with statement, your code becomes shorter and easier to read:
+
+ with (Math){
+    x = cos(3 * PI) + sin (LN10)  
+    y = tan(14 * E)
+ }
+
+==See Also==
+
+              

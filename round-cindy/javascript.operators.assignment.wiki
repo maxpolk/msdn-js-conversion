@@ -1,0 +1,16 @@
+Assigns a value to a variable.
+
+ result = expression
+==Parameters==
+; result: Any variable.
+; expression: Any numeric expression.
+
+==Remarks==
+The = operator behaves like other operators, so expressions that contain it have a value. This means that you can chain assignment operators as follows: <code>j = k = l = 0</code>. In this case <code>j</code> , <code>k</code> , and <code>l</code> equal zero.
+
+
+==See Also==
+
+              
+
+              

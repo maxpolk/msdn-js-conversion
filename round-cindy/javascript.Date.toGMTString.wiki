@@ -1,0 +1,14 @@
+Returns a date converted to a string using Greenwich Mean Time(GMT).
+
+ dateObj.'''toGMTString()''' 
+==Remarks==
+The required dateObj reference is any Date object.
+
+The '''toGMTString''' method is obsolete, and is provided for backwards compatibility only. It is recommended that you use the '''toUTCString''' method instead.
+
+The '''toGMTString''' method returns a String object that contains the date formatted using GMT convention. The format of the return value is as follows: "05 Jan 1996 00:00:00 GMT."
+
+
+==See Also==
+
+              

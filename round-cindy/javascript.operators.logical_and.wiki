@@ -1,0 +1,23 @@
+Performs a logical conjunction on two expressions.
+
+ result = expression1 &amp;&amp; expression2 
+==Parameters==
+; result: Any variable.
+; expression1: Any expression.
+; expression2: Any expression.
+
+==Remarks==
+If both expressions evaluate to true , result is true. If either expression evaluates to false , result is false.
+
+JavaScript uses the following rules for converting non-Boolean values to Boolean values:
+
+* All objects are considered to be true.
+* Strings are considered to be false if they are empty.
+* null and undefined are considered to be false.
+* A Number is false if it is zero.
+
+==See Also==
+
+              
+
+              

@@ -1,0 +1,34 @@
+Specifies the function that creates an object.
+
+ object.constructor
+==Remarks==
+The required object is the name of an object or function.
+
+The '''constructor''' property is a member of the prototype of every object that has a prototype. This includes all intrinsic JavaScript objects except the '''Global''' and '''Math''' objects. The '''constructor''' property contains a reference to the function that constructs instances of that particular object.
+
+
+==Example==
+The following example illustrates the use of the constructor property.
+
+ // A constructor function.
+ function MyObj() {
+     this.number = 1;
+ }
+ 
+ var x = new String("Hi");
+ 
+ if (x.constructor == String)
+     document.write("Object is a String.");
+ document.write ("&lt;br /&gt;");
+ 
+ var y = new MyObj;
+ if (y.constructor == MyObj)
+     document.write("Object constructor is MyObj.");
+ 
+ // Output:
+ // Object is a String.
+ // Object constructor is MyObj.
+
+==See Also==
+
+              

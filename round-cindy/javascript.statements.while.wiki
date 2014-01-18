@@ -1,0 +1,38 @@
+Executes a statement or series of statements until a specified condition is false.
+
+ while ( expression ) {
+     statements 
+ } 
+==Parameters==
+; expression: Required. A Boolean expression that is checked before each iteration of the loop. If expression is true , the loop is executed. If expression is false , the loop is terminated.
+; statements: Optional. One or more statements to be executed if expression is true.
+
+==Remarks==
+The while statement checks expression before a loop is first executed. If expression is false at this time, the loop is never executed.
+
+
+==Example==
+The following example illustrates the use of the while statement.
+
+ var i = 0;
+ var j = 10;
+ while (i &lt; 100) {
+     if (i == j)
+         break;
+     i++;
+ }
+ document.write(i);
+ 
+ // Output: 10
+
+==See Also==
+
+              
+
+              
+
+              
+
+              
+
+              

@@ -1,0 +1,59 @@
+Used by the [[javascript/JSON/stringify|JSON.stringify]] method to enable the transformation of an object's data for JavaScript Object Notation (JSON) serialization.
+
+ objectname.'''toJSON()'''
+==Parameters==
+; objectname: Required. An object for which JSON serialization is wanted.
+
+==Remarks==
+The toJSON method is used by the JSON.stringify function.JSON.stringify serializes a JavaScript value into JSON text. If a toJSON method is provided to JSON.stringify , the toJSON method is called when JSON.stringify is called.
+
+The toJSON method is a built-in member of the [[javascript/Date|Date]] JavaScript object. It returns an ISO-formatted date string for the UTC time zone (denoted by the suffix Z).
+
+You can override the toJSON method for the Date type, or define a toJSON method for other object types to achieve transformation of data for the specific object type before JSON serialization.
+
+
+==Example==
+The following example uses the toJSON method to serialize string member values in uppercase. The toJSON method is called when JSON.stringify is called.
+
+ var contact = new Object();
+ contact.firstname = "Jesper";
+ contact.surname = "Aaberg";
+ contact.phone = ["555-0100", "555-0120"];
+ 
+ contact.toJSON = function(key)
+  {
+     var replacement = new Object();
+     for (var val in this)
+     {
+         if (typeof (this[val]) === 'string')
+             replacement[val] = this[val].toUpperCase();
+         else
+             replacement[val] = this[val]
+     }
+     return replacement;
+ };
+ 
+ var jsonText = JSON.stringify(contact);
+ 
+ /* The value of jsonText is:
+ '{"firstname":"JESPER","surname":"AABERG","phone":["555-0100","555-0120"]}'
+ */
+The following example illustrates how to use the toJSON method that is a built-in member of the [[javascript/Date|Date]] object.
+
+ var dt = new Date('8/24/2009');
+ dt.setUTCHours(7, 30, 0);
+ var jsonText = JSON.stringify(dt);
+ 
+ /* The value of jsonText is:
+ '"2009-08-24T07:30:00Z"'
+ */
+
+==See Also==
+
+              
+
+              
+
+              
+
+              

@@ -1,0 +1,47 @@
+An object representing the arguments to the currently executing function, and the functions that called it.
+
+ [ function '''.''' ] '''arguments[''' n ''']'''
+==Parameters==
+; function: Optional. The name of the currently executing Function object.
+; n: Required. The zero-based index to argument values passed to the Function object.
+
+==Remarks==
+You cannot explicitly create an '''arguments''' object. The '''arguments''' object only becomes available when a function begins execution. The '''arguments''' object of the function is not an array, but the individual arguments are accessed the same way array elements are accessed. The index n is actually a reference to one of the '''0''' n properties of the '''arguments''' object.
+
+
+==Example==
+The following example illustrates the use of the '''arguments''' object.
+
+ function ArgTest(a, b)
+ {
+    var s = "";
+ 
+    s += "Expected Arguments: " + ArgTest.length;
+    s += "&lt;br /&gt;";
+    s += "Passed Arguments: " + arguments.length;
+    s += "&lt;br /&gt;";
+ 
+    s += "The individual arguments are: "
+    for (n = 0; n &lt; arguments.length; n++)
+    {
+       s += ArgTest.arguments[n];
+       s += " ";
+    }
+ 
+    document.write(s);
+ }
+ 
+ ArgTest(1, 2, "hello", new Date())
+ 
+ // Output:
+ // Expected Arguments: 2
+ // Passed Arguments: 4
+ // The individual arguments are: 1 2 hello Tues Jan 8 08:27:09 PST 20xx
+
+==See Also==
+
+              
+
+              
+
+              

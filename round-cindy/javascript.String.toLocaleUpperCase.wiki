@@ -1,0 +1,14 @@
+Returns a string where all alphabetic characters have been converted to uppercase, taking into account the host environment's current locale.
+
+ stringVar.toLocaleUpperCase( )
+==Remarks==
+The required stringVar reference is a String object or string literal.
+
+The '''toLocaleUpperCase''' method converts the characters in a string, taking into account the host environment's current locale. In most cases, the result is the same as the result the '''toUpperCase''' method. Results differ if the rules for a language conflict with the regular Unicode case mappings.
+
+
+==See Also==
+
+              
+
+              

@@ -1,0 +1,16 @@
+Restricts the use of some features in JavaScript. Supported in Internet Explorer 10 and Windows Store apps only.
+
+ use strict
+==Example==
+The following code causes a syntax error because in strict mode all variables must be declared with var.
+
+ "use strict";
+ function testFunction(){
+    var testvar = 4;
+     return testvar;
+ }
+ intvar = 5;
+
+==See Also==
+
+              

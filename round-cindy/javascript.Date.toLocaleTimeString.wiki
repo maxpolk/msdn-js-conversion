@@ -1,0 +1,14 @@
+Returns a time as a string value appropriate to the host environment's current locale.
+
+ objDate.'''toLocaleTimeString( )'''
+==Remarks==
+The required objDate reference is a Date object.
+
+The '''toLocaleTimeString''' method returns a string value that contains a time, in the current time zone, in an easily read format. The time is in the default format of the host environment's current locale. The return value of this method cannot be relied upon in scripting, as it will vary from computer to computer. The '''toLocaleTimeString''' method should only be used to format display - never as part of a computation.
+
+
+==See Also==
+
+              
+
+              

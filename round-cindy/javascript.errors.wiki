@@ -1,0 +1,12 @@
+The following table lists the types of JavaScript errors.
+
+
+==Error Types==
+{| class='wikitable'
+|-
+! For more information about
+! See
+|-
+| List of JavaScript syntax errors
+| [[javascript/errors/syntax|Syntax Errors]]
+|}
