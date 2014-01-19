@@ -8,7 +8,6 @@ A URIComponent is part of a complete URI.
 
 If the encodedURIString is not valid, a URIError occurs.
 
-
 ==Example==
 The following code first encodes and then decodes a URI.
 
