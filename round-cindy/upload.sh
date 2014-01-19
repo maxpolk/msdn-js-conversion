@@ -1,5 +1,7 @@
 #! /bin/sh
 
+trap 'exit 2' INT
+
 if [ -z "$WPD_USERNAME" ]; then
     echo "Missing environment variable WPD_USERNAME"
     exit 1
@@ -21,8 +23,9 @@ fi
 #     Period becomes slash
 #     Underscore becomes space
 #
-for FILE in *.wiki; do
-    PAGE="$(echo $FILE | sed -e 's/\./\//g' -e 's/_/ /g')"
+for FILE in *.wiki.rewrite; do
+    ORIGINAL=${FILE%%.rewrite}
+    PAGE="$(echo ${ORIGINAL%%.wiki} | sed -e 's/\./\//g' -e 's/_/ /g')"
     echo ../modified-wpd edit \""$PAGE"\" \""$FILE"\" 'Script automated upload'
-    ../modified-wpd edit \""$PAGE"\" \""$FILE"\" 'Script automated upload'
+    ../modified-wpd edit "$PAGE" "$FILE" 'Script automated upload'
 done
