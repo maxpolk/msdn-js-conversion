@@ -123,6 +123,15 @@ def addExamples (rewrite, examples):
         print "{} > [EXAMPLES] {}".format ("?", line)
     rewrite.write ("}}\n")
 
+def addRemarks (rewrite, remarks):
+    '''Add Remarks_Section template instance.'''
+    # Fixed parameter
+    rewrite.write ("{{Remarks_Section\n")
+    rewrite.write ("|Remarks=" + "\n".join (remarks))
+    for line in remarks:
+        print "{} > [REMARKS] {}".format ("?", line)
+    rewrite.write ("}}\n")
+
 def convertParameters (parameters):
     '''Convert parameters in wikitable format to Mediawiki definition list.'''
     # If it's already in the right format, do nothing
@@ -271,6 +280,9 @@ def processSection (filename, rewrite, section_name, section):
     elif (section_name == "Example"):
         print "Section \"{}\" contains {} lines:".format (section_name, len (section))
         addExamples (rewrite, section)
+    elif (section_name == "Remarks"):
+        print "Section \"{}\" contains {} lines:".format (section_name, len (section))
+        addRemarks (rewrite, section)
     else:
         print "Section \"{}\" contains {} lines:".format (section_name, len (section))
         # Write section header
@@ -284,7 +296,7 @@ def processSection (filename, rewrite, section_name, section):
 
 def addFooter (rewrite):
     # Enable semantic forms
-    rewrite.write ("{}\n".format ("{{Basic Page}}"))
+    rewrite.write ("{}\n".format ("{{Topics | JS Object}}"))
 
 def processFile (filename):
     '''
