@@ -13,6 +13,16 @@ added_values_param = False
 #: For each file, true if we finished a syntax section
 finished_syntax_section = False
 
+def escape (line):
+    '''
+    Escape the bar character anywhere inside the line, and add a space
+    after each table end so it is not run together next to a template close
+    double right curly brace which mediawiki can't handle.  Hopefully
+    people won't edit out the trailing space in the form edit to undo
+    this fix.
+    '''
+    return line.replace ("|}", "|} ").replace ("|", "{{!}}")
+
 def addTitleAndFlags (rewrite):
     '''Add the top templates to the file, things like title and flags.'''
     rewrite.write ("{{Page_Title}}\n")
@@ -20,7 +30,10 @@ def addTitleAndFlags (rewrite):
 
 def addSummary (rewrite, summary):
     '''Add the summary section template, with given lines of contents.'''
-    rewrite.write ("{{Summary_Section|" + "\n".join (summary) + "}}\n")
+    rewrite.write ("{{Summary_Section|")
+    for line in summary:
+        rewrite.write ("{}\n".format (escape (line)))
+    rewrite.write ("}}\n")
 
 def addSyntaxHeader (rewrite):
     '''
@@ -38,7 +51,7 @@ def addSyntaxFormats (rewrite, syntax):
     # Repeated lines
     for line in syntax:
         rewrite.write ("{{JS_Object_Format\n")
-        rewrite.write ("|Format={}".format (line))
+        rewrite.write ("|Format={}".format (escape (line)))
         rewrite.write ("}}")
 
 def addSyntaxValues (rewrite, syntax):
@@ -51,7 +64,7 @@ def addSyntaxValues (rewrite, syntax):
         rewrite.write ("{{JS_Syntax_Parameter\n")
         rewrite.write ("|Name={}\n".format (""))
         rewrite.write ("|Required={}\n".format (""))
-        rewrite.write ("|Description={}".format (syntax[0]))
+        rewrite.write ("|Description={}".format (escape (syntax[0])))
         rewrite.write ("}}")
     else:
         # Repeat for each line
@@ -73,9 +86,9 @@ def addSyntaxValues (rewrite, syntax):
                 else:
                     required = "false"
                 rewrite.write ("{{JS_Syntax_Parameter\n")
-                rewrite.write ("|Name={}\n".format (name))
-                rewrite.write ("|Required={}\n".format (required))
-                rewrite.write ("|Description={}".format (description))
+                rewrite.write ("|Name={}\n".format (escape (name)))
+                rewrite.write ("|Required={}\n".format (escape (required)))
+                rewrite.write ("|Description={}".format (escape (description)))
                 rewrite.write ("}}")
             elif (line is not ""):
                 match = re.match ("^; ([^:]+): *(.*)$", line)
@@ -83,21 +96,21 @@ def addSyntaxValues (rewrite, syntax):
                     name, description = match.group (1, 2)
                     required = "false"
                     rewrite.write ("{{JS_Syntax_Parameter\n")
-                    rewrite.write ("|Name={}\n".format (name))
-                    rewrite.write ("|Required={}\n".format (required))
-                    rewrite.write ("|Description={}".format (description))
+                    rewrite.write ("|Name={}\n".format (escape (name)))
+                    rewrite.write ("|Required={}\n".format (escape (required)))
+                    rewrite.write ("|Description={}".format (escape (description)))
                     rewrite.write ("}}")
                 else:
                     rewrite.write ("{{JS_Syntax_Parameter\n")
                     rewrite.write ("|Name={}\n".format (""))
                     rewrite.write ("|Required={}\n".format (""))
-                    rewrite.write ("|Description={}".format (line))
+                    rewrite.write ("|Description={}".format (escape (line)))
                     rewrite.write ("}}")
             else:
                     rewrite.write ("{{JS_Syntax_Parameter\n")
                     rewrite.write ("|Name={}\n".format (""))
                     rewrite.write ("|Required={}\n".format (""))
-                    rewrite.write ("|Description={}".format (line))
+                    rewrite.write ("|Description={}".format (escape (line)))
                     rewrite.write ("}}")
 
 def addReturnValue (rewrite, syntax):
@@ -107,7 +120,7 @@ def addReturnValue (rewrite, syntax):
     rewrite.write ("{{JS_Syntax_Parameter\n")
     rewrite.write ("|Name={}\n".format ("return value"))
     rewrite.write ("|Required={}\n".format (""))
-    rewrite.write ("|Description={}".format (syntax[0]))
+    rewrite.write ("|Description={}".format (escape (syntax[0])))
     rewrite.write ("}}")
 
 def addSyntaxFooter (rewrite):
@@ -118,17 +131,102 @@ def addExamples (rewrite, examples):
     '''Add Examples_Section template instance.'''
     # Fixed parameter
     rewrite.write ("{{Examples_Section\n")
-    rewrite.write ("|Examples=" + "\n".join (examples))
+    rewrite.write ("|Not_required=No\n")
+    rewrite.write ("|Examples=")
+
+    #
+    # The Examples parameter has multiple Single_Example template instances.
+    # The Single_Example has Code and Description and Language JavaScript.
+    #
+    # A flag toggles between Description and Code, once we flip from
+    # Code to non-code, we begin another Single_Example.
+    #
+    #{{Single_Example
+    # |Language=JavaScript
+    # |Description=The following example illustrates the use of the '''0 . . .''' n properties of the '''arguments''' object. To fully understand the example, pass one or more arguments to the function:
+    # |Code= function ArgTest(){
+    #     var s = "";
+    #     s += "The individual arguments are: "
+    #     for (n = 0; n &lt; arguments.length; n++){
+    #        s += ArgTest.arguments[n] ;
+    #        s += " ";
+    #     }
+    #     return(s);
+    #  }
+    #  document.write(ArgTest(1, 2, "hello", new Date()));}}
+    #}}
+    inside_template = False
+    inside_description = False
+    inside_code = False
+    current_line_is_code = False
+    current_line_is_blank = False
     for line in examples:
+        # Might need to start a new Single Example template instance
+        if (not inside_template):
+            # Begin a new Single Example
+            inside_template = True
+            inside_description = False
+            inside_code = False
+            rewrite.write ("{{Single_Example\n")
+            rewrite.write ("|Language=JavaScript\n")
+
+        # Determine if this is code or description
+        if (len (line) == 0):
+            current_line_is_blank = True
+        elif (line[0] == " "):
+            current_line_is_blank = False
+            current_line_is_code = True
+        else:
+            current_line_is_blank = False
+            current_line_is_code = False
+
+        #
+        # If we have a non-blank line, and we were in code and now find
+        # a description, begin a new template instance
+        #
+        if (not current_line_is_blank and inside_code and not current_line_is_code):
+            if (inside_template):
+                # Close off previous template
+                inside_template = False
+                rewrite.write ("}}")
+            # Begin a new Single Example
+            inside_template = True
+            inside_description = False
+            inside_code = False
+            rewrite.write ("{{Single_Example\n")
+            rewrite.write ("|Language=JavaScript\n")
+
+        # Nothing to something
+        if (not inside_description and not inside_code):
+            # Add a template parameter (Description or Code)
+            if (current_line_is_code):
+                rewrite.write ("|Code=")
+                inside_code = True
+            else:
+                rewrite.write ("|Description=")
+                inside_description = True
+        elif (inside_description and current_line_is_code):
+            # Flip from description to code
+            rewrite.write ("|Code=")
+            inside_description = False
+            inside_code = True
+
+        # Write current line
+        rewrite.write ("{}\n".format (escape (line)))
         print "{} > [EXAMPLES] {}".format ("?", line)
+    # Finish off the Single_Example
+    if inside_template:
+        rewrite.write ("}}")
+    # Finish off the Examples_Section
     rewrite.write ("}}\n")
 
 def addRemarks (rewrite, remarks):
     '''Add Remarks_Section template instance.'''
     # Fixed parameter
     rewrite.write ("{{Remarks_Section\n")
-    rewrite.write ("|Remarks=" + "\n".join (remarks))
+    rewrite.write ("|Remarks=")
     for line in remarks:
+        rewrite.write ("{}\n".format (escape (line)))
         print "{} > [REMARKS] {}".format ("?", line)
     rewrite.write ("}}\n")
 
@@ -287,16 +385,16 @@ def processSection (filename, rewrite, section_name, section):
         print "Section \"{}\" contains {} lines:".format (section_name, len (section))
         # Write section header
         if section_name != "":
-            rewrite.write ("=={}==\n".format (section_name))
+            rewrite.write ("=={}==\n".format (escape (section_name)))
         count = 1
         for line in section:
             print "{} > [NORMAL] {}".format (count, line)
-            rewrite.write ("{}\n".format (line))
+            rewrite.write ("{}\n".format (escape (line)))
             count += 1
 
 def addFooter (rewrite):
     # Enable semantic forms
-    rewrite.write ("{}\n".format ("{{Topics | JS Object}}"))
+    rewrite.write ("{}\n".format ("{{Topics | JS Basic}}"))
 
 def processFile (filename):
     '''
