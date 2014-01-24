@@ -385,11 +385,12 @@ def processSection (filename, rewrite, section_name, section):
         print "Section \"{}\" contains {} lines:".format (section_name, len (section))
         # Write section header
         if section_name != "":
-            rewrite.write ("=={}==\n".format (escape (section_name)))
+            rewrite.write ("=={}==\n".format (section_name))
         count = 1
         for line in section:
             print "{} > [NORMAL] {}".format (count, line)
-            rewrite.write ("{}\n".format (escape (line)))
+            # Not escaping line, no need to since it's not inside a template
+            rewrite.write ("{}\n".format (line))
             count += 1
 
 def addFooter (rewrite):
