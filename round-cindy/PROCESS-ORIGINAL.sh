@@ -72,8 +72,8 @@ cat MAP-ORIGINAL.txt | \
                 TARGET=${TARGET//.wiki/}
                 TARGET=${TARGET//./\/}
                 TARGET=${TARGET//_/ }
-                # Replace long title with succinct title
-                TITLE=${TITLE// (*/}
+                # Remove (JavaScript) from the end
+                TITLE=${TITLE// (JavaScript*/}
                 # Write new "see also" link
                 echo "[[$TARGET|$TITLE]]" >> $WIKI
             done

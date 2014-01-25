@@ -241,9 +241,6 @@ def addSeeAlso (rewrite, see_also):
         * [http://www.opera.com Opera]
         }}
     '''
-    # Strip off empty lines from the end
-    while (len (see_also) > 0 and re.match ('^[ \t]*$', see_also[-1])):
-        del see_also[-1]
     # Fixed parameter
     rewrite.write ("{{See_Also_Section\n")
     rewrite.write ("|Manual_links=")
@@ -451,6 +448,9 @@ def processFile (filename):
             line = line.rstrip ("\n")
             if line.startswith ("="):
                 # Process section we finished accumulating
+                # Strip off empty lines from the beginning
+                while (len (section) > 0 and re.match ('^[ \t]*$', section[0])):
+                    del section[0]
                 # Strip off empty lines from the end
                 while (len (section) > 0 and re.match ('^[ \t]*$', section[-1])):
                     del section[-1]
@@ -462,13 +462,13 @@ def processFile (filename):
                 section_name = line.translate (None, '=')
             else:
                 section.append (line)
+    # Strip off empty lines from the beginning
+    while (len (section) > 0 and re.match ('^[ \t]*$', section[0])):
+        del section[0]
     # Strip off empty lines from the end
     while (len (section) > 0 and re.match ('^[ \t]*$', section[-1])):
         del section[-1]
     # Process section we finished accumulating
-    # Strip off empty lines from the end
-    while (len (section) > 0 and re.match ('^[ \t]*$', section[-1])):
-        del section[-1]
     if len (section) > 0:
         processSection (filename, rewrite, section_name, section)
     # Finish off a previous template that has no more information to put into it
