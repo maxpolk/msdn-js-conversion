@@ -25,7 +25,7 @@ cat MAP-ORIGINAL.txt | \
         IFS=$'\n'
         RESULT=($(python get-fragment.py "../../msdn-js/$HTML" seeAlsoSection | \
             grep '<a ' | \
-            sed 's/^.*href="\(.*\).htm">\(.*\)<\/a>.*$/\1|\2/'))
+            sed 's/^.*href="\(.*\).htm">\(.*\)<\/a>.*$/\1~\2/'))
         if [ ${#RESULT[@]} -gt 0 ]; then
             echo "-----"
             echo "HTML=$HTML"
@@ -33,13 +33,13 @@ cat MAP-ORIGINAL.txt | \
             # Add "see also" section if not already there
             if ! grep -q '==See Also==' $WIKI; then
                 echo "    SECTION ADD of see also"
-                # echo "    " GTGT $WIKI
-                # echo "    " "==See Also==" GTGT $WIKI
+                echo >> $WIKI
+                echo "==See Also==" >> $WIKI
             fi
             for ITEM in ${RESULT[@]}; do
-                # Line has format SOMETHING|Title with spaces
-                LINK=${ITEM/|*/}
-                TITLE=${ITEM/*|/}
+                # Line has format SOMETHING~Title with spaces
+                LINK=${ITEM/~*/}
+                TITLE=${ITEM/*~/}
                 echo "    LINK=$LINK"
                 echo "    TITLE=$TITLE"
                 # Fix title syntax
@@ -75,7 +75,7 @@ cat MAP-ORIGINAL.txt | \
                 # Replace long title with succinct title
                 TITLE=${TITLE// (*/}
                 # Write new "see also" link
-                echo "    [[$TARGET|$TITLE]]" GTGT $WIKI
+                echo "[[$TARGET|$TITLE]]" >> $WIKI
             done
         fi
         unset IFS
