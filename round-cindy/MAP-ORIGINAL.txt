@@ -376,6 +376,5 @@ with-Statement.html                           javascript.statements.with.wiki
 JavaScript-Directives.html                    javascript.directives.wiki
 use-strict-Directive.html                     javascript.directives.use_strict.wiki
 JavaScript-Errors.html                        javascript.errors.wiki
-JavaScript-Syntax-Errors.html                 javascript.errors.syntax.wiki
 JavaScript-Reserved-Words.html                javascript.reserved_words.wiki
 JavaScript-Future-Reserved-Words.html         javascript.future_reserved_words.wiki

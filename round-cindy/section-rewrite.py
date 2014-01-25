@@ -230,6 +230,28 @@ def addRemarks (rewrite, remarks):
         print "{} > [REMARKS] {}".format ("?", line)
     rewrite.write ("}}\n")
 
+def addSeeAlso (rewrite, see_also):
+    '''
+    Add See_Also_Section template instance.
+
+    Must have bullet in front of each link as in:
+        {{See_Also_Section
+        |Manual_links=* [http://www.google.com Google]
+        * [http://www.mozilla.org Mozilla]
+        * [http://www.opera.com Opera]
+        }}
+    '''
+    # Strip off empty lines from the end
+    while (len (see_also) > 0 and re.match ('^[ \t]*$', see_also[-1])):
+        del see_also[-1]
+    # Fixed parameter
+    rewrite.write ("{{See_Also_Section\n")
+    rewrite.write ("|Manual_links=")
+    for line in see_also:
+        rewrite.write ("* {}\n".format (escape (line)))
+        print "{} > [SEE ALSO] {}".format ("?", line)
+    rewrite.write ("}}\n")
+
 def convertParameters (parameters):
     '''Convert parameters in wikitable format to Mediawiki definition list.'''
     # If it's already in the right format, do nothing
@@ -381,6 +403,9 @@ def processSection (filename, rewrite, section_name, section):
     elif (section_name == "Remarks"):
         print "Section \"{}\" contains {} lines:".format (section_name, len (section))
         addRemarks (rewrite, section)
+    elif (section_name == "See Also"):
+        print "Section \"{}\" contains {} lines:".format (section_name, len (section))
+        addSeeAlso (rewrite, section)
     else:
         print "Section \"{}\" contains {} lines:".format (section_name, len (section))
         # Write section header

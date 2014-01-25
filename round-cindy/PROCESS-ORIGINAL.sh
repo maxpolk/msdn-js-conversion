@@ -20,45 +20,63 @@ cat MAP-ORIGINAL.txt | \
         # Grab the "SOMETHING" and anchor text, make it look like:
         #     08e5f552-0797-4b48-8164-609582fc18c9 Array Object (JavaScript)
         #
-        python get-fragment.py "../../msdn-js/$HTML" seeAlsoSection | \
+        unset RESULT
+        declare -a RESULT
+        IFS=$'\n'
+        RESULT=($(python get-fragment.py "../../msdn-js/$HTML" seeAlsoSection | \
             grep '<a ' | \
-            sed 's/^.*href="\(.*\).htm">\(.*\)<\/a>.*$/\1 "\2"/' | (
-                read LINK TITLE
-                # Strip quotes from around TITLE
-                TITLE=${TITLE//\"/}
-                if [ ! -z "$LINK" ]; then
-                    echo "----------"
-                    echo "WIKI is $WIKI"
-                    echo "LINK is $LINK"
-                    echo "TITLE is $TITLE"
-                    # Fix title syntax
-                    ORIGINAL_TITLE=$TITLE
-                    TITLE=${TITLE//&amp;/&#38;}
-                    TITLE=${TITLE//&lt;/&#60;}
-                    TITLE=${TITLE//&gt;/&#62;}
-                    # Passing to grep, escape regex special char
-                    TITLE=${TITLE//\*/\\*}
-                    # TITLE=${TITLE//[/\\[}
-                    # TITLE=${TITLE//]/\\]}
-                    # Find the title in all other files, should match just one page
-                    PAGE1=$(grep -l "<title>$TITLE</title>" ../../msdn-js/*.html)
-                    PAGE2=$(grep -l "<meta name=\"Microsoft.Help.Id\" content=\"$LINK\" />" ../../msdn-js/*.html)
-                    PAGE1=${PAGE1##../../msdn-js/}
-                    PAGE2=${PAGE2##../../msdn-js/}
-                    if [ "$PAGE1" = "$PAGE2" ]; then
-                        # See if we match something in the MAP-ORIGINAL.txt
-                        TARGET=$(grep "^$PAGE1 " MAP-ORIGINAL.txt | sed 's/^.*  *//')
-                        if [ -f "$TARGET" ]; then
-                            echo "TARGET is $TARGET"
-                        else
-                            echo "Could not find TARGET $TARGET"
-                        fi
-                        # Add the "see also" section to bottom of wiki page
-                    else
-                        echo "PAGES do not match"
-                        echo "    $PAGE1"
-                        echo "    $PAGE2"
-                    fi
+            sed 's/^.*href="\(.*\).htm">\(.*\)<\/a>.*$/\1|\2/'))
+        if [ ${#RESULT[@]} -gt 0 ]; then
+            echo "-----"
+            echo "HTML=$HTML"
+            echo "WIKI=$WIKI"
+            # Add "see also" section if not already there
+            if ! grep -q '==See Also==' $WIKI; then
+                echo "    SECTION ADD of see also"
+                # echo "    " GTGT $WIKI
+                # echo "    " "==See Also==" GTGT $WIKI
+            fi
+            for ITEM in ${RESULT[@]}; do
+                # Line has format SOMETHING|Title with spaces
+                LINK=${ITEM/|*/}
+                TITLE=${ITEM/*|/}
+                echo "    LINK=$LINK"
+                echo "    TITLE=$TITLE"
+                # Fix title syntax
+                TITLE=${TITLE//&amp;/&#38;}
+                TITLE=${TITLE//&lt;/&#60;}
+                TITLE=${TITLE//&gt;/&#62;}
+                # Passing to grep, so escape regex special char
+                TITLE=${TITLE//\*/\\*}
+                # TITLE=${TITLE//[/\\[}
+                # TITLE=${TITLE//]/\\]}
+                # Find the title in all other files, should match just one page
+                PAGE1=$(grep -l "<title>$TITLE</title>" ../../msdn-js/*.html)
+                PAGE2=$(grep -l "<meta name=\"Microsoft.Help.Id\" content=\"$LINK\" />" ../../msdn-js/*.html)
+                PAGE1=${PAGE1##../../msdn-js/}
+                PAGE2=${PAGE2##../../msdn-js/}
+                if [ ! "$PAGE1" = "$PAGE2" ]; then
+                    echo "    PAGES do not match"
+                    echo "        $PAGE1"
+                    echo "        $PAGE2"
+                    continue
                 fi
-            )
+                # See if we match something in the MAP-ORIGINAL.txt
+                TARGET=$(grep "^$PAGE1 " MAP-ORIGINAL.txt | sed 's/^.*  *//')
+                if [ -f "$TARGET" ]; then
+                    echo "    TARGET is $TARGET"
+                else
+                    echo "    Could not find TARGET $TARGET"
+                fi
+                # Replace encoded filename with actual page name
+                TARGET=${TARGET//.wiki/}
+                TARGET=${TARGET//./\/}
+                TARGET=${TARGET//_/ }
+                # Replace long title with succinct title
+                TITLE=${TITLE// (*/}
+                # Write new "see also" link
+                echo "    [[$TARGET|$TITLE]]" GTGT $WIKI
+            done
+        fi
+        unset IFS
     done
