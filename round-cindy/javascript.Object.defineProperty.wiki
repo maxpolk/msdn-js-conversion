@@ -180,3 +180,7 @@ The following example demonstrates how to customize built-in DOM properties by u
               
 
               
+[[javascript/Object/defineProperties|Object.defineProperties Function]]
+[[javascript/Object/create|Object.create Function]]
+[[javascript/Object/getOwnPropertyDescriptor|Object.getOwnPropertyDescriptor Function]]
+[[javascript/Object/getOwnPropertyNames|Object.getOwnPropertyNames Function]]

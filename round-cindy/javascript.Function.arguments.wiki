@@ -39,3 +39,5 @@ The following example illustrates the use of the '''arguments''' property:
               
 
               
+[[javascript/arguments|arguments Object]]
+[[javascript/statements/function|function Statement]]

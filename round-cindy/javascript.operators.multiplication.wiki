@@ -13,3 +13,4 @@ Multiplies the value of two expressions.
               
 
               
+[[javascript/operators/multiplication assignment|Multiplication Assignment Operator (\*=)]]

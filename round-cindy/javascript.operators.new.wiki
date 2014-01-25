@@ -20,3 +20,4 @@ These are examples of valid uses of the '''new''' operator.
 ==See Also==
 
               
+[[javascript/statements/function|function Statement]]

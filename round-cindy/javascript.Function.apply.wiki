@@ -47,3 +47,4 @@ The following code shows how to use the apply method.
 ==See Also==
 
               
+[[javascript/Function|Function Object]]

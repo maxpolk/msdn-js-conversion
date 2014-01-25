@@ -28,3 +28,8 @@ In Internet Explorer 4.0 through Internet Explorer 8 standards mode, the formula
               
 
               
+[[javascript/Date/getFullYear|getFullYear Method (Date)]]
+[[javascript/Date/getUTCFullYear|getUTCFullYear Method (Date)]]
+[[javascript/Date/setFullYear|setFullYear Method (Date)]]
+[[javascript/Date/setUTCFullYear|setUTCFullYear Method (Date)]]
+[[javascript/Date/setYear|setYear Method (Date)]]

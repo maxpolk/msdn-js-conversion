@@ -54,3 +54,7 @@ The following example tests for a data type of undefined for declared and undecl
               
 
               
+[[javascript/Array/isArray|Array.isArray Function]]
+[[javascript/Object/getPrototypeOf|Object.getPrototypeOf Function]]
+[[javascript/undefined|undefined Constant]]
+[[javascript/operators/comparison|Comparison Operators]]

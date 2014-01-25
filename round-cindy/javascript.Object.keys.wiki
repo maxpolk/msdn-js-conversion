@@ -78,3 +78,4 @@ The following example displays the names of all enumerable properties that start
 ==See Also==
 
               
+[[javascript/Object/getOwnPropertyNames|Object.getOwnPropertyNames Function]]

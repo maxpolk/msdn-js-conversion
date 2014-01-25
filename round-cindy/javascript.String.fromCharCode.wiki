@@ -18,3 +18,4 @@ The following example shows how to use this method:
 ==See Also==
 
               
+[[javascript/String/charCodeAt|charCodeAt Method (String)]]

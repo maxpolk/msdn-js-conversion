@@ -10,3 +10,4 @@ The '''isFinite''' function returns true if number is any value other than '''Na
 ==See Also==
 
               
+[[javascript/isNaN|isNaN Function]]

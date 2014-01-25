@@ -28,3 +28,6 @@ The following example shows how to use the '''getUTCFullYear''' method.
               
 
               
+[[javascript/Date/getFullYear|getFullYear Method (Date)]]
+[[javascript/Date/setFullYear|setFullYear Method (Date)]]
+[[javascript/Date/setUTCFullYear|setUTCFullYear Method (Date)]]

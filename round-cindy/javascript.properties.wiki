@@ -122,3 +122,7 @@ The following table lists JavaScript properties.
               
 
               
+[[javascript/objects|JavaScript Objects]]
+[[javascript/constants|JavaScript Constants]]
+[[javascript/methods|JavaScript Methods]]
+[[javascript/functions|JavaScript Functions]]

@@ -45,3 +45,6 @@ The following example illustrates the use of the '''arguments''' object.
               
 
               
+[[javascript/arguments/0 n Properties|0...n Properties (arguments)]]
+[[javascript/arguments/callee|callee Property (arguments)]]
+[[javascript/arguments/length|length Property (arguments)]]

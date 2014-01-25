@@ -38,3 +38,4 @@ In the first example, the slice method returns the entire string. In the second 
 ==See Also==
 
               
+[[javascript/Array/slice|slice Method (Array)]]

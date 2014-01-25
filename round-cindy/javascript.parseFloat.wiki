@@ -18,3 +18,6 @@ You can test for '''NaN''' using the '''isNaN''' function.
               
 
               
+[[javascript/isNaN|isNaN Function]]
+[[javascript/parseInt|parseInt Function]]
+[[javascript/String|String Object]]

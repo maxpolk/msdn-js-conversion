@@ -14,3 +14,5 @@ The return value is an integer value equal to the smallest integer greater than 
               
 
               
+[[javascript/Math/floor|Math.floor Function]]
+[[javascript/Math|Math Object]]

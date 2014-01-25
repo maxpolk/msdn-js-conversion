@@ -34,3 +34,4 @@ The following code shows how to use '''localeCompare'''.
 ==See Also==
 
               
+[[javascript/Object/toLocaleString|toLocaleString Method (Object)]]

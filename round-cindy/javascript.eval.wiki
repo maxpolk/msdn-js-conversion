@@ -28,3 +28,4 @@ The following code initializes the variable <code>myDate</code> to a test date.
 ==See Also==
 
               
+[[javascript/String|String Object]]

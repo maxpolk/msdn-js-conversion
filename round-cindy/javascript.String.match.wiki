@@ -58,3 +58,9 @@ The following example illustrates the use of the match method.
               
 
               
+[[javascript/regular expression/exec|exec Method (Regular Expression)]]
+[[javascript/RegExp|RegExp Object]]
+[[javascript/regular expression|Regular Expression Object]]
+[[javascript/String/replace|replace Method (String)]]
+[[javascript/String/search|search Method (String)]]
+[[javascript/regular expression/test|test Method (Regular Expression)]]

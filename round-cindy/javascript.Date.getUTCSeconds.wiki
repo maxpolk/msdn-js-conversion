@@ -28,3 +28,6 @@ The following example shows how to use the '''getUTCSeconds''' method.
               
 
               
+[[javascript/Date/getSeconds|getSeconds Method (Date)]]
+[[javascript/Date/setSeconds|setSeconds Method (Date)]]
+[[javascript/Date/setUTCSeconds|setUTCSeconds Method (Date)]]

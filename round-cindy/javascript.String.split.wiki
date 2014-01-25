@@ -40,3 +40,6 @@ The following example illustrates the use of the '''split''' method.
               
 
               
+[[javascript/String/concat|concat Method (String)]]
+[[javascript/RegExp|RegExp Object]]
+[[javascript/regular expression|Regular Expression Object]]

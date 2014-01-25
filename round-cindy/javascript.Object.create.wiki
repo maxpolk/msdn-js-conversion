@@ -99,3 +99,5 @@ The following example creates an object that has the same internal prototype as 
               
 
               
+[[javascript/Object/getPrototypeOf|Object.getPrototypeOf Function]]
+[[javascript/Object/isPrototypeOf|isPrototypeOf Method (Object)]]

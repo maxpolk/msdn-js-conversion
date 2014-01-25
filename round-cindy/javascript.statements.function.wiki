@@ -49,3 +49,4 @@ A function can be assigned to a variable. This is illustrated in the following e
 ==See Also==
 
               
+[[javascript/operators/new|new Operator]]

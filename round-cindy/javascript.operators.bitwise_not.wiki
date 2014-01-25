@@ -45,3 +45,4 @@ The resulting value is -6, as shown in the following table.
               
 
               
+[[javascript/operators/logical not|Logical NOT Operator (!)]]

@@ -35,3 +35,6 @@ The following example illustrates the use of the '''length''' property:
               
 
               
+[[javascript/Function/arguments|arguments Property (Function)]]
+[[javascript/Array/length|length Property (Array)]]
+[[javascript/String/length|length Property (String)]]

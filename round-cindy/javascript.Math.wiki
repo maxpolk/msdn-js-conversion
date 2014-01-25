@@ -110,3 +110,5 @@ The following table lists the functions of the '''Math''' object.
               
 
               
+[[javascript/objects|JavaScript Objects]]
+[[javascript/Number|Number Object]]

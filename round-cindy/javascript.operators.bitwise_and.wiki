@@ -52,3 +52,4 @@ The following examples show how to use the &amp; operator.
               
 
               
+[[javascript/operators/bitwise and assignment|Bitwise AND Assignment Operator (&#38;=)]]

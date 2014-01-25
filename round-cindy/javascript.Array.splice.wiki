@@ -23,3 +23,4 @@ The following code shows how to use the '''splice''' method.
 ==See Also==
 
               
+[[javascript/Array/slice|slice Method (Array)]]

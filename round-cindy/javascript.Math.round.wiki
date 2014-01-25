@@ -14,3 +14,4 @@ For example, <code>Math.round(8.5)</code> returns 9, but <code>Math.round(-8.5)<
 ==See Also==
 
               
+[[javascript/Math/random|Math.random Function]]

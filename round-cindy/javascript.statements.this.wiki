@@ -30,3 +30,4 @@ In the following code (for Internet Explorer 9 and later), the event handler pri
 ==See Also==
 
               
+[[javascript/operators/new|new Operator]]

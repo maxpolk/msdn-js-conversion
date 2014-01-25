@@ -46,3 +46,7 @@ The following example shows how to set and then get the stack.
               
 
               
+[[javascript/Error/description|description Property (Error)]]
+[[javascript/Error/message|message Property (Error)]]
+[[javascript/Error/name|name Property (Error)]]
+[[javascript/Error/stackTraceLimit|stackTraceLimit Property (Error)]]

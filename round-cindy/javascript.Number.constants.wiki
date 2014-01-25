@@ -36,3 +36,8 @@ You do not have to create '''Number''' object to access these constants.
               
 
               
+[[javascript/Math/constants|Math Constants]]
+[[javascript/constants|JavaScript Constants]]
+[[javascript/Infinity|Infinity Constant]]
+[[javascript/NaN|NaN Constant]]
+[[javascript/isNaN|isNaN Function]]

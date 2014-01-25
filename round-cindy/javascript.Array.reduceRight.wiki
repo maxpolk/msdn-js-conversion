@@ -187,3 +187,4 @@ The '''reduceRight''' method can be applied to a string. The following example s
 ==See Also==
 
               
+[[javascript/Array/reduce|reduce Method (Array)]]

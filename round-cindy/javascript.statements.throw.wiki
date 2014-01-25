@@ -20,3 +20,5 @@ The following example throws an error inside a try block, and it is caught in th
               
 
               
+[[javascript/statements/try catch finally|try...catch...finally Statement]]
+[[javascript/Error|Error Object]]

@@ -119,3 +119,6 @@ The following example shows how to use the thisArg parameter, which specifies an
               
 
               
+[[javascript/Array/every|every Method (Array)]]
+[[javascript/Array/filter|filter Method (Array)]]
+[[javascript/Array/map|map Method (Array)]]

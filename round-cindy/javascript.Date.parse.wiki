@@ -33,3 +33,4 @@ The following example returns the difference between the date provided and 1/1/1
 ==See Also==
 
               
+[[javascript/Date/getDate|getDate Method (Date)]]

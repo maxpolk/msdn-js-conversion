@@ -21,3 +21,5 @@ In the following example, the time is set to 2000 milliseconds after midnight Ja
               
 
               
+[[javascript/Date/toDateString|toDateString Method (Date)]]
+[[javascript/Date/toLocaleTimeString|toLocaleTimeString Method (Date)]]

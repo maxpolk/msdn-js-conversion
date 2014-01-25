@@ -64,3 +64,9 @@ In the following code, the continue statement refers to the for loop that is pre
               
 
               
+[[javascript/statements/break|break Statement]]
+[[javascript/statements/do while|do...while Statement]]
+[[javascript/statements/for|for Statement]]
+[[javascript/statements/for in|for...in Statement]]
+[[javascript/statements/Labeled|Labeled Statement]]
+[[javascript/statements/while|while Statement]]

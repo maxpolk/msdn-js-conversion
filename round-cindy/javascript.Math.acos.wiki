@@ -40,3 +40,9 @@ The following code shows how to use the '''acos''' function.
               
 
               
+[[javascript/Math/asin|Math.asin Function]]
+[[javascript/Math/atan|Math.atan Function]]
+[[javascript/Math/cos|Math.cos Function]]
+[[javascript/Math/sin|Math.sin Function]]
+[[javascript/Math/tan|Math.tan Function]]
+[[javascript/Math|Math Object]]

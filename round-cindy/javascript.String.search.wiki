@@ -45,3 +45,8 @@ The following example illustrates the use of the '''search''' method.
               
 
               
+[[javascript/regular expression/exec|exec Method (Regular Expression)]]
+[[javascript/String/match|match Method (String)]]
+[[javascript/regular expression|Regular Expression Object]]
+[[javascript/String/replace|replace Method (String)]]
+[[javascript/regular expression/test|test Method (Regular Expression)]]

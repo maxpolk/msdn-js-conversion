@@ -59,3 +59,5 @@ The following example uses the '''Object.getPrototypeOf''' function to validate 
               
 
               
+[[javascript/Object/prototype|prototype Property (Object)]]
+[[javascript/Object/isPrototypeOf|isPrototypeOf Method (Object)]]

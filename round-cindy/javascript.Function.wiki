@@ -49,3 +49,6 @@ In either case, you call the function with a line of code similar to the followi
               
 
               
+[[javascript/statements/function|function Statement]]
+[[javascript/operators/new|new Operator]]
+[[javascript/statements/var|var Statement]]

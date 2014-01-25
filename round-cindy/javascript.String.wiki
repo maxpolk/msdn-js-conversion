@@ -201,3 +201,4 @@ The following table lists the methods of the '''String''' object.
 ==See Also==
 
               
+[[javascript/operators/new|new Operator]]

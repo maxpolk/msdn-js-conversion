@@ -36,3 +36,4 @@ The following example shows how to use the '''undefined''' constant.
 ==See Also==
 
               
+[[javascript/operators/typeof|typeof Operator]]

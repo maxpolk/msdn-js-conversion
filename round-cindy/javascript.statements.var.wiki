@@ -32,3 +32,6 @@ The following examples illustrate the use of the var statement.
               
 
               
+[[javascript/statements/function|function Statement]]
+[[javascript/operators/new|new Operator]]
+[[javascript/Array|Array Object]]

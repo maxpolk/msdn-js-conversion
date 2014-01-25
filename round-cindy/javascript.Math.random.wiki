@@ -8,3 +8,4 @@ The pseudorandom number generated is from 0 (inclusive) to 1 (exclusive), that i
 ==See Also==
 
               
+[[javascript/Math/pow|Math.pow Function]]

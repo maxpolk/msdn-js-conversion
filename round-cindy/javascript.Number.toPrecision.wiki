@@ -32,3 +32,5 @@ The following code shows how to use '''toPrecision'''.
               
 
               
+[[javascript/Number/toFixed|toFixed Method (Number)]]
+[[javascript/Number/toExponential|toExponential Method (Number)]]

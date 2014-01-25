@@ -34,3 +34,6 @@ The following example illustrates the use of the '''setUTCMinutes''' method:
               
 
               
+[[javascript/Date/getMinutes|getMinutes Method (Date)]]
+[[javascript/Date/getUTCMinutes|getUTCMinutes Method (Date)]]
+[[javascript/Date/setMinutes|setMinutes Method (Date)]]

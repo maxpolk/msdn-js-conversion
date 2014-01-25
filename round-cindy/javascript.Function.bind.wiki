@@ -88,3 +88,5 @@ The following code shows how to use the arg1[,arg2[,argN]]] arguments. The bound
               
 
               
+[[javascript/Function|Function Object]]
+[[javascript/Array/filter|filter Method (Array)]]

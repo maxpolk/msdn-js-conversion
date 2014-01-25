@@ -25,3 +25,4 @@ Any time either of the expressions has a 1 in a digit, the result has a 1 in tha
               
 
               
+[[javascript/operators/bitwise or|Bitwise OR Operator (|)]]

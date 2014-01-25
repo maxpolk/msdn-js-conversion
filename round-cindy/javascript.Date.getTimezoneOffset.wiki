@@ -26,3 +26,4 @@ The following example shows how to use the '''getTimezoneOffset''' method.
 ==See Also==
 
               
+[[javascript/Date/getTime|getTime Method (Date)]]

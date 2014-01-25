@@ -67,3 +67,5 @@ Following is the resulting output.
               
 
               
+[[javascript/regular expression/global|global Property (Regular Expression)]]
+[[javascript/regular expression/multiline|multiline Property (Regular Expression)]]

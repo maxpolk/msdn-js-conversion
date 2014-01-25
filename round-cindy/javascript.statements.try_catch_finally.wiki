@@ -79,3 +79,4 @@ The following example shows how to re-throw errors, as well as the execution of 
 ==See Also==
 
               
+[[javascript/statements/throw|throw Statement]]

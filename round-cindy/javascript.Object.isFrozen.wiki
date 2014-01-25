@@ -118,3 +118,11 @@ The following example illustrates the use of the '''Object.isFrozen''' function.
               
 
               
+[[javascript/Object/preventExtensions|Object.preventExtensions Function]]
+[[javascript/Object/seal|Object.seal Function]]
+[[javascript/Object/freeze|Object.freeze Function]]
+[[javascript/Object/isExtensible|Object.isExtensible Function]]
+[[javascript/Object/isSealed|Object.isSealed Function]]
+[[javascript/Object/defineProperty|Object.defineProperty Function]]
+[[javascript/Object/getOwnPropertyDescriptor|Object.getOwnPropertyDescriptor Function]]
+[[javascript/Object/getOwnPropertyNames|Object.getOwnPropertyNames Function]]

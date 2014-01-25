@@ -20,3 +20,4 @@ The '''propertyIsEnumerable''' method does not consider objects in the prototype
 ==See Also==
 
               
+[[javascript/Object/prototype|prototype Property (Object)]]

@@ -34,3 +34,6 @@ The following example illustrates the use of the '''getUTCMilliseconds''' method
               
 
               
+[[javascript/Date/getMilliseconds|getMilliseconds Method (Date)]]
+[[javascript/Date/setMilliseconds|setMilliseconds Method (Date)]]
+[[javascript/Date/setUTCMilliseconds|setUTCMilliseconds Method (Date)]]

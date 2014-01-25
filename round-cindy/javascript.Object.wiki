@@ -104,3 +104,4 @@ The following table lists methods of the '''Object Object'''.
 ==See Also==
 
               
+[[javascript/objects|JavaScript Objects]]

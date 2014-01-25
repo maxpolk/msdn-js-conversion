@@ -63,3 +63,6 @@ The output of this code is as follows.
               
 
               
+[[javascript/Error/description|description Property (Error)]]
+[[javascript/Error/message|message Property (Error)]]
+[[javascript/Error/number|number Property (Error)]]

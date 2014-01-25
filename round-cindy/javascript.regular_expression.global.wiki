@@ -60,3 +60,5 @@ Following is the resulting output.
               
 
               
+[[javascript/regular expression/ignoreCase|ignoreCase Property (Regular Expression)]]
+[[javascript/regular expression/multiline|multiline Property (Regular Expression)]]

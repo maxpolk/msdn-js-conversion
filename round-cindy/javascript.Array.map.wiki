@@ -157,3 +157,7 @@ The '''map''' method can be applied to a string. The following example illustrat
               
 
               
+[[javascript/methods|JavaScript Methods]]
+[[javascript/Array|Array Object]]
+[[javascript/Array/filter|filter Method (Array)]]
+[[javascript/Array/forEach|forEach Method (Array)]]

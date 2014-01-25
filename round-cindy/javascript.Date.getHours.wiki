@@ -34,3 +34,6 @@ The following example shows how to use the '''getHours''' method.
               
 
               
+[[javascript/Date/getUTCHours|getUTCHours Method (Date)]]
+[[javascript/Date/setHours|setHours Method (Date)]]
+[[javascript/Date/setUTCHours|setUTCHours Method (Date)]]

@@ -32,3 +32,4 @@ Any time both of the expressions have a 1 in a digit, the result has a 1 in that
               
 
               
+[[javascript/operators/bitwise and|Bitwise AND Operator (&#38;)]]

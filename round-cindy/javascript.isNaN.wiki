@@ -41,3 +41,7 @@ Alternatively, a variable that contains '''NaN''' or another value could be comp
               
 
               
+[[javascript/isFinite|isFinite Function]]
+[[javascript/NaN|NaN Constant]]
+[[javascript/parseFloat|parseFloat Function]]
+[[javascript/parseInt|parseInt Function]]

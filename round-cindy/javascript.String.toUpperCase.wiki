@@ -20,3 +20,5 @@ The following example demonstrates the effects of the '''toUpperCase''' method:
               
 
               
+[[javascript/String/toLocaleUpperCase|toLocaleUpperCase Method (String)]]
+[[javascript/String/toLowerCase|toLowerCase Method]]

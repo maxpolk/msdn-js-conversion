@@ -81,3 +81,5 @@ This example uses JSON.parse to deserialize an ISO-formatted date string. The <c
               
 
               
+[[javascript/JSON/stringify|JSON.stringify Function]]
+[[javascript/Date/toJSON|toJSON Method (Date)]]

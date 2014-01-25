@@ -28,3 +28,5 @@ In the previous example, <code>!this.JSON</code> evaluates to false in Internet 
               
 
               
+[[javascript/Date/toJSON|toJSON Method (Date)]]
+[[javascript/objects|JavaScript Objects]]

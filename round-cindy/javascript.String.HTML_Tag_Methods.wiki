@@ -143,3 +143,4 @@ The following examples show how to use the HTML tag methods.
 ==See Also==
 
               
+[[javascript/String|String Object]]

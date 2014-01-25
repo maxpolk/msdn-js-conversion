@@ -20,3 +20,4 @@ The initial value of the '''callee''' property is the Function object being exec
 ==See Also==
 
               
+[[javascript/Function/caller|caller Property (Function)]]

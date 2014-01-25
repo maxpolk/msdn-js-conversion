@@ -189,3 +189,6 @@ The '''filter''' method can be applied to a string instead of an array. The foll
               
 
               
+[[javascript/Array|Array Object]]
+[[javascript/Array/map|map Method (Array)]]
+[[javascript/Array/forEach|forEach Method (Array)]]

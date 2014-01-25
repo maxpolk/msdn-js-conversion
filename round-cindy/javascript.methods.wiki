@@ -454,3 +454,8 @@ The following table lists JavaScript methods.
               
 
               
+[[javascript/objects|JavaScript Objects]]
+[[javascript/functions|JavaScript Functions]]
+[[javascript/properties|JavaScript Properties]]
+[[javascript/constants|JavaScript Constants]]
+[[javascript/javascript reference|JavaScript Reference]]

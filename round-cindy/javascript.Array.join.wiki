@@ -23,3 +23,4 @@ The following example illustrates the use of the '''join''' method.
 ==See Also==
 
               
+[[javascript/String|String Object]]

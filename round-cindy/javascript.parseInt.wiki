@@ -22,3 +22,7 @@ You can test for '''NaN''' using the '''isNaN''' function.
               
 
               
+[[javascript/isNaN|isNaN Function]]
+[[javascript/parseFloat|parseFloat Function]]
+[[javascript/String|String Object]]
+[[javascript/Object/valueOf|valueOf Method (Object)]]

@@ -31,3 +31,7 @@ The following example shows how to use the '''setDate''' method.
               
 
               
+[[javascript/Date/getDate|getDate Method (Date)]]
+[[javascript/Date/setFullYear|setFullYear Method (Date)]]
+[[javascript/Date/setMonth|setMonth Method (Date)]]
+[[javascript/Date/setUTCDate|setUTCDate Method (Date)]]

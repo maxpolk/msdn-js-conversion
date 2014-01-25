@@ -32,3 +32,4 @@ The method and property lists for each intrinsic object in this language referen
 ==See Also==
 
               
+[[javascript/Object/constructor|constructor Property (Object)]]

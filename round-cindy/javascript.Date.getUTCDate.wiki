@@ -28,3 +28,6 @@ The following example shows how to use the '''getUTCDate''' method.
               
 
               
+[[javascript/Date/getDate|getDate Method (Date)]]
+[[javascript/Date/setDate|setDate Method (Date)]]
+[[javascript/Date/setUTCDate|setUTCDate Method (Date)]]

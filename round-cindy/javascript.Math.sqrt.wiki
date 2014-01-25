@@ -10,3 +10,4 @@ If number is negative, the return value is '''NaN'''.
 ==See Also==
 
               
+[[javascript/Math/constants|Math Constants]]

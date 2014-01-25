@@ -57,3 +57,5 @@ The following example illustrates how to use the '''Math.PI''' constant.
               
 
               
+[[javascript/Number/constants|Number Constants]]
+[[javascript/constants|JavaScript Constants]]

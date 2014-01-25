@@ -18,3 +18,5 @@ The following example demonstrates the effects of the '''toLowerCase''' method:
               
 
               
+[[javascript/String/toLocaleLowerCase|toLocaleLowerCase Method (String)]]
+[[javascript/String/toUpperCase|toUpperCase Method (String)]]

@@ -24,3 +24,10 @@ The return value is the arctangent of the number argument, in radians.
               
 
               
+[[javascript/Math/acos|Math.acos Function]]
+[[javascript/Math/asin|Math.asin Function]]
+[[javascript/Math/atan2|Math.atan2 Function]]
+[[javascript/Math/cos|Math.cos Function]]
+[[javascript/Math/sin|Math.sin Function]]
+[[javascript/Math/tan|Math.tan Function]]
+[[javascript/Math|Math Object]]

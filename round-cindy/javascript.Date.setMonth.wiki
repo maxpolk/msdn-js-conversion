@@ -31,3 +31,6 @@ The following example illustrates the use of the '''setMonth''' method.
               
 
               
+[[javascript/Date/getMonth|getMonth Method (Date)]]
+[[javascript/Date/getUTCMonth|getUTCMonth Method (Date)]]
+[[javascript/Date/setUTCMonth|setUTCMonth Method (Date)]]

@@ -31,3 +31,5 @@ If fractionDigits is not supplied, the '''toExponential''' method returns as man
               
 
               
+[[javascript/Number/toFixed|toFixed Method (Number)]]
+[[javascript/Number/toPrecision|toPrecision Method (Number)]]

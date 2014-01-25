@@ -31,3 +31,5 @@ The following examples show how to use the slice method. In the first example, a
               
 
               
+[[javascript/String/slice|slice Method (String)]]
+[[javascript/String|String Object]]

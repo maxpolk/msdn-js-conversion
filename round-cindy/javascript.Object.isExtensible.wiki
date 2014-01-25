@@ -91,3 +91,8 @@ The following example illustrates the use of the '''Object.isExtensible''' funct
               
 
               
+[[javascript/Object/preventExtensions|Object.preventExtensions Function]]
+[[javascript/Object/seal|Object.seal Function]]
+[[javascript/Object/freeze|Object.freeze Function]]
+[[javascript/Object/isSealed|Object.isSealed Function]]
+[[javascript/Object/isFrozen|Object.isFrozen Function]]

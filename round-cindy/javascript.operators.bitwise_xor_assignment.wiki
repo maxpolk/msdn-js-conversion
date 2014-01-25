@@ -25,3 +25,4 @@ When one, and only one, of the expressions has a 1 in a digit, the result has a 
               
 
               
+[[javascript/operators/bitwise xor|Bitwise XOR Operator (^)]]

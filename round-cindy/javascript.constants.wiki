@@ -86,3 +86,7 @@ The following table lists predefined JavaScript constants that you can use in ex
               
 
               
+[[javascript/Global|Global Object]]
+[[javascript/Math|Math Object]]
+[[javascript/Number|Number Object]]
+[[javascript/javascript reference|JavaScript Reference]]

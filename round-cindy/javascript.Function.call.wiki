@@ -49,3 +49,5 @@ The following code shows how to use the '''call''' method.
               
 
               
+[[javascript/Function|Function Object]]
+[[javascript/Function/apply|apply Method (Function)]]

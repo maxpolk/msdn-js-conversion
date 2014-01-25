@@ -111,3 +111,5 @@ This example uses the toJSON method to convert string values to uppercase.
               
 
               
+[[javascript/JSON/parse|JSON.parse Function]]
+[[javascript/Date/toJSON|toJSON Method (Date)]]

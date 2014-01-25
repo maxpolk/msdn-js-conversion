@@ -30,3 +30,6 @@ The following example illustrates the use of the '''setUTCDate''' method.
               
 
               
+[[javascript/Date/getDate|getDate Method (Date)]]
+[[javascript/Date/getUTCDate|getUTCDate Method (Date)]]
+[[javascript/Date/setDate|setDate Method (Date)]]

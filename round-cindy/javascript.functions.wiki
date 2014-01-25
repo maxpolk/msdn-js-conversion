@@ -218,3 +218,8 @@ The following table lists JavaScript functions.
               
 
               
+[[javascript/objects|JavaScript Objects]]
+[[javascript/methods|JavaScript Methods]]
+[[javascript/properties|JavaScript Properties]]
+[[javascript/constants|JavaScript Constants]]
+[[javascript/javascript reference|JavaScript Reference]]

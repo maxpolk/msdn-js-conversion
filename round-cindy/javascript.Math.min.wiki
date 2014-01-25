@@ -19,3 +19,4 @@ The following code shows how to get the smaller of two expressions.
 ==See Also==
 
               
+[[javascript/Math/max|Math.max Function]]

@@ -18,3 +18,8 @@ The return value is the sine of the numeric argument.
               
 
               
+[[javascript/Math/acos|Math.acos Function]]
+[[javascript/Math/asin|Math.asin Function]]
+[[javascript/Math/atan|Math.atan Function]]
+[[javascript/Math/cos|Math.cos Function]]
+[[javascript/Math/tan|Math.tan Function]]

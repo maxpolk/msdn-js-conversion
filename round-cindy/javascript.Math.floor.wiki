@@ -12,3 +12,4 @@ The return value is an integer value equal to the greatest integer less than or 
 ==See Also==
 
               
+[[javascript/Math/ceil|Math.ceil Function]]

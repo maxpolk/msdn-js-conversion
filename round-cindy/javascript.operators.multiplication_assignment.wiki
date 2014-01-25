@@ -17,3 +17,4 @@ Using the '''*=''' operator is exactly the same as specifying:
               
 
               
+[[javascript/operators/multiplication|Multiplication Operator (\*)]]

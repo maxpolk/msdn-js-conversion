@@ -23,3 +23,4 @@ Any time either of the expressions has a 1 in a digit, the result will have a 1 
               
 
               
+[[javascript/operators/bitwise or assignment|Bitwise OR Assignment Operator (|=)]]

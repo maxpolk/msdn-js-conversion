@@ -20,3 +20,8 @@ The return value is the cosine of the numeric argument of radians.
               
 
               
+[[javascript/Math/acos|Math.acos Function]]
+[[javascript/Math/asin|Math.asin Function]]
+[[javascript/Math/atan|Math.atan Function]]
+[[javascript/Math/sin|Math.sin Function]]
+[[javascript/Math/tan|Math.tan Function]]

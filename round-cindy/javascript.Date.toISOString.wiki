@@ -32,3 +32,4 @@ The following example illustrates the use of the '''toISOString''' method.
               
 
               
+[[javascript/Date|Date Object]]

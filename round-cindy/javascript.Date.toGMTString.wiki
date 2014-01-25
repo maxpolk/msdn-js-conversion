@@ -12,3 +12,4 @@ The '''toGMTString''' method returns a String object that contains the date form
 ==See Also==
 
               
+[[javascript/Date/toUTCString|toUTCString Method (Date)]]

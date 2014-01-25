@@ -25,3 +25,4 @@ The following example shows how to use the '''getUTCDay''' method.
 ==See Also==
 
               
+[[javascript/Date/getDay|getDay Method (Date)]]

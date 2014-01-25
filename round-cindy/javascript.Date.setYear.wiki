@@ -24,3 +24,8 @@ To set the year of a Date object to 1997, call '''setYear(97)'''. To set the yea
               
 
               
+[[javascript/Date/getFullYear|getFullYear Method (Date)]]
+[[javascript/Date/getUTCFullYear|getUTCFullYear Method (Date)]]
+[[javascript/Date/getYear|getYear Method (Date)]]
+[[javascript/Date/setFullYear|setFullYear Method (Date)]]
+[[javascript/Date/setUTCFullYear|setUTCFullYear Method (Date)]]

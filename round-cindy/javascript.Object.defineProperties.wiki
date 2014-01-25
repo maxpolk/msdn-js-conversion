@@ -117,3 +117,8 @@ To modify property attributes for the object, add the following code. The '''Obj
               
 
               
+[[javascript/Object/getOwnPropertyDescriptor|Object.getOwnPropertyDescriptor Function]]
+[[javascript/Object/getOwnPropertyNames|Object.getOwnPropertyNames Function]]
+[[javascript/Object/defineProperty|Object.defineProperty Function]]
+[[javascript/Object/create|Object.create Function]]
+[[javascript/Object|Object Object]]

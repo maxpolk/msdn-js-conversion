@@ -50,3 +50,5 @@ All of the expressions of the for statement are optional. In the following examp
               
 
               
+[[javascript/statements/for in|for...in Statement]]
+[[javascript/statements/while|while Statement]]

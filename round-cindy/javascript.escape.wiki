@@ -22,3 +22,7 @@ Characters with a value greater than 255 are stored using the '''%u''' xxxx form
               
 
               
+[[javascript/encodeURI|encodeURI Function]]
+[[javascript/encodeURIComponent|encodeURIComponent Function]]
+[[javascript/String|String Object]]
+[[javascript/unescape|unescape Function]]

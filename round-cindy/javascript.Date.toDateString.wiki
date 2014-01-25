@@ -12,3 +12,5 @@ The '''toDateString''' method returns a string value containing the date, in the
               
 
               
+[[javascript/Date/toTimeString|toTimeString Method (Date)]]
+[[javascript/Date/toLocaleDateString|toLocaleDateString Method (Date)]]

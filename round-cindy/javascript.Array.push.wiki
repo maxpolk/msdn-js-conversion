@@ -35,3 +35,5 @@ The following example illustrates the use of the '''push''' method.
               
 
               
+[[javascript/Array/concat|concat Method (Array)]]
+[[javascript/Array/pop|pop Method (Array)]]

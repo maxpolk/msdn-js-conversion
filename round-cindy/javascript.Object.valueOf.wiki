@@ -38,3 +38,4 @@ The '''Math''' and Error objects do not have a '''valueOf''' method.
 ==See Also==
 
               
+[[javascript/Object/toString|toString Method (Object)]]

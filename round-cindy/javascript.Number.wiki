@@ -71,3 +71,6 @@ The following table lists the methods of the '''Number''' object.
               
 
               
+[[javascript/objects|JavaScript Objects]]
+[[javascript/Math|Math Object]]
+[[javascript/operators/new|new Operator]]

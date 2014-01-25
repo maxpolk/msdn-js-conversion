@@ -27,3 +27,4 @@ The following code shows how to use this function.
 ==See Also==
 
               
+[[javascript/Math/sqrt|Math.sqrt Function]]

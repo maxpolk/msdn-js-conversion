@@ -65,3 +65,5 @@ The following examples illustrate the use of the '''lastIndexOf''' method.
               
 
               
+[[javascript/Array/indexOf|indexOf Method (Array)]]
+[[javascript/Array|Array Object]]

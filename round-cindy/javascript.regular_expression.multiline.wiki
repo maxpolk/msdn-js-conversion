@@ -51,3 +51,5 @@ The following example illustrates the behavior of the '''multiline''' property. 
               
 
               
+[[javascript/regular expression/global|global Property (Regular Expression)]]
+[[javascript/regular expression/ignoreCase|ignoreCase Property (Regular Expression)]]

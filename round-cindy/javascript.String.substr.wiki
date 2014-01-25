@@ -31,3 +31,4 @@ The following example illustrates the use of the '''substr''' method.
 ==See Also==
 
               
+[[javascript/String/substring|substring Method (String)]]

@@ -20,3 +20,4 @@ The following example illustrates the use of the '''charAt''' method:
 ==See Also==
 
               
+[[javascript/String|String Object]]

@@ -34,3 +34,5 @@ In the following code, the '''continue''' statement refers to the '''for''' loop
               
 
               
+[[javascript/statements/break|break Statement]]
+[[javascript/statements/continue|continue Statement]]

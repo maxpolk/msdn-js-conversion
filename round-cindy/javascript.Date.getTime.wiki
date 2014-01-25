@@ -35,3 +35,4 @@ The following example shows how to use the '''getTime''' method.
 ==See Also==
 
               
+[[javascript/Date/setTime|setTime Method (Date)]]

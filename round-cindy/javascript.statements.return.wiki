@@ -30,3 +30,4 @@ The following example illustrates the use of the return statement to return a fu
 ==See Also==
 
               
+[[javascript/statements/function|function Statement]]

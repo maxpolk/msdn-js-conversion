@@ -13,3 +13,4 @@ In the following example, a numeric expression equal to baseexponent returns 100
 ==See Also==
 
               
+[[javascript/Math|Math Object]]

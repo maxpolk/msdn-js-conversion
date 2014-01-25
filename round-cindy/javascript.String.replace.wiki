@@ -96,3 +96,8 @@ The following example, which works in JavaScript 5.5 and later, shows how to use
               
 
               
+[[javascript/regular expression/exec|exec Method (Regular Expression)]]
+[[javascript/String/match|match Method (String)]]
+[[javascript/RegExp|RegExp Object]]
+[[javascript/String/search|search Method (String)]]
+[[javascript/regular expression/test|test Method (Regular Expression)]]

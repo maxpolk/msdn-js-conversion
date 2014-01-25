@@ -64,3 +64,5 @@ The following examples illustrate the use of the '''indexOf''' method.
               
 
               
+[[javascript/methods|JavaScript Methods]]
+[[javascript/Array|Array Object]]

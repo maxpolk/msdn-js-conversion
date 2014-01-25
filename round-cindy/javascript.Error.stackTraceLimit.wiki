@@ -29,3 +29,7 @@ The following example shows how to set and then get the stack trace limit.
               
 
               
+[[javascript/Error/description|description Property (Error)]]
+[[javascript/Error/message|message Property (Error)]]
+[[javascript/Error/name|name Property (Error)]]
+[[javascript/Error/stack|stack Property (Error)]]

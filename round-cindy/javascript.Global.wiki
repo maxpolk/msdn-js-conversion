@@ -16,3 +16,4 @@ The '''Global''' object is never used directly, and cannot be created using the 
 ==See Also==
 
               
+[[javascript/Object|Object Object]]

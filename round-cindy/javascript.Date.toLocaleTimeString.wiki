@@ -12,3 +12,5 @@ The '''toLocaleTimeString''' method returns a string value that contains a time,
               
 
               
+[[javascript/Date/toTimeString|toTimeString Method (Date)]]
+[[javascript/Date/toLocaleDateString|toLocaleDateString Method (Date)]]

@@ -47,3 +47,4 @@ The following example illustrates the use of the '''Date.UTC''' function.
 ==See Also==
 
               
+[[javascript/Date/setTime|setTime Method (Date)]]

@@ -8,3 +8,4 @@ The '''Infinity''' constant is a member of the '''Global''' object, and is made 
 ==See Also==
 
               
+[[javascript/Number/constants|Number Constants]]

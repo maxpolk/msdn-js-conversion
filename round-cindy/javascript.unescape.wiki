@@ -20,3 +20,7 @@ Characters encoded in '''%u''' xxxx format (Unicode characters) are replaced wit
               
 
               
+[[javascript/decodeURI|decodeURI Function]]
+[[javascript/decodeURIComponent|decodeURIComponent Function]]
+[[javascript/escape|escape Function]]
+[[javascript/String|String Object]]

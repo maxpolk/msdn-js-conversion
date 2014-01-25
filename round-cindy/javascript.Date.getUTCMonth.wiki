@@ -28,3 +28,6 @@ The following example shows how to use the '''getUTCMonth''' method.
               
 
               
+[[javascript/Date/getMonth|getMonth Method (Date)]]
+[[javascript/Date/setMonth|setMonth Method (Date)]]
+[[javascript/Date/setUTCMonth|setUTCMonth Method (Date)]]

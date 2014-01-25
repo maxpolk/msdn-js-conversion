@@ -22,3 +22,4 @@ The following example illustrates the use of the unshift method.
 ==See Also==
 
               
+[[javascript/Array/shift|shift Method (Array)]]

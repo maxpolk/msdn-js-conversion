@@ -141,3 +141,6 @@ The following example illustrates the use of the thisArg argument, which specifi
               
 
               
+[[javascript/Array/some|some Method (Array)]]
+[[javascript/Array/filter|filter Method (Array)]]
+[[javascript/Array|Array Object]]

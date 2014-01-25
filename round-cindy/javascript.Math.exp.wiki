@@ -12,3 +12,4 @@ The return value is a number. The constant e is Euler's number, approximately eq
 ==See Also==
 
               
+[[javascript/Math/constants|Math Constants]]

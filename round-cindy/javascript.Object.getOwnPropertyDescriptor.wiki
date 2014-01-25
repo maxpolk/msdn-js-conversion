@@ -50,3 +50,4 @@ To list the property attributes, you can add the following code to this example.
 ==See Also==
 
               
+[[javascript/Object/defineProperty|Object.defineProperty Function]]

@@ -35,3 +35,4 @@ It is good practice to enclose statement1 and statement2 in braces ({}) for clar
 ==See Also==
 
               
+[[javascript/operators/conditional ternary|Conditional (Ternary) Operator (?:)]]

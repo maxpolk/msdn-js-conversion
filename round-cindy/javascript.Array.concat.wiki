@@ -33,3 +33,5 @@ The following example shows how to use the '''concat''' method when used with an
               
 
               
+[[javascript/String/concat|concat Method (String)]]
+[[javascript/Array/join|join Method (Array)]]

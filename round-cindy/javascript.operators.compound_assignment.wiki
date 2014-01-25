@@ -44,3 +44,4 @@ The following table lists JavaScript assignment operators.
 ==See Also==
 
               
+[[javascript/operators/assignment|Assignment Operator (=)]]

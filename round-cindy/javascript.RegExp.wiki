@@ -118,3 +118,5 @@ The '''RegExp''' object has no methods.
               
 
               
+[[javascript/regular expression|Regular Expression Object]]
+[[javascript/String|String Object]]

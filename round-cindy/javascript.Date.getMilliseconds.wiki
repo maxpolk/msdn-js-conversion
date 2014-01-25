@@ -33,3 +33,6 @@ The following example shows how to use the '''getMilliseconds''' method.
               
 
               
+[[javascript/Date/getUTCMilliseconds|getUTCMilliseconds Method (Date)]]
+[[javascript/Date/setMilliseconds|setMilliseconds Method (Date)]]
+[[javascript/Date/setUTCMilliseconds|setUTCMilliseconds Method (Date)]]

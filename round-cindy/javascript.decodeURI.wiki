@@ -34,3 +34,6 @@ The following code first encodes a URI component and then decodes it.
               
 
               
+[[javascript/decodeURIComponent|decodeURIComponent Function]]
+[[javascript/encodeURI|encodeURI Function]]
+[[javascript/Global|Global Object]]

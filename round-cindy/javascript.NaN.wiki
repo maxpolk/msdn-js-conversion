@@ -10,3 +10,5 @@ The '''NaN''' constant (not a number) is a member of the '''Global''' object, an
               
 
               
+[[javascript/isNaN|isNaN Function]]
+[[javascript/Number/constants|Number Constants]]

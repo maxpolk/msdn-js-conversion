@@ -12,3 +12,5 @@ The '''toLocaleUpperCase''' method converts the characters in a string, taking i
               
 
               
+[[javascript/String/toLocaleLowerCase|toLocaleLowerCase Method (String)]]
+[[javascript/String/toUpperCase|toUpperCase Method (String)]]

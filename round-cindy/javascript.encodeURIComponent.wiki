@@ -26,3 +26,5 @@ The following code first encodes a URI component and then decodes it.
               
 
               
+[[javascript/decodeURI|decodeURI Function]]
+[[javascript/decodeURIComponent|decodeURIComponent Function]]
