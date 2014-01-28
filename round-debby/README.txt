@@ -7,7 +7,7 @@ Run:
     EXTRACT.js > OUTPUT.txt
 
 Run:
-    REWRITE.pl > REFINED-OUTPUT.txt
+    REWRITE.pl | tr -d $'\r' > REFINED-OUTPUT.txt
 
 Run:
     UPDATE.sh

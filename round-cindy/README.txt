@@ -10,4 +10,6 @@ Run python section-rewrite.py
   ../modified-wpd ls javascript 100 | tee DELETE.pages
   ../modified-wpd batchdelete DELETE.pages "Delete to prepare for batch upload"
 
+Follow instructions in ../round-debby/README.txt
+
 Run upload.sh
