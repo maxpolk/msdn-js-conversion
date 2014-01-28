@@ -50,7 +50,7 @@ def addSyntaxFormats (rewrite, syntax):
     rewrite.write ("|Formats=")
     # Repeated lines
     for line in syntax:
-        rewrite.write ("{{JS_Object_Format\n")
+        rewrite.write ("{{JS_Syntax_Format\n")
         rewrite.write ("|Format={}".format (escape (line)))
         rewrite.write ("}}")
 
@@ -82,9 +82,9 @@ def addSyntaxValues (rewrite, syntax):
             if match:
                 name, required, description = match.group (1, 2, 3)
                 if (required == "Required"):
-                    required = "true"
+                    required = "Required"
                 else:
-                    required = "false"
+                    required = "Optional"
                 rewrite.write ("{{JS_Syntax_Parameter\n")
                 rewrite.write ("|Name={}\n".format (escape (name)))
                 rewrite.write ("|Required={}\n".format (escape (required)))
@@ -94,7 +94,7 @@ def addSyntaxValues (rewrite, syntax):
                 match = re.match ("^; ([^:]+): *(.*)$", line)
                 if match:
                     name, description = match.group (1, 2)
-                    required = "false"
+                    required = ""
                     rewrite.write ("{{JS_Syntax_Parameter\n")
                     rewrite.write ("|Name={}\n".format (escape (name)))
                     rewrite.write ("|Required={}\n".format (escape (required)))
