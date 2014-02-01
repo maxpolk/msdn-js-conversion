@@ -114,14 +114,16 @@ def addSyntaxValues (rewrite, syntax):
                     rewrite.write ("}}")
 
 def addReturnValue (rewrite, syntax):
-    '''Add a return value as a JS syntax Values parameter, with given line of content.'''
-    # Sometimes it is a simple sentence, sometimes a formatted definition list entry
-    print ("Return value syntax line: {}".format (syntax[0]))
-    rewrite.write ("{{JS_Syntax_Parameter\n")
-    rewrite.write ("|Name={}\n".format ("return value"))
-    rewrite.write ("|Required={}\n".format (""))
-    rewrite.write ("|Description={}".format (escape (syntax[0])))
-    rewrite.write ("}}")
+    '''
+    Add return value as a special template instance.
+        {{JS Return Value
+        |Description=
+        }}
+    '''
+    print ("Return value syntax line: {}".format ("\n".join(syntax)))
+    rewrite.write ("{{JS_Return_Value\n")
+    rewrite.write ("|Description={}".format (escape ("\n".join(syntax))))
+    rewrite.write ("}}\n")
 
 def addSyntaxFooter (rewrite):
     '''Finish off the syntax footer.'''
@@ -333,7 +335,7 @@ def processSection (filename, rewrite, section_name, section):
     global started_syntax_section, finished_syntax_section, added_values_param
     # Finish off a previous template that has no more information to put into it
     if (started_syntax_section and not finished_syntax_section and
-            section_name != "Parameters" and section_name != "Return Value"):
+            section_name != "Parameters"):
         addSyntaxFooter (rewrite)
         finished_syntax_section = True
     # Determine if this is the top (unnamed) section
@@ -387,13 +389,7 @@ def processSection (filename, rewrite, section_name, section):
             addSyntaxValues (rewrite, section)
     elif (section_name == "Return Value"):
         print "Section \"{}\" contains {} lines:".format (section_name, len (section))
-        if (not started_syntax_section):
-            print ("ERROR: we never started a syntax template, ignoring {}".format (
-                section_name))
-        elif (not added_values_param):
-            addSyntaxValues (rewrite, section)
-        else:
-            addReturnValue (rewrite, section)
+        addReturnValue (rewrite, section)
     elif (section_name == "Example"):
         print "Section \"{}\" contains {} lines:".format (section_name, len (section))
         addExamples (rewrite, section)
