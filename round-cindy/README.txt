@@ -1,6 +1,6 @@
 Copy *.wiki files from ../round-betty into this directory.
 
-Run RENAME.sh
+Run RENAME.perl
 
 Run PROCESS-ORIGINAL.sh
 
